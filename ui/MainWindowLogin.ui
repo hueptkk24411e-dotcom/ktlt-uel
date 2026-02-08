@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>301</width>
+    <height>382</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>40</y>
+      <width>47</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>301</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>C:/Users/MY LAPTOP/Downloads/login.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>20</y>
+      <width>221</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>C:/Users/MY LAPTOP/Downloads/aaae0954-7d78-4cf3-88bc-75015b07cafb.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>60</y>
+      <width>171</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Login to your account&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>30</y>
+      <width>181</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; color:#cfe4ff;&quot;&gt;MY NAIL SHOP&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonLogin">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>160</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:  rgb(175, 203, 243);
+background-color: rgb(207, 228, 255);
+border-radius: 25px;
+border: 1px solid #DCE6F3;</string>
+    </property>
+    <property name="text">
+     <string>Login</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>C:/Users/MY LAPTOP/Downloads/a75f9166-38fb-4cdd-957b-f7dbbdf55105.png</normaloff>C:/Users/MY LAPTOP/Downloads/a75f9166-38fb-4cdd-957b-f7dbbdf55105.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>42</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="autoRepeatDelay">
+     <number>302</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonExit">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>160</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:  rgb(175, 203, 243);
+background-color: rgb(207, 228, 255);
+border-radius: 20px;
+border: 1px solid #DCE6F3;</string>
+    </property>
+    <property name="text">
+     <string>Exit</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>C:/Users/MY LAPTOP/Downloads/exit.png</normaloff>C:/Users/MY LAPTOP/Downloads/exit.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>42</width>
+      <height>28</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>90</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(175, 203, 243);</string>
+    </property>
+    <property name="text">
+     <string>User's Name: </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>120</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(175, 203, 243);</string>
+    </property>
+    <property name="text">
+     <string>Password:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditUsername">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>90</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditPassword">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>120</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>123</string>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>301</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
