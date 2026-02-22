@@ -114,7 +114,7 @@ border: 1px solid #DCE6F3;</string>
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>C:/Users/MY LAPTOP/Downloads/a75f9166-38fb-4cdd-957b-f7dbbdf55105.png</normaloff>C:/Users/MY LAPTOP/Downloads/a75f9166-38fb-4cdd-957b-f7dbbdf55105.png</iconset>
+      <normaloff>../images/login_image.png</normaloff>../images/login_image.png</iconset>
     </property>
     <property name="iconSize">
      <size>
