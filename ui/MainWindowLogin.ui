@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>301</width>
+    <width>332</width>
     <height>382</height>
    </rect>
   </property>
@@ -30,9 +30,9 @@
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>301</width>
+      <x>10</x>
+      <y>-10</y>
+      <width>311</width>
       <height>371</height>
      </rect>
     </property>
@@ -40,7 +40,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>C:/Users/MY LAPTOP/Downloads/login.png</pixmap>
+     <pixmap>../images/login_bìa.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -51,7 +51,7 @@
      <rect>
       <x>40</x>
       <y>20</y>
-      <width>221</width>
+      <width>231</width>
       <height>191</height>
      </rect>
     </property>
@@ -84,8 +84,11 @@
       <height>20</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(159, 195, 250);</string>
+    </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; color:#cfe4ff;&quot;&gt;MY NAIL SHOP&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; color:#afcbf3;&quot;&gt;MY NAIL SHOP&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButtonLogin">
@@ -93,9 +96,15 @@
      <rect>
       <x>70</x>
       <y>160</y>
-      <width>71</width>
-      <height>21</height>
+      <width>81</width>
+      <height>31</height>
      </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
     </property>
     <property name="font">
      <font>
@@ -104,26 +113,37 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">color:  rgb(175, 203, 243);
-background-color: rgb(207, 228, 255);
-border-radius: 25px;
-border: 1px solid #DCE6F3;</string>
+     <string notr="true">background-color: qlineargradient(
+    x1:0, y1:0,
+    x2:0, y2:1,
+    stop:0 rgb(215, 233, 255),
+    stop:1 rgb(195, 220, 255)
+);
+
+color: rgb(74, 127, 199);
+border: 1px solid rgb(175, 203, 243);
+border-radius: 8px;
+padding: 4px 12px;
+</string>
     </property>
     <property name="text">
      <string>Login</string>
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>../images/login_image.png</normaloff>../images/login_image.png</iconset>
+      <normaloff>../images/login.png</normaloff>../images/login.png</iconset>
     </property>
     <property name="iconSize">
      <size>
-      <width>42</width>
+      <width>25</width>
       <height>20</height>
      </size>
     </property>
     <property name="autoRepeatDelay">
      <number>302</number>
+    </property>
+    <property name="autoDefault">
+     <bool>false</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButtonExit">
@@ -131,8 +151,8 @@ border: 1px solid #DCE6F3;</string>
      <rect>
       <x>170</x>
       <y>160</y>
-      <width>71</width>
-      <height>21</height>
+      <width>81</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="font">
@@ -142,22 +162,30 @@ border: 1px solid #DCE6F3;</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">color:  rgb(175, 203, 243);
-background-color: rgb(207, 228, 255);
-border-radius: 20px;
-border: 1px solid #DCE6F3;</string>
+     <string notr="true">background-color: qlineargradient(
+    x1:0, y1:0,
+    x2:0, y2:1,
+    stop:0 rgb(215, 233, 255),
+    stop:1 rgb(195, 220, 255)
+);
+
+color: rgb(74, 127, 199);
+border: 1px solid rgb(175, 203, 243);
+border-radius: 8px;
+padding: 4px 12px;
+</string>
     </property>
     <property name="text">
      <string>Exit</string>
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>C:/Users/MY LAPTOP/Downloads/exit.png</normaloff>C:/Users/MY LAPTOP/Downloads/exit.png</iconset>
+      <normaloff>../images/exit.png</normaloff>../images/exit.png</iconset>
     </property>
     <property name="iconSize">
      <size>
-      <width>42</width>
-      <height>28</height>
+      <width>20</width>
+      <height>20</height>
      </size>
     </property>
    </widget>
@@ -171,7 +199,7 @@ border: 1px solid #DCE6F3;</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(175, 203, 243);</string>
+     <string notr="true">color: rgb(159, 195, 250);</string>
     </property>
     <property name="text">
      <string>User's Name: </string>
@@ -187,7 +215,7 @@ border: 1px solid #DCE6F3;</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(175, 203, 243);</string>
+     <string notr="true">color: rgb(159, 195, 250);</string>
     </property>
     <property name="text">
      <string>Password:</string>
@@ -225,7 +253,7 @@ border: 1px solid #DCE6F3;</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>301</width>
+     <width>332</width>
      <height>22</height>
     </rect>
    </property>
