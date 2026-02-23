@@ -12,7 +12,7 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(301, 382)
+        MainWindow.resize(314, 382)
         self.centralwidget = QtWidgets.QWidget(parent=MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.label_2 = QtWidgets.QLabel(parent=self.centralwidget)
@@ -20,13 +20,13 @@ class Ui_MainWindow(object):
         self.label_2.setText("")
         self.label_2.setObjectName("label_2")
         self.label_5 = QtWidgets.QLabel(parent=self.centralwidget)
-        self.label_5.setGeometry(QtCore.QRect(0, 0, 301, 371))
+        self.label_5.setGeometry(QtCore.QRect(10, -10, 291, 371))
         self.label_5.setText("")
-        self.label_5.setPixmap(QtGui.QPixmap("C:/Users/MY LAPTOP/Downloads/login.png"))
+        self.label_5.setPixmap(QtGui.QPixmap("D:\\UEL\\PythonProject\\CustomerManagement\\ui\\../images/login_bìa.png"))
         self.label_5.setScaledContents(True)
         self.label_5.setObjectName("label_5")
         self.label_7 = QtWidgets.QLabel(parent=self.centralwidget)
-        self.label_7.setGeometry(QtCore.QRect(40, 20, 221, 191))
+        self.label_7.setGeometry(QtCore.QRect(40, 20, 231, 191))
         self.label_7.setText("")
         self.label_7.setPixmap(QtGui.QPixmap("C:/Users/MY LAPTOP/Downloads/aaae0954-7d78-4cf3-88bc-75015b07cafb.png"))
         self.label_7.setObjectName("label_7")
@@ -35,45 +35,64 @@ class Ui_MainWindow(object):
         self.label_8.setObjectName("label_8")
         self.label_9 = QtWidgets.QLabel(parent=self.centralwidget)
         self.label_9.setGeometry(QtCore.QRect(60, 30, 181, 20))
+        self.label_9.setStyleSheet("color: rgb(159, 195, 250);")
         self.label_9.setObjectName("label_9")
         self.pushButtonLogin = QtWidgets.QPushButton(parent=self.centralwidget)
-        self.pushButtonLogin.setGeometry(QtCore.QRect(70, 160, 71, 21))
+        self.pushButtonLogin.setGeometry(QtCore.QRect(70, 160, 81, 31))
+        self.pushButtonLogin.setMinimumSize(QtCore.QSize(0, 0))
         font = QtGui.QFont()
         font.setBold(True)
         font.setWeight(75)
         self.pushButtonLogin.setFont(font)
-        self.pushButtonLogin.setStyleSheet("color:  rgb(175, 203, 243);\n"
-"background-color: rgb(207, 228, 255);\n"
-"border-radius: 25px;\n"
-"border: 1px solid #DCE6F3;")
+        self.pushButtonLogin.setStyleSheet("background-color: qlineargradient(\n"
+"    x1:0, y1:0,\n"
+"    x2:0, y2:1,\n"
+"    stop:0 rgb(215, 233, 255),\n"
+"    stop:1 rgb(195, 220, 255)\n"
+");\n"
+"\n"
+"color: rgb(74, 127, 199);\n"
+"border: 1px solid rgb(175, 203, 243);\n"
+"border-radius: 8px;\n"
+"padding: 4px 12px;\n"
+"")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("C:/Users/MY LAPTOP/Downloads/a75f9166-38fb-4cdd-957b-f7dbbdf55105.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon.addPixmap(QtGui.QPixmap("D:\\UEL\\PythonProject\\CustomerManagement\\ui\\../images/login.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.pushButtonLogin.setIcon(icon)
-        self.pushButtonLogin.setIconSize(QtCore.QSize(42, 20))
+        self.pushButtonLogin.setIconSize(QtCore.QSize(25, 20))
         self.pushButtonLogin.setAutoRepeatDelay(302)
+        self.pushButtonLogin.setAutoDefault(False)
         self.pushButtonLogin.setObjectName("pushButtonLogin")
         self.pushButtonExit = QtWidgets.QPushButton(parent=self.centralwidget)
-        self.pushButtonExit.setGeometry(QtCore.QRect(170, 160, 71, 21))
+        self.pushButtonExit.setGeometry(QtCore.QRect(170, 160, 81, 31))
         font = QtGui.QFont()
         font.setBold(True)
         font.setWeight(75)
         self.pushButtonExit.setFont(font)
-        self.pushButtonExit.setStyleSheet("color:  rgb(175, 203, 243);\n"
-"background-color: rgb(207, 228, 255);\n"
-"border-radius: 20px;\n"
-"border: 1px solid #DCE6F3;")
+        self.pushButtonExit.setStyleSheet("background-color: qlineargradient(\n"
+"    x1:0, y1:0,\n"
+"    x2:0, y2:1,\n"
+"    stop:0 rgb(215, 233, 255),\n"
+"    stop:1 rgb(195, 220, 255)\n"
+");\n"
+"\n"
+"color: rgb(74, 127, 199);\n"
+"border: 1px solid rgb(175, 203, 243);\n"
+"border-radius: 8px;\n"
+"padding: 4px 12px;\n"
+"")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("C:/Users/MY LAPTOP/Downloads/exit.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon1.addPixmap(QtGui.QPixmap("D:\\UEL\\PythonProject\\CustomerManagement\\ui\\../images/exit.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.pushButtonExit.setIcon(icon1)
-        self.pushButtonExit.setIconSize(QtCore.QSize(42, 28))
+        self.pushButtonExit.setIconSize(QtCore.QSize(20, 20))
         self.pushButtonExit.setObjectName("pushButtonExit")
         self.label = QtWidgets.QLabel(parent=self.centralwidget)
         self.label.setGeometry(QtCore.QRect(70, 90, 81, 16))
-        self.label.setStyleSheet("color: rgb(175, 203, 243);")
+        self.label.setStyleSheet("color: rgb(159, 195, 250);")
         self.label.setObjectName("label")
         self.label_3 = QtWidgets.QLabel(parent=self.centralwidget)
         self.label_3.setGeometry(QtCore.QRect(70, 120, 81, 16))
-        self.label_3.setStyleSheet("color: rgb(175, 203, 243);")
+        self.label_3.setStyleSheet("color: rgb(159, 195, 250);")
         self.label_3.setObjectName("label_3")
         self.lineEditUsername = QtWidgets.QLineEdit(parent=self.centralwidget)
         self.lineEditUsername.setGeometry(QtCore.QRect(140, 90, 113, 20))
@@ -84,7 +103,7 @@ class Ui_MainWindow(object):
         self.lineEditPassword.setObjectName("lineEditPassword")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(parent=MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 301, 22))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 314, 22))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(parent=MainWindow)
@@ -98,7 +117,7 @@ class Ui_MainWindow(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.label_8.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\">Login to your account</p></body></html>"))
-        self.label_9.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:14pt; font-weight:600; color:#cfe4ff;\">MY NAIL SHOP</span></p></body></html>"))
+        self.label_9.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:14pt; font-weight:600; color:#afcbf3;\">MY NAIL SHOP</span></p></body></html>"))
         self.pushButtonLogin.setText(_translate("MainWindow", "Login"))
         self.pushButtonExit.setText(_translate("MainWindow", "Exit"))
         self.label.setText(_translate("MainWindow", "User\'s Name: "))
