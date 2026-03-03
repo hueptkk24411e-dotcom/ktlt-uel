@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PaymentWindow</class>
+ <widget class="QMainWindow" name="PaymentWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>520</width>
+    <height>727</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Secure Payment</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">/* Ép màu cho centralwidget và tất cả các con bên trong */
+#centralwidget {
+    background-color: #FFFFFF; /* Nền trắng */
+    color: #000000;            /* Chữ đen */
+}
+
+/* Đảm bảo các Label không bị Theme hệ thống ghi đè màu trắng */
+QLabel {
+    color: #000000;
+}</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>20</number>
+    </property>
+    <property name="leftMargin">
+     <number>30</number>
+    </property>
+    <property name="topMargin">
+     <number>30</number>
+    </property>
+    <property name="rightMargin">
+     <number>30</number>
+    </property>
+    <property name="bottomMargin">
+     <number>30</number>
+    </property>
+    <item>
+     <widget class="QLabel" name="labelTitle">
+      <property name="styleSheet">
+       <string notr="true">font-size: 22px; font-weight: bold; color: #4A90E2; font-family: 'Georgia';</string>
+      </property>
+      <property name="text">
+       <string>PAYMENT CHECKOUT</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frameTotal">
+      <property name="styleSheet">
+       <string notr="true">background-color: #F0F7FF; border-radius: 15px; border: 1px solid #CFE4FF;</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(15, 15, 15);</string>
+         </property>
+         <property name="text">
+          <string>Total Amount Due:</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="lblTotalValue">
+         <property name="styleSheet">
+          <string notr="true">font-size: 32px; font-weight: bold; color: #0D3B66;</string>
+         </property>
+         <property name="text">
+          <string>0.00$</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item alignment="Qt::AlignHCenter">
+     <widget class="QLabel" name="labelQR">
+      <property name="minimumSize">
+       <size>
+        <width>350</width>
+        <height>350</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>350</width>
+        <height>350</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px dashed #AFCBF3; border-radius: 10px;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../ima/download.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="checkBox">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(9, 9, 9);
+</string>
+      </property>
+      <property name="text">
+       <string>Cash payment</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnConfirm">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #AFCBF3;
+    color: #0D3B66;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 15px;
+}
+QPushButton:hover {
+    background-color: #A6C8FF;
+}</string>
+      </property>
+      <property name="text">
+       <string>DONE</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
