@@ -1,0 +1,29 @@
+{
+    "customers": [
+        {
+            "CustomerUserName": "teo",
+            "Password": "123",
+            "PhoneNumber": "123"
+        },
+        {
+            "CustomerUserName": "ty",
+            "Password": "234",
+            "PhoneNumber": "234"
+        },
+        {
+            "CustomerUserName": "bin",
+            "Password": "345",
+            "PhoneNumber": "345"
+        },
+        {
+            "CustomerUserName": "bo",
+            "Password": "456",
+            "PhoneNumber": "456"
+        },
+        {
+            "CustomerUserName": "tuan",
+            "Password": "789",
+            "PhoneNumber": "789"
+        }
+    ]
+}

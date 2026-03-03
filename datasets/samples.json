@@ -1,0 +1,64 @@
+{
+    "samples": [
+        {
+            "SampleID": "S1",
+            "SampleName": "Name1",
+            "SamplePrice": 100,
+            "SampleQuantity": 10000
+        },
+        {
+            "SampleID": "S2",
+            "SampleName": "Name2",
+            "SamplePrice": 200,
+            "SampleQuantity": 20000
+        },
+        {
+            "SampleID": "S3",
+            "SampleName": "Name3",
+            "SamplePrice": 500,
+            "SampleQuantity": 5000
+        },
+        {
+            "SampleID": "S4",
+            "SampleName": "Name4",
+            "SamplePrice": 300,
+            "SampleQuantity": 3000
+        },
+        {
+            "SampleID": "S5",
+            "SampleName": "Name5",
+            "SamplePrice": 400,
+            "SampleQuantity": 400
+        },
+        {
+            "SampleID": "S6",
+            "SampleName": "Name6",
+            "SamplePrice": 450,
+            "SampleQuantity": 4500
+        },
+        {
+            "SampleID": "S7",
+            "SampleName": "Name7",
+            "SamplePrice": 500,
+            "SampleQuantity": 5000
+        },
+        {
+            "SampleID": "S8",
+            "SampleName": "Name8",
+            "SamplePrice": 700,
+            "SampleQuantity": 7000
+        },
+        {
+            "SampleID": "S9",
+            "SampleName": "Name9",
+            "SamplePrice": 650,
+            "SampleQuantity": 6500
+        },
+        {
+            "SampleID": "S10",
+            "SampleName": "Name10",
+            "SamplePrice": 1000,
+            "SampleQuantity": 8000
+        }
+    ]
+}

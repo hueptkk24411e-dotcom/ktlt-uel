@@ -1,0 +1,34 @@
+{
+    "employees": [
+        {
+            "EmployeeId": "meo",
+            "EmployeeName": "Mèo",
+            "Experience": 1,
+            "CustomerBooked": "teo"
+        },
+        {
+            "EmployeeId": "ga",
+            "EmployeeName": "Gà",
+            "Experience": 3,
+            "CustomerBooked": "ty"
+        },
+        {
+            "EmployeeId": "gau",
+            "EmployeeName": "Gấu",
+            "Experience": 5,
+            "CustomerBooked": "bin"
+        },
+        {
+            "EmployeeId": "chon",
+            "EmployeeName": "Chồn",
+            "Experience": 6,
+            "CustomerBooked": "bo"
+        },
+        {
+            "EmployeeId": "chuot",
+            "EmployeeName": "Chuột",
+            "Experience": 7,
+            "CustomerBooked": "tuan"
+        }
+    ]
+}
