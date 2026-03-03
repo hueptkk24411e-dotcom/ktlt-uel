@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1153</width>
+    <width>1097</width>
     <height>667</height>
    </rect>
   </property>
@@ -28,11 +28,12 @@
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(140, 193, 233);
-font: 14pt &quot;MS Shell Dlg 2&quot;;
+font: 26pt &quot;Rockwell Condensed&quot;;
+
 color: rgb(18, 40, 75);</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Product Management&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:28pt; font-weight:600;&quot;&gt;Product Management&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QTableWidget" name="tableWidgetSample">
@@ -43,6 +44,9 @@ color: rgb(18, 40, 75);</string>
       <width>391</width>
       <height>381</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 9pt &quot;Rockwell&quot;;</string>
     </property>
     <row>
      <property name="text">
@@ -237,9 +241,13 @@ color: rgb(18, 40, 75);</string>
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;
-color: rgb(45, 5, 127);
-background-color: rgb(207, 228, 255);</string>
+     <string notr="true">QWidget {
+    font: 75 16pt &quot;Rockwell&quot;;
+    color: rgb(45, 5, 127);
+    background-color: rgb(207, 228, 255);
+    border-radius: 20px;  
+}
+</string>
     </property>
     <property name="title">
      <string>Sample Detail:</string>
@@ -262,6 +270,9 @@ background-color: rgb(207, 228, 255);</string>
        <height>21</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">font: italic 12pt &quot;Rockwell&quot;;</string>
+     </property>
      <property name="text">
       <string>Sample ID:</string>
      </property>
@@ -275,6 +286,9 @@ background-color: rgb(207, 228, 255);</string>
        <height>21</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">font: italic 12pt &quot;Rockwell&quot;;</string>
+     </property>
      <property name="text">
       <string>Sample Name:</string>
      </property>
@@ -287,6 +301,9 @@ background-color: rgb(207, 228, 255);</string>
        <width>91</width>
        <height>21</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: italic 12pt &quot;Rockwell&quot;;</string>
      </property>
      <property name="text">
       <string>Price:</string>
@@ -303,10 +320,25 @@ background-color: rgb(207, 228, 255);</string>
      </property>
      <property name="styleSheet">
       <string notr="true">background-color: rgb(67, 139, 196);
-color: rgb(224, 253, 255);</string>
+font: 14pt &quot;Rockwell Condensed&quot;;
+color: rgb(224, 253, 255);
+</string>
      </property>
      <property name="text">
       <string>Save</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../images/ic_saveSample.png</normaloff>../images/ic_saveSample.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>15</width>
+       <height>15</height>
+      </size>
+     </property>
+     <property name="autoRepeatInterval">
+      <number>99</number>
      </property>
     </widget>
     <widget class="QPushButton" name="pushButtonSampleClear">
@@ -320,10 +352,22 @@ color: rgb(224, 253, 255);</string>
      </property>
      <property name="styleSheet">
       <string notr="true">background-color: rgb(67, 139, 196);
-color: rgb(224, 253, 255);</string>
+font: 14pt &quot;Rockwell Condensed&quot;;
+color: rgb(224, 253, 255);
+</string>
      </property>
      <property name="text">
       <string>Clear</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../images/ic_clearSample.png</normaloff>../images/ic_clearSample.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>17</width>
+       <height>17</height>
+      </size>
      </property>
     </widget>
     <widget class="QPushButton" name="pushButtonSampleSearch">
@@ -335,12 +379,32 @@ color: rgb(224, 253, 255);</string>
        <height>31</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <family>Rockwell Condensed</family>
+       <pointsize>14</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
      <property name="styleSheet">
       <string notr="true">background-color: rgb(67, 139, 196);
+font: 14pt &quot;Rockwell Condensed&quot;;
 color: rgb(224, 253, 255);</string>
      </property>
      <property name="text">
       <string>Search</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../images/ic_searchSample.png</normaloff>../images/ic_searchSample.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>15</width>
+       <height>15</height>
+      </size>
      </property>
     </widget>
     <widget class="QPushButton" name="pushButtonSampleRemove">
@@ -354,10 +418,21 @@ color: rgb(224, 253, 255);</string>
      </property>
      <property name="styleSheet">
       <string notr="true">background-color: rgb(67, 139, 196);
+font: 14pt &quot;Rockwell Condensed&quot;;
 color: rgb(224, 253, 255);</string>
      </property>
      <property name="text">
       <string>Remove</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../images/ic_removeSample.png</normaloff>../images/ic_removeSample.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>15</width>
+       <height>15</height>
+      </size>
      </property>
     </widget>
     <widget class="QLineEdit" name="lineEditSampleID">
@@ -370,7 +445,9 @@ color: rgb(224, 253, 255);</string>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255);</string>
+      <string notr="true">background-color: rgb(255, 255, 255);
+
+</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="lineEditSampleName">
@@ -407,6 +484,9 @@ color: rgb(224, 253, 255);</string>
        <width>171</width>
        <height>21</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: italic 12pt &quot;Rockwell&quot;;</string>
      </property>
      <property name="text">
       <string>Sample Quantity:</string>
@@ -445,9 +525,12 @@ color: rgb(224, 253, 255);</string>
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;
-background-color: rgb(207, 228, 255);
-color: rgb(45, 5, 127);</string>
+     <string notr="true">QWidget {
+    font: 75 16pt &quot;Rockwell&quot;;
+    color: rgb(45, 5, 127);
+    background-color: rgb(207, 228, 255);
+    border-radius: 20px;   
+}</string>
     </property>
     <property name="title">
      <string>Customer Detail:</string>
@@ -470,8 +553,11 @@ color: rgb(45, 5, 127);</string>
        <height>21</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">font: italic 12pt &quot;Rockwell&quot;;</string>
+     </property>
      <property name="text">
-      <string>Customer User Name</string>
+      <string>Customer User Name:</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_6">
@@ -483,8 +569,11 @@ color: rgb(45, 5, 127);</string>
        <height>21</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">font: italic 12pt &quot;Rockwell&quot;;</string>
+     </property>
      <property name="text">
-      <string>Phone Number</string>
+      <string>Phone Number:</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_7">
@@ -496,8 +585,12 @@ color: rgb(45, 5, 127);</string>
        <height>21</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">font: italic 12pt &quot;Rockwell&quot;;
+</string>
+     </property>
      <property name="text">
-      <string>Type</string>
+      <string>Type:</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="lineEditCustomerUserName">
@@ -550,10 +643,21 @@ color: rgb(45, 5, 127);</string>
      </property>
      <property name="styleSheet">
       <string notr="true">background-color: rgb(67, 139, 196);
+font: 14pt &quot;Rockwell Condensed&quot;;
 color: rgb(224, 253, 255);</string>
      </property>
      <property name="text">
       <string>Save</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../images/ic_saveCustomer.png</normaloff>../images/ic_saveCustomer.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>15</width>
+       <height>15</height>
+      </size>
      </property>
     </widget>
     <widget class="QPushButton" name="pushButtonCustomerClear">
@@ -567,10 +671,21 @@ color: rgb(224, 253, 255);</string>
      </property>
      <property name="styleSheet">
       <string notr="true">background-color: rgb(67, 139, 196);
+font: 14pt &quot;Rockwell Condensed&quot;;
 color: rgb(224, 253, 255);</string>
      </property>
      <property name="text">
       <string>Clear</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../images/ic_clearCustomer.png</normaloff>../images/ic_clearCustomer.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>17</width>
+       <height>17</height>
+      </size>
      </property>
     </widget>
     <widget class="QPushButton" name="pushButtonCustomerSearch">
@@ -584,10 +699,21 @@ color: rgb(224, 253, 255);</string>
      </property>
      <property name="styleSheet">
       <string notr="true">background-color: rgb(67, 139, 196);
+font: 14pt &quot;Rockwell Condensed&quot;;
 color: rgb(224, 253, 255);</string>
      </property>
      <property name="text">
       <string>Search</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../images/ic_searchCustomer.png</normaloff>../images/ic_searchCustomer.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>15</width>
+       <height>15</height>
+      </size>
      </property>
     </widget>
     <widget class="QPushButton" name="pushButtonCustomerRemove">
@@ -601,10 +727,21 @@ color: rgb(224, 253, 255);</string>
      </property>
      <property name="styleSheet">
       <string notr="true">background-color: rgb(67, 139, 196);
+font: 14pt &quot;Rockwell Condensed&quot;;
 color: rgb(224, 253, 255);</string>
      </property>
      <property name="text">
       <string>Remove</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../images/ic_removeCustomer.png</normaloff>../images/ic_removeCustomer.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>15</width>
+       <height>15</height>
+      </size>
      </property>
     </widget>
    </widget>
@@ -630,7 +767,7 @@ color: rgb(224, 253, 255);</string>
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;
+     <string notr="true">font: 14pt &quot;Rockwell Condensed&quot;;
 background-color: rgb(207, 228, 255);</string>
     </property>
     <property name="alignment">
@@ -646,6 +783,15 @@ background-color: rgb(207, 228, 255);</string>
       <height>121</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Rockwell</family>
+      <pointsize>14</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
     <property name="focusPolicy">
      <enum>Qt::NoFocus</enum>
     </property>
@@ -656,9 +802,10 @@ background-color: rgb(207, 228, 255);</string>
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;
+     <string notr="true">font: 75 14pt &quot;Rockwell&quot;;
 background-color: rgb(207, 228, 255);
-color: rgb(45, 5, 127);</string>
+color: rgb(45, 5, 127);
+border-radius: 20px;</string>
     </property>
     <property name="title">
      <string>Customer Feedback:</string>
@@ -681,12 +828,33 @@ color: rgb(45, 5, 127);</string>
        <height>19</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <family>Rockwell Condensed</family>
+       <pointsize>14</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
      <property name="styleSheet">
       <string notr="true">background-color: rgb(67, 139, 196);
+font: 14pt &quot;Rockwell Condensed&quot;;
+
 color: rgb(224, 253, 255);</string>
      </property>
      <property name="text">
       <string>Open Chart</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../images/ic_openchartCustomerFeedback.png</normaloff>../images/ic_openchartCustomerFeedback.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>15</width>
+       <height>15</height>
+      </size>
      </property>
     </widget>
    </widget>
@@ -698,6 +866,9 @@ color: rgb(224, 253, 255);</string>
       <width>341</width>
       <height>251</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 9pt &quot;Rockwell&quot;;</string>
     </property>
     <row>
      <property name="text">
@@ -804,6 +975,9 @@ color: rgb(224, 253, 255);</string>
       <width>391</width>
       <height>251</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 9pt &quot;Rockwell&quot;;</string>
     </property>
     <row>
      <property name="text">
@@ -926,9 +1100,12 @@ color: rgb(224, 253, 255);</string>
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;
-background-color: rgb(207, 228, 255);
-color: rgb(45, 5, 127);</string>
+     <string notr="true">QWidget {
+    font: 75 16pt &quot;Rockwell&quot;;
+    color: rgb(45, 5, 127);
+    background-color: rgb(207, 228, 255);
+    border-radius: 20px;   
+}</string>
     </property>
     <property name="title">
      <string>Employee Detail:</string>
@@ -951,6 +1128,10 @@ color: rgb(45, 5, 127);</string>
        <height>21</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">font: italic 12pt &quot;Rockwell&quot;;
+</string>
+     </property>
      <property name="text">
       <string>Employee ID:</string>
      </property>
@@ -964,6 +1145,9 @@ color: rgb(45, 5, 127);</string>
        <height>21</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">font: italic 12pt &quot;Rockwell&quot;;</string>
+     </property>
      <property name="text">
       <string>Employee Name:</string>
      </property>
@@ -976,6 +1160,9 @@ color: rgb(45, 5, 127);</string>
        <width>161</width>
        <height>21</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: italic 12pt &quot;Rockwell&quot;;</string>
      </property>
      <property name="text">
       <string>Experience</string>
@@ -1031,10 +1218,21 @@ color: rgb(45, 5, 127);</string>
      </property>
      <property name="styleSheet">
       <string notr="true">background-color: rgb(67, 139, 196);
+font: 14pt &quot;Rockwell Condensed&quot;;
 color: rgb(224, 253, 255);</string>
      </property>
      <property name="text">
       <string>Save</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../images/ic_saveEmployee.png</normaloff>../images/ic_saveEmployee.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>15</width>
+       <height>15</height>
+      </size>
      </property>
     </widget>
     <widget class="QPushButton" name="pushButtonEmployeeClear">
@@ -1048,10 +1246,21 @@ color: rgb(224, 253, 255);</string>
      </property>
      <property name="styleSheet">
       <string notr="true">background-color: rgb(67, 139, 196);
+font: 14pt &quot;Rockwell Condensed&quot;;
 color: rgb(224, 253, 255);</string>
      </property>
      <property name="text">
       <string>Clear</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../images/ic_clearEmployee.png</normaloff>../images/ic_clearEmployee.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>17</width>
+       <height>17</height>
+      </size>
      </property>
     </widget>
     <widget class="QPushButton" name="pushButtonEmployeeSearch">
@@ -1065,10 +1274,21 @@ color: rgb(224, 253, 255);</string>
      </property>
      <property name="styleSheet">
       <string notr="true">background-color: rgb(67, 139, 196);
+font: 14pt &quot;Rockwell Condensed&quot;;
 color: rgb(224, 253, 255);</string>
      </property>
      <property name="text">
       <string>Search</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../images/ic_searchEmployee.png</normaloff>../images/ic_searchEmployee.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>15</width>
+       <height>15</height>
+      </size>
      </property>
     </widget>
     <widget class="QPushButton" name="pushButtonEmployeeRemove">
@@ -1082,10 +1302,21 @@ color: rgb(224, 253, 255);</string>
      </property>
      <property name="styleSheet">
       <string notr="true">background-color: rgb(67, 139, 196);
+font: 14pt &quot;Rockwell Condensed&quot;;
 color: rgb(224, 253, 255);</string>
      </property>
      <property name="text">
       <string>Remove</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../images/ic_removeEmployee.png</normaloff>../images/ic_removeEmployee.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>15</width>
+       <height>15</height>
+      </size>
      </property>
     </widget>
     <widget class="QLabel" name="label_11">
@@ -1096,6 +1327,9 @@ color: rgb(224, 253, 255);</string>
        <width>221</width>
        <height>21</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: italic 12pt &quot;Rockwell&quot;;</string>
      </property>
      <property name="text">
       <string>Customer Booked:</string>
@@ -1134,9 +1368,10 @@ color: rgb(224, 253, 255);</string>
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;
+     <string notr="true">font: 75 14pt &quot;Rockwell&quot;;
 background-color: rgb(207, 228, 255);
-color: rgb(45, 5, 127);</string>
+color: rgb(45, 5, 127);
+border-radius: 20px;</string>
     </property>
     <property name="title">
      <string>Sample Quantity</string>
@@ -1161,10 +1396,21 @@ color: rgb(45, 5, 127);</string>
      </property>
      <property name="styleSheet">
       <string notr="true">background-color: rgb(67, 139, 196);
+font: 14pt &quot;Rockwell Condensed&quot;;
 color: rgb(224, 253, 255);</string>
      </property>
      <property name="text">
       <string>Open Chart</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../images/ic_openchartSampleQuantity.png</normaloff>../images/ic_openchartSampleQuantity.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>15</width>
+       <height>15</height>
+      </size>
      </property>
     </widget>
    </widget>
@@ -1187,9 +1433,10 @@ color: rgb(224, 253, 255);</string>
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;
+     <string notr="true">font: 75 14pt &quot;Rockwell&quot;;
 background-color: rgb(207, 228, 255);
-color: rgb(45, 5, 127);</string>
+color: rgb(45, 5, 127);
+border-radius: 20px;</string>
     </property>
     <property name="title">
      <string>Revenue</string>
@@ -1214,10 +1461,21 @@ color: rgb(45, 5, 127);</string>
      </property>
      <property name="styleSheet">
       <string notr="true">background-color: rgb(67, 139, 196);
+font: 14pt &quot;Rockwell Condensed&quot;;
 color: rgb(224, 253, 255);</string>
      </property>
      <property name="text">
       <string>Open Chart</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../images/ic_openchartRevenue.png</normaloff>../images/ic_openchartRevenue.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>15</width>
+       <height>15</height>
+      </size>
      </property>
     </widget>
    </widget>
@@ -1231,12 +1489,23 @@ color: rgb(224, 253, 255);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;
+     <string notr="true">font: 14pt &quot;Rockwell Condensed&quot;;
 background-color: rgb(207, 228, 255);
-color: rgb(45, 5, 127);</string>
+color: rgb(45, 5, 127);
+border-radius: 20px;</string>
     </property>
     <property name="text">
      <string>Close Window</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../images/ic_close.png</normaloff>../images/ic_close.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>15</width>
+      <height>15</height>
+     </size>
     </property>
    </widget>
   </widget>
@@ -1245,7 +1514,7 @@ color: rgb(45, 5, 127);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1153</width>
+     <width>1097</width>
      <height>18</height>
     </rect>
    </property>
