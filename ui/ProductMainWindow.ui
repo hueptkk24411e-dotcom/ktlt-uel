@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>832</width>
-    <height>651</height>
+    <width>1161</width>
+    <height>690</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,7 +19,7 @@
      <rect>
       <x>-2</x>
       <y>0</y>
-      <width>821</width>
+      <width>1221</width>
       <height>41</height>
      </rect>
     </property>
@@ -40,17 +40,190 @@ color: rgb(18, 40, 75);</string>
      <rect>
       <x>10</x>
       <y>50</y>
-      <width>311</width>
-      <height>351</height>
+      <width>391</width>
+      <height>381</height>
      </rect>
     </property>
+    <row>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>175</red>
+       <green>203</green>
+       <blue>243</blue>
+      </color>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>2</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>175</red>
+       <green>203</green>
+       <blue>243</blue>
+      </color>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>3</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>175</red>
+       <green>203</green>
+       <blue>243</blue>
+      </color>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>4</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>175</red>
+       <green>203</green>
+       <blue>243</blue>
+      </color>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>5</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>175</red>
+       <green>203</green>
+       <blue>243</blue>
+      </color>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>6</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>175</red>
+       <green>203</green>
+       <blue>243</blue>
+      </color>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>7</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>175</red>
+       <green>203</green>
+       <blue>243</blue>
+      </color>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>8</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>175</red>
+       <green>203</green>
+       <blue>243</blue>
+      </color>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>9</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>175</red>
+       <green>203</green>
+       <blue>243</blue>
+      </color>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>10</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>175</red>
+       <green>203</green>
+       <blue>243</blue>
+      </color>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>Sample Name</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>175</red>
+       <green>203</green>
+       <blue>243</blue>
+      </color>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Sample ID</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>175</red>
+       <green>203</green>
+       <blue>243</blue>
+      </color>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Sample Price</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>175</red>
+       <green>203</green>
+       <blue>243</blue>
+      </color>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Sample Quantity</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>175</red>
+       <green>203</green>
+       <blue>243</blue>
+      </color>
+     </property>
+    </column>
+    <item row="0" column="1">
+     <property name="text">
+      <string/>
+     </property>
+    </item>
    </widget>
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>410</y>
-      <width>311</width>
+      <y>440</y>
+      <width>391</width>
       <height>191</height>
      </rect>
     </property>
@@ -65,8 +238,8 @@ color: rgb(18, 40, 75);</string>
     </property>
     <property name="styleSheet">
      <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;
-background-color: rgb(164, 239, 255);
-color: rgb(45, 5, 127);</string>
+color: rgb(45, 5, 127);
+background-color: rgb(207, 228, 255);</string>
     </property>
     <property name="title">
      <string>Sample Detail:</string>
@@ -85,7 +258,7 @@ color: rgb(45, 5, 127);</string>
       <rect>
        <x>10</x>
        <y>30</y>
-       <width>71</width>
+       <width>141</width>
        <height>21</height>
       </rect>
      </property>
@@ -98,7 +271,7 @@ color: rgb(45, 5, 127);</string>
       <rect>
        <x>10</x>
        <y>60</y>
-       <width>91</width>
+       <width>151</width>
        <height>21</height>
       </rect>
      </property>
@@ -124,7 +297,7 @@ color: rgb(45, 5, 127);</string>
       <rect>
        <x>10</x>
        <y>150</y>
-       <width>61</width>
+       <width>81</width>
        <height>31</height>
       </rect>
      </property>
@@ -139,9 +312,9 @@ color: rgb(224, 253, 255);</string>
     <widget class="QPushButton" name="pushButtonSampleClear">
      <property name="geometry">
       <rect>
-       <x>80</x>
+       <x>100</x>
        <y>150</y>
-       <width>71</width>
+       <width>81</width>
        <height>31</height>
       </rect>
      </property>
@@ -156,9 +329,9 @@ color: rgb(224, 253, 255);</string>
     <widget class="QPushButton" name="pushButtonSampleSearch">
      <property name="geometry">
       <rect>
-       <x>160</x>
+       <x>190</x>
        <y>150</y>
-       <width>71</width>
+       <width>81</width>
        <height>31</height>
       </rect>
      </property>
@@ -173,9 +346,9 @@ color: rgb(224, 253, 255);</string>
     <widget class="QPushButton" name="pushButtonSampleRemove">
      <property name="geometry">
       <rect>
-       <x>240</x>
+       <x>281</x>
        <y>150</y>
-       <width>62</width>
+       <width>91</width>
        <height>31</height>
       </rect>
      </property>
@@ -190,7 +363,7 @@ color: rgb(224, 253, 255);</string>
     <widget class="QLineEdit" name="lineEditSampleID">
      <property name="geometry">
       <rect>
-       <x>110</x>
+       <x>180</x>
        <y>30</y>
        <width>191</width>
        <height>20</height>
@@ -203,7 +376,7 @@ color: rgb(224, 253, 255);</string>
     <widget class="QLineEdit" name="lineEditSampleName">
      <property name="geometry">
       <rect>
-       <x>110</x>
+       <x>180</x>
        <y>60</y>
        <width>191</width>
        <height>20</height>
@@ -216,7 +389,7 @@ color: rgb(224, 253, 255);</string>
     <widget class="QLineEdit" name="lineEditPrice">
      <property name="geometry">
       <rect>
-       <x>110</x>
+       <x>180</x>
        <y>90</y>
        <width>191</width>
        <height>20</height>
@@ -226,85 +399,39 @@ color: rgb(224, 253, 255);</string>
       <string notr="true">background-color: rgb(255, 255, 255);</string>
      </property>
     </widget>
-   </widget>
-   <widget class="QGroupBox" name="groupBox_3">
-    <property name="geometry">
-     <rect>
-      <x>660</x>
-      <y>50</y>
-      <width>161</width>
-      <height>131</height>
-     </rect>
-    </property>
-    <property name="focusPolicy">
-     <enum>Qt::NoFocus</enum>
-    </property>
-    <property name="whatsThis">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Sample Detail:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;
-background-color: rgb(164, 239, 255);
-color: rgb(45, 5, 127);</string>
-    </property>
-    <property name="title">
-     <string>Sample Quantity:</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="flat">
-     <bool>false</bool>
-    </property>
-    <property name="checkable">
-     <bool>false</bool>
-    </property>
-   </widget>
-   <widget class="QGroupBox" name="groupBox_4">
-    <property name="geometry">
-     <rect>
-      <x>660</x>
-      <y>330</y>
-      <width>161</width>
-      <height>131</height>
-     </rect>
-    </property>
-    <property name="focusPolicy">
-     <enum>Qt::NoFocus</enum>
-    </property>
-    <property name="whatsThis">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Sample Detail:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;
-background-color: rgb(164, 239, 255);
-color: rgb(45, 5, 127);</string>
-    </property>
-    <property name="title">
-     <string>Revenue:</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-    <property name="flat">
-     <bool>false</bool>
-    </property>
-    <property name="checkable">
-     <bool>false</bool>
-    </property>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>120</y>
+       <width>171</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Sample Quantity:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditSampleQuantity">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>120</y>
+       <width>191</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
    </widget>
    <widget class="QGroupBox" name="groupBox_2">
     <property name="geometry">
      <rect>
-      <x>330</x>
-      <y>410</y>
-      <width>321</width>
+      <x>410</x>
+      <y>440</y>
+      <width>341</width>
       <height>191</height>
      </rect>
     </property>
@@ -319,7 +446,7 @@ color: rgb(45, 5, 127);</string>
     </property>
     <property name="styleSheet">
      <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;
-background-color: rgb(164, 239, 255);
+background-color: rgb(207, 228, 255);
 color: rgb(45, 5, 127);</string>
     </property>
     <property name="title">
@@ -339,12 +466,12 @@ color: rgb(45, 5, 127);</string>
       <rect>
        <x>10</x>
        <y>30</y>
-       <width>91</width>
+       <width>161</width>
        <height>21</height>
       </rect>
      </property>
      <property name="text">
-      <string>Customer ID:</string>
+      <string>Customer User Name</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_6">
@@ -352,12 +479,12 @@ color: rgb(45, 5, 127);</string>
       <rect>
        <x>10</x>
        <y>60</y>
-       <width>101</width>
+       <width>161</width>
        <height>21</height>
       </rect>
      </property>
      <property name="text">
-      <string>Customer Name:</string>
+      <string>Customer Password:</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_7">
@@ -365,7 +492,7 @@ color: rgb(45, 5, 127);</string>
       <rect>
        <x>10</x>
        <y>90</y>
-       <width>101</width>
+       <width>161</width>
        <height>21</height>
       </rect>
      </property>
@@ -373,12 +500,12 @@ color: rgb(45, 5, 127);</string>
       <string>Phone Number:</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEditCustomerID">
+    <widget class="QLineEdit" name="lineEditCustomerUserName">
      <property name="geometry">
       <rect>
-       <x>120</x>
+       <x>170</x>
        <y>30</y>
-       <width>191</width>
+       <width>161</width>
        <height>20</height>
       </rect>
      </property>
@@ -386,12 +513,12 @@ color: rgb(45, 5, 127);</string>
       <string notr="true">background-color: rgb(255, 255, 255);</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEditCustomerName">
+    <widget class="QLineEdit" name="lineEditCustomerPassword">
      <property name="geometry">
       <rect>
-       <x>120</x>
+       <x>170</x>
        <y>60</y>
-       <width>191</width>
+       <width>161</width>
        <height>20</height>
       </rect>
      </property>
@@ -402,9 +529,9 @@ color: rgb(45, 5, 127);</string>
     <widget class="QLineEdit" name="lineEditPhoneNumber">
      <property name="geometry">
       <rect>
-       <x>120</x>
+       <x>170</x>
        <y>90</y>
-       <width>191</width>
+       <width>161</width>
        <height>20</height>
       </rect>
      </property>
@@ -412,51 +539,12 @@ color: rgb(45, 5, 127);</string>
       <string notr="true">background-color: rgb(255, 255, 255);</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_8">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>120</y>
-       <width>121</width>
-       <height>21</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Location (Districts):</string>
-     </property>
-    </widget>
-    <widget class="QCheckBox" name="checkBox135">
-     <property name="geometry">
-      <rect>
-       <x>150</x>
-       <y>120</y>
-       <width>59</width>
-       <height>15</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>1,3,5</string>
-     </property>
-    </widget>
-    <widget class="QCheckBox" name="checkBoxOthers">
-     <property name="geometry">
-      <rect>
-       <x>240</x>
-       <y>120</y>
-       <width>59</width>
-       <height>15</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Others</string>
-     </property>
-    </widget>
     <widget class="QPushButton" name="pushButtonCustomerSave">
      <property name="geometry">
       <rect>
        <x>10</x>
        <y>150</y>
-       <width>61</width>
+       <width>71</width>
        <height>31</height>
       </rect>
      </property>
@@ -471,7 +559,7 @@ color: rgb(224, 253, 255);</string>
     <widget class="QPushButton" name="pushButtonCustomerClear">
      <property name="geometry">
       <rect>
-       <x>80</x>
+       <x>90</x>
        <y>150</y>
        <width>71</width>
        <height>31</height>
@@ -488,7 +576,7 @@ color: rgb(224, 253, 255);</string>
     <widget class="QPushButton" name="pushButtonCustomerSearch">
      <property name="geometry">
       <rect>
-       <x>160</x>
+       <x>170</x>
        <y>150</y>
        <width>71</width>
        <height>31</height>
@@ -505,7 +593,7 @@ color: rgb(224, 253, 255);</string>
     <widget class="QPushButton" name="pushButtonCustomerRemove">
      <property name="geometry">
       <rect>
-       <x>240</x>
+       <x>250</x>
        <y>150</y>
        <width>71</width>
        <height>31</height>
@@ -523,10 +611,10 @@ color: rgb(224, 253, 255);</string>
    <widget class="QDateEdit" name="dateEdit">
     <property name="geometry">
      <rect>
-      <x>330</x>
-      <y>50</y>
-      <width>321</width>
-      <height>31</height>
+      <x>1010</x>
+      <y>130</y>
+      <width>141</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="maximumSize">
@@ -543,7 +631,7 @@ color: rgb(224, 253, 255);</string>
     </property>
     <property name="styleSheet">
      <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;
-background-color: rgb(144, 229, 255);</string>
+background-color: rgb(207, 228, 255);</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -552,10 +640,10 @@ background-color: rgb(144, 229, 255);</string>
    <widget class="QGroupBox" name="groupBox_5">
     <property name="geometry">
      <rect>
-      <x>660</x>
-      <y>190</y>
-      <width>161</width>
-      <height>131</height>
+      <x>410</x>
+      <y>50</y>
+      <width>191</width>
+      <height>121</height>
      </rect>
     </property>
     <property name="focusPolicy">
@@ -568,8 +656,8 @@ background-color: rgb(144, 229, 255);</string>
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;
-background-color: rgb(164, 239, 255);
+     <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(207, 228, 255);
 color: rgb(45, 5, 127);</string>
     </property>
     <property name="title">
@@ -584,63 +672,580 @@ color: rgb(45, 5, 127);</string>
     <property name="checkable">
      <bool>false</bool>
     </property>
-   </widget>
-   <widget class="QListWidget" name="listWidgetFeedback">
-    <property name="geometry">
-     <rect>
-      <x>330</x>
-      <y>110</y>
-      <width>321</width>
-      <height>121</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QGroupBox" name="groupBox_6">
-    <property name="geometry">
-     <rect>
-      <x>330</x>
-      <y>89</y>
-      <width>321</width>
-      <height>141</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;
-background-color: rgb(164, 239, 255);
-color: rgb(45, 5, 127);</string>
-    </property>
-    <property name="title">
-     <string>List of Feedback:</string>
-    </property>
+    <widget class="QPushButton" name="pushButtonOpenChartFeedback">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>90</y>
+       <width>101</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(67, 139, 196);
+color: rgb(224, 253, 255);</string>
+     </property>
+     <property name="text">
+      <string>Open Chart</string>
+     </property>
+    </widget>
    </widget>
    <widget class="QTableWidget" name="tableWidgetCustomer">
     <property name="geometry">
      <rect>
-      <x>330</x>
-      <y>240</y>
-      <width>321</width>
-      <height>161</height>
+      <x>410</x>
+      <y>180</y>
+      <width>341</width>
+      <height>251</height>
      </rect>
     </property>
+    <row>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>175</red>
+       <green>203</green>
+       <blue>243</blue>
+      </color>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>2</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>175</red>
+       <green>203</green>
+       <blue>243</blue>
+      </color>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>3</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>175</red>
+       <green>203</green>
+       <blue>243</blue>
+      </color>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>4</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>175</red>
+       <green>203</green>
+       <blue>243</blue>
+      </color>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>5</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>175</red>
+       <green>203</green>
+       <blue>243</blue>
+      </color>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>User Name</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>175</red>
+       <green>203</green>
+       <blue>243</blue>
+      </color>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Password</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>175</red>
+       <green>203</green>
+       <blue>243</blue>
+      </color>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Phone Number</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>175</red>
+       <green>203</green>
+       <blue>243</blue>
+      </color>
+     </property>
+    </column>
    </widget>
-   <zorder>groupBox_6</zorder>
-   <zorder>label</zorder>
-   <zorder>tableWidgetSample</zorder>
-   <zorder>groupBox</zorder>
-   <zorder>groupBox_3</zorder>
-   <zorder>groupBox_4</zorder>
-   <zorder>groupBox_2</zorder>
-   <zorder>dateEdit</zorder>
-   <zorder>groupBox_5</zorder>
-   <zorder>listWidgetFeedback</zorder>
-   <zorder>tableWidgetCustomer</zorder>
+   <widget class="QTableWidget" name="tableWidgetEmployee">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>180</y>
+      <width>391</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <row>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>175</red>
+       <green>203</green>
+       <blue>243</blue>
+      </color>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>2</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>175</red>
+       <green>203</green>
+       <blue>243</blue>
+      </color>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>3</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>175</red>
+       <green>203</green>
+       <blue>243</blue>
+      </color>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>4</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>175</red>
+       <green>203</green>
+       <blue>243</blue>
+      </color>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>5</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>175</red>
+       <green>203</green>
+       <blue>243</blue>
+      </color>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>Employee ID</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>175</red>
+       <green>203</green>
+       <blue>243</blue>
+      </color>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Employee Name</string>
+     </property>
+     <property name="background">
+      <color>
+       <red>175</red>
+       <green>203</green>
+       <blue>243</blue>
+      </color>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Experience </string>
+     </property>
+     <property name="background">
+      <color>
+       <red>175</red>
+       <green>203</green>
+       <blue>243</blue>
+      </color>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Customer Booked</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_6">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>440</y>
+      <width>391</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Sample Detail:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(207, 228, 255);
+color: rgb(45, 5, 127);</string>
+    </property>
+    <property name="title">
+     <string>Employee Detail:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>181</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Employee ID:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>191</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Employee Name:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Experience</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditEmployeeID">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>30</y>
+       <width>191</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditEmployeeName">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>60</y>
+       <width>191</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditExperience">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>90</y>
+       <width>191</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButtonEmployeeSave">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>150</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(67, 139, 196);
+color: rgb(224, 253, 255);</string>
+     </property>
+     <property name="text">
+      <string>Save</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButtonEmployeeClear">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>150</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(67, 139, 196);
+color: rgb(224, 253, 255);</string>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButtonEmployeeSearch">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>150</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(67, 139, 196);
+color: rgb(224, 253, 255);</string>
+     </property>
+     <property name="text">
+      <string>Search</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButtonEmployeeRemove">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>150</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(67, 139, 196);
+color: rgb(224, 253, 255);</string>
+     </property>
+     <property name="text">
+      <string>Remove</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>120</y>
+       <width>221</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Customer Booked:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditCustomerBooked">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>120</y>
+       <width>191</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_7">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>50</y>
+      <width>191</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Sample Detail:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(207, 228, 255);
+color: rgb(45, 5, 127);</string>
+    </property>
+    <property name="title">
+     <string>Sample Quantity</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <widget class="QPushButton" name="pushButtonSampleQuantity">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>90</y>
+       <width>101</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(67, 139, 196);
+color: rgb(224, 253, 255);</string>
+     </property>
+     <property name="text">
+      <string>Open Chart</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_8">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>50</y>
+      <width>191</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Sample Detail:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(207, 228, 255);
+color: rgb(45, 5, 127);</string>
+    </property>
+    <property name="title">
+     <string>Revenue</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <widget class="QPushButton" name="pushButtonOpenChartFeedback_4">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>90</y>
+       <width>101</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(67, 139, 196);
+color: rgb(224, 253, 255);</string>
+     </property>
+     <property name="text">
+      <string>Open Chart</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushButtonCloseWindow">
+    <property name="geometry">
+     <rect>
+      <x>1010</x>
+      <y>50</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(207, 228, 255);
+color: rgb(45, 5, 127);</string>
+    </property>
+    <property name="text">
+     <string>Close Window</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>832</width>
+     <width>1161</width>
      <height>20</height>
     </rect>
    </property>
@@ -648,5 +1253,22 @@ color: rgb(45, 5, 127);</string>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>pushButtonCloseWindow</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1110</x>
+     <y>85</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>592</x>
+     <y>344</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
