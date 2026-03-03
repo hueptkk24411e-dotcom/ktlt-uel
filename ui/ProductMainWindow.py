@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file 'C:\Users\Windows\PycharmProjects\ktlt-uel\ui\ProductMainWindow.ui'
+# Form implementation generated from reading ui file 'D:\Code\ktlt-uel\ui\ProductMainWindow.ui'
 #
 # Created by: PyQt6 UI code generator 6.9.1
 #
@@ -12,7 +12,7 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1161, 690)
+        MainWindow.resize(1153, 667)
         self.centralwidget = QtWidgets.QWidget(parent=MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.label = QtWidgets.QLabel(parent=self.centralwidget)
@@ -363,7 +363,7 @@ class Ui_MainWindow(object):
         self.pushButtonCloseWindow.setObjectName("pushButtonCloseWindow")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(parent=MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 1161, 20))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 1153, 18))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(parent=MainWindow)
@@ -423,8 +423,8 @@ class Ui_MainWindow(object):
         self.groupBox_2.setWhatsThis(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-weight:600;\">Sample Detail:</span></p></body></html>"))
         self.groupBox_2.setTitle(_translate("MainWindow", "Customer Detail:"))
         self.label_5.setText(_translate("MainWindow", "Customer User Name"))
-        self.label_6.setText(_translate("MainWindow", "Customer Password:"))
-        self.label_7.setText(_translate("MainWindow", "Phone Number:"))
+        self.label_6.setText(_translate("MainWindow", "Phone Number"))
+        self.label_7.setText(_translate("MainWindow", "Type"))
         self.pushButtonCustomerSave.setText(_translate("MainWindow", "Save"))
         self.pushButtonCustomerClear.setText(_translate("MainWindow", "Clear"))
         self.pushButtonCustomerSearch.setText(_translate("MainWindow", "Search"))
@@ -447,9 +447,9 @@ class Ui_MainWindow(object):
         item = self.tableWidgetCustomer.horizontalHeaderItem(0)
         item.setText(_translate("MainWindow", "User Name"))
         item = self.tableWidgetCustomer.horizontalHeaderItem(1)
-        item.setText(_translate("MainWindow", "Password"))
-        item = self.tableWidgetCustomer.horizontalHeaderItem(2)
         item.setText(_translate("MainWindow", "Phone Number"))
+        item = self.tableWidgetCustomer.horizontalHeaderItem(2)
+        item.setText(_translate("MainWindow", "Type"))
         item = self.tableWidgetEmployee.verticalHeaderItem(0)
         item.setText(_translate("MainWindow", "1"))
         item = self.tableWidgetEmployee.verticalHeaderItem(1)

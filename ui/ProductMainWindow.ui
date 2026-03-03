@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1161</width>
-    <height>690</height>
+    <width>1153</width>
+    <height>667</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -484,7 +484,7 @@ color: rgb(45, 5, 127);</string>
       </rect>
      </property>
      <property name="text">
-      <string>Customer Password:</string>
+      <string>Phone Number</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_7">
@@ -497,7 +497,7 @@ color: rgb(45, 5, 127);</string>
       </rect>
      </property>
      <property name="text">
-      <string>Phone Number:</string>
+      <string>Type</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="lineEditCustomerUserName">
@@ -773,7 +773,7 @@ color: rgb(224, 253, 255);</string>
     </column>
     <column>
      <property name="text">
-      <string>Password</string>
+      <string>Phone Number</string>
      </property>
      <property name="background">
       <color>
@@ -785,7 +785,7 @@ color: rgb(224, 253, 255);</string>
     </column>
     <column>
      <property name="text">
-      <string>Phone Number</string>
+      <string>Type</string>
      </property>
      <property name="background">
       <color>
@@ -1245,8 +1245,8 @@ color: rgb(45, 5, 127);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1161</width>
-     <height>20</height>
+     <width>1153</width>
+     <height>18</height>
     </rect>
    </property>
   </widget>
