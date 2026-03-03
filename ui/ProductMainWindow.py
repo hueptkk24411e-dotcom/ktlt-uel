@@ -12,7 +12,7 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1185, 690)
+        MainWindow.resize(1161, 690)
         self.centralwidget = QtWidgets.QWidget(parent=MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.label = QtWidgets.QLabel(parent=self.centralwidget)
@@ -182,14 +182,14 @@ class Ui_MainWindow(object):
 "color: rgb(224, 253, 255);")
         self.pushButtonCustomerRemove.setObjectName("pushButtonCustomerRemove")
         self.dateEdit = QtWidgets.QDateEdit(parent=self.centralwidget)
-        self.dateEdit.setGeometry(QtCore.QRect(410, 50, 321, 31))
+        self.dateEdit.setGeometry(QtCore.QRect(1010, 130, 141, 41))
         self.dateEdit.setMaximumSize(QtCore.QSize(321, 16777215))
         self.dateEdit.setStyleSheet("font: 14pt \"MS Shell Dlg 2\";\n"
 "background-color: rgb(207, 228, 255);")
         self.dateEdit.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.dateEdit.setObjectName("dateEdit")
         self.groupBox_5 = QtWidgets.QGroupBox(parent=self.centralwidget)
-        self.groupBox_5.setGeometry(QtCore.QRect(410, 90, 201, 111))
+        self.groupBox_5.setGeometry(QtCore.QRect(410, 50, 191, 121))
         self.groupBox_5.setFocusPolicy(QtCore.Qt.FocusPolicy.NoFocus)
         self.groupBox_5.setAutoFillBackground(False)
         self.groupBox_5.setStyleSheet("font: 12pt \"MS Shell Dlg 2\";\n"
@@ -200,12 +200,12 @@ class Ui_MainWindow(object):
         self.groupBox_5.setCheckable(False)
         self.groupBox_5.setObjectName("groupBox_5")
         self.pushButtonOpenChartFeedback = QtWidgets.QPushButton(parent=self.groupBox_5)
-        self.pushButtonOpenChartFeedback.setGeometry(QtCore.QRect(50, 80, 101, 19))
+        self.pushButtonOpenChartFeedback.setGeometry(QtCore.QRect(50, 90, 101, 19))
         self.pushButtonOpenChartFeedback.setStyleSheet("background-color: rgb(67, 139, 196);\n"
 "color: rgb(224, 253, 255);")
         self.pushButtonOpenChartFeedback.setObjectName("pushButtonOpenChartFeedback")
         self.tableWidgetCustomer = QtWidgets.QTableWidget(parent=self.centralwidget)
-        self.tableWidgetCustomer.setGeometry(QtCore.QRect(410, 210, 341, 221))
+        self.tableWidgetCustomer.setGeometry(QtCore.QRect(410, 180, 341, 251))
         self.tableWidgetCustomer.setObjectName("tableWidgetCustomer")
         self.tableWidgetCustomer.setColumnCount(3)
         self.tableWidgetCustomer.setRowCount(5)
@@ -234,7 +234,7 @@ class Ui_MainWindow(object):
         item.setBackground(QtGui.QColor(175, 203, 243))
         self.tableWidgetCustomer.setHorizontalHeaderItem(2, item)
         self.tableWidgetEmployee = QtWidgets.QTableWidget(parent=self.centralwidget)
-        self.tableWidgetEmployee.setGeometry(QtCore.QRect(760, 210, 381, 221))
+        self.tableWidgetEmployee.setGeometry(QtCore.QRect(760, 180, 391, 251))
         self.tableWidgetEmployee.setObjectName("tableWidgetEmployee")
         self.tableWidgetEmployee.setColumnCount(4)
         self.tableWidgetEmployee.setRowCount(5)
@@ -324,7 +324,7 @@ class Ui_MainWindow(object):
         self.lineEditCustomerBooked.setStyleSheet("background-color: rgb(255, 255, 255);")
         self.lineEditCustomerBooked.setObjectName("lineEditCustomerBooked")
         self.groupBox_7 = QtWidgets.QGroupBox(parent=self.centralwidget)
-        self.groupBox_7.setGeometry(QtCore.QRect(620, 90, 201, 111))
+        self.groupBox_7.setGeometry(QtCore.QRect(610, 50, 191, 121))
         self.groupBox_7.setFocusPolicy(QtCore.Qt.FocusPolicy.NoFocus)
         self.groupBox_7.setAutoFillBackground(False)
         self.groupBox_7.setStyleSheet("font: 12pt \"MS Shell Dlg 2\";\n"
@@ -335,12 +335,12 @@ class Ui_MainWindow(object):
         self.groupBox_7.setCheckable(False)
         self.groupBox_7.setObjectName("groupBox_7")
         self.pushButtonSampleQuantity = QtWidgets.QPushButton(parent=self.groupBox_7)
-        self.pushButtonSampleQuantity.setGeometry(QtCore.QRect(50, 80, 101, 19))
+        self.pushButtonSampleQuantity.setGeometry(QtCore.QRect(50, 90, 101, 19))
         self.pushButtonSampleQuantity.setStyleSheet("background-color: rgb(67, 139, 196);\n"
 "color: rgb(224, 253, 255);")
         self.pushButtonSampleQuantity.setObjectName("pushButtonSampleQuantity")
         self.groupBox_8 = QtWidgets.QGroupBox(parent=self.centralwidget)
-        self.groupBox_8.setGeometry(QtCore.QRect(830, 90, 201, 111))
+        self.groupBox_8.setGeometry(QtCore.QRect(810, 50, 191, 121))
         self.groupBox_8.setFocusPolicy(QtCore.Qt.FocusPolicy.NoFocus)
         self.groupBox_8.setAutoFillBackground(False)
         self.groupBox_8.setStyleSheet("font: 12pt \"MS Shell Dlg 2\";\n"
@@ -351,13 +351,19 @@ class Ui_MainWindow(object):
         self.groupBox_8.setCheckable(False)
         self.groupBox_8.setObjectName("groupBox_8")
         self.pushButtonOpenChartFeedback_4 = QtWidgets.QPushButton(parent=self.groupBox_8)
-        self.pushButtonOpenChartFeedback_4.setGeometry(QtCore.QRect(50, 80, 101, 19))
+        self.pushButtonOpenChartFeedback_4.setGeometry(QtCore.QRect(50, 90, 101, 19))
         self.pushButtonOpenChartFeedback_4.setStyleSheet("background-color: rgb(67, 139, 196);\n"
 "color: rgb(224, 253, 255);")
         self.pushButtonOpenChartFeedback_4.setObjectName("pushButtonOpenChartFeedback_4")
+        self.pushButtonCloseWindow = QtWidgets.QPushButton(parent=self.centralwidget)
+        self.pushButtonCloseWindow.setGeometry(QtCore.QRect(1010, 50, 141, 31))
+        self.pushButtonCloseWindow.setStyleSheet("font: 12pt \"MS Shell Dlg 2\";\n"
+"background-color: rgb(207, 228, 255);\n"
+"color: rgb(45, 5, 127);")
+        self.pushButtonCloseWindow.setObjectName("pushButtonCloseWindow")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(parent=MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 1185, 20))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 1161, 20))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(parent=MainWindow)
@@ -365,6 +371,7 @@ class Ui_MainWindow(object):
         MainWindow.setStatusBar(self.statusbar)
 
         self.retranslateUi(MainWindow)
+        self.pushButtonCloseWindow.clicked.connect(MainWindow.close) # type: ignore
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -477,3 +484,4 @@ class Ui_MainWindow(object):
         self.groupBox_8.setWhatsThis(_translate("MainWindow", "<html><head/><body><p align=\"center\">Sample Detail:</p></body></html>"))
         self.groupBox_8.setTitle(_translate("MainWindow", "Revenue"))
         self.pushButtonOpenChartFeedback_4.setText(_translate("MainWindow", "Open Chart"))
+        self.pushButtonCloseWindow.setText(_translate("MainWindow", "Close Window"))

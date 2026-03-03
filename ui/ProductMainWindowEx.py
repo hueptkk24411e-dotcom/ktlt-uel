@@ -48,8 +48,8 @@ class ProductMainWindowEx(Ui_MainWindow):
         widget = getattr(self, 'lineEditPrice', None)
         if widget:
             widget.setText(str(s.SamplePrice))
-        # quantity field in UI is lineEditPrice_2
-        widget = getattr(self, 'lineEditPrice_2', None)
+        # quantity field in UI is lineEditSampleQuantity
+        widget = getattr(self, 'lineEditSampleQuantity', None)
         if widget:
             widget.setText(str(s.SampleQuantity))
 
