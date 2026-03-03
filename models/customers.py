@@ -8,7 +8,7 @@ class Customers(MyCollections):
         with open(filename, encoding='utf-8') as json_file:
             data = json.load(json_file)
             for p in data['customers']:
-                it = Customer(p['CustomerUserName'], p['Password'],p['Password'])
+                it = Customer(p['CustomerUserName'], p['PhoneNumber'],p['Type'])
                 self.add_item(it)
 
     def export_json(self, filename):
@@ -16,8 +16,8 @@ class Customers(MyCollections):
         for it in self.list:
             data['customers'].append({
                 'CustomerUserName': it.CustomerUserName,
-                'Password': it.Password,
-                'PhoneNumber': it.PhoneNumber
+                'PhoneNumber': it.PhoneNumber,
+                'Type': it.Type
             })
         with open(filename, 'w', encoding='utf-8') as outfile:
             json.dump(data, outfile, ensure_ascii=False, indent=4)

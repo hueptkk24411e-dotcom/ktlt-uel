@@ -1,8 +1,8 @@
 class Customer:
-    def __init__(self,CustomerUserName=None, Password=None, PhoneNumber=None):
+    def __init__(self,CustomerUserName=None,PhoneNumber=None,Type=None):
         self.CustomerUserName=CustomerUserName
-        self.Password=Password
         self.PhoneNumber=PhoneNumber
+        self.Type=Type
     def __str__(self):
-        infor=f"{self.CustomerUserName}\t{self.Password}\t{self.PhoneNumber}"
+        infor=f"{self.CustomerUserName}\t{self.PhoneNumber}\t{self.Type}"
         return infor
