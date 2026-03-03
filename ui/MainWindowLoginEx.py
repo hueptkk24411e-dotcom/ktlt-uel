@@ -2,6 +2,7 @@ import sys
 from PyQt6.QtWidgets import QMainWindow, QMessageBox, QApplication
 
 from ui.MainWindowLogin import Ui_MainWindow
+from ui.ProductMainWindowEx import ProductMainWindowEx
 
 
 class MainWindowLoginEx(QMainWindow):
