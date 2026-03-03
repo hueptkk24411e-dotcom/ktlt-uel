@@ -22,11 +22,8 @@ class Customers(MyCollections):
         with open(filename, 'w', encoding='utf-8') as outfile:
             json.dump(data, outfile, ensure_ascii=False, indent=4)
 
-
-    def login(self,uid,pwd):
-        cust=None
+    def login(self, uid):
         for item in self.list:
-            if item.UserName==uid and item.Password==pwd:
-                cust=item
-                break
-        return cust
+            if item.CustomerUserName == uid:
+                return item
+        return None

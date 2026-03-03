@@ -513,7 +513,7 @@ color: rgb(45, 5, 127);</string>
       <string notr="true">background-color: rgb(255, 255, 255);</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEditCustomerPassword">
+    <widget class="QLineEdit" name="lineEditPhoneNumber">
      <property name="geometry">
       <rect>
        <x>170</x>
@@ -526,7 +526,7 @@ color: rgb(45, 5, 127);</string>
       <string notr="true">background-color: rgb(255, 255, 255);</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEditPhoneNumber">
+    <widget class="QLineEdit" name="lineEditType">
      <property name="geometry">
       <rect>
        <x>170</x>

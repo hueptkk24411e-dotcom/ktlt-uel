@@ -61,13 +61,12 @@ class ProductMainWindowEx(Ui_MainWindow):
         widget = getattr(self, 'lineEditCustomerUserName', None)
         if widget:
             widget.setText(str(c.CustomerUserName))
-        widget = getattr(self, 'lineEditCustomerPassword', None)
-        if widget:
-            widget.setText(str(c.Password))
         widget = getattr(self, 'lineEditPhoneNumber', None)
         if widget:
             widget.setText(str(c.PhoneNumber))
-
+        widget = getattr(self, 'lineEditType', None)
+        if widget:
+            widget.setText(str(c.Type))
     def process_employee_detail(self):
         selected_row = self.tableWidgetEmployee.currentRow()
         if selected_row < 0 or selected_row >= len(self.emp.list):
@@ -110,11 +109,11 @@ class ProductMainWindowEx(Ui_MainWindow):
             new_row_index = self.tableWidgetCustomer.rowCount()
             self.tableWidgetCustomer.insertRow(new_row_index)
             cell_user = QTableWidgetItem(str(it.CustomerUserName))
-            cell_pwd = QTableWidgetItem(str(it.Password))
             cell_phone = QTableWidgetItem(str(it.PhoneNumber))
+            cell_type = QTableWidgetItem(str(it.Type))
             self.tableWidgetCustomer.setItem(new_row_index, 0, cell_user)
-            self.tableWidgetCustomer.setItem(new_row_index, 1, cell_pwd)
-            self.tableWidgetCustomer.setItem(new_row_index, 2, cell_phone)
+            self.tableWidgetCustomer.setItem(new_row_index, 1, cell_phone)
+            self.tableWidgetCustomer.setItem(new_row_index, 2, cell_type)
         try:
             self.tableWidgetCustomer.resizeColumnsToContents()
         except Exception:
