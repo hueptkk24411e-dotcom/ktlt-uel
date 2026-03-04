@@ -137,6 +137,7 @@ class Ui_MainWindow(object):
         self.splitter.setOrientation(QtCore.Qt.Orientation.Horizontal)
         self.splitter.setObjectName("splitter")
         self.widget = QtWidgets.QWidget(parent=self.splitter)
+        self.widget.setMaximumSize(QtCore.QSize(1000, 800))
         self.widget.setStyleSheet("/* Tìm tất cả các widget con có tên bắt đầu bằng \'widget_\' (các Card của bạn) */\n"
 "QWidget[objectName^=\"widget_\"] {\n"
 "    min-width: 180px;\n"
@@ -160,7 +161,7 @@ class Ui_MainWindow(object):
         self.label_101.setText("")
         self.label_101.setObjectName("label_101")
         self.buychocolatebalance_39 = QtWidgets.QPushButton(parent=self.widget_30)
-        self.buychocolatebalance_39.setGeometry(QtCore.QRect(20, 200, 111, 41))
+        self.buychocolatebalance_39.setGeometry(QtCore.QRect(10, 200, 131, 41))
         self.buychocolatebalance_39.setStyleSheet("QPushButton {\n"
 "    background-color:#AFCBF3; /* Màu xanh nhạt chủ đạo bạn chọn */\n"
 "    color: #4A90E2; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */\n"
@@ -208,7 +209,7 @@ class Ui_MainWindow(object):
         self.label_103.setText("")
         self.label_103.setObjectName("label_103")
         self.buychocolatebalance_40 = QtWidgets.QPushButton(parent=self.widget_31)
-        self.buychocolatebalance_40.setGeometry(QtCore.QRect(20, 200, 111, 41))
+        self.buychocolatebalance_40.setGeometry(QtCore.QRect(10, 200, 131, 41))
         self.buychocolatebalance_40.setStyleSheet("QPushButton {\n"
 "    background-color:#AFCBF3; /* Màu xanh nhạt chủ đạo bạn chọn */\n"
 "    color: #4A90E2; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */\n"
@@ -254,7 +255,7 @@ class Ui_MainWindow(object):
         self.label_105.setText("")
         self.label_105.setObjectName("label_105")
         self.buychocolatebalance_41 = QtWidgets.QPushButton(parent=self.widget_32)
-        self.buychocolatebalance_41.setGeometry(QtCore.QRect(20, 200, 111, 41))
+        self.buychocolatebalance_41.setGeometry(QtCore.QRect(10, 200, 131, 41))
         self.buychocolatebalance_41.setStyleSheet("QPushButton {\n"
 "    background-color:#AFCBF3; /* Màu xanh nhạt chủ đạo bạn chọn */\n"
 "    color: #4A90E2; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */\n"
@@ -300,7 +301,7 @@ class Ui_MainWindow(object):
         self.label_107.setText("")
         self.label_107.setObjectName("label_107")
         self.buychocolatebalance_42 = QtWidgets.QPushButton(parent=self.widget_33)
-        self.buychocolatebalance_42.setGeometry(QtCore.QRect(20, 200, 111, 41))
+        self.buychocolatebalance_42.setGeometry(QtCore.QRect(10, 200, 131, 41))
         self.buychocolatebalance_42.setStyleSheet("QPushButton {\n"
 "    background-color:#AFCBF3; /* Màu xanh nhạt chủ đạo bạn chọn */\n"
 "    color: #4A90E2; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */\n"
@@ -346,7 +347,7 @@ class Ui_MainWindow(object):
         self.label_111.setText("")
         self.label_111.setObjectName("label_111")
         self.buychocolatebalance_44 = QtWidgets.QPushButton(parent=self.widget_34)
-        self.buychocolatebalance_44.setGeometry(QtCore.QRect(20, 200, 111, 41))
+        self.buychocolatebalance_44.setGeometry(QtCore.QRect(10, 200, 131, 41))
         self.buychocolatebalance_44.setStyleSheet("QPushButton {\n"
 "    background-color:#AFCBF3; /* Màu xanh nhạt chủ đạo bạn chọn */\n"
 "    color: #4A90E2; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */\n"
@@ -393,7 +394,7 @@ class Ui_MainWindow(object):
         self.label_119.setText("")
         self.label_119.setObjectName("label_119")
         self.buychocolatebalance_48 = QtWidgets.QPushButton(parent=self.widget_38)
-        self.buychocolatebalance_48.setGeometry(QtCore.QRect(20, 200, 111, 41))
+        self.buychocolatebalance_48.setGeometry(QtCore.QRect(10, 200, 131, 41))
         self.buychocolatebalance_48.setStyleSheet("QPushButton {\n"
 "    background-color:#AFCBF3; /* Màu xanh nhạt chủ đạo bạn chọn */\n"
 "    color: #4A90E2; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */\n"
@@ -439,7 +440,7 @@ class Ui_MainWindow(object):
         self.label_115.setText("")
         self.label_115.setObjectName("label_115")
         self.buychocolatebalance_46 = QtWidgets.QPushButton(parent=self.widget_36)
-        self.buychocolatebalance_46.setGeometry(QtCore.QRect(20, 200, 111, 41))
+        self.buychocolatebalance_46.setGeometry(QtCore.QRect(10, 200, 131, 41))
         self.buychocolatebalance_46.setStyleSheet("QPushButton {\n"
 "    background-color:#AFCBF3; /* Màu xanh nhạt chủ đạo bạn chọn */\n"
 "    color: #4A90E2; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */\n"
@@ -485,7 +486,7 @@ class Ui_MainWindow(object):
         self.label_121.setText("")
         self.label_121.setObjectName("label_121")
         self.buychocolatebalance_49 = QtWidgets.QPushButton(parent=self.widget_39)
-        self.buychocolatebalance_49.setGeometry(QtCore.QRect(20, 200, 111, 41))
+        self.buychocolatebalance_49.setGeometry(QtCore.QRect(10, 200, 131, 41))
         self.buychocolatebalance_49.setStyleSheet("QPushButton {\n"
 "    background-color:#AFCBF3; /* Màu xanh nhạt chủ đạo bạn chọn */\n"
 "    color: #4A90E2; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */\n"
@@ -531,7 +532,7 @@ class Ui_MainWindow(object):
         self.label_117.setText("")
         self.label_117.setObjectName("label_117")
         self.buychocolatebalance_47 = QtWidgets.QPushButton(parent=self.widget_37)
-        self.buychocolatebalance_47.setGeometry(QtCore.QRect(20, 200, 111, 41))
+        self.buychocolatebalance_47.setGeometry(QtCore.QRect(10, 200, 131, 41))
         self.buychocolatebalance_47.setStyleSheet("QPushButton {\n"
 "    background-color:#AFCBF3; /* Màu xanh nhạt chủ đạo bạn chọn */\n"
 "    color: #4A90E2; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */\n"
@@ -577,7 +578,7 @@ class Ui_MainWindow(object):
         self.label_113.setText("")
         self.label_113.setObjectName("label_113")
         self.buychocolatebalance_45 = QtWidgets.QPushButton(parent=self.widget_35)
-        self.buychocolatebalance_45.setGeometry(QtCore.QRect(20, 200, 111, 41))
+        self.buychocolatebalance_45.setGeometry(QtCore.QRect(10, 200, 131, 41))
         self.buychocolatebalance_45.setStyleSheet("QPushButton {\n"
 "    background-color:#AFCBF3; /* Màu xanh nhạt chủ đạo bạn chọn */\n"
 "    color: #4A90E2; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */\n"
@@ -624,7 +625,7 @@ class Ui_MainWindow(object):
         self.label_183.setText("")
         self.label_183.setObjectName("label_183")
         self.buychocolatebalance_80 = QtWidgets.QPushButton(parent=self.widget_63)
-        self.buychocolatebalance_80.setGeometry(QtCore.QRect(20, 200, 111, 41))
+        self.buychocolatebalance_80.setGeometry(QtCore.QRect(10, 200, 131, 41))
         self.buychocolatebalance_80.setStyleSheet("QPushButton {\n"
 "    background-color:#AFCBF3; /* Màu xanh nhạt chủ đạo bạn chọn */\n"
 "    color: #4A90E2; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */\n"
@@ -670,7 +671,7 @@ class Ui_MainWindow(object):
         self.label_187.setText("")
         self.label_187.setObjectName("label_187")
         self.buychocolatebalance_82 = QtWidgets.QPushButton(parent=self.widget_65)
-        self.buychocolatebalance_82.setGeometry(QtCore.QRect(20, 200, 111, 41))
+        self.buychocolatebalance_82.setGeometry(QtCore.QRect(10, 200, 131, 41))
         self.buychocolatebalance_82.setStyleSheet("QPushButton {\n"
 "    background-color:#AFCBF3; /* Màu xanh nhạt chủ đạo bạn chọn */\n"
 "    color: #4A90E2; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */\n"
@@ -716,7 +717,7 @@ class Ui_MainWindow(object):
         self.label_185.setText("")
         self.label_185.setObjectName("label_185")
         self.buychocolatebalance_81 = QtWidgets.QPushButton(parent=self.widget_64)
-        self.buychocolatebalance_81.setGeometry(QtCore.QRect(20, 200, 111, 41))
+        self.buychocolatebalance_81.setGeometry(QtCore.QRect(10, 200, 131, 41))
         self.buychocolatebalance_81.setStyleSheet("QPushButton {\n"
 "    background-color:#AFCBF3; /* Màu xanh nhạt chủ đạo bạn chọn */\n"
 "    color: #4A90E2; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */\n"
@@ -762,7 +763,7 @@ class Ui_MainWindow(object):
         self.label_189.setText("")
         self.label_189.setObjectName("label_189")
         self.buychocolatebalance_83 = QtWidgets.QPushButton(parent=self.widget_66)
-        self.buychocolatebalance_83.setGeometry(QtCore.QRect(20, 200, 111, 41))
+        self.buychocolatebalance_83.setGeometry(QtCore.QRect(10, 200, 131, 41))
         self.buychocolatebalance_83.setStyleSheet("QPushButton {\n"
 "    background-color:#AFCBF3; /* Màu xanh nhạt chủ đạo bạn chọn */\n"
 "    color: #4A90E2; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */\n"
@@ -838,15 +839,22 @@ class Ui_MainWindow(object):
         self.imagecoffee_78.setPixmap(QtGui.QPixmap("D:\\PythonProject\\testck\\ui\\ima/plus.png"))
         self.imagecoffee_78.setScaledContents(True)
         self.imagecoffee_78.setObjectName("imagecoffee_78")
+        self.imagecoffee_42 = QtWidgets.QLabel(parent=self.widget_62)
+        self.imagecoffee_42.setGeometry(QtCore.QRect(50, 60, 61, 61))
+        self.imagecoffee_42.setText("")
+        self.imagecoffee_42.setPixmap(QtGui.QPixmap("D:\\PythonProject\\testck\\ui\\../ima/add.png"))
+        self.imagecoffee_42.setScaledContents(True)
+        self.imagecoffee_42.setObjectName("imagecoffee_42")
         self.gridLayout.addWidget(self.widget_62, 2, 4, 1, 1)
         self.frame = QtWidgets.QFrame(parent=self.splitter)
-        self.frame.setMaximumSize(QtCore.QSize(400, 16777215))
+        self.frame.setMaximumSize(QtCore.QSize(410, 800))
         self.frame.setFrameShape(QtWidgets.QFrame.Shape.StyledPanel)
         self.frame.setFrameShadow(QtWidgets.QFrame.Shadow.Raised)
         self.frame.setObjectName("frame")
         self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.frame)
         self.verticalLayout_3.setObjectName("verticalLayout_3")
         self.tableWidget = QtWidgets.QTableWidget(parent=self.frame)
+        self.tableWidget.setMaximumSize(QtCore.QSize(16777215, 600))
         font = QtGui.QFont()
         font.setFamily("Georgia")
         font.setPointSize(-1)
@@ -898,20 +906,73 @@ class Ui_MainWindow(object):
         self.tableWidget.horizontalHeader().setDefaultSectionSize(130)
         self.tableWidget.horizontalHeader().setMinimumSectionSize(20)
         self.verticalLayout_3.addWidget(self.tableWidget)
-        self.formLayout = QtWidgets.QFormLayout()
-        self.formLayout.setObjectName("formLayout")
-        self.totalLabel = QtWidgets.QLabel(parent=self.frame)
-        font = QtGui.QFont()
-        font.setPointSize(10)
-        self.totalLabel.setFont(font)
-        self.totalLabel.setStyleSheet("color: rgb(11, 11, 11);")
-        self.totalLabel.setObjectName("totalLabel")
-        self.formLayout.setWidget(0, QtWidgets.QFormLayout.ItemRole.LabelRole, self.totalLabel)
-        self.totalLineEdit = QtWidgets.QLineEdit(parent=self.frame)
-        self.totalLineEdit.setStyleSheet("color: rgb(15, 15, 15);")
-        self.totalLineEdit.setObjectName("totalLineEdit")
-        self.formLayout.setWidget(0, QtWidgets.QFormLayout.ItemRole.FieldRole, self.totalLineEdit)
-        self.verticalLayout_3.addLayout(self.formLayout)
+        self.widget_2 = QtWidgets.QWidget(parent=self.frame)
+        self.widget_2.setMinimumSize(QtCore.QSize(0, 85))
+        self.widget_2.setMaximumSize(QtCore.QSize(16777215, 85))
+        self.widget_2.setObjectName("widget_2")
+        self.lineEdit_PhoneNum_2 = QtWidgets.QLineEdit(parent=self.widget_2)
+        self.lineEdit_PhoneNum_2.setGeometry(QtCore.QRect(180, 10, 141, 31))
+        self.lineEdit_PhoneNum_2.setStyleSheet("color: rgb(11, 11, 11);\n"
+"border: 1px solid black;")
+        self.lineEdit_PhoneNum_2.setText("")
+        self.lineEdit_PhoneNum_2.setObjectName("lineEdit_PhoneNum_2")
+        self.label_3 = QtWidgets.QLabel(parent=self.widget_2)
+        self.label_3.setGeometry(QtCore.QRect(0, 0, 161, 51))
+        self.label_3.setStyleSheet(" font-family: \"Georgia\";\n"
+"color: rgb(13, 13, 13);\n"
+"")
+        self.label_3.setObjectName("label_3")
+        self.pushButton_loadCusType_2 = QtWidgets.QPushButton(parent=self.widget_2)
+        self.pushButton_loadCusType_2.setGeometry(QtCore.QRect(330, 10, 31, 31))
+        self.pushButton_loadCusType_2.setStyleSheet("color: rgb(18, 18, 18);\n"
+"border: 1px solid black;")
+        self.pushButton_loadCusType_2.setText("")
+        icon1 = QtGui.QIcon()
+        icon1.addPixmap(QtGui.QPixmap("D:\\PythonProject\\testck\\ui\\../../images/7479650_literature_literature review_search_find_read_icon.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        self.pushButton_loadCusType_2.setIcon(icon1)
+        self.pushButton_loadCusType_2.setIconSize(QtCore.QSize(20, 20))
+        self.pushButton_loadCusType_2.setObjectName("pushButton_loadCusType_2")
+        self.label_14 = QtWidgets.QLabel(parent=self.widget_2)
+        self.label_14.setGeometry(QtCore.QRect(0, 40, 161, 51))
+        self.label_14.setStyleSheet(" font-family: \"Georgia\";\n"
+"color: rgb(15, 15, 15);\n"
+"")
+        self.label_14.setObjectName("label_14")
+        self.lineEdit_CustomerType_3 = QtWidgets.QLineEdit(parent=self.widget_2)
+        self.lineEdit_CustomerType_3.setGeometry(QtCore.QRect(180, 50, 141, 31))
+        self.lineEdit_CustomerType_3.setStyleSheet("color: rgb(11, 11, 11);\n"
+"border: 1px solid black;")
+        self.lineEdit_CustomerType_3.setObjectName("lineEdit_CustomerType_3")
+        self.verticalLayout_3.addWidget(self.widget_2)
+        self.widget_3 = QtWidgets.QWidget(parent=self.frame)
+        self.widget_3.setMinimumSize(QtCore.QSize(0, 54))
+        self.widget_3.setMaximumSize(QtCore.QSize(16777215, 50))
+        self.widget_3.setObjectName("widget_3")
+        self.labelTB_2 = QtWidgets.QLabel(parent=self.widget_3)
+        self.labelTB_2.setGeometry(QtCore.QRect(150, 10, 171, 31))
+        self.labelTB_2.setStyleSheet("color: rgb(3, 3, 3);")
+        self.labelTB_2.setText("")
+        self.labelTB_2.setObjectName("labelTB_2")
+        self.label_6 = QtWidgets.QLabel(parent=self.widget_3)
+        self.label_6.setGeometry(QtCore.QRect(0, 0, 331, 51))
+        self.label_6.setStyleSheet("QLabel {\n"
+"    background-color: rgba(255, 255, 255, 100); /* Màu trắng, trong suốt khoảng 40% */\n"
+"    border: 1px solid black; /* THÊM DÒNG NÀY: Viền đen, dày 2px, nét liền */\n"
+"    border-radius: 20px;  /* Bo góc 20px */\n"
+"    padding: 5px; /* Khoảng cách nội dung và viền */\n"
+"    font-size: 14px;\n"
+"    font-family: Georgia;\n"
+"    color: black; /* Màu chữ */\n"
+"}")
+        self.label_6.setText("")
+        self.label_6.setObjectName("label_6")
+        self.label_11 = QtWidgets.QLabel(parent=self.widget_3)
+        self.label_11.setGeometry(QtCore.QRect(20, 20, 60, 16))
+        self.label_11.setStyleSheet(" font-family: \"Georgia\";\n"
+"color: rgb(9, 9, 9);\n"
+"")
+        self.label_11.setObjectName("label_11")
+        self.verticalLayout_3.addWidget(self.widget_3)
         self.widget_5 = QtWidgets.QWidget(parent=self.frame)
         self.widget_5.setObjectName("widget_5")
         self.gridLayout_3 = QtWidgets.QGridLayout(self.widget_5)
@@ -939,9 +1000,9 @@ class Ui_MainWindow(object):
 "    background-color: #7FAFFF; /* Màu đậm nhất khi nhấn giữ nút */\n"
 "    border: 2px solid #4A90E2;\n"
 "}")
-        icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("D:\\PythonProject\\testck\\ui\\../images/2987779_coffee_cup_drink_icon.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
-        self.pushButton_TB_9.setIcon(icon1)
+        icon2 = QtGui.QIcon()
+        icon2.addPixmap(QtGui.QPixmap("D:\\PythonProject\\testck\\ui\\../images/2987779_coffee_cup_drink_icon.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        self.pushButton_TB_9.setIcon(icon2)
         self.pushButton_TB_9.setIconSize(QtCore.QSize(20, 20))
         self.pushButton_TB_9.setObjectName("pushButton_TB_9")
         self.gridLayout_3.addWidget(self.pushButton_TB_9, 1, 1, 1, 1)
@@ -968,64 +1029,10 @@ class Ui_MainWindow(object):
 "    background-color: #7FAFFF; /* Màu đậm nhất khi nhấn giữ nút */\n"
 "    border: 2px solid #4A90E2;\n"
 "}")
-        self.pushButton_TB_10.setIcon(icon1)
+        self.pushButton_TB_10.setIcon(icon2)
         self.pushButton_TB_10.setIconSize(QtCore.QSize(20, 20))
         self.pushButton_TB_10.setObjectName("pushButton_TB_10")
         self.gridLayout_3.addWidget(self.pushButton_TB_10, 1, 0, 1, 1)
-        self.pushButton_TB_17 = QtWidgets.QPushButton(parent=self.widget_5)
-        self.pushButton_TB_17.setCursor(QtGui.QCursor(QtCore.Qt.CursorShape.OpenHandCursor))
-        self.pushButton_TB_17.setStyleSheet("QPushButton {\n"
-"    background-color:#AFCBF3; /* Màu xanh nhạt chủ đạo bạn chọn */\n"
-"    color: #4A90E2; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */\n"
-"    border-radius: 12px;\n"
-"    padding: 10px;\n"
-"    font-size: 14px;\n"
-"    font-weight: bold;\n"
-"    font-family: \"Georgia\";\n"
-"    border: 2px solid #A6C8FF; /* Viền xanh đậm hơn một chút để tạo khối */\n"
-"}\n"
-"\n"
-"QPushButton:hover {\n"
-"    background-color: #A6C8FF; /* Màu đậm hơn khi di chuột vào */\n"
-"    border: 2px solid #7FAFFF; /* Viền đậm hơn khi hover */\n"
-"    color: white; /* Chuyển chữ sang trắng để nổi bật */\n"
-"}\n"
-"\n"
-"QPushButton:pressed {\n"
-"    background-color: #7FAFFF; /* Màu đậm nhất khi nhấn giữ nút */\n"
-"    border: 2px solid #4A90E2;\n"
-"}")
-        self.pushButton_TB_17.setIcon(icon1)
-        self.pushButton_TB_17.setIconSize(QtCore.QSize(20, 20))
-        self.pushButton_TB_17.setObjectName("pushButton_TB_17")
-        self.gridLayout_3.addWidget(self.pushButton_TB_17, 2, 0, 1, 1)
-        self.pushButton_TB_11 = QtWidgets.QPushButton(parent=self.widget_5)
-        self.pushButton_TB_11.setCursor(QtGui.QCursor(QtCore.Qt.CursorShape.OpenHandCursor))
-        self.pushButton_TB_11.setStyleSheet("QPushButton {\n"
-"    background-color:#AFCBF3; /* Màu xanh nhạt chủ đạo bạn chọn */\n"
-"    color: #4A90E2; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */\n"
-"    border-radius: 12px;\n"
-"    padding: 10px;\n"
-"    font-size: 14px;\n"
-"    font-weight: bold;\n"
-"    font-family: \"Georgia\";\n"
-"    border: 2px solid #A6C8FF; /* Viền xanh đậm hơn một chút để tạo khối */\n"
-"}\n"
-"\n"
-"QPushButton:hover {\n"
-"    background-color: #A6C8FF; /* Màu đậm hơn khi di chuột vào */\n"
-"    border: 2px solid #7FAFFF; /* Viền đậm hơn khi hover */\n"
-"    color: white; /* Chuyển chữ sang trắng để nổi bật */\n"
-"}\n"
-"\n"
-"QPushButton:pressed {\n"
-"    background-color: #7FAFFF; /* Màu đậm nhất khi nhấn giữ nút */\n"
-"    border: 2px solid #4A90E2;\n"
-"}")
-        self.pushButton_TB_11.setIcon(icon1)
-        self.pushButton_TB_11.setIconSize(QtCore.QSize(20, 20))
-        self.pushButton_TB_11.setObjectName("pushButton_TB_11")
-        self.gridLayout_3.addWidget(self.pushButton_TB_11, 3, 0, 1, 1)
         self.pushButton_TB_16 = QtWidgets.QPushButton(parent=self.widget_5)
         self.pushButton_TB_16.setCursor(QtGui.QCursor(QtCore.Qt.CursorShape.OpenHandCursor))
         self.pushButton_TB_16.setStyleSheet("QPushButton {\n"
@@ -1049,13 +1056,13 @@ class Ui_MainWindow(object):
 "    background-color: #7FAFFF; /* Màu đậm nhất khi nhấn giữ nút */\n"
 "    border: 2px solid #4A90E2;\n"
 "}")
-        self.pushButton_TB_16.setIcon(icon1)
+        self.pushButton_TB_16.setIcon(icon2)
         self.pushButton_TB_16.setIconSize(QtCore.QSize(20, 20))
         self.pushButton_TB_16.setObjectName("pushButton_TB_16")
         self.gridLayout_3.addWidget(self.pushButton_TB_16, 2, 1, 1, 1)
-        self.pushButton_TB_8 = QtWidgets.QPushButton(parent=self.widget_5)
-        self.pushButton_TB_8.setCursor(QtGui.QCursor(QtCore.Qt.CursorShape.OpenHandCursor))
-        self.pushButton_TB_8.setStyleSheet("QPushButton {\n"
+        self.pushButton_TB_11 = QtWidgets.QPushButton(parent=self.widget_5)
+        self.pushButton_TB_11.setCursor(QtGui.QCursor(QtCore.Qt.CursorShape.OpenHandCursor))
+        self.pushButton_TB_11.setStyleSheet("QPushButton {\n"
 "    background-color:#AFCBF3; /* Màu xanh nhạt chủ đạo bạn chọn */\n"
 "    color: #4A90E2; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */\n"
 "    border-radius: 12px;\n"
@@ -1076,10 +1083,10 @@ class Ui_MainWindow(object):
 "    background-color: #7FAFFF; /* Màu đậm nhất khi nhấn giữ nút */\n"
 "    border: 2px solid #4A90E2;\n"
 "}")
-        self.pushButton_TB_8.setIcon(icon1)
-        self.pushButton_TB_8.setIconSize(QtCore.QSize(20, 20))
-        self.pushButton_TB_8.setObjectName("pushButton_TB_8")
-        self.gridLayout_3.addWidget(self.pushButton_TB_8, 3, 1, 1, 1)
+        self.pushButton_TB_11.setIcon(icon2)
+        self.pushButton_TB_11.setIconSize(QtCore.QSize(20, 20))
+        self.pushButton_TB_11.setObjectName("pushButton_TB_11")
+        self.gridLayout_3.addWidget(self.pushButton_TB_11, 2, 0, 1, 1)
         self.verticalLayout_3.addWidget(self.widget_5)
         self.verticalLayout_4.addWidget(self.splitter)
         MainWindow.setCentralWidget(self.centralwidget)
@@ -1121,33 +1128,33 @@ class Ui_MainWindow(object):
         self.Summer.setText(_translate("MainWindow", "Summer"))
         self.Autumn.setText(_translate("MainWindow", "Autumn"))
         self.Winter.setText(_translate("MainWindow", "Winter"))
-        self.buychocolatebalance_39.setText(_translate("MainWindow", "Add to cart"))
+        self.buychocolatebalance_39.setText(_translate("MainWindow", "Select Design"))
         self.label_102.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#040404;\">Chocolate Balance - 36$</span></p></body></html>"))
-        self.buychocolatebalance_40.setText(_translate("MainWindow", "Add to cart"))
+        self.buychocolatebalance_40.setText(_translate("MainWindow", "Select Design"))
         self.label_104.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#040404;\">Chocolate Balance - 36$</span></p></body></html>"))
-        self.buychocolatebalance_41.setText(_translate("MainWindow", "Add to cart"))
+        self.buychocolatebalance_41.setText(_translate("MainWindow", "Select Design"))
         self.label_106.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#040404;\">Chocolate Balance - 36$</span></p></body></html>"))
-        self.buychocolatebalance_42.setText(_translate("MainWindow", "Add to cart"))
+        self.buychocolatebalance_42.setText(_translate("MainWindow", "Select Design"))
         self.label_108.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#040404;\">Chocolate Balance - 36$</span></p></body></html>"))
-        self.buychocolatebalance_44.setText(_translate("MainWindow", "Add to cart"))
+        self.buychocolatebalance_44.setText(_translate("MainWindow", "Select Design"))
         self.label_112.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#040404;\">Chocolate Balance - 36$</span></p></body></html>"))
-        self.buychocolatebalance_48.setText(_translate("MainWindow", "Add to cart"))
+        self.buychocolatebalance_48.setText(_translate("MainWindow", "Select Design"))
         self.label_120.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#040404;\">Chocolate Balance - 36$</span></p></body></html>"))
-        self.buychocolatebalance_46.setText(_translate("MainWindow", "Add to cart"))
+        self.buychocolatebalance_46.setText(_translate("MainWindow", "Select Design"))
         self.label_116.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#040404;\">Chocolate Balance - 36$</span></p></body></html>"))
-        self.buychocolatebalance_49.setText(_translate("MainWindow", "Add to cart"))
+        self.buychocolatebalance_49.setText(_translate("MainWindow", "Select Design"))
         self.label_122.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#040404;\">Chocolate Balance - 36$</span></p></body></html>"))
-        self.buychocolatebalance_47.setText(_translate("MainWindow", "Add to cart"))
+        self.buychocolatebalance_47.setText(_translate("MainWindow", "Select Design"))
         self.label_118.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#040404;\">Chocolate Balance - 36$</span></p></body></html>"))
-        self.buychocolatebalance_45.setText(_translate("MainWindow", "Add to cart"))
+        self.buychocolatebalance_45.setText(_translate("MainWindow", "Select Design"))
         self.label_114.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#040404;\">Chocolate Balance - 36$</span></p></body></html>"))
-        self.buychocolatebalance_80.setText(_translate("MainWindow", "Add to cart"))
+        self.buychocolatebalance_80.setText(_translate("MainWindow", "Select Design"))
         self.label_184.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#040404;\">Chocolate Balance - 36$</span></p></body></html>"))
-        self.buychocolatebalance_82.setText(_translate("MainWindow", "Add to cart"))
+        self.buychocolatebalance_82.setText(_translate("MainWindow", "Select Design"))
         self.label_188.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#040404;\">Chocolate Balance - 36$</span></p></body></html>"))
-        self.buychocolatebalance_81.setText(_translate("MainWindow", "Add to cart"))
+        self.buychocolatebalance_81.setText(_translate("MainWindow", "Select Design"))
         self.label_186.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#040404;\">Chocolate Balance - 36$</span></p></body></html>"))
-        self.buychocolatebalance_83.setText(_translate("MainWindow", "Add to cart"))
+        self.buychocolatebalance_83.setText(_translate("MainWindow", "Select Design"))
         self.label_190.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#040404;\">Chocolate Balance - 36$</span></p></body></html>"))
         self.buychocolatebalance_79.setText(_translate("MainWindow", "Self-custom"))
         item = self.tableWidget.horizontalHeaderItem(0)
@@ -1156,14 +1163,13 @@ class Ui_MainWindow(object):
         item.setText(_translate("MainWindow", "Quantity"))
         item = self.tableWidget.horizontalHeaderItem(2)
         item.setText(_translate("MainWindow", "Price"))
-        self.totalLabel.setText(_translate("MainWindow", "Total:"))
-        self.totalLineEdit.setText(_translate("MainWindow", "0"))
+        self.label_3.setText(_translate("MainWindow", "Customer\'s Phone Number:"))
+        self.label_14.setText(_translate("MainWindow", "Customer\'s Type: "))
+        self.label_11.setText(_translate("MainWindow", "Total Bill: "))
         self.pushButton_TB_9.setText(_translate("MainWindow", "Check out"))
         self.pushButton_TB_10.setText(_translate("MainWindow", "Remove"))
-        self.pushButton_TB_17.setText(_translate("MainWindow", "Call Staff"))
+        self.pushButton_TB_16.setText(_translate("MainWindow", "Log out"))
         self.pushButton_TB_11.setText(_translate("MainWindow", "Select Technician"))
-        self.pushButton_TB_16.setText(_translate("MainWindow", "Note"))
-        self.pushButton_TB_8.setText(_translate("MainWindow", "Feedback "))
         self.menuMENU.setTitle(_translate("MainWindow", "MENU"))
         self.menuMore_about_us.setTitle(_translate("MainWindow", "More about us"))
         self.actionSpring.setText(_translate("MainWindow", "Spring"))
