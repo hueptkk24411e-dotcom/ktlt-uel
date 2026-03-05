@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file 'D:\PythonProject\testck\ui\FeedbackWindow.ui'
+# Form implementation generated from reading ui file 'D:\Code\ktlt-uel\ui\FeedbackWindow.ui'
 #
 # Created by: PyQt6 UI code generator 6.9.1
 #
@@ -13,22 +13,46 @@ class Ui_RatingUI(object):
     def setupUi(self, RatingUI):
         RatingUI.setObjectName("RatingUI")
         RatingUI.resize(450, 400)
-        RatingUI.setStyleSheet("/* Áp dụng trực tiếp cho chính Widget này và toàn bộ con bên trong */\n"
+        RatingUI.setStyleSheet("/* ===== NỀN CHÍNH ===== */\n"
 "QWidget {\n"
-"    background-color: #FFFFFF; /* Nền trắng sạch sẽ */\n"
-"    color: #000000;            /* Chữ đen rõ ràng */\n"
+"    background-color: #e6f4fa;\n"
+"    color: #000000;\n"
 "    font-family: \'Georgia\';\n"
 "}\n"
 "\n"
+"/* ===== KHUNG CHỨA (nếu muốn bo góc nền chính) ===== */\n"
+"QFrame {\n"
+"    background: qlineargradient(\n"
+"        spread:pad,\n"
+"        x1:0, y1:0,\n"
+"        x2:1, y2:1,\n"
+"        stop:0 #ffffff,\n"
+"        stop:0.5 #e6f4fa,\n"
+"        stop:1 #d4edf7\n"
+"    );\n"
+"    border-radius: 20px;\n"
+"}\n"
+"\n"
+"/* ===== LABEL NỔI BẬT ===== */\n"
 "QLabel {\n"
-"    background-color: transparent; /* Đảm bảo nhãn không bị đè nền */\n"
+"    background: qlineargradient(\n"
+"        spread:pad,\n"
+"        x1:0, y1:0,\n"
+"        x2:1, y2:1,\n"
+"        stop:0 rgba(255,255,255,220),\n"
+"        stop:1 rgba(255,255,255,150)\n"
+"    );\n"
+"    border-radius: 15px;\n"
+"    padding: 8px 15px;\n"
+"    border: 1px solid rgba(255,255,255,180);\n"
 "}")
         self.verticalLayout = QtWidgets.QVBoxLayout(RatingUI)
         self.verticalLayout.setProperty("contentsMargins", 30)
         self.verticalLayout.setSpacing(20)
         self.verticalLayout.setObjectName("verticalLayout")
         self.lblInstruction = QtWidgets.QLabel(parent=RatingUI)
-        self.lblInstruction.setStyleSheet("font-size: 18px; font-weight: bold; color: #AFCBF3;")
+        self.lblInstruction.setStyleSheet("font-size: 18px; font-weight: bold; \n"
+"color: rgb(190, 215, 226);")
         self.lblInstruction.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.lblInstruction.setObjectName("lblInstruction")
         self.verticalLayout.addWidget(self.lblInstruction)
@@ -56,16 +80,52 @@ class Ui_RatingUI(object):
         self.starLayout.addWidget(self.star_5)
         self.verticalLayout.addLayout(self.starLayout)
         self.lblFeedback = QtWidgets.QLabel(parent=RatingUI)
+        self.lblFeedback.setStyleSheet("/* Áp dụng trực tiếp cho chính Widget này và toàn bộ con bên trong */\n"
+"QWidget {\n"
+"    background-color: #FFFFFF; /* Nền trắng sạch sẽ */\n"
+"    color: #000000;            /* Chữ đen rõ ràng */\n"
+"    font-family: \'Georgia\';\n"
+"}\n"
+"\n"
+"QLabel {\n"
+"    background-color: transparent; /* Đảm bảo nhãn không bị đè nền */\n"
+"}")
         self.lblFeedback.setObjectName("lblFeedback")
         self.verticalLayout.addWidget(self.lblFeedback)
         self.lineEditFeedback = QtWidgets.QLineEdit(parent=RatingUI)
         self.lineEditFeedback.setMinimumSize(QtCore.QSize(0, 40))
-        self.lineEditFeedback.setStyleSheet(" background-color:#AFCBF3; color: rgb(15, 15, 15);")
+        self.lineEditFeedback.setStyleSheet("QLineEdit {\n"
+"    \n"
+"    background-color: rgb(208, 236, 250);\n"
+"    color: rgb(15, 15, 15);\n"
+"    border: 2px solid #AFCBF3;   /* bắt buộc nên có border */\n"
+"    border-radius: 20px;         /* tăng lên để tròn hơn */\n"
+"    padding: 6px 10px;           /* padding đều 2 bên */\n"
+"}")
         self.lineEditFeedback.setObjectName("lineEditFeedback")
         self.verticalLayout.addWidget(self.lineEditFeedback)
         self.btnSubmit = QtWidgets.QPushButton(parent=RatingUI)
         self.btnSubmit.setMinimumSize(QtCore.QSize(0, 45))
-        self.btnSubmit.setStyleSheet("QPushButton { background-color: #AFCBF3; color: #0D3B66; font-weight: bold; border-radius: 10px; font-size: 15px; } QPushButton:hover { background-color: #A6C8FF; }")
+        self.btnSubmit.setStyleSheet("QPushButton {\n"
+"    \n"
+"    background-color: rgb(208, 236, 250);\n"
+"    color: #0D3B66;\n"
+"    font-weight: bold;\n"
+"    font-size: 15px;\n"
+"\n"
+"    border: none;              /* bỏ viền mặc định */\n"
+"    border-radius: 15px;       /* tăng lên để bo tròn rõ hơn */\n"
+"    padding: 8px 15px;         /* tạo khoảng cách bên trong */\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"   \n"
+"    background-color: rgb(208, 236, 250);\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: #8FB6F5; /* hiệu ứng khi bấm */\n"
+"}")
         self.btnSubmit.setObjectName("btnSubmit")
         self.verticalLayout.addWidget(self.btnSubmit)
 
@@ -86,6 +146,6 @@ class Ui_RatingUI(object):
         self.star_4.setText(_translate("RatingUI", "★"))
         self.star_5.setStyleSheet(_translate("RatingUI", "QPushButton { background: transparent; color: #333; font-size: 35px; border: none; }"))
         self.star_5.setText(_translate("RatingUI", "★"))
-        self.lblFeedback.setText(_translate("RatingUI", "Leave a feedbak for us:"))
+        self.lblFeedback.setText(_translate("RatingUI", "Leave a feedback for us:"))
         self.lineEditFeedback.setPlaceholderText(_translate("RatingUI", "Your thoughts..."))
-        self.btnSubmit.setText(_translate("RatingUI", "SUBMIT FEEDBACK"))
+        self.btnSubmit.setText(_translate("RatingUI", "SEND"))
