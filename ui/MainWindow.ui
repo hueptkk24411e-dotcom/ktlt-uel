@@ -200,6 +200,12 @@ QPushButton:pressed {
        <enum>Qt::Horizontal</enum>
       </property>
       <widget class="QWidget" name="widget" native="true">
+       <property name="maximumSize">
+        <size>
+         <width>1000</width>
+         <height>800</height>
+        </size>
+       </property>
        <property name="styleSheet">
         <string notr="true">/* Tìm tất cả các widget con có tên bắt đầu bằng 'widget_' (các Card của bạn) */
 QWidget[objectName^=&quot;widget_&quot;] {
@@ -240,9 +246,9 @@ background-color: white; /* Nền trắng */
           <widget class="QPushButton" name="buychocolatebalance_39">
            <property name="geometry">
             <rect>
-             <x>20</x>
+             <x>10</x>
              <y>200</y>
-             <width>111</width>
+             <width>131</width>
              <height>41</height>
             </rect>
            </property>
@@ -270,7 +276,7 @@ QPushButton:pressed {
 }</string>
            </property>
            <property name="text">
-            <string>Add to cart</string>
+            <string>Select Design</string>
            </property>
            <property name="icon">
             <iconset>
@@ -338,9 +344,9 @@ background-color: white; /* Nền trắng */
           <widget class="QPushButton" name="buychocolatebalance_40">
            <property name="geometry">
             <rect>
-             <x>20</x>
+             <x>10</x>
              <y>200</y>
-             <width>111</width>
+             <width>131</width>
              <height>41</height>
             </rect>
            </property>
@@ -368,7 +374,7 @@ QPushButton:pressed {
 }</string>
            </property>
            <property name="text">
-            <string>Add to cart</string>
+            <string>Select Design</string>
            </property>
            <property name="icon">
             <iconset>
@@ -436,9 +442,9 @@ background-color: white; /* Nền trắng */
           <widget class="QPushButton" name="buychocolatebalance_41">
            <property name="geometry">
             <rect>
-             <x>20</x>
+             <x>10</x>
              <y>200</y>
-             <width>111</width>
+             <width>131</width>
              <height>41</height>
             </rect>
            </property>
@@ -466,7 +472,7 @@ QPushButton:pressed {
 }</string>
            </property>
            <property name="text">
-            <string>Add to cart</string>
+            <string>Select Design</string>
            </property>
            <property name="icon">
             <iconset>
@@ -534,9 +540,9 @@ background-color: white; /* Nền trắng */
           <widget class="QPushButton" name="buychocolatebalance_42">
            <property name="geometry">
             <rect>
-             <x>20</x>
+             <x>10</x>
              <y>200</y>
-             <width>111</width>
+             <width>131</width>
              <height>41</height>
             </rect>
            </property>
@@ -564,7 +570,7 @@ QPushButton:pressed {
 }</string>
            </property>
            <property name="text">
-            <string>Add to cart</string>
+            <string>Select Design</string>
            </property>
            <property name="icon">
             <iconset>
@@ -632,9 +638,9 @@ background-color: white; /* Nền trắng */
           <widget class="QPushButton" name="buychocolatebalance_44">
            <property name="geometry">
             <rect>
-             <x>20</x>
+             <x>10</x>
              <y>200</y>
-             <width>111</width>
+             <width>131</width>
              <height>41</height>
             </rect>
            </property>
@@ -662,7 +668,7 @@ QPushButton:pressed {
 }</string>
            </property>
            <property name="text">
-            <string>Add to cart</string>
+            <string>Select Design</string>
            </property>
            <property name="icon">
             <iconset>
@@ -736,9 +742,9 @@ background-color: white; /* Nền trắng */
           <widget class="QPushButton" name="buychocolatebalance_48">
            <property name="geometry">
             <rect>
-             <x>20</x>
+             <x>10</x>
              <y>200</y>
-             <width>111</width>
+             <width>131</width>
              <height>41</height>
             </rect>
            </property>
@@ -766,7 +772,7 @@ QPushButton:pressed {
 }</string>
            </property>
            <property name="text">
-            <string>Add to cart</string>
+            <string>Select Design</string>
            </property>
            <property name="icon">
             <iconset>
@@ -834,9 +840,9 @@ background-color: white; /* Nền trắng */
           <widget class="QPushButton" name="buychocolatebalance_46">
            <property name="geometry">
             <rect>
-             <x>20</x>
+             <x>10</x>
              <y>200</y>
-             <width>111</width>
+             <width>131</width>
              <height>41</height>
             </rect>
            </property>
@@ -864,7 +870,7 @@ QPushButton:pressed {
 }</string>
            </property>
            <property name="text">
-            <string>Add to cart</string>
+            <string>Select Design</string>
            </property>
            <property name="icon">
             <iconset>
@@ -932,9 +938,9 @@ background-color: white; /* Nền trắng */
           <widget class="QPushButton" name="buychocolatebalance_49">
            <property name="geometry">
             <rect>
-             <x>20</x>
+             <x>10</x>
              <y>200</y>
-             <width>111</width>
+             <width>131</width>
              <height>41</height>
             </rect>
            </property>
@@ -962,7 +968,7 @@ QPushButton:pressed {
 }</string>
            </property>
            <property name="text">
-            <string>Add to cart</string>
+            <string>Select Design</string>
            </property>
            <property name="icon">
             <iconset>
@@ -1030,9 +1036,9 @@ background-color: white; /* Nền trắng */
           <widget class="QPushButton" name="buychocolatebalance_47">
            <property name="geometry">
             <rect>
-             <x>20</x>
+             <x>10</x>
              <y>200</y>
-             <width>111</width>
+             <width>131</width>
              <height>41</height>
             </rect>
            </property>
@@ -1060,7 +1066,7 @@ QPushButton:pressed {
 }</string>
            </property>
            <property name="text">
-            <string>Add to cart</string>
+            <string>Select Design</string>
            </property>
            <property name="icon">
             <iconset>
@@ -1128,9 +1134,9 @@ background-color: white; /* Nền trắng */
           <widget class="QPushButton" name="buychocolatebalance_45">
            <property name="geometry">
             <rect>
-             <x>20</x>
+             <x>10</x>
              <y>200</y>
-             <width>111</width>
+             <width>131</width>
              <height>41</height>
             </rect>
            </property>
@@ -1158,7 +1164,7 @@ QPushButton:pressed {
 }</string>
            </property>
            <property name="text">
-            <string>Add to cart</string>
+            <string>Select Design</string>
            </property>
            <property name="icon">
             <iconset>
@@ -1232,9 +1238,9 @@ background-color: white; /* Nền trắng */
           <widget class="QPushButton" name="buychocolatebalance_80">
            <property name="geometry">
             <rect>
-             <x>20</x>
+             <x>10</x>
              <y>200</y>
-             <width>111</width>
+             <width>131</width>
              <height>41</height>
             </rect>
            </property>
@@ -1262,7 +1268,7 @@ QPushButton:pressed {
 }</string>
            </property>
            <property name="text">
-            <string>Add to cart</string>
+            <string>Select Design</string>
            </property>
            <property name="icon">
             <iconset>
@@ -1330,9 +1336,9 @@ background-color: white; /* Nền trắng */
           <widget class="QPushButton" name="buychocolatebalance_82">
            <property name="geometry">
             <rect>
-             <x>20</x>
+             <x>10</x>
              <y>200</y>
-             <width>111</width>
+             <width>131</width>
              <height>41</height>
             </rect>
            </property>
@@ -1360,7 +1366,7 @@ QPushButton:pressed {
 }</string>
            </property>
            <property name="text">
-            <string>Add to cart</string>
+            <string>Select Design</string>
            </property>
            <property name="icon">
             <iconset>
@@ -1428,9 +1434,9 @@ background-color: white; /* Nền trắng */
           <widget class="QPushButton" name="buychocolatebalance_81">
            <property name="geometry">
             <rect>
-             <x>20</x>
+             <x>10</x>
              <y>200</y>
-             <width>111</width>
+             <width>131</width>
              <height>41</height>
             </rect>
            </property>
@@ -1458,7 +1464,7 @@ QPushButton:pressed {
 }</string>
            </property>
            <property name="text">
-            <string>Add to cart</string>
+            <string>Select Design</string>
            </property>
            <property name="icon">
             <iconset>
@@ -1526,9 +1532,9 @@ background-color: white; /* Nền trắng */
           <widget class="QPushButton" name="buychocolatebalance_83">
            <property name="geometry">
             <rect>
-             <x>20</x>
+             <x>10</x>
              <y>200</y>
-             <width>111</width>
+             <width>131</width>
              <height>41</height>
             </rect>
            </property>
@@ -1556,7 +1562,7 @@ QPushButton:pressed {
 }</string>
            </property>
            <property name="text">
-            <string>Add to cart</string>
+            <string>Select Design</string>
            </property>
            <property name="icon">
             <iconset>
@@ -1706,8 +1712,8 @@ QPushButton:pressed {
       <widget class="QFrame" name="frame">
        <property name="maximumSize">
         <size>
-         <width>400</width>
-         <height>16777215</height>
+         <width>410</width>
+         <height>800</height>
         </size>
        </property>
        <property name="frameShape">
@@ -1719,6 +1725,12 @@ QPushButton:pressed {
        <layout class="QVBoxLayout" name="verticalLayout_3">
         <item>
          <widget class="QTableWidget" name="tableWidget">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>600</height>
+           </size>
+          </property>
           <property name="font">
            <font>
             <family>Georgia</family>
@@ -1792,33 +1804,188 @@ QPushButton:hover {
          </widget>
         </item>
         <item>
-         <layout class="QFormLayout" name="formLayout">
-          <item row="0" column="0">
-           <widget class="QLabel" name="totalLabel">
-            <property name="font">
-             <font>
-              <pointsize>10</pointsize>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">color: rgb(11, 11, 11);</string>
-            </property>
-            <property name="text">
-             <string>Total:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="1">
-           <widget class="QLineEdit" name="totalLineEdit">
-            <property name="styleSheet">
-             <string notr="true">color: rgb(15, 15, 15);</string>
-            </property>
-            <property name="text">
-             <string>0</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
+         <widget class="QWidget" name="widget_2" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>85</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>85</height>
+           </size>
+          </property>
+          <widget class="QLineEdit" name="lineEdit_PhoneNum_2">
+           <property name="geometry">
+            <rect>
+             <x>180</x>
+             <y>10</y>
+             <width>141</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(11, 11, 11);
+border: 1px solid black;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_3">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>161</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"> font-family: &quot;Georgia&quot;;
+color: rgb(13, 13, 13);
+</string>
+           </property>
+           <property name="text">
+            <string>Customer's Phone Number:</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_loadCusType_2">
+           <property name="geometry">
+            <rect>
+             <x>330</x>
+             <y>10</y>
+             <width>31</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(18, 18, 18);
+border: 1px solid black;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../images/7479650_literature_literature review_search_find_read_icon.png</normaloff>../../images/7479650_literature_literature review_search_find_read_icon.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_14">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>40</y>
+             <width>161</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"> font-family: &quot;Georgia&quot;;
+color: rgb(15, 15, 15);
+</string>
+           </property>
+           <property name="text">
+            <string>Customer's Type: </string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_CustomerType_3">
+           <property name="geometry">
+            <rect>
+             <x>180</x>
+             <y>50</y>
+             <width>141</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(11, 11, 11);
+border: 1px solid black;</string>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_3" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>54</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>50</height>
+           </size>
+          </property>
+          <widget class="QLabel" name="labelTB_2">
+           <property name="geometry">
+            <rect>
+             <x>150</x>
+             <y>10</y>
+             <width>171</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(3, 3, 3);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_6">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>331</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    background-color: rgba(255, 255, 255, 100); /* Màu trắng, trong suốt khoảng 40% */
+    border: 1px solid black; /* THÊM DÒNG NÀY: Viền đen, dày 2px, nét liền */
+    border-radius: 20px;  /* Bo góc 20px */
+    padding: 5px; /* Khoảng cách nội dung và viền */
+    font-size: 14px;
+    font-family: Georgia;
+    color: black; /* Màu chữ */
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_11">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>20</y>
+             <width>60</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"> font-family: &quot;Georgia&quot;;
+color: rgb(9, 9, 9);
+</string>
+           </property>
+           <property name="text">
+            <string>Total Bill: </string>
+           </property>
+          </widget>
+         </widget>
         </item>
         <item>
          <widget class="QWidget" name="widget_5" native="true">
@@ -1909,92 +2076,6 @@ QPushButton:pressed {
              </property>
             </widget>
            </item>
-           <item row="2" column="0">
-            <widget class="QPushButton" name="pushButton_TB_17">
-             <property name="cursor">
-              <cursorShape>OpenHandCursor</cursorShape>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">QPushButton {
-    background-color:#AFCBF3; /* Màu xanh nhạt chủ đạo bạn chọn */
-    color: #4A90E2; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */
-    border-radius: 12px;
-    padding: 10px;
-    font-size: 14px;
-    font-weight: bold;
-    font-family: &quot;Georgia&quot;;
-    border: 2px solid #A6C8FF; /* Viền xanh đậm hơn một chút để tạo khối */
-}
-
-QPushButton:hover {
-    background-color: #A6C8FF; /* Màu đậm hơn khi di chuột vào */
-    border: 2px solid #7FAFFF; /* Viền đậm hơn khi hover */
-    color: white; /* Chuyển chữ sang trắng để nổi bật */
-}
-
-QPushButton:pressed {
-    background-color: #7FAFFF; /* Màu đậm nhất khi nhấn giữ nút */
-    border: 2px solid #4A90E2;
-}</string>
-             </property>
-             <property name="text">
-              <string>Call Staff</string>
-             </property>
-             <property name="icon">
-              <iconset>
-               <normaloff>../images/2987779_coffee_cup_drink_icon.png</normaloff>../images/2987779_coffee_cup_drink_icon.png</iconset>
-             </property>
-             <property name="iconSize">
-              <size>
-               <width>20</width>
-               <height>20</height>
-              </size>
-             </property>
-            </widget>
-           </item>
-           <item row="3" column="0">
-            <widget class="QPushButton" name="pushButton_TB_11">
-             <property name="cursor">
-              <cursorShape>OpenHandCursor</cursorShape>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">QPushButton {
-    background-color:#AFCBF3; /* Màu xanh nhạt chủ đạo bạn chọn */
-    color: #4A90E2; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */
-    border-radius: 12px;
-    padding: 10px;
-    font-size: 14px;
-    font-weight: bold;
-    font-family: &quot;Georgia&quot;;
-    border: 2px solid #A6C8FF; /* Viền xanh đậm hơn một chút để tạo khối */
-}
-
-QPushButton:hover {
-    background-color: #A6C8FF; /* Màu đậm hơn khi di chuột vào */
-    border: 2px solid #7FAFFF; /* Viền đậm hơn khi hover */
-    color: white; /* Chuyển chữ sang trắng để nổi bật */
-}
-
-QPushButton:pressed {
-    background-color: #7FAFFF; /* Màu đậm nhất khi nhấn giữ nút */
-    border: 2px solid #4A90E2;
-}</string>
-             </property>
-             <property name="text">
-              <string>Select Technician</string>
-             </property>
-             <property name="icon">
-              <iconset>
-               <normaloff>../images/2987779_coffee_cup_drink_icon.png</normaloff>../images/2987779_coffee_cup_drink_icon.png</iconset>
-             </property>
-             <property name="iconSize">
-              <size>
-               <width>20</width>
-               <height>20</height>
-              </size>
-             </property>
-            </widget>
-           </item>
            <item row="2" column="1">
             <widget class="QPushButton" name="pushButton_TB_16">
              <property name="cursor">
@@ -2024,7 +2105,7 @@ QPushButton:pressed {
 }</string>
              </property>
              <property name="text">
-              <string>Note</string>
+              <string>Log out</string>
              </property>
              <property name="icon">
               <iconset>
@@ -2038,8 +2119,8 @@ QPushButton:pressed {
              </property>
             </widget>
            </item>
-           <item row="3" column="1">
-            <widget class="QPushButton" name="pushButton_TB_8">
+           <item row="2" column="0">
+            <widget class="QPushButton" name="pushButton_TB_11">
              <property name="cursor">
               <cursorShape>OpenHandCursor</cursorShape>
              </property>
@@ -2067,7 +2148,7 @@ QPushButton:pressed {
 }</string>
              </property>
              <property name="text">
-              <string>Feedback </string>
+              <string>Select Technician</string>
              </property>
              <property name="icon">
               <iconset>
