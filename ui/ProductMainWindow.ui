@@ -241,24 +241,13 @@ color: rgb(18, 40, 75);</string>
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">QGroupBox {
+     <string notr="true">QWidget {
     font: 75 16pt &quot;Rockwell&quot;;
     color: rgb(45, 5, 127);
-
-    border: none;
-    border-radius: 25px;
-    padding-top: 35px;
-
-    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1,
-        stop:0 rgba(230,242,255,230),
-        stop:1 rgba(180,210,255,230));
+    background-color: rgb(207, 228, 255);
+    border-radius: 20px;  
 }
-
-QGroupBox::title {
-    subcontrol-origin: margin;
-    subcontrol-position: top center;
-    padding: 5px 15px;
-}</string>
+</string>
     </property>
     <property name="title">
      <string>Sample Detail:</string>
@@ -536,23 +525,11 @@ color: rgb(224, 253, 255);</string>
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">#groupBox_2, #groupBox_6 {
+     <string notr="true">QWidget {
     font: 75 16pt &quot;Rockwell&quot;;
     color: rgb(45, 5, 127);
-
-    border: none;
-    border-radius: 25px;
-    padding-top: 35px;
-
-    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1,
-        stop:0 rgba(230,242,255,230),
-        stop:1 rgba(180,210,255,230));
-}
-
-#groupBox_2::title, #groupBox_6::title {
-    subcontrol-origin: margin;
-    subcontrol-position: top center;
-    padding: 5px 15px;
+    background-color: rgb(207, 228, 255);
+    border-radius: 20px;   
 }</string>
     </property>
     <property name="title">
@@ -825,23 +802,10 @@ background-color: rgb(207, 228, 255);</string>
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">#groupBox_5 {
-    font: 75 14pt &quot;Rockwell&quot;;
-    color: rgb(45, 5, 127);
-    border: none;
-    border-radius: 25px;
-    padding-top: 35px;
-
-    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1,
-                                      stop:0 rgba(230,242,255,230),
-                                      stop:1 rgba(180,210,255,230));
-}
-
-#groupBox_::title {
-    subcontrol-origin: margin;
-    subcontrol-position: top center;
-    padding: 5px 15px;
-}</string>
+     <string notr="true">font: 75 14pt &quot;Rockwell&quot;;
+background-color: rgb(207, 228, 255);
+color: rgb(45, 5, 127);
+border-radius: 20px;</string>
     </property>
     <property name="title">
      <string>Customer Feedback:</string>
@@ -1136,23 +1100,11 @@ color: rgb(224, 253, 255);</string>
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">#groupBox_2, #groupBox_6 {
+     <string notr="true">QWidget {
     font: 75 16pt &quot;Rockwell&quot;;
     color: rgb(45, 5, 127);
-
-    border: none;
-    border-radius: 25px;
-    padding-top: 35px;
-
-    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1,
-        stop:0 rgba(230,242,255,230),
-        stop:1 rgba(180,210,255,230));
-}
-
-#groupBox_2::title, #groupBox_6::title {
-    subcontrol-origin: margin;
-    subcontrol-position: top center;
-    padding: 5px 15px;
+    background-color: rgb(207, 228, 255);
+    border-radius: 20px;   
 }</string>
     </property>
     <property name="title">
@@ -1416,23 +1368,10 @@ color: rgb(224, 253, 255);</string>
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">#groupBox_7 {
-    font: 75 14pt &quot;Rockwell&quot;;
-    color: rgb(45, 5, 127);
-    border: none;
-    border-radius: 25px;
-    padding-top: 35px;
-
-    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1,
-                                      stop:0 rgba(230,242,255,230),
-                                      stop:1 rgba(180,210,255,230));
-}
-
-#groupBox_::title {
-    subcontrol-origin: margin;
-    subcontrol-position: top center;
-    padding: 5px 15px;
-}</string>
+     <string notr="true">font: 75 14pt &quot;Rockwell&quot;;
+background-color: rgb(207, 228, 255);
+color: rgb(45, 5, 127);
+border-radius: 20px;</string>
     </property>
     <property name="title">
      <string>Sample Quantity</string>
@@ -1494,23 +1433,10 @@ color: rgb(224, 253, 255);</string>
      <bool>false</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">#groupBox_8 {
-    font: 75 14pt &quot;Rockwell&quot;;
-    color: rgb(45, 5, 127);
-    border: none;
-    border-radius: 25px;
-    padding-top: 35px;
-
-    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1,
-                                      stop:0 rgba(230,242,255,230),
-                                      stop:1 rgba(180,210,255,230));
-}
-
-#groupBox_::title {
-    subcontrol-origin: margin;
-    subcontrol-position: top center;
-    padding: 5px 15px;
-}</string>
+     <string notr="true">font: 75 14pt &quot;Rockwell&quot;;
+background-color: rgb(207, 228, 255);
+color: rgb(45, 5, 127);
+border-radius: 20px;</string>
     </property>
     <property name="title">
      <string>Revenue</string>
