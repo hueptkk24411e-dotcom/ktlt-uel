@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>314</width>
-    <height>382</height>
+    <width>339</width>
+    <height>441</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -36,11 +36,16 @@
       <height>371</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">
+border-radius: 10px;
+padding: 2px 8px;</string>
+    </property>
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../images/login_bìa.png</pixmap>
+     <pixmap>../images/Brown and Beige Minimalist Nail Art Salon Services Instagram Post (1).png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -55,11 +60,19 @@
       <height>191</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">
+    border-radius: 10px;
+    padding: 2px 8px;
+border: 2px solid rgb(216, 237, 248);
+
+font: 14pt &quot;Rockwell Condensed&quot;;
+color: rgb(243, 248, 253);
+background-color: rgb(243, 248, 253);
+</string>
+    </property>
     <property name="text">
      <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>C:/Users/MY LAPTOP/Downloads/aaae0954-7d78-4cf3-88bc-75015b07cafb.png</pixmap>
     </property>
    </widget>
    <widget class="QLabel" name="label_8">
@@ -71,8 +84,12 @@
       <height>20</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(104, 184, 227);
+font: 20 20pt &quot;Alex Brush&quot;;</string>
+    </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Login to your account&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Login to your account&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_9">
@@ -85,10 +102,12 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(159, 195, 250);</string>
+     <string notr="true">color: rgb(0, 0, 127);
+font: 20 20pt &quot;Alex Brush&quot;;
+</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; color:#afcbf3;&quot;&gt;MY NAIL SHOP&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600; color:#00007f;&quot;&gt;MY NAIL SHOP&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButtonLogin">
@@ -108,8 +127,11 @@
     </property>
     <property name="font">
      <font>
-      <weight>75</weight>
-      <bold>true</bold>
+      <family>Rockwell Condensed</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -117,11 +139,11 @@
     x1:0, y1:0,
     x2:0, y2:1,
     stop:0 rgb(215, 233, 255),
-    stop:1 rgb(195, 220, 255)
+    stop:1 rgb(67, 139, 196);
 );
-
-color: rgb(74, 127, 199);
-border: 1px solid rgb(175, 203, 243);
+font: 13pt &quot;Rockwell Condensed&quot;;
+color:  rgb(67, 139, 196);
+border: 1px solid rgb(170,210,250);
 border-radius: 8px;
 padding: 4px 12px;
 </string>
@@ -131,7 +153,7 @@ padding: 4px 12px;
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>../images/login.png</normaloff>../images/login.png</iconset>
+      <normaloff>../images/ic_login.png</normaloff>../images/ic_login.png</iconset>
     </property>
     <property name="iconSize">
      <size>
@@ -157,8 +179,11 @@ padding: 4px 12px;
     </property>
     <property name="font">
      <font>
-      <weight>75</weight>
-      <bold>true</bold>
+      <family>Rockwell Condensed</family>
+      <pointsize>13</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -166,11 +191,11 @@ padding: 4px 12px;
     x1:0, y1:0,
     x2:0, y2:1,
     stop:0 rgb(215, 233, 255),
-    stop:1 rgb(195, 220, 255)
+    stop:1 rgb(67, 139, 196);
 );
-
-color: rgb(74, 127, 199);
-border: 1px solid rgb(175, 203, 243);
+font: 13pt &quot;Rockwell Condensed&quot;;
+color:  rgb(67, 139, 196);
+border: 1px solid rgb(170,210,250);
 border-radius: 8px;
 padding: 4px 12px;
 </string>
@@ -180,12 +205,12 @@ padding: 4px 12px;
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>../images/exit.png</normaloff>../images/exit.png</iconset>
+      <normaloff>../images/ic_exit.png</normaloff>../images/ic_exit.png</iconset>
     </property>
     <property name="iconSize">
      <size>
-      <width>20</width>
-      <height>20</height>
+      <width>40</width>
+      <height>25</height>
      </size>
     </property>
    </widget>
@@ -195,11 +220,13 @@ padding: 4px 12px;
       <x>70</x>
       <y>90</y>
       <width>81</width>
-      <height>16</height>
+      <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(159, 195, 250);</string>
+     <string notr="true">color:  rgb(67, 139, 196);
+
+font: 10pt &quot;Rockwell Condensed&quot;;</string>
     </property>
     <property name="text">
      <string>User's Name: </string>
@@ -211,11 +238,12 @@ padding: 4px 12px;
       <x>70</x>
       <y>120</y>
       <width>81</width>
-      <height>16</height>
+      <height>31</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(159, 195, 250);</string>
+     <string notr="true">color:  rgb(67, 139, 196);
+font: 10pt &quot;Rockwell Condensed&quot;;</string>
     </property>
     <property name="text">
      <string>Password:</string>
@@ -230,6 +258,11 @@ padding: 4px 12px;
       <height>20</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">border: 2px solid rgb(216, 237, 248);
+
+</string>
+    </property>
    </widget>
    <widget class="QLineEdit" name="lineEditPassword">
     <property name="geometry">
@@ -239,6 +272,9 @@ padding: 4px 12px;
       <width>113</width>
       <height>20</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 2px solid rgb(216, 237, 248);</string>
     </property>
     <property name="text">
      <string>123</string>
@@ -253,7 +289,7 @@ padding: 4px 12px;
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>314</width>
+     <width>339</width>
      <height>22</height>
     </rect>
    </property>

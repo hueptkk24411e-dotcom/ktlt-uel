@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file 'D:\UEL\KTTL\final_ktlt\ui\ProductMainWindow.ui'
+# Form implementation generated from reading ui file 'D:\UEL\PythonProject\CustomerManagement\ui\ProductMainWindow.ui'
 #
 # Created by: PyQt6 UI code generator 6.10.2
 #
@@ -12,19 +12,27 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1097, 667)
+        MainWindow.resize(1195, 723)
         self.centralwidget = QtWidgets.QWidget(parent=MainWindow)
+        self.centralwidget.setStyleSheet("background-color: rgb(234, 242, 251);")
         self.centralwidget.setObjectName("centralwidget")
         self.label = QtWidgets.QLabel(parent=self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(-2, 0, 1221, 41))
-        self.label.setStyleSheet("background-color: rgb(140, 193, 233);\n"
-"font: 26pt \"Rockwell Condensed\";\n"
-"\n"
-"color: rgb(18, 40, 75);")
+        self.label.setGeometry(QtCore.QRect(-2, 0, 1151, 41))
+        self.label.setStyleSheet("background-color: rgb(167, 212, 238);\n"
+"color: rgb(15,40,80);\n"
+"font: 50 20pt \"Alex Brush\";\n"
+"border-radius: 20px;\n"
+"border: 2px solid rgb(67, 139, 196);\n"
+"    border-radius: 12px;\n"
+"")
         self.label.setObjectName("label")
         self.tableWidgetSample = QtWidgets.QTableWidget(parent=self.centralwidget)
-        self.tableWidgetSample.setGeometry(QtCore.QRect(10, 50, 391, 381))
-        self.tableWidgetSample.setStyleSheet("font: 9pt \"Rockwell\";")
+        self.tableWidgetSample.setGeometry(QtCore.QRect(10, 50, 381, 381))
+        self.tableWidgetSample.setStyleSheet("border: 2px solid rgb(170,210,250);\n"
+"font: 9pt \"Rockwell\";\n"
+"background-color: rgb(234, 242, 251);\n"
+"color: rgb(0, 0, 127);\n"
+"")
         self.tableWidgetSample.setObjectName("tableWidgetSample")
         self.tableWidgetSample.setColumnCount(4)
         self.tableWidgetSample.setRowCount(10)
@@ -73,22 +81,22 @@ class Ui_MainWindow(object):
         item = QtWidgets.QTableWidgetItem()
         self.tableWidgetSample.setItem(0, 1, item)
         self.groupBox = QtWidgets.QGroupBox(parent=self.centralwidget)
-        self.groupBox.setGeometry(QtCore.QRect(10, 440, 391, 191))
+        self.groupBox.setGeometry(QtCore.QRect(10, 440, 381, 191))
         self.groupBox.setFocusPolicy(QtCore.Qt.FocusPolicy.NoFocus)
         self.groupBox.setAutoFillBackground(False)
         self.groupBox.setStyleSheet("QWidget {\n"
 "    font: 75 16pt \"Rockwell\";\n"
 "    color: rgb(45, 5, 127);\n"
-"    background-color: rgb(207, 228, 255);\n"
-"    border-radius: 20px;  \n"
-"}\n"
-"")
+"     background-color: rgb(167, 212, 238);\n"
+"    border-radius: 20px;   \n"
+"border: 2px solid rgb(67, 139, 196);\n"
+"}")
         self.groupBox.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.groupBox.setFlat(False)
         self.groupBox.setCheckable(False)
         self.groupBox.setObjectName("groupBox")
         self.label_2 = QtWidgets.QLabel(parent=self.groupBox)
-        self.label_2.setGeometry(QtCore.QRect(10, 30, 141, 21))
+        self.label_2.setGeometry(QtCore.QRect(10, 30, 151, 21))
         self.label_2.setStyleSheet("font: italic 12pt \"Rockwell\";")
         self.label_2.setObjectName("label_2")
         self.label_3 = QtWidgets.QLabel(parent=self.groupBox)
@@ -96,7 +104,7 @@ class Ui_MainWindow(object):
         self.label_3.setStyleSheet("font: italic 12pt \"Rockwell\";")
         self.label_3.setObjectName("label_3")
         self.label_4 = QtWidgets.QLabel(parent=self.groupBox)
-        self.label_4.setGeometry(QtCore.QRect(10, 90, 91, 21))
+        self.label_4.setGeometry(QtCore.QRect(10, 90, 151, 21))
         self.label_4.setStyleSheet("font: italic 12pt \"Rockwell\";")
         self.label_4.setObjectName("label_4")
         self.pushButtonSampleSave = QtWidgets.QPushButton(parent=self.groupBox)
@@ -104,26 +112,37 @@ class Ui_MainWindow(object):
         self.pushButtonSampleSave.setStyleSheet("background-color: rgb(67, 139, 196);\n"
 "font: 14pt \"Rockwell Condensed\";\n"
 "color: rgb(224, 253, 255);\n"
-"")
+"\n"
+"    border-radius: 10px;\n"
+"    padding: 2px 8px;\n"
+"border: 2px solid rgb(170,210,250);\n"
+"QPushButton{\n"
+"    background-color:#4E86B5;\n"
+"    border:none;\n"
+"}")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("D:\\UEL\\KTTL\\final_ktlt\\ui\\../images/ic_saveSample.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon.addPixmap(QtGui.QPixmap("D:\\UEL\\PythonProject\\CustomerManagement\\ui\\../images/ic_save(2).png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.pushButtonSampleSave.setIcon(icon)
-        self.pushButtonSampleSave.setIconSize(QtCore.QSize(15, 15))
+        self.pushButtonSampleSave.setIconSize(QtCore.QSize(40, 25))
         self.pushButtonSampleSave.setAutoRepeatInterval(99)
         self.pushButtonSampleSave.setObjectName("pushButtonSampleSave")
         self.pushButtonSampleClear = QtWidgets.QPushButton(parent=self.groupBox)
-        self.pushButtonSampleClear.setGeometry(QtCore.QRect(100, 150, 81, 31))
+        self.pushButtonSampleClear.setGeometry(QtCore.QRect(90, 150, 91, 31))
         self.pushButtonSampleClear.setStyleSheet("background-color: rgb(67, 139, 196);\n"
 "font: 14pt \"Rockwell Condensed\";\n"
 "color: rgb(224, 253, 255);\n"
+"\n"
+"    border-radius: 10px;\n"
+"    padding: 2px 8px;\n"
+"border: 2px solid rgb(170,210,250);\n"
 "")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("D:\\UEL\\KTTL\\final_ktlt\\ui\\../images/ic_clearSample.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon1.addPixmap(QtGui.QPixmap("D:\\UEL\\PythonProject\\CustomerManagement\\ui\\../images/ic_clear (2).png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.pushButtonSampleClear.setIcon(icon1)
-        self.pushButtonSampleClear.setIconSize(QtCore.QSize(17, 17))
+        self.pushButtonSampleClear.setIconSize(QtCore.QSize(40, 25))
         self.pushButtonSampleClear.setObjectName("pushButtonSampleClear")
         self.pushButtonSampleSearch = QtWidgets.QPushButton(parent=self.groupBox)
-        self.pushButtonSampleSearch.setGeometry(QtCore.QRect(190, 150, 81, 31))
+        self.pushButtonSampleSearch.setGeometry(QtCore.QRect(180, 150, 91, 31))
         font = QtGui.QFont()
         font.setFamily("Rockwell Condensed")
         font.setPointSize(14)
@@ -133,21 +152,29 @@ class Ui_MainWindow(object):
         self.pushButtonSampleSearch.setFont(font)
         self.pushButtonSampleSearch.setStyleSheet("background-color: rgb(67, 139, 196);\n"
 "font: 14pt \"Rockwell Condensed\";\n"
-"color: rgb(224, 253, 255);")
+"color: rgb(224, 253, 255);\n"
+"\n"
+"    border-radius: 10px;\n"
+"    padding: 2px 8px;\n"
+"border: 2px solid rgb(170,210,250);")
         icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap("D:\\UEL\\KTTL\\final_ktlt\\ui\\../images/ic_searchSample.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon2.addPixmap(QtGui.QPixmap("D:\\UEL\\PythonProject\\CustomerManagement\\ui\\../images/ic_search.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.pushButtonSampleSearch.setIcon(icon2)
-        self.pushButtonSampleSearch.setIconSize(QtCore.QSize(15, 15))
+        self.pushButtonSampleSearch.setIconSize(QtCore.QSize(40, 25))
         self.pushButtonSampleSearch.setObjectName("pushButtonSampleSearch")
         self.pushButtonSampleRemove = QtWidgets.QPushButton(parent=self.groupBox)
-        self.pushButtonSampleRemove.setGeometry(QtCore.QRect(281, 150, 91, 31))
+        self.pushButtonSampleRemove.setGeometry(QtCore.QRect(271, 150, 101, 31))
         self.pushButtonSampleRemove.setStyleSheet("background-color: rgb(67, 139, 196);\n"
 "font: 14pt \"Rockwell Condensed\";\n"
-"color: rgb(224, 253, 255);")
+"color: rgb(224, 253, 255);\n"
+"\n"
+"    border-radius: 10px;\n"
+"    padding: 2px 8px;\n"
+"border: 2px solid rgb(170,210,250);")
         icon3 = QtGui.QIcon()
-        icon3.addPixmap(QtGui.QPixmap("D:\\UEL\\KTTL\\final_ktlt\\ui\\../images/ic_removeSample.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon3.addPixmap(QtGui.QPixmap("D:\\UEL\\PythonProject\\CustomerManagement\\ui\\../images/ic_remove.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.pushButtonSampleRemove.setIcon(icon3)
-        self.pushButtonSampleRemove.setIconSize(QtCore.QSize(15, 15))
+        self.pushButtonSampleRemove.setIconSize(QtCore.QSize(40, 25))
         self.pushButtonSampleRemove.setObjectName("pushButtonSampleRemove")
         self.lineEditSampleID = QtWidgets.QLineEdit(parent=self.groupBox)
         self.lineEditSampleID.setGeometry(QtCore.QRect(180, 30, 191, 20))
@@ -164,7 +191,7 @@ class Ui_MainWindow(object):
         self.lineEditPrice.setStyleSheet("background-color: rgb(255, 255, 255);")
         self.lineEditPrice.setObjectName("lineEditPrice")
         self.label_12 = QtWidgets.QLabel(parent=self.groupBox)
-        self.label_12.setGeometry(QtCore.QRect(10, 120, 171, 21))
+        self.label_12.setGeometry(QtCore.QRect(10, 120, 151, 21))
         self.label_12.setStyleSheet("font: italic 12pt \"Rockwell\";")
         self.label_12.setObjectName("label_12")
         self.lineEditSampleQuantity = QtWidgets.QLineEdit(parent=self.groupBox)
@@ -172,93 +199,114 @@ class Ui_MainWindow(object):
         self.lineEditSampleQuantity.setStyleSheet("background-color: rgb(255, 255, 255);")
         self.lineEditSampleQuantity.setObjectName("lineEditSampleQuantity")
         self.groupBox_2 = QtWidgets.QGroupBox(parent=self.centralwidget)
-        self.groupBox_2.setGeometry(QtCore.QRect(410, 440, 341, 191))
+        self.groupBox_2.setGeometry(QtCore.QRect(400, 440, 361, 191))
         self.groupBox_2.setFocusPolicy(QtCore.Qt.FocusPolicy.NoFocus)
         self.groupBox_2.setAutoFillBackground(False)
         self.groupBox_2.setStyleSheet("QWidget {\n"
 "    font: 75 16pt \"Rockwell\";\n"
 "    color: rgb(45, 5, 127);\n"
-"    background-color: rgb(207, 228, 255);\n"
+"     background-color: rgb(167, 212, 238);\n"
 "    border-radius: 20px;   \n"
+"border: 2px solid rgb(67, 139, 196);\n"
 "}")
         self.groupBox_2.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.groupBox_2.setFlat(False)
         self.groupBox_2.setCheckable(False)
         self.groupBox_2.setObjectName("groupBox_2")
         self.label_5 = QtWidgets.QLabel(parent=self.groupBox_2)
-        self.label_5.setGeometry(QtCore.QRect(10, 30, 161, 21))
+        self.label_5.setGeometry(QtCore.QRect(10, 30, 171, 21))
         self.label_5.setStyleSheet("font: italic 12pt \"Rockwell\";")
         self.label_5.setObjectName("label_5")
         self.label_6 = QtWidgets.QLabel(parent=self.groupBox_2)
-        self.label_6.setGeometry(QtCore.QRect(10, 60, 161, 21))
+        self.label_6.setGeometry(QtCore.QRect(10, 60, 171, 21))
         self.label_6.setStyleSheet("font: italic 12pt \"Rockwell\";")
         self.label_6.setObjectName("label_6")
         self.label_7 = QtWidgets.QLabel(parent=self.groupBox_2)
-        self.label_7.setGeometry(QtCore.QRect(10, 90, 161, 21))
+        self.label_7.setGeometry(QtCore.QRect(10, 90, 171, 21))
         self.label_7.setStyleSheet("font: italic 12pt \"Rockwell\";\n"
 "")
         self.label_7.setObjectName("label_7")
         self.lineEditCustomerUserName = QtWidgets.QLineEdit(parent=self.groupBox_2)
-        self.lineEditCustomerUserName.setGeometry(QtCore.QRect(170, 30, 161, 20))
+        self.lineEditCustomerUserName.setGeometry(QtCore.QRect(190, 30, 161, 20))
         self.lineEditCustomerUserName.setStyleSheet("background-color: rgb(255, 255, 255);")
         self.lineEditCustomerUserName.setObjectName("lineEditCustomerUserName")
         self.lineEditPhoneNumber = QtWidgets.QLineEdit(parent=self.groupBox_2)
-        self.lineEditPhoneNumber.setGeometry(QtCore.QRect(170, 60, 161, 20))
+        self.lineEditPhoneNumber.setGeometry(QtCore.QRect(190, 60, 161, 20))
         self.lineEditPhoneNumber.setStyleSheet("background-color: rgb(255, 255, 255);")
         self.lineEditPhoneNumber.setObjectName("lineEditPhoneNumber")
         self.lineEditType = QtWidgets.QLineEdit(parent=self.groupBox_2)
-        self.lineEditType.setGeometry(QtCore.QRect(170, 90, 161, 20))
+        self.lineEditType.setGeometry(QtCore.QRect(190, 90, 161, 20))
         self.lineEditType.setStyleSheet("background-color: rgb(255, 255, 255);")
         self.lineEditType.setObjectName("lineEditType")
         self.pushButtonCustomerSave = QtWidgets.QPushButton(parent=self.groupBox_2)
-        self.pushButtonCustomerSave.setGeometry(QtCore.QRect(10, 150, 71, 31))
+        self.pushButtonCustomerSave.setGeometry(QtCore.QRect(10, 150, 81, 31))
         self.pushButtonCustomerSave.setStyleSheet("background-color: rgb(67, 139, 196);\n"
 "font: 14pt \"Rockwell Condensed\";\n"
-"color: rgb(224, 253, 255);")
-        icon4 = QtGui.QIcon()
-        icon4.addPixmap(QtGui.QPixmap("D:\\UEL\\KTTL\\final_ktlt\\ui\\../images/ic_saveCustomer.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
-        self.pushButtonCustomerSave.setIcon(icon4)
-        self.pushButtonCustomerSave.setIconSize(QtCore.QSize(15, 15))
+"color: rgb(224, 253, 255);\n"
+"\n"
+"    border-radius: 10px;\n"
+"    padding: 2px 8px;\n"
+"border: 2px solid rgb(170,210,250);")
+        self.pushButtonCustomerSave.setIcon(icon)
+        self.pushButtonCustomerSave.setIconSize(QtCore.QSize(40, 23))
         self.pushButtonCustomerSave.setObjectName("pushButtonCustomerSave")
         self.pushButtonCustomerClear = QtWidgets.QPushButton(parent=self.groupBox_2)
-        self.pushButtonCustomerClear.setGeometry(QtCore.QRect(90, 150, 71, 31))
+        self.pushButtonCustomerClear.setGeometry(QtCore.QRect(90, 150, 81, 31))
         self.pushButtonCustomerClear.setStyleSheet("background-color: rgb(67, 139, 196);\n"
 "font: 14pt \"Rockwell Condensed\";\n"
-"color: rgb(224, 253, 255);")
-        icon5 = QtGui.QIcon()
-        icon5.addPixmap(QtGui.QPixmap("D:\\UEL\\KTTL\\final_ktlt\\ui\\../images/ic_clearCustomer.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
-        self.pushButtonCustomerClear.setIcon(icon5)
-        self.pushButtonCustomerClear.setIconSize(QtCore.QSize(17, 17))
+"color: rgb(224, 253, 255);\n"
+"\n"
+"    border-radius: 10px;\n"
+"    padding: 2px 8px;\n"
+"border: 2px solid rgb(170,210,250);")
+        self.pushButtonCustomerClear.setIcon(icon1)
+        self.pushButtonCustomerClear.setIconSize(QtCore.QSize(40, 23))
         self.pushButtonCustomerClear.setObjectName("pushButtonCustomerClear")
         self.pushButtonCustomerSearch = QtWidgets.QPushButton(parent=self.groupBox_2)
-        self.pushButtonCustomerSearch.setGeometry(QtCore.QRect(170, 150, 71, 31))
-        self.pushButtonCustomerSearch.setStyleSheet("background-color: rgb(67, 139, 196);\n"
+        self.pushButtonCustomerSearch.setGeometry(QtCore.QRect(170, 150, 91, 31))
+        self.pushButtonCustomerSearch.setStyleSheet("\n"
+"    border-radius: 10px;\n"
+"    padding: 2px 8px;\n"
+"border: 2px solid rgb(170,210,250);\n"
+"background-color: rgb(67, 139, 196);\n"
 "font: 14pt \"Rockwell Condensed\";\n"
 "color: rgb(224, 253, 255);")
-        icon6 = QtGui.QIcon()
-        icon6.addPixmap(QtGui.QPixmap("D:\\UEL\\KTTL\\final_ktlt\\ui\\../images/ic_searchCustomer.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
-        self.pushButtonCustomerSearch.setIcon(icon6)
-        self.pushButtonCustomerSearch.setIconSize(QtCore.QSize(15, 15))
+        self.pushButtonCustomerSearch.setIcon(icon2)
+        self.pushButtonCustomerSearch.setIconSize(QtCore.QSize(40, 23))
         self.pushButtonCustomerSearch.setObjectName("pushButtonCustomerSearch")
         self.pushButtonCustomerRemove = QtWidgets.QPushButton(parent=self.groupBox_2)
-        self.pushButtonCustomerRemove.setGeometry(QtCore.QRect(250, 150, 71, 31))
+        self.pushButtonCustomerRemove.setGeometry(QtCore.QRect(260, 150, 91, 31))
         self.pushButtonCustomerRemove.setStyleSheet("background-color: rgb(67, 139, 196);\n"
 "font: 14pt \"Rockwell Condensed\";\n"
-"color: rgb(224, 253, 255);")
-        icon7 = QtGui.QIcon()
-        icon7.addPixmap(QtGui.QPixmap("D:\\UEL\\KTTL\\final_ktlt\\ui\\../images/ic_removeCustomer.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
-        self.pushButtonCustomerRemove.setIcon(icon7)
-        self.pushButtonCustomerRemove.setIconSize(QtCore.QSize(15, 15))
+"color: rgb(224, 253, 255);\n"
+"\n"
+"    border-radius: 10px;\n"
+"    padding: 2px 8px;\n"
+"border: 2px solid rgb(170,210,250);")
+        self.pushButtonCustomerRemove.setIcon(icon3)
+        self.pushButtonCustomerRemove.setIconSize(QtCore.QSize(40, 22))
         self.pushButtonCustomerRemove.setObjectName("pushButtonCustomerRemove")
+        self.pushButtonCustomerSearch.raise_()
+        self.label_5.raise_()
+        self.label_6.raise_()
+        self.label_7.raise_()
+        self.lineEditCustomerUserName.raise_()
+        self.lineEditPhoneNumber.raise_()
+        self.lineEditType.raise_()
+        self.pushButtonCustomerSave.raise_()
+        self.pushButtonCustomerClear.raise_()
+        self.pushButtonCustomerRemove.raise_()
         self.dateEdit = QtWidgets.QDateEdit(parent=self.centralwidget)
-        self.dateEdit.setGeometry(QtCore.QRect(1010, 130, 141, 41))
+        self.dateEdit.setGeometry(QtCore.QRect(1000, 50, 151, 51))
         self.dateEdit.setMaximumSize(QtCore.QSize(321, 16777215))
         self.dateEdit.setStyleSheet("font: 14pt \"Rockwell Condensed\";\n"
-"background-color: rgb(207, 228, 255);")
+"background-color: rgb(207, 228, 255);\n"
+"border-radius: 20px;\n"
+"border: 2px solid rgb(170,210,250);")
         self.dateEdit.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.dateEdit.setObjectName("dateEdit")
         self.groupBox_5 = QtWidgets.QGroupBox(parent=self.centralwidget)
-        self.groupBox_5.setGeometry(QtCore.QRect(410, 50, 191, 121))
+        self.groupBox_5.setGeometry(QtCore.QRect(400, 50, 191, 121))
         font = QtGui.QFont()
         font.setFamily("Rockwell")
         font.setPointSize(14)
@@ -269,6 +317,7 @@ class Ui_MainWindow(object):
         self.groupBox_5.setFocusPolicy(QtCore.Qt.FocusPolicy.NoFocus)
         self.groupBox_5.setAutoFillBackground(False)
         self.groupBox_5.setStyleSheet("font: 75 14pt \"Rockwell\";\n"
+"border: 2px solid rgb(170,210,250);\n"
 "background-color: rgb(207, 228, 255);\n"
 "color: rgb(45, 5, 127);\n"
 "border-radius: 20px;")
@@ -277,7 +326,7 @@ class Ui_MainWindow(object):
         self.groupBox_5.setCheckable(False)
         self.groupBox_5.setObjectName("groupBox_5")
         self.pushButtonOpenChartFeedback = QtWidgets.QPushButton(parent=self.groupBox_5)
-        self.pushButtonOpenChartFeedback.setGeometry(QtCore.QRect(50, 90, 101, 19))
+        self.pushButtonOpenChartFeedback.setGeometry(QtCore.QRect(30, 80, 121, 31))
         font = QtGui.QFont()
         font.setFamily("Rockwell Condensed")
         font.setPointSize(14)
@@ -286,17 +335,24 @@ class Ui_MainWindow(object):
         font.setWeight(50)
         self.pushButtonOpenChartFeedback.setFont(font)
         self.pushButtonOpenChartFeedback.setStyleSheet("background-color: rgb(67, 139, 196);\n"
-"font: 14pt \"Rockwell Condensed\";\n"
+"color: rgb(224, 253, 255);\n"
 "\n"
-"color: rgb(224, 253, 255);")
-        icon8 = QtGui.QIcon()
-        icon8.addPixmap(QtGui.QPixmap("D:\\UEL\\KTTL\\final_ktlt\\ui\\../images/ic_openchartCustomerFeedback.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
-        self.pushButtonOpenChartFeedback.setIcon(icon8)
-        self.pushButtonOpenChartFeedback.setIconSize(QtCore.QSize(15, 15))
+"    border-radius: 10px;\n"
+"    padding: 2px 8px;\n"
+"border: 2px solid rgb(170,210,250);\n"
+"font: 14pt \"Rockwell Condensed\";\n"
+"")
+        icon4 = QtGui.QIcon()
+        icon4.addPixmap(QtGui.QPixmap("D:\\UEL\\PythonProject\\CustomerManagement\\ui\\../images/ic_feedback.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        self.pushButtonOpenChartFeedback.setIcon(icon4)
+        self.pushButtonOpenChartFeedback.setIconSize(QtCore.QSize(40, 20))
         self.pushButtonOpenChartFeedback.setObjectName("pushButtonOpenChartFeedback")
         self.tableWidgetCustomer = QtWidgets.QTableWidget(parent=self.centralwidget)
-        self.tableWidgetCustomer.setGeometry(QtCore.QRect(410, 180, 341, 251))
-        self.tableWidgetCustomer.setStyleSheet("font: 9pt \"Rockwell\";")
+        self.tableWidgetCustomer.setGeometry(QtCore.QRect(400, 180, 361, 251))
+        self.tableWidgetCustomer.setStyleSheet("font: 9pt \"Rockwell\";\n"
+"color: rgb(0, 0, 127);\n"
+"background-color: rgb(234, 242, 251);\n"
+"border: 2px solid rgb(170,210,250);")
         self.tableWidgetCustomer.setObjectName("tableWidgetCustomer")
         self.tableWidgetCustomer.setColumnCount(3)
         self.tableWidgetCustomer.setRowCount(5)
@@ -325,8 +381,12 @@ class Ui_MainWindow(object):
         item.setBackground(QtGui.QColor(175, 203, 243))
         self.tableWidgetCustomer.setHorizontalHeaderItem(2, item)
         self.tableWidgetEmployee = QtWidgets.QTableWidget(parent=self.centralwidget)
-        self.tableWidgetEmployee.setGeometry(QtCore.QRect(760, 180, 391, 251))
-        self.tableWidgetEmployee.setStyleSheet("font: 9pt \"Rockwell\";")
+        self.tableWidgetEmployee.setGeometry(QtCore.QRect(770, 180, 381, 251))
+        self.tableWidgetEmployee.setStyleSheet("font: 9pt \"Rockwell\";\n"
+"color: rgb(0, 0, 127);\n"
+"background-color: rgb(234, 242, 251);\n"
+"border: 2px solid rgb(170,210,250);\n"
+"")
         self.tableWidgetEmployee.setObjectName("tableWidgetEmployee")
         self.tableWidgetEmployee.setColumnCount(4)
         self.tableWidgetEmployee.setRowCount(5)
@@ -357,26 +417,27 @@ class Ui_MainWindow(object):
         item = QtWidgets.QTableWidgetItem()
         self.tableWidgetEmployee.setHorizontalHeaderItem(3, item)
         self.groupBox_6 = QtWidgets.QGroupBox(parent=self.centralwidget)
-        self.groupBox_6.setGeometry(QtCore.QRect(760, 440, 391, 191))
+        self.groupBox_6.setGeometry(QtCore.QRect(770, 440, 381, 191))
         self.groupBox_6.setFocusPolicy(QtCore.Qt.FocusPolicy.NoFocus)
         self.groupBox_6.setAutoFillBackground(False)
         self.groupBox_6.setStyleSheet("QWidget {\n"
 "    font: 75 16pt \"Rockwell\";\n"
 "    color: rgb(45, 5, 127);\n"
-"    background-color: rgb(207, 228, 255);\n"
+"     background-color: rgb(167, 212, 238);\n"
 "    border-radius: 20px;   \n"
+"border: 2px solid rgb(67, 139, 196);\n"
 "}")
         self.groupBox_6.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.groupBox_6.setFlat(False)
         self.groupBox_6.setCheckable(False)
         self.groupBox_6.setObjectName("groupBox_6")
         self.label_8 = QtWidgets.QLabel(parent=self.groupBox_6)
-        self.label_8.setGeometry(QtCore.QRect(10, 30, 181, 21))
+        self.label_8.setGeometry(QtCore.QRect(10, 30, 161, 21))
         self.label_8.setStyleSheet("font: italic 12pt \"Rockwell\";\n"
 "")
         self.label_8.setObjectName("label_8")
         self.label_9 = QtWidgets.QLabel(parent=self.groupBox_6)
-        self.label_9.setGeometry(QtCore.QRect(10, 60, 191, 21))
+        self.label_9.setGeometry(QtCore.QRect(10, 60, 161, 21))
         self.label_9.setStyleSheet("font: italic 12pt \"Rockwell\";")
         self.label_9.setObjectName("label_9")
         self.label_10 = QtWidgets.QLabel(parent=self.groupBox_6)
@@ -384,123 +445,155 @@ class Ui_MainWindow(object):
         self.label_10.setStyleSheet("font: italic 12pt \"Rockwell\";")
         self.label_10.setObjectName("label_10")
         self.lineEditEmployeeID = QtWidgets.QLineEdit(parent=self.groupBox_6)
-        self.lineEditEmployeeID.setGeometry(QtCore.QRect(190, 30, 191, 20))
+        self.lineEditEmployeeID.setGeometry(QtCore.QRect(190, 30, 171, 20))
         self.lineEditEmployeeID.setStyleSheet("background-color: rgb(255, 255, 255);")
         self.lineEditEmployeeID.setObjectName("lineEditEmployeeID")
         self.lineEditEmployeeName = QtWidgets.QLineEdit(parent=self.groupBox_6)
-        self.lineEditEmployeeName.setGeometry(QtCore.QRect(190, 60, 191, 20))
+        self.lineEditEmployeeName.setGeometry(QtCore.QRect(190, 60, 171, 20))
         self.lineEditEmployeeName.setStyleSheet("background-color: rgb(255, 255, 255);")
         self.lineEditEmployeeName.setObjectName("lineEditEmployeeName")
         self.lineEditExperience = QtWidgets.QLineEdit(parent=self.groupBox_6)
-        self.lineEditExperience.setGeometry(QtCore.QRect(190, 90, 191, 20))
+        self.lineEditExperience.setGeometry(QtCore.QRect(190, 90, 171, 20))
         self.lineEditExperience.setStyleSheet("background-color: rgb(255, 255, 255);")
         self.lineEditExperience.setObjectName("lineEditExperience")
         self.pushButtonEmployeeSave = QtWidgets.QPushButton(parent=self.groupBox_6)
         self.pushButtonEmployeeSave.setGeometry(QtCore.QRect(10, 150, 81, 31))
-        self.pushButtonEmployeeSave.setStyleSheet("background-color: rgb(67, 139, 196);\n"
+        self.pushButtonEmployeeSave.setStyleSheet("\n"
+"    border-radius: 10px;\n"
+"    padding: 2px 8px;\n"
+"border: 2px solid rgb(170,210,250);background-color: rgb(67, 139, 196);\n"
 "font: 14pt \"Rockwell Condensed\";\n"
 "color: rgb(224, 253, 255);")
-        icon9 = QtGui.QIcon()
-        icon9.addPixmap(QtGui.QPixmap("D:\\UEL\\KTTL\\final_ktlt\\ui\\../images/ic_saveEmployee.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
-        self.pushButtonEmployeeSave.setIcon(icon9)
-        self.pushButtonEmployeeSave.setIconSize(QtCore.QSize(15, 15))
+        self.pushButtonEmployeeSave.setIcon(icon)
+        self.pushButtonEmployeeSave.setIconSize(QtCore.QSize(40, 25))
         self.pushButtonEmployeeSave.setObjectName("pushButtonEmployeeSave")
         self.pushButtonEmployeeClear = QtWidgets.QPushButton(parent=self.groupBox_6)
-        self.pushButtonEmployeeClear.setGeometry(QtCore.QRect(100, 150, 81, 31))
-        self.pushButtonEmployeeClear.setStyleSheet("background-color: rgb(67, 139, 196);\n"
+        self.pushButtonEmployeeClear.setGeometry(QtCore.QRect(90, 150, 81, 31))
+        self.pushButtonEmployeeClear.setStyleSheet("\n"
+"    border-radius: 10px;\n"
+"    padding: 2px 8px;\n"
+"border: 2px solid rgb(170,210,250);background-color: rgb(67, 139, 196);\n"
 "font: 14pt \"Rockwell Condensed\";\n"
 "color: rgb(224, 253, 255);")
-        icon10 = QtGui.QIcon()
-        icon10.addPixmap(QtGui.QPixmap("D:\\UEL\\KTTL\\final_ktlt\\ui\\../images/ic_clearEmployee.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
-        self.pushButtonEmployeeClear.setIcon(icon10)
-        self.pushButtonEmployeeClear.setIconSize(QtCore.QSize(17, 17))
+        self.pushButtonEmployeeClear.setIcon(icon1)
+        self.pushButtonEmployeeClear.setIconSize(QtCore.QSize(40, 25))
         self.pushButtonEmployeeClear.setObjectName("pushButtonEmployeeClear")
         self.pushButtonEmployeeSearch = QtWidgets.QPushButton(parent=self.groupBox_6)
-        self.pushButtonEmployeeSearch.setGeometry(QtCore.QRect(190, 150, 91, 31))
-        self.pushButtonEmployeeSearch.setStyleSheet("background-color: rgb(67, 139, 196);\n"
+        self.pushButtonEmployeeSearch.setGeometry(QtCore.QRect(170, 150, 91, 31))
+        self.pushButtonEmployeeSearch.setStyleSheet("\n"
+"    border-radius: 10px;\n"
+"    padding: 2px 8px;\n"
+"border: 2px solid rgb(170,210,250);background-color: rgb(67, 139, 196);\n"
 "font: 14pt \"Rockwell Condensed\";\n"
 "color: rgb(224, 253, 255);")
-        icon11 = QtGui.QIcon()
-        icon11.addPixmap(QtGui.QPixmap("D:\\UEL\\KTTL\\final_ktlt\\ui\\../images/ic_searchEmployee.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
-        self.pushButtonEmployeeSearch.setIcon(icon11)
-        self.pushButtonEmployeeSearch.setIconSize(QtCore.QSize(15, 15))
+        self.pushButtonEmployeeSearch.setIcon(icon2)
+        self.pushButtonEmployeeSearch.setIconSize(QtCore.QSize(40, 25))
         self.pushButtonEmployeeSearch.setObjectName("pushButtonEmployeeSearch")
         self.pushButtonEmployeeRemove = QtWidgets.QPushButton(parent=self.groupBox_6)
-        self.pushButtonEmployeeRemove.setGeometry(QtCore.QRect(290, 150, 91, 31))
-        self.pushButtonEmployeeRemove.setStyleSheet("background-color: rgb(67, 139, 196);\n"
+        self.pushButtonEmployeeRemove.setGeometry(QtCore.QRect(260, 150, 101, 31))
+        self.pushButtonEmployeeRemove.setStyleSheet("\n"
+"    border-radius: 10px;\n"
+"    padding: 2px 8px;\n"
+"border: 2px solid rgb(170,210,250);background-color: rgb(67, 139, 196);\n"
 "font: 14pt \"Rockwell Condensed\";\n"
 "color: rgb(224, 253, 255);")
-        icon12 = QtGui.QIcon()
-        icon12.addPixmap(QtGui.QPixmap("D:\\UEL\\KTTL\\final_ktlt\\ui\\../images/ic_removeEmployee.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
-        self.pushButtonEmployeeRemove.setIcon(icon12)
-        self.pushButtonEmployeeRemove.setIconSize(QtCore.QSize(15, 15))
+        self.pushButtonEmployeeRemove.setIcon(icon3)
+        self.pushButtonEmployeeRemove.setIconSize(QtCore.QSize(40, 25))
         self.pushButtonEmployeeRemove.setObjectName("pushButtonEmployeeRemove")
         self.label_11 = QtWidgets.QLabel(parent=self.groupBox_6)
-        self.label_11.setGeometry(QtCore.QRect(10, 120, 221, 21))
+        self.label_11.setGeometry(QtCore.QRect(10, 120, 161, 21))
         self.label_11.setStyleSheet("font: italic 12pt \"Rockwell\";")
         self.label_11.setObjectName("label_11")
         self.lineEditCustomerBooked = QtWidgets.QLineEdit(parent=self.groupBox_6)
-        self.lineEditCustomerBooked.setGeometry(QtCore.QRect(190, 120, 191, 20))
+        self.lineEditCustomerBooked.setGeometry(QtCore.QRect(190, 120, 171, 20))
         self.lineEditCustomerBooked.setStyleSheet("background-color: rgb(255, 255, 255);")
         self.lineEditCustomerBooked.setObjectName("lineEditCustomerBooked")
         self.groupBox_7 = QtWidgets.QGroupBox(parent=self.centralwidget)
-        self.groupBox_7.setGeometry(QtCore.QRect(610, 50, 191, 121))
+        self.groupBox_7.setGeometry(QtCore.QRect(600, 50, 191, 121))
         self.groupBox_7.setFocusPolicy(QtCore.Qt.FocusPolicy.NoFocus)
         self.groupBox_7.setAutoFillBackground(False)
         self.groupBox_7.setStyleSheet("font: 75 14pt \"Rockwell\";\n"
 "background-color: rgb(207, 228, 255);\n"
 "color: rgb(45, 5, 127);\n"
-"border-radius: 20px;")
+"border-radius: 20px;\n"
+"border: 2px solid rgb(170,210,250);")
         self.groupBox_7.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.groupBox_7.setFlat(False)
         self.groupBox_7.setCheckable(False)
         self.groupBox_7.setObjectName("groupBox_7")
         self.pushButtonSampleQuantity = QtWidgets.QPushButton(parent=self.groupBox_7)
-        self.pushButtonSampleQuantity.setGeometry(QtCore.QRect(50, 90, 101, 19))
+        self.pushButtonSampleQuantity.setGeometry(QtCore.QRect(30, 80, 121, 31))
         self.pushButtonSampleQuantity.setStyleSheet("background-color: rgb(67, 139, 196);\n"
+"color: rgb(224, 253, 255);\n"
+"\n"
+"    border-radius: 10px;\n"
+"    padding: 2px 8px;\n"
+"border: 2px solid rgb(170,210,250);\n"
 "font: 14pt \"Rockwell Condensed\";\n"
-"color: rgb(224, 253, 255);")
-        icon13 = QtGui.QIcon()
-        icon13.addPixmap(QtGui.QPixmap("D:\\UEL\\KTTL\\final_ktlt\\ui\\../images/ic_openchartSampleQuantity.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
-        self.pushButtonSampleQuantity.setIcon(icon13)
-        self.pushButtonSampleQuantity.setIconSize(QtCore.QSize(15, 15))
+"")
+        icon5 = QtGui.QIcon()
+        icon5.addPixmap(QtGui.QPixmap("D:\\UEL\\PythonProject\\CustomerManagement\\ui\\../images/ic_samplequantity.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        self.pushButtonSampleQuantity.setIcon(icon5)
+        self.pushButtonSampleQuantity.setIconSize(QtCore.QSize(30, 15))
         self.pushButtonSampleQuantity.setObjectName("pushButtonSampleQuantity")
         self.groupBox_8 = QtWidgets.QGroupBox(parent=self.centralwidget)
-        self.groupBox_8.setGeometry(QtCore.QRect(810, 50, 191, 121))
+        self.groupBox_8.setGeometry(QtCore.QRect(800, 50, 191, 121))
         self.groupBox_8.setFocusPolicy(QtCore.Qt.FocusPolicy.NoFocus)
         self.groupBox_8.setAutoFillBackground(False)
         self.groupBox_8.setStyleSheet("font: 75 14pt \"Rockwell\";\n"
 "background-color: rgb(207, 228, 255);\n"
 "color: rgb(45, 5, 127);\n"
-"border-radius: 20px;")
+"border-radius: 20px;\n"
+"padding: 2px 8px;\n"
+"border: 2px solid rgb(170,210,250);")
         self.groupBox_8.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.groupBox_8.setFlat(False)
         self.groupBox_8.setCheckable(False)
         self.groupBox_8.setObjectName("groupBox_8")
         self.pushButtonOpenChartFeedback_4 = QtWidgets.QPushButton(parent=self.groupBox_8)
-        self.pushButtonOpenChartFeedback_4.setGeometry(QtCore.QRect(50, 90, 101, 19))
+        self.pushButtonOpenChartFeedback_4.setGeometry(QtCore.QRect(40, 78, 111, 31))
         self.pushButtonOpenChartFeedback_4.setStyleSheet("background-color: rgb(67, 139, 196);\n"
+"color: rgb(224, 253, 255);\n"
+"\n"
+"    border-radius: 10px;\n"
+"    padding: 2px 8px;\n"
+"border: 2px solid rgb(170,210,250);\n"
 "font: 14pt \"Rockwell Condensed\";\n"
-"color: rgb(224, 253, 255);")
-        icon14 = QtGui.QIcon()
-        icon14.addPixmap(QtGui.QPixmap("D:\\UEL\\KTTL\\final_ktlt\\ui\\../images/ic_openchartRevenue.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
-        self.pushButtonOpenChartFeedback_4.setIcon(icon14)
-        self.pushButtonOpenChartFeedback_4.setIconSize(QtCore.QSize(15, 15))
+"")
+        icon6 = QtGui.QIcon()
+        icon6.addPixmap(QtGui.QPixmap("D:\\UEL\\PythonProject\\CustomerManagement\\ui\\../images/ic_revenue.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        self.pushButtonOpenChartFeedback_4.setIcon(icon6)
+        self.pushButtonOpenChartFeedback_4.setIconSize(QtCore.QSize(40, 25))
         self.pushButtonOpenChartFeedback_4.setObjectName("pushButtonOpenChartFeedback_4")
         self.pushButtonCloseWindow = QtWidgets.QPushButton(parent=self.centralwidget)
-        self.pushButtonCloseWindow.setGeometry(QtCore.QRect(1010, 50, 141, 31))
-        self.pushButtonCloseWindow.setStyleSheet("font: 14pt \"Rockwell Condensed\";\n"
-"background-color: rgb(207, 228, 255);\n"
-"color: rgb(45, 5, 127);\n"
-"border-radius: 20px;")
-        icon15 = QtGui.QIcon()
-        icon15.addPixmap(QtGui.QPixmap("D:\\UEL\\KTTL\\final_ktlt\\ui\\../images/ic_close.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
-        self.pushButtonCloseWindow.setIcon(icon15)
-        self.pushButtonCloseWindow.setIconSize(QtCore.QSize(15, 15))
+        self.pushButtonCloseWindow.setGeometry(QtCore.QRect(1000, 130, 151, 41))
+        self.pushButtonCloseWindow.setStyleSheet("QPushButton{\n"
+"    background-color: rgb(72,134,180);\n"
+"    color: white;\n"
+"\n"
+"    border: 2px solid rgb(170,210,250);\n"
+"    border-radius: 12px;\n"
+"\n"
+"    padding: 3px 12px;\n"
+"    font: 75 12pt \"Rockwell\";\n"
+"}\n"
+"\n"
+"QPushButton:hover{\n"
+"    background-color: rgb(90,150,200);\n"
+"    border: 2px solid rgb(190,220,255);\n"
+"}\n"
+"\n"
+"QPushButton:pressed{\n"
+"    background-color: rgb(60,120,170);\n"
+"}")
+        icon7 = QtGui.QIcon()
+        icon7.addPixmap(QtGui.QPixmap("D:\\UEL\\PythonProject\\CustomerManagement\\ui\\../images/ic_closewindow.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        self.pushButtonCloseWindow.setIcon(icon7)
+        self.pushButtonCloseWindow.setIconSize(QtCore.QSize(40, 15))
         self.pushButtonCloseWindow.setObjectName("pushButtonCloseWindow")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(parent=MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 1097, 18))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 1195, 22))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(parent=MainWindow)
@@ -514,8 +607,8 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.label.setToolTip(_translate("MainWindow", "<html><head/><body><p align=\"center\"><br/></p></body></html>"))
-        self.label.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:28pt; font-weight:600;\">Product Management</span></p></body></html>"))
+        self.label.setToolTip(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:24pt;\"><br/></span></p></body></html>"))
+        self.label.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:26pt; font-weight:600; color:#142d5a;\">Product Management</span></p></body></html>"))
         item = self.tableWidgetSample.verticalHeaderItem(0)
         item.setText(_translate("MainWindow", "1"))
         item = self.tableWidgetSample.verticalHeaderItem(1)
@@ -569,7 +662,7 @@ class Ui_MainWindow(object):
         self.dateEdit.setToolTip(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:14pt;\"><br/></span></p></body></html>"))
         self.dateEdit.setWhatsThis(_translate("MainWindow", "<html><head/><body><p align=\"center\"><br/></p></body></html>"))
         self.groupBox_5.setWhatsThis(_translate("MainWindow", "<html><head/><body><p align=\"center\">Sample Detail:</p></body></html>"))
-        self.groupBox_5.setTitle(_translate("MainWindow", "Customer Feedback:"))
+        self.groupBox_5.setTitle(_translate("MainWindow", "Customer Feedback"))
         self.pushButtonOpenChartFeedback.setText(_translate("MainWindow", "Open Chart"))
         item = self.tableWidgetCustomer.verticalHeaderItem(0)
         item.setText(_translate("MainWindow", "1"))
@@ -621,4 +714,5 @@ class Ui_MainWindow(object):
         self.groupBox_8.setWhatsThis(_translate("MainWindow", "<html><head/><body><p align=\"center\">Sample Detail:</p></body></html>"))
         self.groupBox_8.setTitle(_translate("MainWindow", "Revenue"))
         self.pushButtonOpenChartFeedback_4.setText(_translate("MainWindow", "Open Chart"))
+        self.pushButtonCloseWindow.setToolTip(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:10pt;\">Close Window</span></p></body></html>"))
         self.pushButtonCloseWindow.setText(_translate("MainWindow", "Close Window"))

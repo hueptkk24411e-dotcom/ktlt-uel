@@ -50,10 +50,16 @@ class PaymentWindow(QMainWindow):
         self.ui.lblTotalValue.setText(total_amount)
         self.ui.btnConfirm.clicked.connect(self.confirm_payment)
 
-
     def confirm_payment(self):
+        # 1. Thông báo thanh toán thành công
         QMessageBox.information(self, "Success", "Payment successful! We are preparing your service.")
+
+        # 2. Đóng cửa sổ thanh toán
         self.close()
+
+        # 3. Mở cửa sổ Feedback
+        self.fb_screen = FeedbackWindow()  # Khởi tạo class FeedbackWindow bạn đã viết
+        self.fb_screen.show()
 
 
 
@@ -90,7 +96,7 @@ class MainWindowEx(Ui_MainWindow):
         super().setupUi(MainWindow)
         self.MainWindow = MainWindow
 
-        # 1. Thiết lập Scroll Area giữ nguyên cấu trúc của bạn
+        # 1. Thiết lập Scroll Area
         scroll = QScrollArea()
         scroll.setWidget(self.centralwidget)
         scroll.setWidgetResizable(True)
@@ -98,17 +104,16 @@ class MainWindowEx(Ui_MainWindow):
         MainWindow.setCentralWidget(scroll)
 
         # 2. Cài đặt ban đầu cho giỏ hàng
-        self.totalLineEdit.setReadOnly(True)
-        self.totalLineEdit.setText("0.00$")
+
+        self.labelTB_2.setText("0.00$")  # Khởi tạo giá trị ban đầu là 0
 
         # 3. Kết nối các nút chức năng chính
         self.pushButton_TB_9.clicked.connect(self.open_payment)  # Check out
         self.pushButton_TB_10.clicked.connect(self.remove_from_cart)  # Remove item
-        self.pushButton_TB_17.clicked.connect(self.call_staff)
         self.buychocolatebalance_79.clicked.connect(self.open_self_custom)# Call staff
-        self.pushButton_TB_8.clicked.connect(self.open_feedback)
+        self.menuMore_about_us.aboutToShow.connect(self.show_about_us)#mo ta
 
-        # 4. Kết nối các nút thêm sản phẩm (Làm mẫu 5 nút, bạn copy cho các nút khác)
+
         self.buychocolatebalance_39.clicked.connect(lambda: self.add_to_cart("Chocolate Balance", 36))
         self.buychocolatebalance_40.clicked.connect(lambda: self.add_to_cart("Milk Chocolate", 36))
         self.buychocolatebalance_41.clicked.connect(lambda: self.add_to_cart("Dark Chocolate", 36))
@@ -124,7 +129,7 @@ class MainWindowEx(Ui_MainWindow):
         self.tableWidget.setItem(row_count, 2, QTableWidgetItem(f"{price}$"))
 
         self.total_money += price
-        self.totalLineEdit.setText(f"{self.total_money:.2f}$")
+        self.labelTB_2.setText(f"{self.total_money:.2f}$")
 
     def remove_from_cart(self):
         """Xóa hàng đang được chọn trong bảng và trừ tiền tương ứng"""
@@ -142,30 +147,51 @@ class MainWindowEx(Ui_MainWindow):
 
         # Xóa hàng và cập nhật lại hiển thị
         self.tableWidget.removeRow(current_row)
-        self.totalLineEdit.setText(f"{max(0, self.total_money):.2f}$")
+        self.labelTB_2.setText(f"{max(0, self.total_money):.2f}$")
 
     def open_payment(self):
         if self.total_money <= 0:
             QMessageBox.warning(self.MainWindow, "Empty", "Your cart is empty!")
             return
 
-        # Mở cửa sổ thanh toán và truyền số tiền hiện tại
-        self.payment_screen = PaymentWindow(self.totalLineEdit.text())
+
+        self.payment_screen = PaymentWindow(self.labelTB_2.text())
         self.payment_screen.show()
 
-    def call_staff(self):
-        QMessageBox.information(self.MainWindow, "Assistance", "Staff notified. We will be with you shortly!")
 
     def show(self):
         self.MainWindow.show()
 
     def open_self_custom(self):
-        # Khởi tạo và hiển thị cửa sổ custom
         self.custom_screen = SelfCustomWindow(self)
         self.custom_screen.show()
 
-    def open_feedback(self):
-        # Khởi tạo và hiển thị cửa sổ Feedback
-        self.fb_screen = FeedbackWindow()
-        self.fb_screen.show()
+    def show_about_us(self):
 
+        about_title = "✨ ABOUT MY NAIL SHOP ✨"
+
+
+        about_text = (
+            "<b>Vision:</b> <i>'Elevating Vietnamese Beauty Through Every Stroke'</i><br><br>"
+            "<b>Our Professional Team:</b><br>"
+            "• All technicians are <b>extensively trained</b> and certified by industry experts.<br>"
+            "• We stay ahead of the curve with the <b>latest global nail trends</b>.<br>"
+            "• Dedicated to providing meticulous service with <b>unmatched attention to detail</b>.<br><br>"
+            "<b>Our Commitment:</b><br>"
+            "• <b>100% Customer Satisfaction Guarantee</b>: Your happiness is our priority.<br>"
+            "• <b>Premium Quality</b>: We use only high-end, non-toxic, and eco-friendly products.<br>"
+            "• <b>Standard Hygiene</b>: A 5-star relaxing environment with sterilized equipment.<br><br>"
+            "<b>Contact Information:</b><br>"
+            "📍 Address: UEL University Village, Di An, Binh Duong.<br>"
+            "📞 Hotline: (+84) 123 456 789<br>"
+            "⏰ Hours: 08:00 AM - 09:00 PM (Daily)"
+        )
+
+        # Tạo một QMessageBox tùy chỉnh để điều chỉnh kích thước
+        msg = QtWidgets.QMessageBox(self.MainWindow)
+        msg.setWindowTitle("About Our Services")
+        msg.setTextFormat(QtCore.Qt.TextFormat.RichText)  # Cho phép dùng thẻ HTML (b, i, br) để nội dung đẹp hơn
+        msg.setText(about_title)
+        msg.setInformativeText(about_text)
+        msg.setStyleSheet("QLabel{ min-width: 500px; font-size: 13px; }")
+        msg.exec()
