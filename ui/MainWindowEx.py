@@ -1,10 +1,10 @@
-import sys
-from PyQt6.QtWidgets import QApplication, QMainWindow, QMessageBox, QTableWidgetItem, QScrollArea
-from PyQt6 import QtCore, QtWidgets
-from MainWindow import Ui_MainWindow
-from PaymentWindow import Ui_PaymentWindow
-from SelfCustomWindow import Ui_SelfCustomWindow
-from FeedbackWindow import Ui_RatingUI
+from PyQt6 import QtWidgets
+from PyQt6.QtWidgets import QMessageBox, QMainWindow, QScrollArea, QTableWidgetItem
+
+from ui.FeedbackWindow import Ui_RatingUI
+from ui.MainWindow import Ui_MainWindow
+from ui.PaymentWindow import Ui_PaymentWindow
+from ui.SelfCustomWindow import Ui_SelfCustomWindow
 
 
 class FeedbackWindow(QtWidgets.QWidget): # Thay QMainWindow bằng QWidget
