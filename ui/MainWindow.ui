@@ -2,16 +2,22 @@
 <ui version="4.0">
  <class>MainWindow</class>
  <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1505</width>
-    <height>1118</height>
+    <width>1430</width>
+    <height>934</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="styleSheet">
@@ -29,7 +35,9 @@
       <property name="styleSheet">
        <string notr="true">color: white;
 font-size: 14px;
-background-color:#AFCBF3;
+background-color:rgb(167, 212, 238);
+ border-radius: 20px;  /* Bo góc 15px */
+   
 </string>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_5">
@@ -239,48 +247,17 @@ border: 2px solid #ccc; /* Viền màu xám */
 background-color: white; /* Nền trắng */
 </string>
            </property>
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Plain</enum>
+           </property>
            <property name="text">
             <string/>
            </property>
-          </widget>
-          <widget class="QPushButton" name="buychocolatebalance_39">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>200</y>
-             <width>131</width>
-             <height>41</height>
-            </rect>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton {
-    background-color:#AFCBF3; /* Màu xanh nhạt chủ đạo bạn chọn */
-    color: #4A90E2; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */
-    border-radius: 12px;
-    padding: 10px;
-    font-size: 14px;
-    font-weight: bold;
-    font-family: &quot;Georgia&quot;;
-    border: 2px solid #A6C8FF; /* Viền xanh đậm hơn một chút để tạo khối */
-}
-
-QPushButton:hover {
-    background-color: #A6C8FF; /* Màu đậm hơn khi di chuột vào */
-    border: 2px solid #7FAFFF; /* Viền đậm hơn khi hover */
-    color: white; /* Chuyển chữ sang trắng để nổi bật */
-}
-
-QPushButton:pressed {
-    background-color: #7FAFFF; /* Màu đậm nhất khi nhấn giữ nút */
-    border: 2px solid #4A90E2;
-}</string>
-           </property>
-           <property name="text">
-            <string>Select Design</string>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</iconset>
+           <property name="scaledContents">
+            <bool>true</bool>
            </property>
           </widget>
           <widget class="QLabel" name="label_102">
@@ -302,20 +279,60 @@ QPushButton:pressed {
           <widget class="QLabel" name="imagecoffee_38">
            <property name="geometry">
             <rect>
-             <x>20</x>
+             <x>10</x>
              <y>10</y>
-             <width>111</width>
-             <height>131</height>
+             <width>131</width>
+             <height>151</height>
             </rect>
            </property>
            <property name="text">
             <string/>
            </property>
            <property name="pixmap">
-            <pixmap>../ex/ex85/images/ic_protection.png</pixmap>
+            <pixmap>../images/white.jpg</pixmap>
            </property>
            <property name="scaledContents">
             <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="buychocolatebalance_94">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>200</y>
+             <width>131</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color:rgb(167, 212, 238); /* Màu xanh nhạt chủ đạo bạn chọn */
+    color: white;
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: &quot;Georgia&quot;;
+    border: 2px solid rgb(67, 139, 196); /* Viền xanh đậm hơn một chút để tạo khối */
+}
+
+QPushButton:hover {
+    background-color: #A6C8FF; /* Màu đậm hơn khi di chuột vào */
+    border: 2px solid #7FAFFF; /* Viền đậm hơn khi hover */
+    color: white; /* Chuyển chữ sang trắng để nổi bật */
+}
+
+QPushButton:pressed {
+    background-color: #7FAFFF; /* Màu đậm nhất khi nhấn giữ nút */
+    border: 2px solid #4A90E2;
+}</string>
+           </property>
+           <property name="text">
+            <string>Select Design</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</iconset>
            </property>
           </widget>
          </widget>
@@ -341,46 +358,6 @@ background-color: white; /* Nền trắng */
             <string/>
            </property>
           </widget>
-          <widget class="QPushButton" name="buychocolatebalance_40">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>200</y>
-             <width>131</width>
-             <height>41</height>
-            </rect>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton {
-    background-color:#AFCBF3; /* Màu xanh nhạt chủ đạo bạn chọn */
-    color: #4A90E2; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */
-    border-radius: 12px;
-    padding: 10px;
-    font-size: 14px;
-    font-weight: bold;
-    font-family: &quot;Georgia&quot;;
-    border: 2px solid #A6C8FF; /* Viền xanh đậm hơn một chút để tạo khối */
-}
-
-QPushButton:hover {
-    background-color: #A6C8FF; /* Màu đậm hơn khi di chuột vào */
-    border: 2px solid #7FAFFF; /* Viền đậm hơn khi hover */
-    color: white; /* Chuyển chữ sang trắng để nổi bật */
-}
-
-QPushButton:pressed {
-    background-color: #7FAFFF; /* Màu đậm nhất khi nhấn giữ nút */
-    border: 2px solid #4A90E2;
-}</string>
-           </property>
-           <property name="text">
-            <string>Select Design</string>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</iconset>
-           </property>
-          </widget>
           <widget class="QLabel" name="label_104">
            <property name="geometry">
             <rect>
@@ -400,46 +377,26 @@ QPushButton:pressed {
           <widget class="QLabel" name="imagecoffee_39">
            <property name="geometry">
             <rect>
-             <x>20</x>
+             <x>10</x>
              <y>10</y>
-             <width>111</width>
-             <height>131</height>
+             <width>131</width>
+             <height>151</height>
             </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border-radius: 20px;</string>
            </property>
            <property name="text">
             <string/>
            </property>
            <property name="pixmap">
-            <pixmap>../ima/plus.png</pixmap>
+            <pixmap>../images/74bc4908e5697cb42af594c4713df14c.jpg</pixmap>
            </property>
            <property name="scaledContents">
             <bool>true</bool>
            </property>
           </widget>
-         </widget>
-        </item>
-        <item row="0" column="2">
-         <widget class="QWidget" name="widget_32" native="true">
-          <widget class="QLabel" name="label_105">
-           <property name="geometry">
-            <rect>
-             <x>0</x>
-             <y>0</y>
-             <width>151</width>
-             <height>171</height>
-            </rect>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">border-radius: 20px; /* Bo tròn góc */
-border: 2px solid #ccc; /* Viền màu xám */
-background-color: white; /* Nền trắng */
-</string>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-          </widget>
-          <widget class="QPushButton" name="buychocolatebalance_41">
+          <widget class="QPushButton" name="buychocolatebalance_95">
            <property name="geometry">
             <rect>
              <x>10</x>
@@ -450,14 +407,14 @@ background-color: white; /* Nền trắng */
            </property>
            <property name="styleSheet">
             <string notr="true">QPushButton {
-    background-color:#AFCBF3; /* Màu xanh nhạt chủ đạo bạn chọn */
-    color: #4A90E2; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */
+    background-color:rgb(167, 212, 238); /* Màu xanh nhạt chủ đạo bạn chọn */
+    color: white; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */
     border-radius: 12px;
     padding: 10px;
     font-size: 14px;
     font-weight: bold;
     font-family: &quot;Georgia&quot;;
-    border: 2px solid #A6C8FF; /* Viền xanh đậm hơn một chút để tạo khối */
+    border: 2px solid rgb(67, 139, 196); /* Viền xanh đậm hơn một chút để tạo khối */
 }
 
 QPushButton:hover {
@@ -477,41 +434,6 @@ QPushButton:pressed {
            <property name="icon">
             <iconset>
              <normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</iconset>
-           </property>
-          </widget>
-          <widget class="QLabel" name="label_106">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>170</y>
-             <width>141</width>
-             <height>31</height>
-            </rect>
-           </property>
-           <property name="styleSheet">
-            <string notr="true"> font-family: &quot;Georgia&quot;</string>
-           </property>
-           <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#040404;&quot;&gt;Chocolate Balance - 36$&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-           </property>
-          </widget>
-          <widget class="QLabel" name="imagecoffee_40">
-           <property name="geometry">
-            <rect>
-             <x>20</x>
-             <y>10</y>
-             <width>111</width>
-             <height>131</height>
-            </rect>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-           <property name="pixmap">
-            <pixmap>../ex/ex85/images/ic_protection.png</pixmap>
-           </property>
-           <property name="scaledContents">
-            <bool>true</bool>
            </property>
           </widget>
          </widget>
@@ -537,7 +459,42 @@ background-color: white; /* Nền trắng */
             <string/>
            </property>
           </widget>
-          <widget class="QPushButton" name="buychocolatebalance_42">
+          <widget class="QLabel" name="label_108">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>170</y>
+             <width>141</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"> font-family: &quot;Georgia&quot;</string>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#040404;&quot;&gt;Chocolate Balance - 36$&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="imagecoffee_41">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>131</width>
+             <height>151</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>../images/summer.jpg</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="buychocolatebalance_97">
            <property name="geometry">
             <rect>
              <x>10</x>
@@ -548,14 +505,14 @@ background-color: white; /* Nền trắng */
            </property>
            <property name="styleSheet">
             <string notr="true">QPushButton {
-    background-color:#AFCBF3; /* Màu xanh nhạt chủ đạo bạn chọn */
-    color: #4A90E2; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */
+    background-color:rgb(167, 212, 238); /* Màu xanh nhạt chủ đạo bạn chọn */
+    color: white; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */
     border-radius: 12px;
     padding: 10px;
     font-size: 14px;
     font-weight: bold;
     font-family: &quot;Georgia&quot;;
-    border: 2px solid #A6C8FF; /* Viền xanh đậm hơn một chút để tạo khối */
+    border: 2px solid rgb(67, 139, 196); /* Viền xanh đậm hơn một chút để tạo khối */
 }
 
 QPushButton:hover {
@@ -577,7 +534,30 @@ QPushButton:pressed {
              <normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</iconset>
            </property>
           </widget>
-          <widget class="QLabel" name="label_108">
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QWidget" name="widget_32" native="true">
+          <widget class="QLabel" name="label_105">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>151</width>
+             <height>171</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border-radius: 20px; /* Bo tròn góc */
+border: 2px solid #ccc; /* Viền màu xám */
+background-color: white; /* Nền trắng */
+</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_106">
            <property name="geometry">
             <rect>
              <x>10</x>
@@ -593,23 +573,66 @@ QPushButton:pressed {
             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#040404;&quot;&gt;Chocolate Balance - 36$&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
           </widget>
-          <widget class="QLabel" name="imagecoffee_41">
+          <widget class="QLabel" name="imagecoffee_40">
            <property name="geometry">
             <rect>
-             <x>20</x>
+             <x>10</x>
              <y>10</y>
-             <width>111</width>
-             <height>131</height>
+             <width>131</width>
+             <height>151</height>
             </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border-radius: 20px;</string>
            </property>
            <property name="text">
             <string/>
            </property>
            <property name="pixmap">
-            <pixmap>../ex/ex85/images/ic_protection.png</pixmap>
+            <pixmap>../images/76ff2c0e2bda87e3a7efbf02d3128c3d.jpg</pixmap>
            </property>
            <property name="scaledContents">
             <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="buychocolatebalance_96">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>200</y>
+             <width>131</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color:rgb(167, 212, 238); /* Màu xanh nhạt chủ đạo bạn chọn */
+    color: white; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: &quot;Georgia&quot;;
+    border: 2px solid rgb(67, 139, 196); /* Viền xanh đậm hơn một chút để tạo khối */
+}
+
+QPushButton:hover {
+    background-color: #A6C8FF; /* Màu đậm hơn khi di chuột vào */
+    border: 2px solid #7FAFFF; /* Viền đậm hơn khi hover */
+    color: white; /* Chuyển chữ sang trắng để nổi bật */
+}
+
+QPushButton:pressed {
+    background-color: #7FAFFF; /* Màu đậm nhất khi nhấn giữ nút */
+    border: 2px solid #4A90E2;
+}</string>
+           </property>
+           <property name="text">
+            <string>Select Design</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</iconset>
            </property>
           </widget>
          </widget>
@@ -635,46 +658,6 @@ background-color: white; /* Nền trắng */
             <string/>
            </property>
           </widget>
-          <widget class="QPushButton" name="buychocolatebalance_44">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>200</y>
-             <width>131</width>
-             <height>41</height>
-            </rect>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton {
-    background-color:#AFCBF3; /* Màu xanh nhạt chủ đạo bạn chọn */
-    color: #4A90E2; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */
-    border-radius: 12px;
-    padding: 10px;
-    font-size: 14px;
-    font-weight: bold;
-    font-family: &quot;Georgia&quot;;
-    border: 2px solid #A6C8FF; /* Viền xanh đậm hơn một chút để tạo khối */
-}
-
-QPushButton:hover {
-    background-color: #A6C8FF; /* Màu đậm hơn khi di chuột vào */
-    border: 2px solid #7FAFFF; /* Viền đậm hơn khi hover */
-    color: white; /* Chuyển chữ sang trắng để nổi bật */
-}
-
-QPushButton:pressed {
-    background-color: #7FAFFF; /* Màu đậm nhất khi nhấn giữ nút */
-    border: 2px solid #4A90E2;
-}</string>
-           </property>
-           <property name="text">
-            <string>Select Design</string>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</iconset>
-           </property>
-          </widget>
           <widget class="QLabel" name="label_112">
            <property name="geometry">
             <rect>
@@ -694,70 +677,41 @@ QPushButton:pressed {
           <widget class="QLabel" name="imagecoffee_43">
            <property name="geometry">
             <rect>
-             <x>20</x>
+             <x>10</x>
              <y>10</y>
-             <width>111</width>
-             <height>131</height>
+             <width>131</width>
+             <height>151</height>
             </rect>
            </property>
            <property name="text">
             <string/>
            </property>
            <property name="pixmap">
-            <pixmap>../ex/ex85/images/ic_protection.png</pixmap>
+            <pixmap>../images/32144f52e3fe45bba60a86e1a5218fb1.jpg</pixmap>
            </property>
            <property name="scaledContents">
             <bool>true</bool>
            </property>
           </widget>
-         </widget>
-        </item>
-        <item row="1" column="0">
-         <widget class="QWidget" name="widget_38" native="true">
-          <property name="maximumSize">
-           <size>
-            <width>180</width>
-            <height>250</height>
-           </size>
-          </property>
-          <widget class="QLabel" name="label_119">
-           <property name="geometry">
-            <rect>
-             <x>0</x>
-             <y>0</y>
-             <width>151</width>
-             <height>171</height>
-            </rect>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">border-radius: 20px; /* Bo tròn góc */
-border: 2px solid #ccc; /* Viền màu xám */
-background-color: white; /* Nền trắng */
-</string>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-          </widget>
-          <widget class="QPushButton" name="buychocolatebalance_48">
+          <widget class="QPushButton" name="buychocolatebalance_98">
            <property name="geometry">
             <rect>
              <x>10</x>
              <y>200</y>
-             <width>131</width>
+             <width>121</width>
              <height>41</height>
             </rect>
            </property>
            <property name="styleSheet">
             <string notr="true">QPushButton {
-    background-color:#AFCBF3; /* Màu xanh nhạt chủ đạo bạn chọn */
-    color: #4A90E2; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */
+    background-color:rgb(167, 212, 238); /* Màu xanh nhạt chủ đạo bạn chọn */
+    color: white; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */
     border-radius: 12px;
     padding: 10px;
     font-size: 14px;
     font-weight: bold;
     font-family: &quot;Georgia&quot;;
-    border: 2px solid #A6C8FF; /* Viền xanh đậm hơn một chút để tạo khối */
+    border: 2px solid rgb(67, 139, 196); /* Viền xanh đậm hơn một chút để tạo khối */
 }
 
 QPushButton:hover {
@@ -772,144 +726,11 @@ QPushButton:pressed {
 }</string>
            </property>
            <property name="text">
-            <string>Select Design</string>
+            <string>Self-custom</string>
            </property>
            <property name="icon">
             <iconset>
              <normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</iconset>
-           </property>
-          </widget>
-          <widget class="QLabel" name="label_120">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>170</y>
-             <width>141</width>
-             <height>31</height>
-            </rect>
-           </property>
-           <property name="styleSheet">
-            <string notr="true"> font-family: &quot;Georgia&quot;</string>
-           </property>
-           <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#040404;&quot;&gt;Chocolate Balance - 36$&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-           </property>
-          </widget>
-          <widget class="QLabel" name="imagecoffee_47">
-           <property name="geometry">
-            <rect>
-             <x>20</x>
-             <y>10</y>
-             <width>111</width>
-             <height>131</height>
-            </rect>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-           <property name="pixmap">
-            <pixmap>../ex/ex85/images/ic_protection.png</pixmap>
-           </property>
-           <property name="scaledContents">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </widget>
-        </item>
-        <item row="1" column="1">
-         <widget class="QWidget" name="widget_36" native="true">
-          <widget class="QLabel" name="label_115">
-           <property name="geometry">
-            <rect>
-             <x>0</x>
-             <y>0</y>
-             <width>151</width>
-             <height>171</height>
-            </rect>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">border-radius: 20px; /* Bo tròn góc */
-border: 2px solid #ccc; /* Viền màu xám */
-background-color: white; /* Nền trắng */
-</string>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-          </widget>
-          <widget class="QPushButton" name="buychocolatebalance_46">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>200</y>
-             <width>131</width>
-             <height>41</height>
-            </rect>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton {
-    background-color:#AFCBF3; /* Màu xanh nhạt chủ đạo bạn chọn */
-    color: #4A90E2; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */
-    border-radius: 12px;
-    padding: 10px;
-    font-size: 14px;
-    font-weight: bold;
-    font-family: &quot;Georgia&quot;;
-    border: 2px solid #A6C8FF; /* Viền xanh đậm hơn một chút để tạo khối */
-}
-
-QPushButton:hover {
-    background-color: #A6C8FF; /* Màu đậm hơn khi di chuột vào */
-    border: 2px solid #7FAFFF; /* Viền đậm hơn khi hover */
-    color: white; /* Chuyển chữ sang trắng để nổi bật */
-}
-
-QPushButton:pressed {
-    background-color: #7FAFFF; /* Màu đậm nhất khi nhấn giữ nút */
-    border: 2px solid #4A90E2;
-}</string>
-           </property>
-           <property name="text">
-            <string>Select Design</string>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</iconset>
-           </property>
-          </widget>
-          <widget class="QLabel" name="label_116">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>170</y>
-             <width>141</width>
-             <height>31</height>
-            </rect>
-           </property>
-           <property name="styleSheet">
-            <string notr="true"> font-family: &quot;Georgia&quot;</string>
-           </property>
-           <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#040404;&quot;&gt;Chocolate Balance - 36$&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-           </property>
-          </widget>
-          <widget class="QLabel" name="imagecoffee_45">
-           <property name="geometry">
-            <rect>
-             <x>20</x>
-             <y>10</y>
-             <width>111</width>
-             <height>131</height>
-            </rect>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-           <property name="pixmap">
-            <pixmap>../ex/ex85/images/ic_protection.png</pixmap>
-           </property>
-           <property name="scaledContents">
-            <bool>true</bool>
            </property>
           </widget>
          </widget>
@@ -935,46 +756,6 @@ background-color: white; /* Nền trắng */
             <string/>
            </property>
           </widget>
-          <widget class="QPushButton" name="buychocolatebalance_49">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>200</y>
-             <width>131</width>
-             <height>41</height>
-            </rect>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton {
-    background-color:#AFCBF3; /* Màu xanh nhạt chủ đạo bạn chọn */
-    color: #4A90E2; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */
-    border-radius: 12px;
-    padding: 10px;
-    font-size: 14px;
-    font-weight: bold;
-    font-family: &quot;Georgia&quot;;
-    border: 2px solid #A6C8FF; /* Viền xanh đậm hơn một chút để tạo khối */
-}
-
-QPushButton:hover {
-    background-color: #A6C8FF; /* Màu đậm hơn khi di chuột vào */
-    border: 2px solid #7FAFFF; /* Viền đậm hơn khi hover */
-    color: white; /* Chuyển chữ sang trắng để nổi bật */
-}
-
-QPushButton:pressed {
-    background-color: #7FAFFF; /* Màu đậm nhất khi nhấn giữ nút */
-    border: 2px solid #4A90E2;
-}</string>
-           </property>
-           <property name="text">
-            <string>Select Design</string>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</iconset>
-           </property>
-          </widget>
           <widget class="QLabel" name="label_122">
            <property name="geometry">
             <rect>
@@ -994,46 +775,23 @@ QPushButton:pressed {
           <widget class="QLabel" name="imagecoffee_48">
            <property name="geometry">
             <rect>
-             <x>20</x>
+             <x>10</x>
              <y>10</y>
-             <width>111</width>
-             <height>131</height>
+             <width>131</width>
+             <height>151</height>
             </rect>
            </property>
            <property name="text">
             <string/>
            </property>
            <property name="pixmap">
-            <pixmap>../ex/ex85/images/ic_protection.png</pixmap>
+            <pixmap>../images/greenlake.jpg</pixmap>
            </property>
            <property name="scaledContents">
             <bool>true</bool>
            </property>
           </widget>
-         </widget>
-        </item>
-        <item row="1" column="3">
-         <widget class="QWidget" name="widget_37" native="true">
-          <widget class="QLabel" name="label_117">
-           <property name="geometry">
-            <rect>
-             <x>0</x>
-             <y>0</y>
-             <width>151</width>
-             <height>171</height>
-            </rect>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">border-radius: 20px; /* Bo tròn góc */
-border: 2px solid #ccc; /* Viền màu xám */
-background-color: white; /* Nền trắng */
-</string>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-          </widget>
-          <widget class="QPushButton" name="buychocolatebalance_47">
+          <widget class="QPushButton" name="buychocolatebalance_92">
            <property name="geometry">
             <rect>
              <x>10</x>
@@ -1044,14 +802,14 @@ background-color: white; /* Nền trắng */
            </property>
            <property name="styleSheet">
             <string notr="true">QPushButton {
-    background-color:#AFCBF3; /* Màu xanh nhạt chủ đạo bạn chọn */
-    color: #4A90E2; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */
+    background-color:rgb(167, 212, 238); /* Màu xanh nhạt chủ đạo bạn chọn */
+    color: White; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */
     border-radius: 12px;
     padding: 10px;
     font-size: 14px;
     font-weight: bold;
     font-family: &quot;Georgia&quot;;
-    border: 2px solid #A6C8FF; /* Viền xanh đậm hơn một chút để tạo khối */
+    border: 2px solid rgb(67, 139, 196); /* Viền xanh đậm hơn một chút để tạo khối */
 }
 
 QPushButton:hover {
@@ -1073,7 +831,30 @@ QPushButton:pressed {
              <normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</iconset>
            </property>
           </widget>
-          <widget class="QLabel" name="label_118">
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QWidget" name="widget_36" native="true">
+          <widget class="QLabel" name="label_115">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>151</width>
+             <height>171</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border-radius: 20px; /* Bo tròn góc */
+border: 2px solid #ccc; /* Viền màu xám */
+background-color: white; /* Nền trắng */
+</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_116">
            <property name="geometry">
             <rect>
              <x>10</x>
@@ -1089,23 +870,299 @@ QPushButton:pressed {
             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#040404;&quot;&gt;Chocolate Balance - 36$&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
           </widget>
-          <widget class="QLabel" name="imagecoffee_46">
+          <widget class="QLabel" name="imagecoffee_45">
            <property name="geometry">
             <rect>
-             <x>20</x>
+             <x>10</x>
              <y>10</y>
-             <width>111</width>
-             <height>131</height>
+             <width>131</width>
+             <height>151</height>
             </rect>
            </property>
            <property name="text">
             <string/>
            </property>
            <property name="pixmap">
-            <pixmap>../ex/ex85/images/ic_protection.png</pixmap>
+            <pixmap>../images/Fleur.jpg</pixmap>
            </property>
            <property name="scaledContents">
             <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="buychocolatebalance_91">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>200</y>
+             <width>131</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color:rgb(167, 212, 238); /* Màu xanh nhạt chủ đạo bạn chọn */
+    color: White; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: &quot;Georgia&quot;;
+    border: 2px solid rgb(67, 139, 196); /* Viền xanh đậm hơn một chút để tạo khối */
+}
+
+QPushButton:hover {
+    background-color: #A6C8FF; /* Màu đậm hơn khi di chuột vào */
+    border: 2px solid #7FAFFF; /* Viền đậm hơn khi hover */
+    color: white; /* Chuyển chữ sang trắng để nổi bật */
+}
+
+QPushButton:pressed {
+    background-color: #7FAFFF; /* Màu đậm nhất khi nhấn giữ nút */
+    border: 2px solid #4A90E2;
+}</string>
+           </property>
+           <property name="text">
+            <string>Select Design</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</iconset>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QWidget" name="widget_65" native="true">
+          <widget class="QLabel" name="label_187">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>151</width>
+             <height>171</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border-radius: 20px; /* Bo tròn góc */
+border: 2px solid #ccc; /* Viền màu xám */
+background-color: white; /* Nền trắng */
+</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_188">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>170</y>
+             <width>141</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"> font-family: &quot;Georgia&quot;</string>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#040404;&quot;&gt;Chocolate Balance - 36$&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="imagecoffee_81">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>131</width>
+             <height>151</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>../images/39ba71c2622a3e6d476b86f6882a987a.jpg</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="buychocolatebalance_84">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>200</y>
+             <width>141</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color:rgb(167, 212, 238); /* Màu xanh nhạt chủ đạo bạn chọn */
+    color: White; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: &quot;Georgia&quot;;
+    border: 2px solid rgb(67, 139, 196); /* Viền xanh đậm hơn một chút để tạo khối */
+}
+
+QPushButton:hover {
+    background-color: #A6C8FF; /* Màu đậm hơn khi di chuột vào */
+    border: 2px solid #7FAFFF; /* Viền đậm hơn khi hover */
+    color: white; /* Chuyển chữ sang trắng để nổi bật */
+}
+
+QPushButton:pressed {
+    background-color: #7FAFFF; /* Màu đậm nhất khi nhấn giữ nút */
+    border: 2px solid #4A90E2;
+}</string>
+           </property>
+           <property name="text">
+            <string>Select Design</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</iconset>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="buychocolatebalance_80">
+           <property name="geometry">
+            <rect>
+             <x>226</x>
+             <y>200</y>
+             <width>121</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color:rgb(167, 212, 238); /* Màu xanh nhạt chủ đạo bạn chọn */
+    color: #4A90E2; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: &quot;Georgia&quot;;
+    border: 2px solid rgb(67, 139, 196); /* Viền xanh đậm hơn một chút để tạo khối */
+}
+
+QPushButton:hover {
+    background-color: #A6C8FF; /* Màu đậm hơn khi di chuột vào */
+    border: 2px solid #7FAFFF; /* Viền đậm hơn khi hover */
+    color: white; /* Chuyển chữ sang trắng để nổi bật */
+}
+
+QPushButton:pressed {
+    background-color: #7FAFFF; /* Màu đậm nhất khi nhấn giữ nút */
+    border: 2px solid #4A90E2;
+}</string>
+           </property>
+           <property name="text">
+            <string>Self-custom</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</iconset>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QWidget" name="widget_64" native="true">
+          <widget class="QLabel" name="label_185">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>151</width>
+             <height>171</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border-radius: 20px; /* Bo tròn góc */
+border: 2px solid #ccc; /* Viền màu xám */
+background-color: white; /* Nền trắng */
+</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_186">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>170</y>
+             <width>141</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"> font-family: &quot;Georgia&quot;</string>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#040404;&quot;&gt;Chocolate Balance - 36$&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="imagecoffee_80">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>131</width>
+             <height>151</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>../images/36389bc3ef476ddec430aa38c7c1b41a.jpg</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="buychocolatebalance_85">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>200</y>
+             <width>131</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color:rgb(167, 212, 238); /* Màu xanh nhạt chủ đạo bạn chọn */
+    color: White; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: &quot;Georgia&quot;;
+    border: 2px solid rgb(67, 139, 196); /* Viền xanh đậm hơn một chút để tạo khối */
+}
+
+QPushButton:hover {
+    background-color: #A6C8FF; /* Màu đậm hơn khi di chuột vào */
+    border: 2px solid #7FAFFF; /* Viền đậm hơn khi hover */
+    color: white; /* Chuyển chữ sang trắng để nổi bật */
+}
+
+QPushButton:pressed {
+    background-color: #7FAFFF; /* Màu đậm nhất khi nhấn giữ nút */
+    border: 2px solid #4A90E2;
+}</string>
+           </property>
+           <property name="text">
+            <string>Select Design</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</iconset>
            </property>
           </widget>
          </widget>
@@ -1131,7 +1188,42 @@ background-color: white; /* Nền trắng */
             <string/>
            </property>
           </widget>
-          <widget class="QPushButton" name="buychocolatebalance_45">
+          <widget class="QLabel" name="label_114">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>170</y>
+             <width>141</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"> font-family: &quot;Georgia&quot;</string>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#040404;&quot;&gt;Chocolate Balance - 36$&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="imagecoffee_44">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>131</width>
+             <height>151</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>../images/snowman.jpg</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="buychocolatebalance_99">
            <property name="geometry">
             <rect>
              <x>10</x>
@@ -1142,14 +1234,14 @@ background-color: white; /* Nền trắng */
            </property>
            <property name="styleSheet">
             <string notr="true">QPushButton {
-    background-color:#AFCBF3; /* Màu xanh nhạt chủ đạo bạn chọn */
-    color: #4A90E2; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */
+    background-color:rgb(167, 212, 238); /* Màu xanh nhạt chủ đạo bạn chọn */
+    color: White; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */
     border-radius: 12px;
     padding: 10px;
     font-size: 14px;
     font-weight: bold;
     font-family: &quot;Georgia&quot;;
-    border: 2px solid #A6C8FF; /* Viền xanh đậm hơn một chút để tạo khối */
+    border: 2px solid rgb(67, 139, 196); /* Viền xanh đậm hơn một chút để tạo khối */
 }
 
 QPushButton:hover {
@@ -1171,7 +1263,30 @@ QPushButton:pressed {
              <normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</iconset>
            </property>
           </widget>
-          <widget class="QLabel" name="label_114">
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QWidget" name="widget_37" native="true">
+          <widget class="QLabel" name="label_117">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>151</width>
+             <height>171</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border-radius: 20px; /* Bo tròn góc */
+border: 2px solid #ccc; /* Viền màu xám */
+background-color: white; /* Nền trắng */
+</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_118">
            <property name="geometry">
             <rect>
              <x>10</x>
@@ -1187,23 +1302,63 @@ QPushButton:pressed {
             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#040404;&quot;&gt;Chocolate Balance - 36$&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
           </widget>
-          <widget class="QLabel" name="imagecoffee_44">
+          <widget class="QLabel" name="imagecoffee_46">
            <property name="geometry">
             <rect>
-             <x>20</x>
+             <x>10</x>
              <y>10</y>
-             <width>111</width>
-             <height>131</height>
+             <width>131</width>
+             <height>151</height>
             </rect>
            </property>
            <property name="text">
             <string/>
            </property>
            <property name="pixmap">
-            <pixmap>../ex/ex85/images/ic_protection.png</pixmap>
+            <pixmap>../images/yellowsummer.jpg</pixmap>
            </property>
            <property name="scaledContents">
             <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="buychocolatebalance_93">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>200</y>
+             <width>131</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color:rgb(167, 212, 238); /* Màu xanh nhạt chủ đạo bạn chọn */
+    color: White; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: &quot;Georgia&quot;;
+    border: 2px solid rgb(67, 139, 196); /* Viền xanh đậm hơn một chút để tạo khối */
+}
+
+QPushButton:hover {
+    background-color: #A6C8FF; /* Màu đậm hơn khi di chuột vào */
+    border: 2px solid #7FAFFF; /* Viền đậm hơn khi hover */
+    color: white; /* Chuyển chữ sang trắng để nổi bật */
+}
+
+QPushButton:pressed {
+    background-color: #7FAFFF; /* Màu đậm nhất khi nhấn giữ nút */
+    border: 2px solid #4A90E2;
+}</string>
+           </property>
+           <property name="text">
+            <string>Select Design</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</iconset>
            </property>
           </widget>
          </widget>
@@ -1235,46 +1390,6 @@ background-color: white; /* Nền trắng */
             <string/>
            </property>
           </widget>
-          <widget class="QPushButton" name="buychocolatebalance_80">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>200</y>
-             <width>131</width>
-             <height>41</height>
-            </rect>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton {
-    background-color:#AFCBF3; /* Màu xanh nhạt chủ đạo bạn chọn */
-    color: #4A90E2; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */
-    border-radius: 12px;
-    padding: 10px;
-    font-size: 14px;
-    font-weight: bold;
-    font-family: &quot;Georgia&quot;;
-    border: 2px solid #A6C8FF; /* Viền xanh đậm hơn một chút để tạo khối */
-}
-
-QPushButton:hover {
-    background-color: #A6C8FF; /* Màu đậm hơn khi di chuột vào */
-    border: 2px solid #7FAFFF; /* Viền đậm hơn khi hover */
-    color: white; /* Chuyển chữ sang trắng để nổi bật */
-}
-
-QPushButton:pressed {
-    background-color: #7FAFFF; /* Màu đậm nhất khi nhấn giữ nút */
-    border: 2px solid #4A90E2;
-}</string>
-           </property>
-           <property name="text">
-            <string>Select Design</string>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</iconset>
-           </property>
-          </widget>
           <widget class="QLabel" name="label_184">
            <property name="geometry">
             <rect>
@@ -1294,49 +1409,26 @@ QPushButton:pressed {
           <widget class="QLabel" name="imagecoffee_79">
            <property name="geometry">
             <rect>
-             <x>20</x>
+             <x>10</x>
              <y>10</y>
-             <width>111</width>
-             <height>131</height>
+             <width>131</width>
+             <height>151</height>
             </rect>
            </property>
            <property name="text">
             <string/>
            </property>
            <property name="pixmap">
-            <pixmap>../ex/ex85/images/ic_protection.png</pixmap>
+            <pixmap>../images/a13d710c6e412c6e53965f8b65aeac70.jpg</pixmap>
            </property>
            <property name="scaledContents">
             <bool>true</bool>
            </property>
           </widget>
-         </widget>
-        </item>
-        <item row="2" column="1">
-         <widget class="QWidget" name="widget_65" native="true">
-          <widget class="QLabel" name="label_187">
+          <widget class="QPushButton" name="buychocolatebalance_89">
            <property name="geometry">
             <rect>
-             <x>0</x>
-             <y>0</y>
-             <width>151</width>
-             <height>171</height>
-            </rect>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">border-radius: 20px; /* Bo tròn góc */
-border: 2px solid #ccc; /* Viền màu xám */
-background-color: white; /* Nền trắng */
-</string>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-          </widget>
-          <widget class="QPushButton" name="buychocolatebalance_82">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
+             <x>20</x>
              <y>200</y>
              <width>131</width>
              <height>41</height>
@@ -1344,14 +1436,14 @@ background-color: white; /* Nền trắng */
            </property>
            <property name="styleSheet">
             <string notr="true">QPushButton {
-    background-color:#AFCBF3; /* Màu xanh nhạt chủ đạo bạn chọn */
+    background-color:rgb(167, 212, 238); /* Màu xanh nhạt chủ đạo bạn chọn */
     color: #4A90E2; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */
     border-radius: 12px;
     padding: 10px;
     font-size: 14px;
     font-weight: bold;
     font-family: &quot;Georgia&quot;;
-    border: 2px solid #A6C8FF; /* Viền xanh đậm hơn một chút để tạo khối */
+    border: 2px solid rgb(67, 139, 196); /* Viền xanh đậm hơn một chút để tạo khối */
 }
 
 QPushButton:hover {
@@ -1373,46 +1465,11 @@ QPushButton:pressed {
              <normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</iconset>
            </property>
           </widget>
-          <widget class="QLabel" name="label_188">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>170</y>
-             <width>141</width>
-             <height>31</height>
-            </rect>
-           </property>
-           <property name="styleSheet">
-            <string notr="true"> font-family: &quot;Georgia&quot;</string>
-           </property>
-           <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#040404;&quot;&gt;Chocolate Balance - 36$&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-           </property>
-          </widget>
-          <widget class="QLabel" name="imagecoffee_81">
-           <property name="geometry">
-            <rect>
-             <x>20</x>
-             <y>10</y>
-             <width>111</width>
-             <height>131</height>
-            </rect>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-           <property name="pixmap">
-            <pixmap>../ex/ex85/images/ic_protection.png</pixmap>
-           </property>
-           <property name="scaledContents">
-            <bool>true</bool>
-           </property>
-          </widget>
          </widget>
         </item>
-        <item row="2" column="2">
-         <widget class="QWidget" name="widget_64" native="true">
-          <widget class="QLabel" name="label_185">
+        <item row="2" column="4">
+         <widget class="QWidget" name="widget_62" native="true">
+          <widget class="QLabel" name="label_181">
            <property name="geometry">
             <rect>
              <x>0</x>
@@ -1430,26 +1487,29 @@ background-color: white; /* Nền trắng */
            <property name="text">
             <string/>
            </property>
+           <property name="pixmap">
+            <pixmap>../images/plus.png</pixmap>
+           </property>
           </widget>
-          <widget class="QPushButton" name="buychocolatebalance_81">
+          <widget class="QPushButton" name="buychocolatebalance_79">
            <property name="geometry">
             <rect>
              <x>10</x>
              <y>200</y>
-             <width>131</width>
+             <width>121</width>
              <height>41</height>
             </rect>
            </property>
            <property name="styleSheet">
             <string notr="true">QPushButton {
-    background-color:#AFCBF3; /* Màu xanh nhạt chủ đạo bạn chọn */
-    color: #4A90E2; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */
+    background-color:rgb(167, 212, 238); /* Màu xanh nhạt chủ đạo bạn chọn */
+    color: White; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */
     border-radius: 12px;
     padding: 10px;
     font-size: 14px;
     font-weight: bold;
     font-family: &quot;Georgia&quot;;
-    border: 2px solid #A6C8FF; /* Viền xanh đậm hơn một chút để tạo khối */
+    border: 2px solid rgb(67, 139, 196); /* Viền xanh đậm hơn một chút để tạo khối */
 }
 
 QPushButton:hover {
@@ -1464,43 +1524,27 @@ QPushButton:pressed {
 }</string>
            </property>
            <property name="text">
-            <string>Select Design</string>
+            <string>Self-custom</string>
            </property>
            <property name="icon">
             <iconset>
              <normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</iconset>
            </property>
           </widget>
-          <widget class="QLabel" name="label_186">
+          <widget class="QLabel" name="imagecoffee_78">
            <property name="geometry">
             <rect>
              <x>10</x>
-             <y>170</y>
-             <width>141</width>
-             <height>31</height>
-            </rect>
-           </property>
-           <property name="styleSheet">
-            <string notr="true"> font-family: &quot;Georgia&quot;</string>
-           </property>
-           <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#040404;&quot;&gt;Chocolate Balance - 36$&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-           </property>
-          </widget>
-          <widget class="QLabel" name="imagecoffee_80">
-           <property name="geometry">
-            <rect>
-             <x>20</x>
              <y>10</y>
-             <width>111</width>
-             <height>131</height>
+             <width>131</width>
+             <height>151</height>
             </rect>
            </property>
            <property name="text">
             <string/>
            </property>
            <property name="pixmap">
-            <pixmap>../ex/ex85/images/ic_protection.png</pixmap>
+            <pixmap>../images/plus.png</pixmap>
            </property>
            <property name="scaledContents">
             <bool>true</bool>
@@ -1529,6 +1573,41 @@ background-color: white; /* Nền trắng */
             <string/>
            </property>
           </widget>
+          <widget class="QLabel" name="label_190">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>170</y>
+             <width>141</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"> font-family: &quot;Georgia&quot;</string>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#040404;&quot;&gt;Chocolate Balance - 36$&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="imagecoffee_82">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>131</width>
+             <height>151</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>../images/dc6567ac1f25b987742d46805f5e074a.jpg</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
           <widget class="QPushButton" name="buychocolatebalance_83">
            <property name="geometry">
             <rect>
@@ -1540,14 +1619,14 @@ background-color: white; /* Nền trắng */
            </property>
            <property name="styleSheet">
             <string notr="true">QPushButton {
-    background-color:#AFCBF3; /* Màu xanh nhạt chủ đạo bạn chọn */
-    color: #4A90E2; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */
+    background-color:rgb(167, 212, 238); /* Màu xanh nhạt chủ đạo bạn chọn */
+    color: White; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */
     border-radius: 12px;
     padding: 10px;
     font-size: 14px;
     font-weight: bold;
     font-family: &quot;Georgia&quot;;
-    border: 2px solid #A6C8FF; /* Viền xanh đậm hơn một chút để tạo khối */
+    border: 2px solid rgb(67, 139, 196); /* Viền xanh đậm hơn một chút để tạo khối */
 }
 
 QPushButton:hover {
@@ -1569,46 +1648,17 @@ QPushButton:pressed {
              <normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</iconset>
            </property>
           </widget>
-          <widget class="QLabel" name="label_190">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>170</y>
-             <width>141</width>
-             <height>31</height>
-            </rect>
-           </property>
-           <property name="styleSheet">
-            <string notr="true"> font-family: &quot;Georgia&quot;</string>
-           </property>
-           <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#040404;&quot;&gt;Chocolate Balance - 36$&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-           </property>
-          </widget>
-          <widget class="QLabel" name="imagecoffee_82">
-           <property name="geometry">
-            <rect>
-             <x>20</x>
-             <y>10</y>
-             <width>111</width>
-             <height>131</height>
-            </rect>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-           <property name="pixmap">
-            <pixmap>../ex/ex85/images/ic_protection.png</pixmap>
-           </property>
-           <property name="scaledContents">
-            <bool>true</bool>
-           </property>
-          </widget>
          </widget>
         </item>
-        <item row="2" column="4">
-         <widget class="QWidget" name="widget_62" native="true">
-          <widget class="QLabel" name="label_181">
+        <item row="1" column="0">
+         <widget class="QWidget" name="widget_38" native="true">
+          <property name="maximumSize">
+           <size>
+            <width>180</width>
+            <height>250</height>
+           </size>
+          </property>
+          <widget class="QLabel" name="label_119">
            <property name="geometry">
             <rect>
              <x>0</x>
@@ -1627,25 +1677,60 @@ background-color: white; /* Nền trắng */
             <string/>
            </property>
           </widget>
-          <widget class="QPushButton" name="buychocolatebalance_79">
+          <widget class="QLabel" name="label_120">
            <property name="geometry">
             <rect>
-             <x>20</x>
+             <x>10</x>
+             <y>170</y>
+             <width>141</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"> font-family: &quot;Georgia&quot;</string>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#040404;&quot;&gt;Chocolate Balance - 36$&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="imagecoffee_47">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>131</width>
+             <height>151</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>../images/d60f12a16546fd232f3419e0b35493ae.jpg</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="buychocolatebalance_90">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
              <y>200</y>
-             <width>121</width>
+             <width>131</width>
              <height>41</height>
             </rect>
            </property>
            <property name="styleSheet">
             <string notr="true">QPushButton {
-    background-color:#AFCBF3; /* Màu xanh nhạt chủ đạo bạn chọn */
-    color: #4A90E2; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */
+    background-color:rgb(167, 212, 238); /* Màu xanh nhạt chủ đạo bạn chọn */
+    color: White; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */
     border-radius: 12px;
     padding: 10px;
     font-size: 14px;
     font-weight: bold;
     font-family: &quot;Georgia&quot;;
-    border: 2px solid #A6C8FF; /* Viền xanh đậm hơn một chút để tạo khối */
+    border: 2px solid rgb(67, 139, 196); /* Viền xanh đậm hơn một chút để tạo khối */
 }
 
 QPushButton:hover {
@@ -1660,49 +1745,11 @@ QPushButton:pressed {
 }</string>
            </property>
            <property name="text">
-            <string>Self-custom</string>
+            <string>Select Design</string>
            </property>
            <property name="icon">
             <iconset>
              <normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</iconset>
-           </property>
-          </widget>
-          <widget class="QLabel" name="imagecoffee_78">
-           <property name="geometry">
-            <rect>
-             <x>40</x>
-             <y>40</y>
-             <width>71</width>
-             <height>81</height>
-            </rect>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-           <property name="pixmap">
-            <pixmap>ima/plus.png</pixmap>
-           </property>
-           <property name="scaledContents">
-            <bool>true</bool>
-           </property>
-          </widget>
-          <widget class="QLabel" name="imagecoffee_42">
-           <property name="geometry">
-            <rect>
-             <x>50</x>
-             <y>60</y>
-             <width>61</width>
-             <height>61</height>
-            </rect>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-           <property name="pixmap">
-            <pixmap>../ima/add.png</pixmap>
-           </property>
-           <property name="scaledContents">
-            <bool>true</bool>
            </property>
           </widget>
          </widget>
@@ -1739,31 +1786,42 @@ QPushButton:pressed {
           </property>
           <property name="styleSheet">
            <string notr="true">QTableWidget {
-    background-color: #F0F7FF; /* Màu xanh cực nhạt để làm nền bảng */
-    alternate-background-color: #E1EFFF; /* Màu xen kẽ để dễ nhìn dòng */
+    background-color: #e6f4fa;
+    alternate-background-color: #E1EFFF;
     font-family: &quot;Georgia&quot;;
     font-size: 14px;
-    gridline-color: #CFE4FF; /* Đường kẻ bảng trùng màu chủ đạo */
-    border: 1px solid #A6C8FF;
-    color: #333333;
+    gridline-color: #CFE4FF;
+
+    border: 2px solid #A6C8FF;
+    border-radius: 20px;
 }
 
-QTableWidget::item {
-    padding: 5px;
+/* Header container */
+QHeaderView {
+    background: transparent;
 }
 
-/* Chỉnh màu cho thanh tiêu đề (Items, Quantity, Price) */
+/* Header cells */
 QHeaderView::section {
-    background-color: #CFE4FF; /* Màu xanh chủ đạo cho tiêu đề */
-    color: #0D3B66; /* Chữ xanh đậm cho rõ ràng */
+    background-color: #e6f4fa;
+    color: #0D3B66;
     font-weight: bold;
     font-family: &quot;Georgia&quot;;
-    border: 1px solid #A6C8FF;
-    height: 30px;
+    height: 32px;
+
+    border: none;              /* bỏ border để không lệch */
+    border-bottom: 1px solid #A6C8FF;
 }
 
-QPushButton:hover {
-    color: #0D3B66; /* Màu xanh đậm hơn khi di chuột qua để tạo điểm nhấn */}</string>
+/* bo góc trái */
+QHeaderView::section:first {
+    border-top-left-radius: 20px;
+}
+
+/* bo góc phải */
+QHeaderView::section:last {
+    border-top-right-radius: 20px;
+}</string>
           </property>
           <attribute name="horizontalHeaderDefaultSectionSize">
            <number>130</number>
@@ -1870,7 +1928,7 @@ border: 1px solid black;</string>
            </property>
            <property name="icon">
             <iconset>
-             <normaloff>../../images/7479650_literature_literature review_search_find_read_icon.png</normaloff>../../images/7479650_literature_literature review_search_find_read_icon.png</iconset>
+             <normaloff>../images/search.png</normaloff>../images/search.png</iconset>
            </property>
            <property name="iconSize">
             <size>
@@ -1997,14 +2055,14 @@ color: rgb(9, 9, 9);
              </property>
              <property name="styleSheet">
               <string notr="true">QPushButton {
-    background-color:#AFCBF3; /* Màu xanh nhạt chủ đạo bạn chọn */
+    background-color:rgb(167, 212, 238); /* Màu xanh nhạt chủ đạo bạn chọn */
     color: #4A90E2; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */
     border-radius: 12px;
     padding: 10px;
     font-size: 14px;
     font-weight: bold;
     font-family: &quot;Georgia&quot;;
-    border: 2px solid #A6C8FF; /* Viền xanh đậm hơn một chút để tạo khối */
+    border: 2px solid rgb(67, 139, 196); /* Viền xanh đậm hơn một chút để tạo khối */
 }
 
 QPushButton:hover {
@@ -2023,7 +2081,7 @@ QPushButton:pressed {
              </property>
              <property name="icon">
               <iconset>
-               <normaloff>../images/2987779_coffee_cup_drink_icon.png</normaloff>../images/2987779_coffee_cup_drink_icon.png</iconset>
+               <normaloff>../images/7007504_payment_bill_invoice_receipt_business_icon.png</normaloff>../images/7007504_payment_bill_invoice_receipt_business_icon.png</iconset>
              </property>
              <property name="iconSize">
               <size>
@@ -2040,14 +2098,14 @@ QPushButton:pressed {
              </property>
              <property name="styleSheet">
               <string notr="true">QPushButton {
-    background-color:#AFCBF3; /* Màu xanh nhạt chủ đạo bạn chọn */
+    background-color:rgb(167, 212, 238); /* Màu xanh nhạt chủ đạo bạn chọn */
     color: #4A90E2; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */
     border-radius: 12px;
     padding: 10px;
     font-size: 14px;
     font-weight: bold;
     font-family: &quot;Georgia&quot;;
-    border: 2px solid #A6C8FF; /* Viền xanh đậm hơn một chút để tạo khối */
+    border: 2px solid rgb(67, 139, 196); /* Viền xanh đậm hơn một chút để tạo khối */
 }
 
 QPushButton:hover {
@@ -2066,7 +2124,7 @@ QPushButton:pressed {
              </property>
              <property name="icon">
               <iconset>
-               <normaloff>../images/2987779_coffee_cup_drink_icon.png</normaloff>../images/2987779_coffee_cup_drink_icon.png</iconset>
+               <normaloff>../images/ic_remove.png</normaloff>../images/ic_remove.png</iconset>
              </property>
              <property name="iconSize">
               <size>
@@ -2083,14 +2141,14 @@ QPushButton:pressed {
              </property>
              <property name="styleSheet">
               <string notr="true">QPushButton {
-    background-color:#AFCBF3; /* Màu xanh nhạt chủ đạo bạn chọn */
+    background-color:rgb(167, 212, 238); /* Màu xanh nhạt chủ đạo bạn chọn */
     color: #4A90E2; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */
     border-radius: 12px;
     padding: 10px;
     font-size: 14px;
     font-weight: bold;
     font-family: &quot;Georgia&quot;;
-    border: 2px solid #A6C8FF; /* Viền xanh đậm hơn một chút để tạo khối */
+    border: 2px solid rgb(67, 139, 196); /* Viền xanh đậm hơn một chút để tạo khối */
 }
 
 QPushButton:hover {
@@ -2109,7 +2167,7 @@ QPushButton:pressed {
              </property>
              <property name="icon">
               <iconset>
-               <normaloff>../images/2987779_coffee_cup_drink_icon.png</normaloff>../images/2987779_coffee_cup_drink_icon.png</iconset>
+               <normaloff>../images/ic_exit.png</normaloff>../images/ic_exit.png</iconset>
              </property>
              <property name="iconSize">
               <size>
@@ -2126,14 +2184,14 @@ QPushButton:pressed {
              </property>
              <property name="styleSheet">
               <string notr="true">QPushButton {
-    background-color:#AFCBF3; /* Màu xanh nhạt chủ đạo bạn chọn */
+    background-color:rgb(167, 212, 238); /* Màu xanh nhạt chủ đạo bạn chọn */
     color: #4A90E2; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */
     border-radius: 12px;
     padding: 10px;
     font-size: 14px;
     font-weight: bold;
     font-family: &quot;Georgia&quot;;
-    border: 2px solid #A6C8FF; /* Viền xanh đậm hơn một chút để tạo khối */
+    border: 2px solid rgb(67, 139, 196); /* Viền xanh đậm hơn một chút để tạo khối */
 }
 
 QPushButton:hover {
@@ -2152,11 +2210,11 @@ QPushButton:pressed {
              </property>
              <property name="icon">
               <iconset>
-               <normaloff>../images/2987779_coffee_cup_drink_icon.png</normaloff>../images/2987779_coffee_cup_drink_icon.png</iconset>
+               <normaloff>../images/staff.png</normaloff>../images/staff.png</iconset>
              </property>
              <property name="iconSize">
               <size>
-               <width>20</width>
+               <width>32</width>
                <height>20</height>
               </size>
              </property>
@@ -2176,8 +2234,8 @@ QPushButton:pressed {
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1505</width>
-     <height>26</height>
+     <width>1430</width>
+     <height>18</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuMENU">

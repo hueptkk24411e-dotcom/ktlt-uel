@@ -834,89 +834,6 @@ QPushButton:pressed {
         </item>
        </layout>
       </widget>
-      <widget class="QWidget" name="widget_3" native="true">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>70</y>
-         <width>1121</width>
-         <height>185</height>
-        </rect>
-       </property>
-       <widget class="QLabel" name="label_2">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>10</y>
-          <width>171</width>
-          <height>31</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;Detailed description :&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-        </property>
-       </widget>
-       <widget class="QTextEdit" name="textEdit">
-        <property name="geometry">
-         <rect>
-          <x>20</x>
-          <y>40</y>
-          <width>461</width>
-          <height>71</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true"> background-color:#AFCBF3; color: rgb(15, 15, 15);</string>
-        </property>
-        <property name="html">
-         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="buychocolatebalance_46">
-        <property name="geometry">
-         <rect>
-          <x>20</x>
-          <y>120</y>
-          <width>111</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QPushButton {
-    background-color:#AFCBF3; /* Màu xanh nhạt chủ đạo bạn chọn */
-    color: #4A90E2; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */
-    border-radius: 12px;
-    padding: 10px;
-    font-size: 14px;
-    font-weight: bold;
-    font-family: &quot;Georgia&quot;;
-    border: 2px solid #A6C8FF; /* Viền xanh đậm hơn một chút để tạo khối */
-}
-
-QPushButton:hover {
-    background-color: #A6C8FF; /* Màu đậm hơn khi di chuột vào */
-    border: 2px solid #7FAFFF; /* Viền đậm hơn khi hover */
-    color: white; /* Chuyển chữ sang trắng để nổi bật */
-}
-
-QPushButton:pressed {
-    background-color: #7FAFFF; /* Màu đậm nhất khi nhấn giữ nút */
-    border: 2px solid #4A90E2;
-}</string>
-        </property>
-        <property name="text">
-         <string>Done</string>
-        </property>
-        <property name="icon">
-         <iconset>
-          <normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</iconset>
-        </property>
-       </widget>
-      </widget>
      </widget>
     </item>
    </layout>
@@ -927,7 +844,7 @@ QPushButton:pressed {
      <x>0</x>
      <y>0</y>
      <width>1143</width>
-     <height>26</height>
+     <height>18</height>
     </rect>
    </property>
   </widget>
