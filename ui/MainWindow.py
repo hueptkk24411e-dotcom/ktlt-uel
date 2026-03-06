@@ -13,7 +13,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.setEnabled(True)
-        MainWindow.resize(1430, 934)
+        MainWindow.resize(1282, 924)
         MainWindow.setDocumentMode(False)
         self.centralwidget = QtWidgets.QWidget(parent=MainWindow)
         self.centralwidget.setStyleSheet("background-color: rgb(255, 255, 255);")
@@ -528,31 +528,6 @@ class Ui_MainWindow(object):
 "}")
         self.buychocolatebalance_84.setIcon(icon)
         self.buychocolatebalance_84.setObjectName("buychocolatebalance_84")
-        self.buychocolatebalance_80 = QtWidgets.QPushButton(parent=self.widget_65)
-        self.buychocolatebalance_80.setGeometry(QtCore.QRect(226, 200, 121, 41))
-        self.buychocolatebalance_80.setStyleSheet("QPushButton {\n"
-"    background-color:rgb(167, 212, 238); /* Màu xanh nhạt chủ đạo bạn chọn */\n"
-"    color: #4A90E2; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */\n"
-"    border-radius: 12px;\n"
-"    padding: 10px;\n"
-"    font-size: 14px;\n"
-"    font-weight: bold;\n"
-"    font-family: \"Georgia\";\n"
-"    border: 2px solid rgb(67, 139, 196); /* Viền xanh đậm hơn một chút để tạo khối */\n"
-"}\n"
-"\n"
-"QPushButton:hover {\n"
-"    background-color: #A6C8FF; /* Màu đậm hơn khi di chuột vào */\n"
-"    border: 2px solid #7FAFFF; /* Viền đậm hơn khi hover */\n"
-"    color: white; /* Chuyển chữ sang trắng để nổi bật */\n"
-"}\n"
-"\n"
-"QPushButton:pressed {\n"
-"    background-color: #7FAFFF; /* Màu đậm nhất khi nhấn giữ nút */\n"
-"    border: 2px solid #4A90E2;\n"
-"}")
-        self.buychocolatebalance_80.setIcon(icon)
-        self.buychocolatebalance_80.setObjectName("buychocolatebalance_80")
         self.gridLayout.addWidget(self.widget_65, 2, 1, 1, 1)
         self.widget_64 = QtWidgets.QWidget(parent=self.widget)
         self.widget_64.setObjectName("widget_64")
@@ -793,7 +768,7 @@ class Ui_MainWindow(object):
         self.label_189.setText("")
         self.label_189.setObjectName("label_189")
         self.label_190 = QtWidgets.QLabel(parent=self.widget_66)
-        self.label_190.setGeometry(QtCore.QRect(10, 170, 141, 31))
+        self.label_190.setGeometry(QtCore.QRect(10, 180, 92, 10))
         self.label_190.setStyleSheet(" font-family: \"Georgia\"")
         self.label_190.setObjectName("label_190")
         self.imagecoffee_82 = QtWidgets.QLabel(parent=self.widget_66)
@@ -953,35 +928,35 @@ class Ui_MainWindow(object):
         self.lineEdit_PhoneNum_2 = QtWidgets.QLineEdit(parent=self.widget_2)
         self.lineEdit_PhoneNum_2.setGeometry(QtCore.QRect(180, 10, 141, 31))
         self.lineEdit_PhoneNum_2.setStyleSheet("color: rgb(11, 11, 11);\n"
-"border: 1px solid black;")
+"border: 1px solid rgb(67, 139, 196);")
         self.lineEdit_PhoneNum_2.setText("")
         self.lineEdit_PhoneNum_2.setObjectName("lineEdit_PhoneNum_2")
         self.label_3 = QtWidgets.QLabel(parent=self.widget_2)
         self.label_3.setGeometry(QtCore.QRect(0, 0, 161, 51))
         self.label_3.setStyleSheet(" font-family: \"Georgia\";\n"
-"color: rgb(13, 13, 13);\n"
+"color: rgb(67, 139, 196);\n"
 "")
         self.label_3.setObjectName("label_3")
         self.pushButton_loadCusType_2 = QtWidgets.QPushButton(parent=self.widget_2)
         self.pushButton_loadCusType_2.setGeometry(QtCore.QRect(330, 10, 31, 31))
         self.pushButton_loadCusType_2.setStyleSheet("color: rgb(18, 18, 18);\n"
-"border: 1px solid black;")
+"border: 1px solid rgb(67, 139, 196);")
         self.pushButton_loadCusType_2.setText("")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("D:\\Code\\ktlt-uel\\ui\\../images/search.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon1.addPixmap(QtGui.QPixmap("D:\\Code\\ktlt-uel\\ui\\../images/ic_search.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.pushButton_loadCusType_2.setIcon(icon1)
         self.pushButton_loadCusType_2.setIconSize(QtCore.QSize(20, 20))
         self.pushButton_loadCusType_2.setObjectName("pushButton_loadCusType_2")
         self.label_14 = QtWidgets.QLabel(parent=self.widget_2)
         self.label_14.setGeometry(QtCore.QRect(0, 40, 161, 51))
         self.label_14.setStyleSheet(" font-family: \"Georgia\";\n"
-"color: rgb(15, 15, 15);\n"
+"color: rgb(67, 139, 196);\n"
 "")
         self.label_14.setObjectName("label_14")
         self.lineEdit_CustomerType_3 = QtWidgets.QLineEdit(parent=self.widget_2)
         self.lineEdit_CustomerType_3.setGeometry(QtCore.QRect(180, 50, 141, 31))
         self.lineEdit_CustomerType_3.setStyleSheet("color: rgb(11, 11, 11);\n"
-"border: 1px solid black;")
+"border: 1px solid rgb(67, 139, 196);")
         self.lineEdit_CustomerType_3.setObjectName("lineEdit_CustomerType_3")
         self.verticalLayout_3.addWidget(self.widget_2)
         self.widget_3 = QtWidgets.QWidget(parent=self.frame)
@@ -997,19 +972,19 @@ class Ui_MainWindow(object):
         self.label_6.setGeometry(QtCore.QRect(0, 0, 331, 51))
         self.label_6.setStyleSheet("QLabel {\n"
 "    background-color: rgba(255, 255, 255, 100); /* Màu trắng, trong suốt khoảng 40% */\n"
-"    border: 1px solid black; /* THÊM DÒNG NÀY: Viền đen, dày 2px, nét liền */\n"
+"    border: 1px solid rgb(67, 139, 196); /* THÊM DÒNG NÀY: Viền đen, dày 2px, nét liền */\n"
 "    border-radius: 20px;  /* Bo góc 20px */\n"
 "    padding: 5px; /* Khoảng cách nội dung và viền */\n"
 "    font-size: 14px;\n"
 "    font-family: Georgia;\n"
-"    color: black; /* Màu chữ */\n"
+"    color: rgb(67, 139, 196); /* Màu chữ */\n"
 "}")
         self.label_6.setText("")
         self.label_6.setObjectName("label_6")
         self.label_11 = QtWidgets.QLabel(parent=self.widget_3)
         self.label_11.setGeometry(QtCore.QRect(20, 20, 60, 16))
         self.label_11.setStyleSheet(" font-family: \"Georgia\";\n"
-"color: rgb(9, 9, 9);\n"
+"color: rgb(67, 139, 196);\n"
 "")
         self.label_11.setObjectName("label_11")
         self.verticalLayout_3.addWidget(self.widget_3)
@@ -1128,16 +1103,16 @@ class Ui_MainWindow(object):
 "    border: 2px solid #4A90E2;\n"
 "}")
         icon5 = QtGui.QIcon()
-        icon5.addPixmap(QtGui.QPixmap("D:\\Code\\ktlt-uel\\ui\\../images/staff.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon5.addPixmap(QtGui.QPixmap("D:\\Code\\ktlt-uel\\ui\\../images/â.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.pushButton_TB_11.setIcon(icon5)
-        self.pushButton_TB_11.setIconSize(QtCore.QSize(32, 20))
+        self.pushButton_TB_11.setIconSize(QtCore.QSize(35, 35))
         self.pushButton_TB_11.setObjectName("pushButton_TB_11")
         self.gridLayout_3.addWidget(self.pushButton_TB_11, 2, 0, 1, 1)
         self.verticalLayout_3.addWidget(self.widget_5)
         self.verticalLayout_4.addWidget(self.splitter)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(parent=MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 1430, 18))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 1282, 18))
         self.menubar.setObjectName("menubar")
         self.menuMENU = QtWidgets.QMenu(parent=self.menubar)
         self.menuMENU.setObjectName("menuMENU")
@@ -1174,35 +1149,34 @@ class Ui_MainWindow(object):
         self.Summer.setText(_translate("MainWindow", "Summer"))
         self.Autumn.setText(_translate("MainWindow", "Autumn"))
         self.Winter.setText(_translate("MainWindow", "Winter"))
-        self.label_102.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#040404;\">Chocolate Balance - 36$</span></p></body></html>"))
+        self.label_102.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#438ac3;\">White Flora Charm - 36$</span></p></body></html>"))
         self.buychocolatebalance_94.setText(_translate("MainWindow", "Select Design"))
-        self.label_104.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#040404;\">Chocolate Balance - 36$</span></p></body></html>"))
+        self.label_104.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#438bc4;\">Yellow Daisy Garden - 30$</span></p></body></html>"))
         self.buychocolatebalance_95.setText(_translate("MainWindow", "Select Design"))
-        self.label_108.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#040404;\">Chocolate Balance - 36$</span></p></body></html>"))
+        self.label_108.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#438bc4;\">Ocean Pearl Dream- 40$</span></p></body></html>"))
         self.buychocolatebalance_97.setText(_translate("MainWindow", "Select Design"))
-        self.label_106.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#040404;\">Chocolate Balance - 36$</span></p></body></html>"))
+        self.label_106.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#438bc4;\">Silver Ribbon Dew - 25$</span></p></body></html>"))
         self.buychocolatebalance_96.setText(_translate("MainWindow", "Select Design"))
-        self.label_112.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#040404;\">Chocolate Balance - 36$</span></p></body></html>"))
-        self.buychocolatebalance_98.setText(_translate("MainWindow", "Self-custom"))
-        self.label_122.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#040404;\">Chocolate Balance - 36$</span></p></body></html>"))
+        self.label_112.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#438bc4;\">Purple Amethyst Glaze - 36$</span></p></body></html>"))
+        self.buychocolatebalance_98.setText(_translate("MainWindow", "Select Design"))
+        self.label_122.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#438bc4;\">Green Matcha Muse- 36$</span></p></body></html>"))
         self.buychocolatebalance_92.setText(_translate("MainWindow", "Select Design"))
-        self.label_116.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#040404;\">Chocolate Balance - 36$</span></p></body></html>"))
+        self.label_116.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#438bc4;\">Sparkling Starlight - 37$</span></p></body></html>"))
         self.buychocolatebalance_91.setText(_translate("MainWindow", "Select Design"))
-        self.label_188.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#040404;\">Chocolate Balance - 36$</span></p></body></html>"))
+        self.label_188.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#438bc4;\">Butterfly Garden Glow - 36$</span></p></body></html>"))
         self.buychocolatebalance_84.setText(_translate("MainWindow", "Select Design"))
-        self.buychocolatebalance_80.setText(_translate("MainWindow", "Self-custom"))
-        self.label_186.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#040404;\">Chocolate Balance - 36$</span></p></body></html>"))
+        self.label_186.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#438bc4;\">inimalist Red Ribbon - 30$</span></p></body></html>"))
         self.buychocolatebalance_85.setText(_translate("MainWindow", "Select Design"))
-        self.label_114.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#040404;\">Chocolate Balance - 36$</span></p></body></html>"))
+        self.label_114.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#438bc4;\">Winter Snowman - 30$</span></p></body></html>"))
         self.buychocolatebalance_99.setText(_translate("MainWindow", "Select Design"))
-        self.label_118.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#040404;\">Chocolate Balance - 36$</span></p></body></html>"))
+        self.label_118.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-style:italic; color:#438bc4;\">Sunny Side Up</span><span style=\" color:#438bc4;\"> - 26$</span></p></body></html>"))
         self.buychocolatebalance_93.setText(_translate("MainWindow", "Select Design"))
-        self.label_184.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#040404;\">Chocolate Balance - 36$</span></p></body></html>"))
+        self.label_184.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#438bc4;\">Cosmic Marble Pink - 36$</span></p></body></html>"))
         self.buychocolatebalance_89.setText(_translate("MainWindow", "Select Design"))
         self.buychocolatebalance_79.setText(_translate("MainWindow", "Self-custom"))
-        self.label_190.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#040404;\">Chocolate Balance - 36$</span></p></body></html>"))
+        self.label_190.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-style:italic; color:#438bc4;\">Creamy Heart Pearl</span><span style=\" color:#438bc4;\">- 32$</span></p></body></html>"))
         self.buychocolatebalance_83.setText(_translate("MainWindow", "Select Design"))
-        self.label_120.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#040404;\">Chocolate Balance - 36$</span></p></body></html>"))
+        self.label_120.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#438bc4;\">Pink Crystal Fairy - 36$</span></p></body></html>"))
         self.buychocolatebalance_90.setText(_translate("MainWindow", "Select Design"))
         item = self.tableWidget.horizontalHeaderItem(0)
         item.setText(_translate("MainWindow", "Items"))

@@ -254,32 +254,98 @@ class MainWindowEx(Ui_MainWindow):
         self.buychocolatebalance_79.clicked.connect(self.open_self_custom)
         self.pushButton_TB_11.clicked.connect(self.open_technician)
         self.menuMore_about_us.aboutToShow.connect(self.show_about_us)
-
+        self.Spring.clicked.connect(self.show_spring)
+        self.Summer.clicked.connect(self.show_summer)
+        self.Autumn.clicked.connect(self.show_autumn)
+        self.Winter.clicked.connect(self.show_winter)
         # ========================
         # ADD PRODUCTS
         # ========================
 
+        # SPRING
         self.buychocolatebalance_94.clicked.connect(
-            lambda: self.add_to_cart("Chocolate Balance", 36)
+            lambda: self.add_to_cart("White Flora Charm", 36)
         )
 
         self.buychocolatebalance_95.clicked.connect(
-            lambda: self.add_to_cart("Milk Chocolate", 36)
+            lambda: self.add_to_cart("Yellow Daisy Garden", 30)
         )
 
         self.buychocolatebalance_96.clicked.connect(
-            lambda: self.add_to_cart("Dark Chocolate", 36)
+            lambda: self.add_to_cart("Silver Ribbon Dew", 25)
         )
 
+        # SUMMER
         self.buychocolatebalance_90.clicked.connect(
-            lambda: self.add_to_cart("Spring Special", 36)
+            lambda: self.add_to_cart("Pink Crystal Fairy", 40)
         )
 
-        self.buychocolatebalance_79.clicked.connect(
-            lambda: self.add_to_cart("Summer Nail", 36)
+        self.buychocolatebalance_91.clicked.connect(
+            lambda: self.add_to_cart("Sparkling Starlight", 37)
         )
 
+        # AUTUMN
+        self.buychocolatebalance_92.clicked.connect(
+            lambda: self.add_to_cart("Green Matcha Muse", 36)
+        )
 
+        self.buychocolatebalance_93.clicked.connect(
+            lambda: self.add_to_cart("Sunny Side Up", 26)
+        )
+
+        # WINTER
+        self.buychocolatebalance_97.clicked.connect(
+            lambda: self.add_to_cart("Ocean Pearl Dream", 40)
+        )
+
+        self.buychocolatebalance_89.clicked.connect(
+            lambda: self.add_to_cart("Cosmic Marble Pink", 36)
+        )
+        self.buychocolatebalance_84.clicked.connect(
+            lambda: self.add_to_cart("Butterfly Garden Glow ", 36)
+        )
+        self.buychocolatebalance_83.clicked.connect(
+            lambda: self.add_to_cart("Creamy Heart Pearl", 32)
+        )
+
+        self.buychocolatebalance_99.clicked.connect(
+            lambda: self.add_to_cart("Winter Snowman", 30)
+        )
+
+        self.buychocolatebalance_98.clicked.connect(
+            lambda: self.add_to_cart("Purple Amethyst Glaze", 36)
+
+        )
+
+        # ========================
+        # SEASON PRODUCTS
+        # ========================
+
+        self.spring_widgets = [
+            self.widget_65,
+            self.widget_66,
+            self.widget_36,
+            self.widget_30,
+        ]
+
+        self.summer_widgets = [
+            self.widget_31,
+            self.widget_33,
+            self.widget_37,
+            self.widget_39
+        ]
+
+        self.autumn_widgets = [
+            self.widget_64,
+            self.widget_63,
+            self.widget_38
+        ]
+
+        self.winter_widgets = [
+            self.widget_32,
+            self.widget_35,
+            self.widget_63
+        ]
     # ===============================
     # ADD ITEM
     # ===============================
@@ -340,6 +406,52 @@ class MainWindowEx(Ui_MainWindow):
         del self.cart[row]
 
         self.update_cart_display()
+
+    # ===============================
+    # HIDE ALL PRODUCTS
+    # ===============================
+    def hide_all_products(self):
+
+        all_widgets = (
+                self.spring_widgets
+                + self.summer_widgets
+                + self.autumn_widgets
+                + self.winter_widgets
+        )
+
+        for w in all_widgets:
+            w.setVisible(False)
+
+    # ===============================
+    # SHOW SPRING
+    # ===============================
+    def show_spring(self):
+
+        self.hide_all_products()
+
+        for w in self.spring_widgets:
+            w.setVisible(True)
+
+    def show_summer(self):
+
+        self.hide_all_products()
+
+        for w in self.summer_widgets:
+            w.setVisible(True)
+
+    def show_autumn(self):
+
+        self.hide_all_products()
+
+        for w in self.autumn_widgets:
+            w.setVisible(True)
+
+    def show_winter(self):
+
+        self.hide_all_products()
+
+        for w in self.winter_widgets:
+            w.setVisible(True)
     #SET TECHNICIAN
     def set_technician(self, name):
 
@@ -415,9 +527,7 @@ class MainWindowEx(Ui_MainWindow):
         msg.exec()
 
 
-    # ===============================
-    # LOGOUT
-    # ===============================
+
 
 
     def open_technician(self):
@@ -425,6 +535,7 @@ class MainWindowEx(Ui_MainWindow):
         self.tech_window = TechnicianWindow(self)
 
         self.tech_window.show()
+
 
     # ===============================
     # SHOW MAIN WINDOW

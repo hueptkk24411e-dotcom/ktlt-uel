@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1430</width>
-    <height>934</height>
+    <width>1282</width>
+    <height>924</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -273,7 +273,7 @@ background-color: white; /* Nền trắng */
             <string notr="true"> font-family: &quot;Georgia&quot;</string>
            </property>
            <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#040404;&quot;&gt;Chocolate Balance - 36$&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#438ac3;&quot;&gt;White Flora Charm - 36$&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
           </widget>
           <widget class="QLabel" name="imagecoffee_38">
@@ -371,7 +371,7 @@ background-color: white; /* Nền trắng */
             <string notr="true"> font-family: &quot;Georgia&quot;</string>
            </property>
            <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#040404;&quot;&gt;Chocolate Balance - 36$&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#438bc4;&quot;&gt;Yellow Daisy Garden - 30$&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
           </widget>
           <widget class="QLabel" name="imagecoffee_39">
@@ -472,7 +472,7 @@ background-color: white; /* Nền trắng */
             <string notr="true"> font-family: &quot;Georgia&quot;</string>
            </property>
            <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#040404;&quot;&gt;Chocolate Balance - 36$&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#438bc4;&quot;&gt;Ocean Pearl Dream- 40$&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
           </widget>
           <widget class="QLabel" name="imagecoffee_41">
@@ -570,7 +570,7 @@ background-color: white; /* Nền trắng */
             <string notr="true"> font-family: &quot;Georgia&quot;</string>
            </property>
            <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#040404;&quot;&gt;Chocolate Balance - 36$&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#438bc4;&quot;&gt;Silver Ribbon Dew - 25$&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
           </widget>
           <widget class="QLabel" name="imagecoffee_40">
@@ -671,7 +671,7 @@ background-color: white; /* Nền trắng */
             <string notr="true"> font-family: &quot;Georgia&quot;</string>
            </property>
            <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#040404;&quot;&gt;Chocolate Balance - 36$&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#438bc4;&quot;&gt;Purple Amethyst Glaze - 36$&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
           </widget>
           <widget class="QLabel" name="imagecoffee_43">
@@ -726,7 +726,7 @@ QPushButton:pressed {
 }</string>
            </property>
            <property name="text">
-            <string>Self-custom</string>
+            <string>Select Design</string>
            </property>
            <property name="icon">
             <iconset>
@@ -769,7 +769,7 @@ background-color: white; /* Nền trắng */
             <string notr="true"> font-family: &quot;Georgia&quot;</string>
            </property>
            <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#040404;&quot;&gt;Chocolate Balance - 36$&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#438bc4;&quot;&gt;Green Matcha Muse- 36$&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
           </widget>
           <widget class="QLabel" name="imagecoffee_48">
@@ -867,7 +867,7 @@ background-color: white; /* Nền trắng */
             <string notr="true"> font-family: &quot;Georgia&quot;</string>
            </property>
            <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#040404;&quot;&gt;Chocolate Balance - 36$&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#438bc4;&quot;&gt;Sparkling Starlight - 37$&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
           </widget>
           <widget class="QLabel" name="imagecoffee_45">
@@ -965,7 +965,7 @@ background-color: white; /* Nền trắng */
             <string notr="true"> font-family: &quot;Georgia&quot;</string>
            </property>
            <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#040404;&quot;&gt;Chocolate Balance - 36$&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#438bc4;&quot;&gt;Butterfly Garden Glow - 36$&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
           </widget>
           <widget class="QLabel" name="imagecoffee_81">
@@ -1027,46 +1027,6 @@ QPushButton:pressed {
              <normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</iconset>
            </property>
           </widget>
-          <widget class="QPushButton" name="buychocolatebalance_80">
-           <property name="geometry">
-            <rect>
-             <x>226</x>
-             <y>200</y>
-             <width>121</width>
-             <height>41</height>
-            </rect>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton {
-    background-color:rgb(167, 212, 238); /* Màu xanh nhạt chủ đạo bạn chọn */
-    color: #4A90E2; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */
-    border-radius: 12px;
-    padding: 10px;
-    font-size: 14px;
-    font-weight: bold;
-    font-family: &quot;Georgia&quot;;
-    border: 2px solid rgb(67, 139, 196); /* Viền xanh đậm hơn một chút để tạo khối */
-}
-
-QPushButton:hover {
-    background-color: #A6C8FF; /* Màu đậm hơn khi di chuột vào */
-    border: 2px solid #7FAFFF; /* Viền đậm hơn khi hover */
-    color: white; /* Chuyển chữ sang trắng để nổi bật */
-}
-
-QPushButton:pressed {
-    background-color: #7FAFFF; /* Màu đậm nhất khi nhấn giữ nút */
-    border: 2px solid #4A90E2;
-}</string>
-           </property>
-           <property name="text">
-            <string>Self-custom</string>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</normaloff>images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png</iconset>
-           </property>
-          </widget>
          </widget>
         </item>
         <item row="2" column="2">
@@ -1103,7 +1063,7 @@ background-color: white; /* Nền trắng */
             <string notr="true"> font-family: &quot;Georgia&quot;</string>
            </property>
            <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#040404;&quot;&gt;Chocolate Balance - 36$&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#438bc4;&quot;&gt;inimalist Red Ribbon - 30$&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
           </widget>
           <widget class="QLabel" name="imagecoffee_80">
@@ -1201,7 +1161,7 @@ background-color: white; /* Nền trắng */
             <string notr="true"> font-family: &quot;Georgia&quot;</string>
            </property>
            <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#040404;&quot;&gt;Chocolate Balance - 36$&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#438bc4;&quot;&gt;Winter Snowman - 30$&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
           </widget>
           <widget class="QLabel" name="imagecoffee_44">
@@ -1299,7 +1259,7 @@ background-color: white; /* Nền trắng */
             <string notr="true"> font-family: &quot;Georgia&quot;</string>
            </property>
            <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#040404;&quot;&gt;Chocolate Balance - 36$&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-style:italic; color:#438bc4;&quot;&gt;Sunny Side Up&lt;/span&gt;&lt;span style=&quot; color:#438bc4;&quot;&gt; - 26$&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
           </widget>
           <widget class="QLabel" name="imagecoffee_46">
@@ -1403,7 +1363,7 @@ background-color: white; /* Nền trắng */
             <string notr="true"> font-family: &quot;Georgia&quot;</string>
            </property>
            <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#040404;&quot;&gt;Chocolate Balance - 36$&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#438bc4;&quot;&gt;Cosmic Marble Pink - 36$&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
           </widget>
           <widget class="QLabel" name="imagecoffee_79">
@@ -1577,16 +1537,16 @@ background-color: white; /* Nền trắng */
            <property name="geometry">
             <rect>
              <x>10</x>
-             <y>170</y>
-             <width>141</width>
-             <height>31</height>
+             <y>180</y>
+             <width>92</width>
+             <height>10</height>
             </rect>
            </property>
            <property name="styleSheet">
             <string notr="true"> font-family: &quot;Georgia&quot;</string>
            </property>
            <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#040404;&quot;&gt;Chocolate Balance - 36$&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-style:italic; color:#438bc4;&quot;&gt;Creamy Heart Pearl&lt;/span&gt;&lt;span style=&quot; color:#438bc4;&quot;&gt;- 32$&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
           </widget>
           <widget class="QLabel" name="imagecoffee_82">
@@ -1690,7 +1650,7 @@ background-color: white; /* Nền trắng */
             <string notr="true"> font-family: &quot;Georgia&quot;</string>
            </property>
            <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#040404;&quot;&gt;Chocolate Balance - 36$&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#438bc4;&quot;&gt;Pink Crystal Fairy - 36$&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
           </widget>
           <widget class="QLabel" name="imagecoffee_47">
@@ -1886,7 +1846,7 @@ QHeaderView::section:last {
            </property>
            <property name="styleSheet">
             <string notr="true">color: rgb(11, 11, 11);
-border: 1px solid black;</string>
+border: 1px solid rgb(67, 139, 196);</string>
            </property>
            <property name="text">
             <string/>
@@ -1903,7 +1863,7 @@ border: 1px solid black;</string>
            </property>
            <property name="styleSheet">
             <string notr="true"> font-family: &quot;Georgia&quot;;
-color: rgb(13, 13, 13);
+color: rgb(67, 139, 196);
 </string>
            </property>
            <property name="text">
@@ -1921,14 +1881,14 @@ color: rgb(13, 13, 13);
            </property>
            <property name="styleSheet">
             <string notr="true">color: rgb(18, 18, 18);
-border: 1px solid black;</string>
+border: 1px solid rgb(67, 139, 196);</string>
            </property>
            <property name="text">
             <string/>
            </property>
            <property name="icon">
             <iconset>
-             <normaloff>../images/search.png</normaloff>../images/search.png</iconset>
+             <normaloff>../images/ic_search.png</normaloff>../images/ic_search.png</iconset>
            </property>
            <property name="iconSize">
             <size>
@@ -1948,7 +1908,7 @@ border: 1px solid black;</string>
            </property>
            <property name="styleSheet">
             <string notr="true"> font-family: &quot;Georgia&quot;;
-color: rgb(15, 15, 15);
+color: rgb(67, 139, 196);
 </string>
            </property>
            <property name="text">
@@ -1966,7 +1926,7 @@ color: rgb(15, 15, 15);
            </property>
            <property name="styleSheet">
             <string notr="true">color: rgb(11, 11, 11);
-border: 1px solid black;</string>
+border: 1px solid rgb(67, 139, 196);</string>
            </property>
           </widget>
          </widget>
@@ -2013,12 +1973,12 @@ border: 1px solid black;</string>
            <property name="styleSheet">
             <string notr="true">QLabel {
     background-color: rgba(255, 255, 255, 100); /* Màu trắng, trong suốt khoảng 40% */
-    border: 1px solid black; /* THÊM DÒNG NÀY: Viền đen, dày 2px, nét liền */
+    border: 1px solid rgb(67, 139, 196); /* THÊM DÒNG NÀY: Viền đen, dày 2px, nét liền */
     border-radius: 20px;  /* Bo góc 20px */
     padding: 5px; /* Khoảng cách nội dung và viền */
     font-size: 14px;
     font-family: Georgia;
-    color: black; /* Màu chữ */
+    color: rgb(67, 139, 196); /* Màu chữ */
 }</string>
            </property>
            <property name="text">
@@ -2036,7 +1996,7 @@ border: 1px solid black;</string>
            </property>
            <property name="styleSheet">
             <string notr="true"> font-family: &quot;Georgia&quot;;
-color: rgb(9, 9, 9);
+color: rgb(67, 139, 196);
 </string>
            </property>
            <property name="text">
@@ -2210,12 +2170,12 @@ QPushButton:pressed {
              </property>
              <property name="icon">
               <iconset>
-               <normaloff>../images/staff.png</normaloff>../images/staff.png</iconset>
+               <normaloff>../images/â.png</normaloff>../images/â.png</iconset>
              </property>
              <property name="iconSize">
               <size>
-               <width>32</width>
-               <height>20</height>
+               <width>35</width>
+               <height>35</height>
               </size>
              </property>
             </widget>
@@ -2234,7 +2194,7 @@ QPushButton:pressed {
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1430</width>
+     <width>1282</width>
      <height>18</height>
     </rect>
    </property>
