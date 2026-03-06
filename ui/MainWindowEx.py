@@ -8,8 +8,7 @@ from ui.MainWindowLoginEx import MainWindowLoginEx
 from ui.PaymentWindow import Ui_PaymentWindow
 from ui.SelfCustomWindow import Ui_SelfCustomWindow
 
-from PyQt6.QtWidgets import QFileDialog
-from PyQt6.QtGui import QPixmap
+
 class TechnicianWindow(QtWidgets.QWidget):
 
     def __init__(self, parent_logic):
