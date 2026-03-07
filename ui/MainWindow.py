@@ -13,7 +13,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.setEnabled(True)
-        MainWindow.resize(1456, 1007)
+        MainWindow.resize(1407, 1007)
         MainWindow.setDocumentMode(False)
         self.centralwidget = QtWidgets.QWidget(parent=MainWindow)
         self.centralwidget.setStyleSheet("background-color: rgb(234, 242, 251);")
@@ -189,7 +189,7 @@ class Ui_MainWindow(object):
         self.imagecoffee_46.setScaledContents(True)
         self.imagecoffee_46.setObjectName("imagecoffee_46")
         self.buychocolatebalance_93 = QtWidgets.QPushButton(parent=self.widget_37)
-        self.buychocolatebalance_93.setGeometry(QtCore.QRect(30, 200, 121, 41))
+        self.buychocolatebalance_93.setGeometry(QtCore.QRect(40, 200, 121, 41))
         self.buychocolatebalance_93.setStyleSheet("QPushButton {\n"
 "    background-color:rgb(167, 212, 238); /* Màu xanh nhạt chủ đạo bạn chọn */\n"
 "    color: White; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */\n"
@@ -237,7 +237,7 @@ class Ui_MainWindow(object):
         self.imagecoffee_80.setScaledContents(True)
         self.imagecoffee_80.setObjectName("imagecoffee_80")
         self.buychocolatebalance_85 = QtWidgets.QPushButton(parent=self.widget_64)
-        self.buychocolatebalance_85.setGeometry(QtCore.QRect(30, 200, 121, 41))
+        self.buychocolatebalance_85.setGeometry(QtCore.QRect(40, 200, 121, 41))
         self.buychocolatebalance_85.setStyleSheet("QPushButton {\n"
 "    background-color:rgb(167, 212, 238); /* Màu xanh nhạt chủ đạo bạn chọn */\n"
 "    color: White; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */\n"
@@ -274,7 +274,7 @@ class Ui_MainWindow(object):
         self.label_107.setText("")
         self.label_107.setObjectName("label_107")
         self.label_108 = QtWidgets.QLabel(parent=self.widget_33)
-        self.label_108.setGeometry(QtCore.QRect(20, 170, 141, 31))
+        self.label_108.setGeometry(QtCore.QRect(40, 170, 141, 31))
         self.label_108.setStyleSheet(" font-family: \"Georgia\"")
         self.label_108.setObjectName("label_108")
         self.imagecoffee_41 = QtWidgets.QLabel(parent=self.widget_33)
@@ -284,7 +284,7 @@ class Ui_MainWindow(object):
         self.imagecoffee_41.setScaledContents(True)
         self.imagecoffee_41.setObjectName("imagecoffee_41")
         self.buychocolatebalance_97 = QtWidgets.QPushButton(parent=self.widget_33)
-        self.buychocolatebalance_97.setGeometry(QtCore.QRect(30, 200, 121, 41))
+        self.buychocolatebalance_97.setGeometry(QtCore.QRect(40, 200, 121, 41))
         self.buychocolatebalance_97.setStyleSheet("QPushButton {\n"
 "    background-color:rgb(167, 212, 238); /* Màu xanh nhạt chủ đạo bạn chọn */\n"
 "    color: white; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */\n"
@@ -320,7 +320,7 @@ class Ui_MainWindow(object):
         self.label_121.setText("")
         self.label_121.setObjectName("label_121")
         self.label_122 = QtWidgets.QLabel(parent=self.widget_39)
-        self.label_122.setGeometry(QtCore.QRect(30, 180, 141, 21))
+        self.label_122.setGeometry(QtCore.QRect(30, 170, 141, 31))
         self.label_122.setStyleSheet(" font-family: \"Georgia\"")
         self.label_122.setObjectName("label_122")
         self.imagecoffee_48 = QtWidgets.QLabel(parent=self.widget_39)
@@ -330,7 +330,7 @@ class Ui_MainWindow(object):
         self.imagecoffee_48.setScaledContents(True)
         self.imagecoffee_48.setObjectName("imagecoffee_48")
         self.buychocolatebalance_92 = QtWidgets.QPushButton(parent=self.widget_39)
-        self.buychocolatebalance_92.setGeometry(QtCore.QRect(30, 200, 121, 41))
+        self.buychocolatebalance_92.setGeometry(QtCore.QRect(40, 200, 121, 41))
         self.buychocolatebalance_92.setStyleSheet("QPushButton {\n"
 "    background-color:rgb(167, 212, 238); /* Màu xanh nhạt chủ đạo bạn chọn */\n"
 "    color: White; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */\n"
@@ -376,7 +376,7 @@ class Ui_MainWindow(object):
         self.imagecoffee_81.setScaledContents(True)
         self.imagecoffee_81.setObjectName("imagecoffee_81")
         self.buychocolatebalance_84 = QtWidgets.QPushButton(parent=self.widget_65)
-        self.buychocolatebalance_84.setGeometry(QtCore.QRect(30, 200, 121, 41))
+        self.buychocolatebalance_84.setGeometry(QtCore.QRect(40, 200, 121, 41))
         self.buychocolatebalance_84.setStyleSheet("QPushButton {\n"
 "    background-color:rgb(167, 212, 238); /* Màu xanh nhạt chủ đạo bạn chọn */\n"
 "    color: White; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */\n"
@@ -402,8 +402,7 @@ class Ui_MainWindow(object):
         self.buychocolatebalance_84.setObjectName("buychocolatebalance_84")
         self.gridLayout.addWidget(self.widget_65, 3, 1, 1, 1)
         self.widget_34 = QtWidgets.QWidget(parent=self.widget)
-        self.widget_34.setStyleSheet("\n"
-"")
+        self.widget_34.setStyleSheet("")
         self.widget_34.setObjectName("widget_34")
         self.label_111 = QtWidgets.QLabel(parent=self.widget_34)
         self.label_111.setGeometry(QtCore.QRect(30, 10, 141, 161))
@@ -414,7 +413,7 @@ class Ui_MainWindow(object):
         self.label_111.setText("")
         self.label_111.setObjectName("label_111")
         self.label_112 = QtWidgets.QLabel(parent=self.widget_34)
-        self.label_112.setGeometry(QtCore.QRect(20, 170, 141, 31))
+        self.label_112.setGeometry(QtCore.QRect(40, 170, 141, 31))
         self.label_112.setStyleSheet(" font-family: \"Georgia\"")
         self.label_112.setObjectName("label_112")
         self.imagecoffee_43 = QtWidgets.QLabel(parent=self.widget_34)
@@ -424,7 +423,7 @@ class Ui_MainWindow(object):
         self.imagecoffee_43.setScaledContents(True)
         self.imagecoffee_43.setObjectName("imagecoffee_43")
         self.buychocolatebalance_98 = QtWidgets.QPushButton(parent=self.widget_34)
-        self.buychocolatebalance_98.setGeometry(QtCore.QRect(30, 200, 121, 41))
+        self.buychocolatebalance_98.setGeometry(QtCore.QRect(40, 200, 121, 41))
         self.buychocolatebalance_98.setStyleSheet("QPushButton {\n"
 "    background-color:rgb(167, 212, 238); /* Màu xanh nhạt chủ đạo bạn chọn */\n"
 "    color: white; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */\n"
@@ -452,7 +451,7 @@ class Ui_MainWindow(object):
         self.widget_66 = QtWidgets.QWidget(parent=self.widget)
         self.widget_66.setObjectName("widget_66")
         self.label_189 = QtWidgets.QLabel(parent=self.widget_66)
-        self.label_189.setGeometry(QtCore.QRect(20, 10, 141, 161))
+        self.label_189.setGeometry(QtCore.QRect(30, 10, 141, 161))
         self.label_189.setStyleSheet("border-radius: 20px; /* Bo tròn góc */\n"
 "border: 2px solid #ccc; /* Viền màu xám */\n"
 "background-color: white; /* Nền trắng */\n"
@@ -460,11 +459,11 @@ class Ui_MainWindow(object):
         self.label_189.setText("")
         self.label_189.setObjectName("label_189")
         self.label_190 = QtWidgets.QLabel(parent=self.widget_66)
-        self.label_190.setGeometry(QtCore.QRect(30, 180, 141, 16))
+        self.label_190.setGeometry(QtCore.QRect(30, 175, 141, 21))
         self.label_190.setStyleSheet(" font-family: \"Georgia\"")
         self.label_190.setObjectName("label_190")
         self.imagecoffee_82 = QtWidgets.QLabel(parent=self.widget_66)
-        self.imagecoffee_82.setGeometry(QtCore.QRect(30, 20, 121, 141))
+        self.imagecoffee_82.setGeometry(QtCore.QRect(40, 20, 121, 141))
         self.imagecoffee_82.setText("")
         self.imagecoffee_82.setPixmap(QtGui.QPixmap("D:\\UEL\\PythonProject\\CustomerManagement\\ui\\../images/dc6567ac1f25b987742d46805f5e074a.jpg"))
         self.imagecoffee_82.setScaledContents(True)
@@ -506,7 +505,7 @@ class Ui_MainWindow(object):
         self.label_103.setText("")
         self.label_103.setObjectName("label_103")
         self.label_104 = QtWidgets.QLabel(parent=self.widget_31)
-        self.label_104.setGeometry(QtCore.QRect(20, 170, 141, 31))
+        self.label_104.setGeometry(QtCore.QRect(40, 170, 141, 31))
         self.label_104.setStyleSheet(" font-family: \"Georgia\"")
         self.label_104.setObjectName("label_104")
         self.imagecoffee_39 = QtWidgets.QLabel(parent=self.widget_31)
@@ -517,7 +516,7 @@ class Ui_MainWindow(object):
         self.imagecoffee_39.setScaledContents(True)
         self.imagecoffee_39.setObjectName("imagecoffee_39")
         self.buychocolatebalance_95 = QtWidgets.QPushButton(parent=self.widget_31)
-        self.buychocolatebalance_95.setGeometry(QtCore.QRect(30, 200, 121, 41))
+        self.buychocolatebalance_95.setGeometry(QtCore.QRect(40, 200, 121, 41))
         self.buychocolatebalance_95.setStyleSheet("QPushButton {\n"
 "    background-color:rgb(167, 212, 238); /* Màu xanh nhạt chủ đạo bạn chọn */\n"
 "    color: white; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */\n"
@@ -553,7 +552,7 @@ class Ui_MainWindow(object):
         self.label_105.setText("")
         self.label_105.setObjectName("label_105")
         self.label_106 = QtWidgets.QLabel(parent=self.widget_32)
-        self.label_106.setGeometry(QtCore.QRect(30, 170, 141, 31))
+        self.label_106.setGeometry(QtCore.QRect(40, 170, 141, 31))
         self.label_106.setStyleSheet(" font-family: \"Georgia\"")
         self.label_106.setObjectName("label_106")
         self.imagecoffee_40 = QtWidgets.QLabel(parent=self.widget_32)
@@ -564,7 +563,7 @@ class Ui_MainWindow(object):
         self.imagecoffee_40.setScaledContents(True)
         self.imagecoffee_40.setObjectName("imagecoffee_40")
         self.buychocolatebalance_96 = QtWidgets.QPushButton(parent=self.widget_32)
-        self.buychocolatebalance_96.setGeometry(QtCore.QRect(30, 200, 121, 41))
+        self.buychocolatebalance_96.setGeometry(QtCore.QRect(40, 200, 121, 41))
         self.buychocolatebalance_96.setStyleSheet("QPushButton {\n"
 "    background-color:rgb(167, 212, 238); /* Màu xanh nhạt chủ đạo bạn chọn */\n"
 "    color: white; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */\n"
@@ -614,7 +613,7 @@ class Ui_MainWindow(object):
         self.imagecoffee_38.setScaledContents(True)
         self.imagecoffee_38.setObjectName("imagecoffee_38")
         self.buychocolatebalance_94 = QtWidgets.QPushButton(parent=self.widget_30)
-        self.buychocolatebalance_94.setGeometry(QtCore.QRect(30, 200, 131, 41))
+        self.buychocolatebalance_94.setGeometry(QtCore.QRect(40, 200, 121, 41))
         self.buychocolatebalance_94.setStyleSheet("QPushButton {\n"
 "    background-color:rgb(167, 212, 238); /* Màu xanh nhạt chủ đạo bạn chọn */\n"
 "    color: white;\n"
@@ -651,7 +650,7 @@ class Ui_MainWindow(object):
         self.label_181.setPixmap(QtGui.QPixmap("D:\\UEL\\PythonProject\\CustomerManagement\\ui\\../images/plus.png"))
         self.label_181.setObjectName("label_181")
         self.buychocolatebalance_79 = QtWidgets.QPushButton(parent=self.widget_62)
-        self.buychocolatebalance_79.setGeometry(QtCore.QRect(30, 200, 121, 41))
+        self.buychocolatebalance_79.setGeometry(QtCore.QRect(40, 200, 121, 41))
         self.buychocolatebalance_79.setStyleSheet("QPushButton {\n"
 "    background-color:rgb(167, 212, 238); /* Màu xanh nhạt chủ đạo bạn chọn */\n"
 "    color: White; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */\n"
@@ -704,7 +703,7 @@ class Ui_MainWindow(object):
         self.imagecoffee_79.setScaledContents(True)
         self.imagecoffee_79.setObjectName("imagecoffee_79")
         self.buychocolatebalance_89 = QtWidgets.QPushButton(parent=self.widget_63)
-        self.buychocolatebalance_89.setGeometry(QtCore.QRect(30, 200, 121, 41))
+        self.buychocolatebalance_89.setGeometry(QtCore.QRect(40, 200, 121, 41))
         self.buychocolatebalance_89.setStyleSheet("QPushButton {\n"
 "    background-color:rgb(167, 212, 238); /* Màu xanh nhạt chủ đạo bạn chọn */\n"
 "        color: White;/* Chữ màu xanh đậm để dễ đọc trên nền nhạt */\n"
@@ -751,7 +750,7 @@ class Ui_MainWindow(object):
         self.imagecoffee_44.setScaledContents(True)
         self.imagecoffee_44.setObjectName("imagecoffee_44")
         self.buychocolatebalance_99 = QtWidgets.QPushButton(parent=self.widget_35)
-        self.buychocolatebalance_99.setGeometry(QtCore.QRect(30, 200, 121, 41))
+        self.buychocolatebalance_99.setGeometry(QtCore.QRect(40, 200, 121, 41))
         self.buychocolatebalance_99.setStyleSheet("QPushButton {\n"
 "    background-color:rgb(167, 212, 238); /* Màu xanh nhạt chủ đạo bạn chọn */\n"
 "    color: White; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */\n"
@@ -798,7 +797,7 @@ class Ui_MainWindow(object):
         self.imagecoffee_47.setScaledContents(True)
         self.imagecoffee_47.setObjectName("imagecoffee_47")
         self.buychocolatebalance_90 = QtWidgets.QPushButton(parent=self.widget_38)
-        self.buychocolatebalance_90.setGeometry(QtCore.QRect(30, 200, 121, 41))
+        self.buychocolatebalance_90.setGeometry(QtCore.QRect(40, 200, 121, 41))
         self.buychocolatebalance_90.setStyleSheet("QPushButton {\n"
 "    background-color:rgb(167, 212, 238); /* Màu xanh nhạt chủ đạo bạn chọn */\n"
 "    color: White; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */\n"
@@ -834,7 +833,7 @@ class Ui_MainWindow(object):
         self.label_115.setText("")
         self.label_115.setObjectName("label_115")
         self.label_116 = QtWidgets.QLabel(parent=self.widget_36)
-        self.label_116.setGeometry(QtCore.QRect(30, 170, 141, 31))
+        self.label_116.setGeometry(QtCore.QRect(40, 170, 141, 31))
         self.label_116.setStyleSheet(" font-family: \"Georgia\"")
         self.label_116.setObjectName("label_116")
         self.imagecoffee_45 = QtWidgets.QLabel(parent=self.widget_36)
@@ -844,7 +843,7 @@ class Ui_MainWindow(object):
         self.imagecoffee_45.setScaledContents(True)
         self.imagecoffee_45.setObjectName("imagecoffee_45")
         self.buychocolatebalance_91 = QtWidgets.QPushButton(parent=self.widget_36)
-        self.buychocolatebalance_91.setGeometry(QtCore.QRect(30, 200, 121, 41))
+        self.buychocolatebalance_91.setGeometry(QtCore.QRect(40, 200, 121, 41))
         self.buychocolatebalance_91.setStyleSheet("QPushButton {\n"
 "    background-color:rgb(167, 212, 238); /* Màu xanh nhạt chủ đạo bạn chọn */\n"
 "    color: White; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */\n"
@@ -1138,7 +1137,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_4.addWidget(self.splitter)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(parent=MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 1456, 22))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 1407, 22))
         self.menubar.setObjectName("menubar")
         self.menuMENU = QtWidgets.QMenu(parent=self.menubar)
         self.menuMENU.setObjectName("menuMENU")
