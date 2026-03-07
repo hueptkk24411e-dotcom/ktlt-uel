@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1195</width>
-    <height>723</height>
+    <width>1873</width>
+    <height>764</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,10 +20,10 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>-2</x>
+      <x>8</x>
       <y>0</y>
-      <width>1151</width>
-      <height>41</height>
+      <width>1141</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="toolTip">
@@ -46,9 +46,9 @@ border: 2px solid rgb(67, 139, 196);
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>50</y>
+      <y>60</y>
       <width>381</width>
-      <height>381</height>
+      <height>371</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -805,7 +805,7 @@ border: 2px solid rgb(170,210,250);</string>
     <property name="geometry">
      <rect>
       <x>1000</x>
-      <y>50</y>
+      <y>60</y>
       <width>151</width>
       <height>51</height>
      </rect>
@@ -836,9 +836,9 @@ border: 2px solid rgb(170,210,250);</string>
     <property name="geometry">
      <rect>
       <x>400</x>
-      <y>50</y>
+      <y>60</y>
       <width>191</width>
-      <height>121</height>
+      <height>111</height>
      </rect>
     </property>
     <property name="font">
@@ -1436,9 +1436,9 @@ color: rgb(224, 253, 255);</string>
     <property name="geometry">
      <rect>
       <x>600</x>
-      <y>50</y>
+      <y>60</y>
       <width>191</width>
-      <height>121</height>
+      <height>111</height>
      </rect>
     </property>
     <property name="focusPolicy">
@@ -1507,9 +1507,9 @@ font: 14pt &quot;Rockwell Condensed&quot;;
     <property name="geometry">
      <rect>
       <x>800</x>
-      <y>50</y>
+      <y>60</y>
       <width>191</width>
-      <height>121</height>
+      <height>111</height>
      </rect>
     </property>
     <property name="focusPolicy">
@@ -1628,7 +1628,7 @@ QPushButton:pressed{
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1195</width>
+     <width>1873</width>
      <height>22</height>
     </rect>
    </property>
