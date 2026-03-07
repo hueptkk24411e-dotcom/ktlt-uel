@@ -9,7 +9,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1456</width>
+    <width>1407</width>
     <height>1007</height>
    </rect>
   </property>
@@ -302,7 +302,7 @@ background-color: white; /* Nền trắng */
           <widget class="QPushButton" name="buychocolatebalance_93">
            <property name="geometry">
             <rect>
-             <x>30</x>
+             <x>40</x>
              <y>200</y>
              <width>121</width>
              <height>41</height>
@@ -400,7 +400,7 @@ background-color: white; /* Nền trắng */
           <widget class="QPushButton" name="buychocolatebalance_85">
            <property name="geometry">
             <rect>
-             <x>30</x>
+             <x>40</x>
              <y>200</y>
              <width>121</width>
              <height>41</height>
@@ -466,7 +466,7 @@ background-color: white; /* Nền trắng */
           <widget class="QLabel" name="label_108">
            <property name="geometry">
             <rect>
-             <x>20</x>
+             <x>40</x>
              <y>170</y>
              <width>141</width>
              <height>31</height>
@@ -501,7 +501,7 @@ background-color: white; /* Nền trắng */
           <widget class="QPushButton" name="buychocolatebalance_97">
            <property name="geometry">
             <rect>
-             <x>30</x>
+             <x>40</x>
              <y>200</y>
              <width>121</width>
              <height>41</height>
@@ -565,9 +565,9 @@ background-color: white; /* Nền trắng */
            <property name="geometry">
             <rect>
              <x>30</x>
-             <y>180</y>
+             <y>170</y>
              <width>141</width>
-             <height>21</height>
+             <height>31</height>
             </rect>
            </property>
            <property name="styleSheet">
@@ -599,7 +599,7 @@ background-color: white; /* Nền trắng */
           <widget class="QPushButton" name="buychocolatebalance_92">
            <property name="geometry">
             <rect>
-             <x>30</x>
+             <x>40</x>
              <y>200</y>
              <width>121</width>
              <height>41</height>
@@ -697,7 +697,7 @@ background-color: white; /* Nền trắng */
           <widget class="QPushButton" name="buychocolatebalance_84">
            <property name="geometry">
             <rect>
-             <x>30</x>
+             <x>40</x>
              <y>200</y>
              <width>121</width>
              <height>41</height>
@@ -739,8 +739,7 @@ QPushButton:pressed {
         <item row="0" column="4">
          <widget class="QWidget" name="widget_34" native="true">
           <property name="styleSheet">
-           <string notr="true">
-</string>
+           <string notr="true"/>
           </property>
           <widget class="QLabel" name="label_111">
            <property name="geometry">
@@ -764,7 +763,7 @@ background-color: white; /* Nền trắng */
           <widget class="QLabel" name="label_112">
            <property name="geometry">
             <rect>
-             <x>20</x>
+             <x>40</x>
              <y>170</y>
              <width>141</width>
              <height>31</height>
@@ -799,7 +798,7 @@ background-color: white; /* Nền trắng */
           <widget class="QPushButton" name="buychocolatebalance_98">
            <property name="geometry">
             <rect>
-             <x>30</x>
+             <x>40</x>
              <y>200</y>
              <width>121</width>
              <height>41</height>
@@ -843,7 +842,7 @@ QPushButton:pressed {
           <widget class="QLabel" name="label_189">
            <property name="geometry">
             <rect>
-             <x>20</x>
+             <x>30</x>
              <y>10</y>
              <width>141</width>
              <height>161</height>
@@ -863,9 +862,9 @@ background-color: white; /* Nền trắng */
            <property name="geometry">
             <rect>
              <x>30</x>
-             <y>180</y>
+             <y>175</y>
              <width>141</width>
-             <height>16</height>
+             <height>21</height>
             </rect>
            </property>
            <property name="styleSheet">
@@ -878,7 +877,7 @@ background-color: white; /* Nền trắng */
           <widget class="QLabel" name="imagecoffee_82">
            <property name="geometry">
             <rect>
-             <x>30</x>
+             <x>40</x>
              <y>20</y>
              <width>121</width>
              <height>141</height>
@@ -960,7 +959,7 @@ background-color: white; /* Nền trắng */
           <widget class="QLabel" name="label_104">
            <property name="geometry">
             <rect>
-             <x>20</x>
+             <x>40</x>
              <y>170</y>
              <width>141</width>
              <height>31</height>
@@ -998,7 +997,7 @@ background-color: white; /* Nền trắng */
           <widget class="QPushButton" name="buychocolatebalance_95">
            <property name="geometry">
             <rect>
-             <x>30</x>
+             <x>40</x>
              <y>200</y>
              <width>121</width>
              <height>41</height>
@@ -1061,7 +1060,7 @@ background-color: white; /* Nền trắng */
           <widget class="QLabel" name="label_106">
            <property name="geometry">
             <rect>
-             <x>30</x>
+             <x>40</x>
              <y>170</y>
              <width>141</width>
              <height>31</height>
@@ -1099,7 +1098,7 @@ background-color: white; /* Nền trắng */
           <widget class="QPushButton" name="buychocolatebalance_96">
            <property name="geometry">
             <rect>
-             <x>30</x>
+             <x>40</x>
              <y>200</y>
              <width>121</width>
              <height>41</height>
@@ -1212,9 +1211,9 @@ background-color: white; /* Nền trắng */
           <widget class="QPushButton" name="buychocolatebalance_94">
            <property name="geometry">
             <rect>
-             <x>30</x>
+             <x>40</x>
              <y>200</y>
-             <width>131</width>
+             <width>121</width>
              <height>41</height>
             </rect>
            </property>
@@ -1278,7 +1277,7 @@ background-color: white; /* Nền trắng */
           <widget class="QPushButton" name="buychocolatebalance_79">
            <property name="geometry">
             <rect>
-             <x>30</x>
+             <x>40</x>
              <y>200</y>
              <width>121</width>
              <height>41</height>
@@ -1401,7 +1400,7 @@ background-color: white; /* Nền trắng */
           <widget class="QPushButton" name="buychocolatebalance_89">
            <property name="geometry">
             <rect>
-             <x>30</x>
+             <x>40</x>
              <y>200</y>
              <width>121</width>
              <height>41</height>
@@ -1502,7 +1501,7 @@ background-color: white; /* Nền trắng */
           <widget class="QPushButton" name="buychocolatebalance_99">
            <property name="geometry">
             <rect>
-             <x>30</x>
+             <x>40</x>
              <y>200</y>
              <width>121</width>
              <height>41</height>
@@ -1606,7 +1605,7 @@ background-color: white; /* Nền trắng */
           <widget class="QPushButton" name="buychocolatebalance_90">
            <property name="geometry">
             <rect>
-             <x>30</x>
+             <x>40</x>
              <y>200</y>
              <width>121</width>
              <height>41</height>
@@ -1669,7 +1668,7 @@ background-color: white; /* Nền trắng */
           <widget class="QLabel" name="label_116">
            <property name="geometry">
             <rect>
-             <x>30</x>
+             <x>40</x>
              <y>170</y>
              <width>141</width>
              <height>31</height>
@@ -1704,7 +1703,7 @@ background-color: white; /* Nền trắng */
           <widget class="QPushButton" name="buychocolatebalance_91">
            <property name="geometry">
             <rect>
-             <x>30</x>
+             <x>40</x>
              <y>200</y>
              <width>121</width>
              <height>41</height>
@@ -2225,7 +2224,7 @@ QPushButton:pressed {
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1456</width>
+     <width>1407</width>
      <height>22</height>
     </rect>
    </property>
