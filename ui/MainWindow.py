@@ -953,7 +953,7 @@ class Ui_MainWindow(object):
 "")
         self.widget_2.setObjectName("widget_2")
         self.lineEdit_PhoneNum_2 = QtWidgets.QLineEdit(parent=self.widget_2)
-        self.lineEdit_PhoneNum_2.setGeometry(QtCore.QRect(180, 10, 131, 31))
+        self.lineEdit_PhoneNum_2.setGeometry(QtCore.QRect(180, 10, 121, 31))
         self.lineEdit_PhoneNum_2.setStyleSheet("color: rgb(11, 11, 11);\n"
 "border: 1px solid rgb(67, 139, 196);")
         self.lineEdit_PhoneNum_2.setText("")
@@ -966,7 +966,7 @@ class Ui_MainWindow(object):
 "")
         self.label_3.setObjectName("label_3")
         self.pushButton_loadCusType_2 = QtWidgets.QPushButton(parent=self.widget_2)
-        self.pushButton_loadCusType_2.setGeometry(QtCore.QRect(320, 10, 31, 31))
+        self.pushButton_loadCusType_2.setGeometry(QtCore.QRect(310, 10, 31, 31))
         self.pushButton_loadCusType_2.setStyleSheet("color: rgb(18, 18, 18);\n"
 "border: 1px solid rgb(67, 139, 196);")
         self.pushButton_loadCusType_2.setText("")
@@ -982,7 +982,7 @@ class Ui_MainWindow(object):
 "border: 1px solid rgb(67, 139, 196);")
         self.label_14.setObjectName("label_14")
         self.lineEdit_CustomerType_3 = QtWidgets.QLineEdit(parent=self.widget_2)
-        self.lineEdit_CustomerType_3.setGeometry(QtCore.QRect(180, 50, 131, 31))
+        self.lineEdit_CustomerType_3.setGeometry(QtCore.QRect(180, 50, 121, 31))
         self.lineEdit_CustomerType_3.setStyleSheet("color: rgb(11, 11, 11);\n"
 "border: 1px solid rgb(67, 139, 196);")
         self.lineEdit_CustomerType_3.setObjectName("lineEdit_CustomerType_3")

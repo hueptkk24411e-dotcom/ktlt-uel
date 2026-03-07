@@ -1881,7 +1881,7 @@ border: 2px solid rgb(170,210,250);
             <rect>
              <x>180</x>
              <y>10</y>
-             <width>131</width>
+             <width>121</width>
              <height>31</height>
             </rect>
            </property>
@@ -1915,7 +1915,7 @@ border: 1px solid rgb(67, 139, 196);
           <widget class="QPushButton" name="pushButton_loadCusType_2">
            <property name="geometry">
             <rect>
-             <x>320</x>
+             <x>310</x>
              <y>10</y>
              <width>31</width>
              <height>31</height>
@@ -1962,7 +1962,7 @@ border: 1px solid rgb(67, 139, 196);</string>
             <rect>
              <x>180</x>
              <y>50</y>
-             <width>131</width>
+             <width>121</width>
              <height>31</height>
             </rect>
            </property>

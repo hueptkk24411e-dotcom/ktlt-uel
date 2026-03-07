@@ -240,7 +240,7 @@ class MainWindowEx(Ui_MainWindow):
         MainWindow.setCentralWidget(scroll)
 
         # Tổng tiền ban đầu
-        self.labelTB_2.setText("0.00$")
+        self.lineEdit_TotalBill.setText("0.00$")
 
         # ========================
         # CONNECT BUTTONS
@@ -387,7 +387,7 @@ class MainWindowEx(Ui_MainWindow):
 
             self.total_money += price * quantity
 
-        self.labelTB_2.setText(f"{self.total_money:.2f}$")
+        self.lineEdit_TotalBill.setText(f"{self.total_money:.2f}$")
 
 
     # ===============================
@@ -480,7 +480,7 @@ class MainWindowEx(Ui_MainWindow):
 
             return
 
-        self.payment_screen = PaymentWindow(self.labelTB_2.text())
+        self.payment_screen = PaymentWindow(self.lineEdit_TotalBill.text())
 
         self.payment_screen.show()
 
