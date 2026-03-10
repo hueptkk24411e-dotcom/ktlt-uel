@@ -216,26 +216,28 @@ class ProductMainWindowEx(Ui_MainWindow):
     # ================= REVENUE CHART =================
     def show_revenue_chart(self):
 
-        names = []
-        revenues = []
+        months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                  "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
-        for s in self.lp.list:
-            names.append(str(s.SampleName))
+        revenues = [0] * 12
 
+        for i, s in enumerate(self.lp.list):
             price = int(s.SamplePrice)
             quantity = int(s.SampleQuantity)
 
             revenue = price * quantity
-            revenues.append(revenue)
 
-        plt.figure(figsize=(8,5))
-        plt.bar(names, revenues)
+            month_index = i % 12
+            revenues[month_index] += revenue
 
-        plt.title("Revenue Statistics")
-        plt.xlabel("Sample Name")
+        plt.figure(figsize=(8, 5))
+
+        plt.bar(months, revenues, color="skyblue")
+
+        plt.title("Revenue Statistics by Month")
+        plt.xlabel("Month")
         plt.ylabel("Revenue")
 
-        plt.xticks(rotation=45)
         plt.tight_layout()
         plt.show()
 
