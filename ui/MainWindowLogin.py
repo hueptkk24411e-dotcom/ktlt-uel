@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file 'D:\UEL\PythonProject\CustomerManagement\ui\MainWindowLogin.ui'
+# Form implementation generated from reading ui file 'D:\UEL\KTTL\ktlt-uel\ui\MainWindowLogin.ui'
 #
 # Created by: PyQt6 UI code generator 6.10.2
 #
@@ -25,7 +25,7 @@ class Ui_MainWindow(object):
 "border-radius: 10px;\n"
 "padding: 2px 8px;")
         self.label_5.setText("")
-        self.label_5.setPixmap(QtGui.QPixmap("D:\\UEL\\PythonProject\\CustomerManagement\\ui\\../images/Brown and Beige Minimalist Nail Art Salon Services Instagram Post (1).png"))
+        self.label_5.setPixmap(QtGui.QPixmap("D:\\UEL\\KTTL\\ktlt-uel\\ui\\../images/Brown and Beige Minimalist Nail Art Salon Services Instagram Post (1).png"))
         self.label_5.setScaledContents(True)
         self.label_5.setObjectName("label_5")
         self.label_7 = QtWidgets.QLabel(parent=self.centralwidget)
@@ -75,7 +75,7 @@ class Ui_MainWindow(object):
 "padding: 4px 12px;\n"
 "")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("D:\\UEL\\PythonProject\\CustomerManagement\\ui\\../images/ic_login.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon.addPixmap(QtGui.QPixmap("D:\\UEL\\KTTL\\ktlt-uel\\ui\\../images/ic_login.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.pushButtonLogin.setIcon(icon)
         self.pushButtonLogin.setIconSize(QtCore.QSize(25, 20))
         self.pushButtonLogin.setAutoRepeatDelay(302)
@@ -103,7 +103,7 @@ class Ui_MainWindow(object):
 "padding: 4px 12px;\n"
 "")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("D:\\UEL\\PythonProject\\CustomerManagement\\ui\\../images/ic_exit.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon1.addPixmap(QtGui.QPixmap("D:\\UEL\\KTTL\\ktlt-uel\\ui\\../images/ic_exit.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.pushButtonExit.setIcon(icon1)
         self.pushButtonExit.setIconSize(QtCore.QSize(40, 25))
         self.pushButtonExit.setObjectName("pushButtonExit")
@@ -131,7 +131,7 @@ class Ui_MainWindow(object):
         self.lineEditPassword.setObjectName("lineEditPassword")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(parent=MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 339, 22))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 339, 18))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(parent=MainWindow)
