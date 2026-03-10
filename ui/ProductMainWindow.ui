@@ -881,7 +881,7 @@ border-radius: 20px;</string>
     <widget class="QPushButton" name="pushButtonOpenChartFeedback">
      <property name="geometry">
       <rect>
-       <x>30</x>
+       <x>40</x>
        <y>80</y>
        <width>121</width>
        <height>31</height>
@@ -907,7 +907,7 @@ font: 14pt &quot;Rockwell Condensed&quot;;
 </string>
      </property>
      <property name="text">
-      <string>Open Chart</string>
+      <string>Open Table</string>
      </property>
      <property name="icon">
       <iconset>
@@ -1472,7 +1472,7 @@ border: 2px solid rgb(170,210,250);</string>
     <widget class="QPushButton" name="pushButtonSampleQuantity">
      <property name="geometry">
       <rect>
-       <x>30</x>
+       <x>40</x>
        <y>80</y>
        <width>121</width>
        <height>31</height>
@@ -1545,7 +1545,7 @@ border: 2px solid rgb(170,210,250);</string>
      <property name="geometry">
       <rect>
        <x>40</x>
-       <y>78</y>
+       <y>80</y>
        <width>111</width>
        <height>31</height>
       </rect>
@@ -1629,7 +1629,7 @@ QPushButton:pressed{
      <x>0</x>
      <y>0</y>
      <width>1873</width>
-     <height>22</height>
+     <height>18</height>
     </rect>
    </property>
   </widget>
