@@ -23,12 +23,6 @@
             "EmployeeName": "Chồn",
             "Experience": 6,
             "CustomerBooked": "bo"
-        },
-        {
-            "EmployeeId": "chuot",
-            "EmployeeName": "Chuột",
-            "Experience": 7,
-            "CustomerBooked": "tuan"
         }
     ]
 }
