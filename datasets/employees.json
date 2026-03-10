@@ -3,26 +3,37 @@
         {
             "EmployeeId": "meo",
             "EmployeeName": "Mèo",
+            "Password": 111,
             "Experience": 1,
             "CustomerBooked": "teo"
         },
         {
             "EmployeeId": "ga",
             "EmployeeName": "Gà",
-            "Experience": 3,
+            "Password": 333,
+            "Experience": 2,
             "CustomerBooked": "ty"
         },
         {
             "EmployeeId": "gau",
             "EmployeeName": "Gấu",
-            "Experience": 5,
+            "Password": 5444,
+            "Experience": 1,
             "CustomerBooked": "bin"
         },
         {
             "EmployeeId": "chon",
             "EmployeeName": "Chồn",
-            "Experience": 6,
+            "Password": 6555,
+            "Experience": 3,
             "CustomerBooked": "bo"
+        },
+        {
+            "EmployeeId": "chuot",
+            "EmployeeName": "Chuột",
+            "Password": 7446,
+            "Experience": 4,
+            "CustomerBooked": "tuan"
         }
     ]
 }
