@@ -6,5 +6,5 @@ class Employee:
         self.Experience=Experience
         self.CustomerBooked=CustomerBooked
     def __str__(self):
-        infor=f"{self.EmployeeId}\t{self.EmployeeName}\t{self.Experience}\t{self.CustomerBooked}"
+        infor=f"{self.EmployeeId}\t{self.EmployeeName}\t{self.Experience}\t{self.Password}\t{self.CustomerBooked}"
         return infor
