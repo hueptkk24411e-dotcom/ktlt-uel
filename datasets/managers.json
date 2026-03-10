@@ -1,0 +1,28 @@
+{
+    "managers": [
+        {
+            "ManagerID": "M01",
+            "ManagerName": "Hổ",
+            "ManagerUsername": "ho",
+            "ManagerPassword": "111111"
+        },
+        {
+            "ManagerID": "M02",
+            "ManagerName": "Voi",
+            "ManagerUsername": "voi",
+            "ManagerPassword": "333333"
+        },
+        {
+            "ManagerID": "M03",
+            "ManagerName": "Thỏ Trắng",
+            "ManagerUsername": "tho",
+            "ManagerPassword": "345678"
+        },
+        {
+            "ManagerID": "M04",
+            "ManagerName": "Cáo Đỏ",
+            "ManagerUsername": "cao",
+            "ManagerPassword": "456789"
+        }
+    ]
+}

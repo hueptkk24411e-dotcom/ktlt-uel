@@ -1,6 +1,7 @@
 import sys
 from PyQt6.QtWidgets import QMainWindow, QMessageBox, QApplication
 
+from libs.DataConnector import DataConnector
 from ui.MainWindowLogin import Ui_MainWindow
 from ui.ProductMainWindowEx import ProductMainWindowEx
 
@@ -18,8 +19,7 @@ class MainWindowLoginEx(QMainWindow):
         self.ui.pushButtonExit.clicked.connect(self.process_exit)
 
         # Khởi tạo DataConnector để đọc dữ liệu Manager từ JSON
-        self.data_connector = DataConnector(
-            manager_file_path="/Users/dovi/ProductManagement/Final/dataset/managers.json")
+        self.data_connector = DataConnector(manager_file_path="../datasets/managers.json")
 
         # Biến đếm số lần đăng nhập sai
         self.failed_attempts = 0
@@ -28,9 +28,7 @@ class MainWindowLoginEx(QMainWindow):
     def process_login(self):
         username = self.ui.lineEditUsername.text().strip().lower()
         password = self.ui.lineEditPassword.text().strip()
-
         manager = self.data_connector.validate_manager_login(username, password)
-
         if manager:
             self.open_main_window()
         else:
@@ -42,10 +40,12 @@ class MainWindowLoginEx(QMainWindow):
                 self.show_login_failed_message()
 
     def open_main_window(self):
-        self.product_window = ProductMainWindowEx()
-        self.product_window.show()
-        self.close()
-
+        def open_main_window(self):
+            self.product_window = QMainWindow()
+            self.ui_product = ProductMainWindowEx()
+            self.ui_product.setupUi(self.product_window)
+            self.product_window.show()
+            self.close()
     def show_login_failed_message(self):
         """Hiển thị thông báo lỗi khi đăng nhập thất bại"""
         QMessageBox.warning(self, "Đăng nhập thất bại",

@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file 'D:\PythonProject\testck\ui\SelfCustomWindow.ui'
+# Form implementation generated from reading ui file 'D:\Code\ktlt-uel\ui\SelfCustomWindow.ui'
 #
 # Created by: PyQt6 UI code generator 6.9.1
 #
@@ -50,7 +50,7 @@ class Ui_SelfCustomWindow(object):
         self.imagecoffee_43 = QtWidgets.QLabel(parent=self.widget)
         self.imagecoffee_43.setGeometry(QtCore.QRect(170, 20, 221, 231))
         self.imagecoffee_43.setText("")
-        self.imagecoffee_43.setPixmap(QtGui.QPixmap("D:\\PythonProject\\testck\\ui\\../ima/plus.png"))
+        self.imagecoffee_43.setPixmap(QtGui.QPixmap("D:\\Code\\ktlt-uel\\ui\\../ima/plus.png"))
         self.imagecoffee_43.setScaledContents(True)
         self.imagecoffee_43.setObjectName("imagecoffee_43")
         self.buychocolatebalance_44 = QtWidgets.QPushButton(parent=self.widget)
@@ -77,7 +77,7 @@ class Ui_SelfCustomWindow(object):
 "    border: 2px solid #4A90E2;\n"
 "}")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("D:\\PythonProject\\testck\\ui\\../ima/add.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon.addPixmap(QtGui.QPixmap("D:\\Code\\ktlt-uel\\ui\\../ima/add.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.buychocolatebalance_44.setIcon(icon)
         self.buychocolatebalance_44.setObjectName("buychocolatebalance_44")
         self.horizontalLayout.addWidget(self.widget)
@@ -301,47 +301,10 @@ class Ui_SelfCustomWindow(object):
         self.chooseTheStyleComboBox_2.addItem("")
         self.chooseTheStyleComboBox_2.addItem("")
         self.formLayout_2.setWidget(0, QtWidgets.QFormLayout.ItemRole.FieldRole, self.chooseTheStyleComboBox_2)
-        self.widget_3 = QtWidgets.QWidget(parent=self.widget_2)
-        self.widget_3.setGeometry(QtCore.QRect(0, 70, 1121, 185))
-        self.widget_3.setObjectName("widget_3")
-        self.label_2 = QtWidgets.QLabel(parent=self.widget_3)
-        self.label_2.setGeometry(QtCore.QRect(10, 10, 171, 31))
-        self.label_2.setObjectName("label_2")
-        self.textEdit = QtWidgets.QTextEdit(parent=self.widget_3)
-        self.textEdit.setGeometry(QtCore.QRect(20, 40, 461, 71))
-        self.textEdit.setStyleSheet(" background-color:#AFCBF3; color: rgb(15, 15, 15);")
-        self.textEdit.setObjectName("textEdit")
-        self.buychocolatebalance_46 = QtWidgets.QPushButton(parent=self.widget_3)
-        self.buychocolatebalance_46.setGeometry(QtCore.QRect(20, 120, 111, 41))
-        self.buychocolatebalance_46.setStyleSheet("QPushButton {\n"
-"    background-color:#AFCBF3; /* Màu xanh nhạt chủ đạo bạn chọn */\n"
-"    color: #4A90E2; /* Chữ màu xanh đậm để dễ đọc trên nền nhạt */\n"
-"    border-radius: 12px;\n"
-"    padding: 10px;\n"
-"    font-size: 14px;\n"
-"    font-weight: bold;\n"
-"    font-family: \"Georgia\";\n"
-"    border: 2px solid #A6C8FF; /* Viền xanh đậm hơn một chút để tạo khối */\n"
-"}\n"
-"\n"
-"QPushButton:hover {\n"
-"    background-color: #A6C8FF; /* Màu đậm hơn khi di chuột vào */\n"
-"    border: 2px solid #7FAFFF; /* Viền đậm hơn khi hover */\n"
-"    color: white; /* Chuyển chữ sang trắng để nổi bật */\n"
-"}\n"
-"\n"
-"QPushButton:pressed {\n"
-"    background-color: #7FAFFF; /* Màu đậm nhất khi nhấn giữ nút */\n"
-"    border: 2px solid #4A90E2;\n"
-"}")
-        icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("D:\\PythonProject\\testck\\ui\\images/3507742_cart_ecommerce_grocery_iconoteka_shop_icon.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
-        self.buychocolatebalance_46.setIcon(icon1)
-        self.buychocolatebalance_46.setObjectName("buychocolatebalance_46")
         self.verticalLayout.addWidget(self.widget_2)
         SelfCustomWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(parent=SelfCustomWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 1143, 26))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 1143, 18))
         self.menubar.setObjectName("menubar")
         SelfCustomWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(parent=SelfCustomWindow)
@@ -398,10 +361,3 @@ class Ui_SelfCustomWindow(object):
         self.chooseTheStyleComboBox_2.setItemText(2, _translate("SelfCustomWindow", "Medium"))
         self.chooseTheStyleComboBox_2.setItemText(3, _translate("SelfCustomWindow", "Long"))
         self.chooseTheStyleComboBox_2.setItemText(4, _translate("SelfCustomWindow", "Extra Long"))
-        self.label_2.setText(_translate("SelfCustomWindow", "<html><head/><body><p><span style=\" font-size:10pt;\">Detailed description :</span></p></body></html>"))
-        self.textEdit.setHtml(_translate("SelfCustomWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:7.8pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
-        self.buychocolatebalance_46.setText(_translate("SelfCustomWindow", "Done"))
