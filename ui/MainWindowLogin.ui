@@ -32,8 +32,8 @@
      <rect>
       <x>10</x>
       <y>-10</y>
-      <width>291</width>
-      <height>371</height>
+      <width>321</width>
+      <height>391</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -56,7 +56,7 @@ padding: 2px 8px;</string>
      <rect>
       <x>40</x>
       <y>20</y>
-      <width>231</width>
+      <width>261</width>
       <height>191</height>
      </rect>
     </property>
@@ -80,7 +80,7 @@ background-color: rgb(243, 248, 253);
      <rect>
       <x>60</x>
       <y>60</y>
-      <width>171</width>
+      <width>221</width>
       <height>20</height>
      </rect>
     </property>
@@ -97,7 +97,7 @@ font: 20 20pt &quot;Alex Brush&quot;;</string>
      <rect>
       <x>60</x>
       <y>30</y>
-      <width>181</width>
+      <width>221</width>
       <height>20</height>
      </rect>
     </property>
@@ -115,7 +115,7 @@ font: 20 20pt &quot;Alex Brush&quot;;
      <rect>
       <x>70</x>
       <y>160</y>
-      <width>81</width>
+      <width>91</width>
       <height>31</height>
      </rect>
     </property>
@@ -171,9 +171,9 @@ padding: 4px 12px;
    <widget class="QPushButton" name="pushButtonExit">
     <property name="geometry">
      <rect>
-      <x>170</x>
+      <x>190</x>
       <y>160</y>
-      <width>81</width>
+      <width>91</width>
       <height>31</height>
      </rect>
     </property>
@@ -220,7 +220,7 @@ padding: 4px 12px;
       <x>70</x>
       <y>90</y>
       <width>81</width>
-      <height>31</height>
+      <height>21</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -238,7 +238,7 @@ font: 10pt &quot;Rockwell Condensed&quot;;</string>
       <x>70</x>
       <y>120</y>
       <width>81</width>
-      <height>31</height>
+      <height>21</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -252,9 +252,9 @@ font: 10pt &quot;Rockwell Condensed&quot;;</string>
    <widget class="QLineEdit" name="lineEditUsername">
     <property name="geometry">
      <rect>
-      <x>140</x>
+      <x>160</x>
       <y>90</y>
-      <width>113</width>
+      <width>121</width>
       <height>20</height>
      </rect>
     </property>
@@ -267,9 +267,9 @@ font: 10pt &quot;Rockwell Condensed&quot;;</string>
    <widget class="QLineEdit" name="lineEditPassword">
     <property name="geometry">
      <rect>
-      <x>140</x>
+      <x>160</x>
       <y>120</y>
-      <width>113</width>
+      <width>121</width>
       <height>20</height>
      </rect>
     </property>
@@ -277,7 +277,7 @@ font: 10pt &quot;Rockwell Condensed&quot;;</string>
      <string notr="true">border: 2px solid rgb(216, 237, 248);</string>
     </property>
     <property name="text">
-     <string>123</string>
+     <string/>
     </property>
     <property name="echoMode">
      <enum>QLineEdit::Password</enum>
@@ -290,7 +290,7 @@ font: 10pt &quot;Rockwell Condensed&quot;;</string>
      <x>0</x>
      <y>0</y>
      <width>339</width>
-     <height>18</height>
+     <height>22</height>
     </rect>
    </property>
   </widget>

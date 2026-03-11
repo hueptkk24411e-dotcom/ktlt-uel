@@ -40,12 +40,15 @@ class MainWindowLoginEx(QMainWindow):
                 self.show_login_failed_message()
 
     def open_main_window(self):
-        def open_main_window(self):
-            self.product_window = QMainWindow()
-            self.ui_product = ProductMainWindowEx()
-            self.ui_product.setupUi(self.product_window)
-            self.product_window.show()
-            self.close()
+
+        self.product_window = QMainWindow()
+
+        self.product_ui = ProductMainWindowEx()
+        self.product_ui.setupUi(self.product_window)
+
+        self.product_ui.showWindow()
+
+        self.close()
     def show_login_failed_message(self):
         """Hiển thị thông báo lỗi khi đăng nhập thất bại"""
         QMessageBox.warning(self, "Đăng nhập thất bại",

@@ -1,10 +1,9 @@
 import sys
 from PyQt6.QtWidgets import QApplication, QMainWindow, QMessageBox, QTableWidgetItem, QScrollArea
 from PyQt6 import QtCore, QtWidgets
-
+from models.customers import Customers
 from ui.FeedbackWindow import Ui_RatingUI
 from ui.MainWindow import Ui_MainWindow
-from ui.MainWindowLoginEx import MainWindowLoginEx
 from ui.PaymentWindow import Ui_PaymentWindow
 from ui.SelfCustomWindow import Ui_SelfCustomWindow
 
@@ -218,9 +217,10 @@ class SelfCustomWindow(QMainWindow):
 class MainWindowEx(Ui_MainWindow):
 
     def __init__(self):
-
+        self.file_name_cus = "../datasets/customers.json"
+        self.cus = Customers()
+        self.cus.import_json(self.file_name_cus)
         super().__init__()
-
         self.cart = []
         self.total_money = 0
 
@@ -248,8 +248,8 @@ class MainWindowEx(Ui_MainWindow):
 
         self.pushButton_TB_9.clicked.connect(self.open_payment)
         self.pushButton_TB_10.clicked.connect(self.remove_from_cart)
+        self.pushButton_loadCusType_2.clicked.connect(self.calculate_total)
 
-        self.pushButton_TB_16.clicked.connect(self.process_logout)
 
         self.buychocolatebalance_79.clicked.connect(self.open_self_custom)
         self.pushButton_TB_11.clicked.connect(self.open_technician)
@@ -463,12 +463,7 @@ class MainWindowEx(Ui_MainWindow):
             f"You selected: {name}"
         )
 
-    def process_logout(self):
 
-        self.login_window = MainWindowLoginEx()
-        self.login_window.show()
-
-        self.MainWindow.close()
     # ===============================
     # PAYMENT
     # ===============================
@@ -527,19 +522,37 @@ class MainWindowEx(Ui_MainWindow):
         msg.exec()
 
 
-
-
-
     def open_technician(self):
 
         self.tech_window = TechnicianWindow(self)
 
         self.tech_window.show()
+    # SEARCH
 
+    def get_customer_type(self):
 
-    # ===============================
-    # SHOW MAIN WINDOW
-    # ===============================
+        phone = self.lineEdit_PhoneNum_2.text().strip()
+
+        for c in self.cus.list:
+            if str(c.PhoneNumber) == phone:
+                return c.Type
+
+        return None
+    def calculate_total(self):
+
+            cus_type = self.get_customer_type()
+
+            if cus_type is None:
+                QMessageBox.warning(self.MainWindow, "Customer", "Customer not found")
+                return
+
+            self.lineEdit_CustomerType_3.setText(cus_type)
+
+            total = self.total_money
+
+            if cus_type.lower() == "vip":
+                total = total * 0.85
+
+            self.lineEdit_TotalBill.setText(f"{total:.2f}$")
     def show(self):
-
         self.MainWindow.show()

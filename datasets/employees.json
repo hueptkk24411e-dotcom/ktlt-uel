@@ -1,37 +1,37 @@
 {
     "employees": [
         {
-            "EmployeeId": "meo",
-            "EmployeeName": "Mèo",
-            "Password": 111,
+            "EmployeeId": "E01",
+            "EmployeeName": "meo",
+            "Password": "1111",
             "Experience": 1,
             "CustomerBooked": "teo"
         },
         {
-            "EmployeeId": "ga",
-            "EmployeeName": "Gà",
-            "Password": 333,
+            "EmployeeId": "E02",
+            "EmployeeName": "ga",
+            "Password": "3331",
             "Experience": 2,
             "CustomerBooked": "ty"
         },
         {
-            "EmployeeId": "gau",
-            "EmployeeName": "Gấu",
-            "Password": 5444,
+            "EmployeeId": "E03",
+            "EmployeeName": "gau",
+            "Password": "5444",
             "Experience": 1,
             "CustomerBooked": "bin"
         },
         {
-            "EmployeeId": "chon",
-            "EmployeeName": "Chồn",
-            "Password": 6555,
+            "EmployeeId": "E04",
+            "EmployeeName": "chon",
+            "Password": "6555",
             "Experience": 3,
             "CustomerBooked": "bo"
         },
         {
-            "EmployeeId": "chuot",
-            "EmployeeName": "Chuột",
-            "Password": 7446,
+            "EmployeeId": "E05",
+            "EmployeeName": "chuot",
+            "Password": "7446",
             "Experience": 4,
             "CustomerBooked": "tuan"
         }

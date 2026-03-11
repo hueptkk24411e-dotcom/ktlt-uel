@@ -8,7 +8,7 @@ class Employees(MyCollections):
         with open(filename, encoding='utf-8') as json_file:
             data = json.load(json_file)
             for p in data['employees']:
-                it = Employee(p['EmployeeId'], p['EmployeeName'],p['Password'], p['Experience'],p['CustomerBooked'])
+                it = Employee(p['EmployeeId'], p['EmployeeName'],str(p['Password']), p['Experience'],p['CustomerBooked'])
                 self.add_item(it)
 
     def export_json(self, filename):
@@ -17,7 +17,7 @@ class Employees(MyCollections):
             data['employees'].append({
                 'EmployeeId': it.EmployeeId,
                 'EmployeeName': it.EmployeeName,
-                'Password': it.Password,
+                'Password': str(it.Password),
                 'Experience': it.Experience,
                 'CustomerBooked': it.CustomerBooked
             })

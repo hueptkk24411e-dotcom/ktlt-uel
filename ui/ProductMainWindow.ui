@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1195</width>
-    <height>723</height>
+    <width>1873</width>
+    <height>764</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,10 +20,10 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>-2</x>
+      <x>8</x>
       <y>0</y>
-      <width>1151</width>
-      <height>41</height>
+      <width>1141</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="toolTip">
@@ -35,7 +35,7 @@ color: rgb(15,40,80);
 font: 50 20pt &quot;Alex Brush&quot;;
 border-radius: 20px;
 border: 2px solid rgb(67, 139, 196);
-    border-radius: 12px;
+   border-radius: 12px;
 </string>
     </property>
     <property name="text">
@@ -46,9 +46,9 @@ border: 2px solid rgb(67, 139, 196);
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>50</y>
+      <y>60</y>
       <width>381</width>
-      <height>381</height>
+      <height>371</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -252,10 +252,10 @@ color: rgb(0, 0, 127);
     </property>
     <property name="styleSheet">
      <string notr="true">QWidget {
-    font: 75 16pt &quot;Rockwell&quot;;
-    color: rgb(45, 5, 127);
- 	background-color: rgb(167, 212, 238);
-    border-radius: 20px;
+   font: 75 16pt &quot;Rockwell&quot;;
+   color: rgb(45, 5, 127);
+   background-color: rgb(167, 212, 238);
+   border-radius: 20px;
 border: 2px solid rgb(67, 139, 196);
 }</string>
     </property>
@@ -333,12 +333,13 @@ border: 2px solid rgb(67, 139, 196);
 font: 14pt &quot;Rockwell Condensed&quot;;
 color: rgb(224, 253, 255);
 
-    border-radius: 10px;
-    padding: 2px 8px;
+
+   border-radius: 10px;
+   padding: 2px 8px;
 border: 2px solid rgb(170,210,250);
 QPushButton{
-    background-color:#4E86B5;
-    border:none;
+   background-color:#4E86B5;
+   border:none;
 }</string>
      </property>
      <property name="text">
@@ -346,12 +347,12 @@ QPushButton{
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>../../../../.designer/images/ic_save(2).png</normaloff>../../../../.designer/images/ic_save(2).png</iconset>
+       <normaloff>../images/ic_save(2).png</normaloff>../images/ic_save(2).png</iconset>
      </property>
      <property name="iconSize">
       <size>
        <width>40</width>
-       <height>25</height>
+       <height>20</height>
       </size>
      </property>
      <property name="autoRepeatInterval">
@@ -372,8 +373,9 @@ QPushButton{
 font: 14pt &quot;Rockwell Condensed&quot;;
 color: rgb(224, 253, 255);
 
-    border-radius: 10px;
-    padding: 2px 8px;
+
+   border-radius: 10px;
+   padding: 2px 8px;
 border: 2px solid rgb(170,210,250);
 </string>
      </property>
@@ -382,12 +384,12 @@ border: 2px solid rgb(170,210,250);
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>../../../../.designer/images/ic_clear (2).png</normaloff>../../../../.designer/images/ic_clear (2).png</iconset>
+       <normaloff>../images/ic_clear (2).png</normaloff>../images/ic_clear (2).png</iconset>
      </property>
      <property name="iconSize">
       <size>
        <width>40</width>
-       <height>25</height>
+       <height>20</height>
       </size>
      </property>
     </widget>
@@ -414,8 +416,9 @@ border: 2px solid rgb(170,210,250);
 font: 14pt &quot;Rockwell Condensed&quot;;
 color: rgb(224, 253, 255);
 
-    border-radius: 10px;
-    padding: 2px 8px;
+
+   border-radius: 10px;
+   padding: 2px 8px;
 border: 2px solid rgb(170,210,250);</string>
      </property>
      <property name="text">
@@ -423,12 +426,12 @@ border: 2px solid rgb(170,210,250);</string>
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>../../../../.designer/images/ic_search.png</normaloff>../../../../.designer/images/ic_search.png</iconset>
+       <normaloff>../images/ic_search.png</normaloff>../images/ic_search.png</iconset>
      </property>
      <property name="iconSize">
       <size>
        <width>40</width>
-       <height>25</height>
+       <height>20</height>
       </size>
      </property>
     </widget>
@@ -446,8 +449,9 @@ border: 2px solid rgb(170,210,250);</string>
 font: 14pt &quot;Rockwell Condensed&quot;;
 color: rgb(224, 253, 255);
 
-    border-radius: 10px;
-    padding: 2px 8px;
+
+   border-radius: 10px;
+   padding: 2px 8px;
 border: 2px solid rgb(170,210,250);</string>
      </property>
      <property name="text">
@@ -455,12 +459,12 @@ border: 2px solid rgb(170,210,250);</string>
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>../../../../.designer/images/ic_remove.png</normaloff>../../../../.designer/images/ic_remove.png</iconset>
+       <normaloff>../images/ic_remove.png</normaloff>../images/ic_remove.png</iconset>
      </property>
      <property name="iconSize">
       <size>
        <width>40</width>
-       <height>25</height>
+       <height>20</height>
       </size>
      </property>
     </widget>
@@ -475,6 +479,7 @@ border: 2px solid rgb(170,210,250);</string>
      </property>
      <property name="styleSheet">
       <string notr="true">background-color: rgb(255, 255, 255);
+
 
 </string>
      </property>
@@ -555,10 +560,10 @@ border: 2px solid rgb(170,210,250);</string>
     </property>
     <property name="styleSheet">
      <string notr="true">QWidget {
-    font: 75 16pt &quot;Rockwell&quot;;
-    color: rgb(45, 5, 127);
- 	background-color: rgb(167, 212, 238);
-    border-radius: 20px;
+   font: 75 16pt &quot;Rockwell&quot;;
+   color: rgb(45, 5, 127);
+   background-color: rgb(167, 212, 238);
+   border-radius: 20px;
 border: 2px solid rgb(67, 139, 196);
 }</string>
     </property>
@@ -671,13 +676,23 @@ border: 2px solid rgb(67, 139, 196);
        <height>31</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <family>Rockwell Condensed</family>
+       <pointsize>14</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
      <property name="styleSheet">
       <string notr="true">background-color: rgb(67, 139, 196);
 font: 14pt &quot;Rockwell Condensed&quot;;
 color: rgb(224, 253, 255);
 
-    border-radius: 10px;
-    padding: 2px 8px;
+
+   border-radius: 10px;
+   padding: 2px 8px;
 border: 2px solid rgb(170,210,250);</string>
      </property>
      <property name="text">
@@ -685,12 +700,12 @@ border: 2px solid rgb(170,210,250);</string>
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>../../../../.designer/images/ic_save(2).png</normaloff>../../../../.designer/images/ic_save(2).png</iconset>
+       <normaloff>../images/ic_save(2).png</normaloff>../images/ic_save(2).png</iconset>
      </property>
      <property name="iconSize">
       <size>
        <width>40</width>
-       <height>23</height>
+       <height>20</height>
       </size>
      </property>
     </widget>
@@ -708,8 +723,9 @@ border: 2px solid rgb(170,210,250);</string>
 font: 14pt &quot;Rockwell Condensed&quot;;
 color: rgb(224, 253, 255);
 
-    border-radius: 10px;
-    padding: 2px 8px;
+
+   border-radius: 10px;
+   padding: 2px 8px;
 border: 2px solid rgb(170,210,250);</string>
      </property>
      <property name="text">
@@ -717,12 +733,12 @@ border: 2px solid rgb(170,210,250);</string>
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>../../../../.designer/images/ic_clear (2).png</normaloff>../../../../.designer/images/ic_clear (2).png</iconset>
+       <normaloff>../images/ic_clear (2).png</normaloff>../images/ic_clear (2).png</iconset>
      </property>
      <property name="iconSize">
       <size>
        <width>40</width>
-       <height>23</height>
+       <height>20</height>
       </size>
      </property>
     </widget>
@@ -735,10 +751,19 @@ border: 2px solid rgb(170,210,250);</string>
        <height>31</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <family>Rockwell Condensed</family>
+       <pointsize>14</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
      <property name="styleSheet">
       <string notr="true">
-    border-radius: 10px;
-    padding: 2px 8px;
+   border-radius: 10px;
+   padding: 2px 8px;
 border: 2px solid rgb(170,210,250);
 background-color: rgb(67, 139, 196);
 font: 14pt &quot;Rockwell Condensed&quot;;
@@ -749,12 +774,12 @@ color: rgb(224, 253, 255);</string>
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>../../../../.designer/images/ic_search.png</normaloff>../../../../.designer/images/ic_search.png</iconset>
+       <normaloff>../images/ic_search.png</normaloff>../images/ic_search.png</iconset>
      </property>
      <property name="iconSize">
       <size>
        <width>40</width>
-       <height>23</height>
+       <height>20</height>
       </size>
      </property>
     </widget>
@@ -767,13 +792,23 @@ color: rgb(224, 253, 255);</string>
        <height>31</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <family>Rockwell Condensed</family>
+       <pointsize>14</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
      <property name="styleSheet">
       <string notr="true">background-color: rgb(67, 139, 196);
 font: 14pt &quot;Rockwell Condensed&quot;;
 color: rgb(224, 253, 255);
 
-    border-radius: 10px;
-    padding: 2px 8px;
+
+   border-radius: 10px;
+   padding: 2px 8px;
 border: 2px solid rgb(170,210,250);</string>
      </property>
      <property name="text">
@@ -781,12 +816,12 @@ border: 2px solid rgb(170,210,250);</string>
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>../../../../.designer/images/ic_remove.png</normaloff>../../../../.designer/images/ic_remove.png</iconset>
+       <normaloff>../images/ic_remove.png</normaloff>../images/ic_remove.png</iconset>
      </property>
      <property name="iconSize">
       <size>
        <width>40</width>
-       <height>22</height>
+       <height>20</height>
       </size>
      </property>
     </widget>
@@ -805,7 +840,7 @@ border: 2px solid rgb(170,210,250);</string>
     <property name="geometry">
      <rect>
       <x>1000</x>
-      <y>50</y>
+      <y>60</y>
       <width>151</width>
       <height>51</height>
      </rect>
@@ -836,9 +871,9 @@ border: 2px solid rgb(170,210,250);</string>
     <property name="geometry">
      <rect>
       <x>400</x>
-      <y>50</y>
+      <y>60</y>
       <width>191</width>
-      <height>121</height>
+      <height>111</height>
      </rect>
     </property>
     <property name="font">
@@ -881,9 +916,9 @@ border-radius: 20px;</string>
     <widget class="QPushButton" name="pushButtonOpenChartFeedback">
      <property name="geometry">
       <rect>
-       <x>30</x>
+       <x>20</x>
        <y>80</y>
-       <width>121</width>
+       <width>141</width>
        <height>31</height>
       </rect>
      </property>
@@ -900,8 +935,9 @@ border-radius: 20px;</string>
       <string notr="true">background-color: rgb(67, 139, 196);
 color: rgb(224, 253, 255);
 
-    border-radius: 10px;
-    padding: 2px 8px;
+
+   border-radius: 10px;
+   padding: 2px 8px;
 border: 2px solid rgb(170,210,250);
 font: 14pt &quot;Rockwell Condensed&quot;;
 </string>
@@ -911,7 +947,7 @@ font: 14pt &quot;Rockwell Condensed&quot;;
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>../../../../.designer/images/ic_feedback.png</normaloff>../../../../.designer/images/ic_feedback.png</iconset>
+       <normaloff>../images/ic_feedback.png</normaloff>../images/ic_feedback.png</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -1171,10 +1207,10 @@ border: 2px solid rgb(170,210,250);
     </property>
     <property name="styleSheet">
      <string notr="true">QWidget {
-    font: 75 16pt &quot;Rockwell&quot;;
-    color: rgb(45, 5, 127);
- 	background-color: rgb(167, 212, 238);
-    border-radius: 20px;
+   font: 75 16pt &quot;Rockwell&quot;;
+   color: rgb(45, 5, 127);
+   background-color: rgb(167, 212, 238);
+   border-radius: 20px;
 border: 2px solid rgb(67, 139, 196);
 }</string>
     </property>
@@ -1289,8 +1325,8 @@ border: 2px solid rgb(67, 139, 196);
      </property>
      <property name="styleSheet">
       <string notr="true">
-    border-radius: 10px;
-    padding: 2px 8px;
+   border-radius: 10px;
+   padding: 2px 8px;
 border: 2px solid rgb(170,210,250);background-color: rgb(67, 139, 196);
 font: 14pt &quot;Rockwell Condensed&quot;;
 color: rgb(224, 253, 255);</string>
@@ -1300,12 +1336,12 @@ color: rgb(224, 253, 255);</string>
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>../../../../.designer/images/ic_save(2).png</normaloff>../../../../.designer/images/ic_save(2).png</iconset>
+       <normaloff>../images/ic_save(2).png</normaloff>../images/ic_save(2).png</iconset>
      </property>
      <property name="iconSize">
       <size>
        <width>40</width>
-       <height>25</height>
+       <height>20</height>
       </size>
      </property>
     </widget>
@@ -1320,8 +1356,8 @@ color: rgb(224, 253, 255);</string>
      </property>
      <property name="styleSheet">
       <string notr="true">
-    border-radius: 10px;
-    padding: 2px 8px;
+   border-radius: 10px;
+   padding: 2px 8px;
 border: 2px solid rgb(170,210,250);background-color: rgb(67, 139, 196);
 font: 14pt &quot;Rockwell Condensed&quot;;
 color: rgb(224, 253, 255);</string>
@@ -1331,12 +1367,12 @@ color: rgb(224, 253, 255);</string>
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>../../../../.designer/images/ic_clear (2).png</normaloff>../../../../.designer/images/ic_clear (2).png</iconset>
+       <normaloff>../images/ic_clear (2).png</normaloff>../images/ic_clear (2).png</iconset>
      </property>
      <property name="iconSize">
       <size>
        <width>40</width>
-       <height>25</height>
+       <height>20</height>
       </size>
      </property>
     </widget>
@@ -1351,8 +1387,8 @@ color: rgb(224, 253, 255);</string>
      </property>
      <property name="styleSheet">
       <string notr="true">
-    border-radius: 10px;
-    padding: 2px 8px;
+   border-radius: 10px;
+   padding: 2px 8px;
 border: 2px solid rgb(170,210,250);background-color: rgb(67, 139, 196);
 font: 14pt &quot;Rockwell Condensed&quot;;
 color: rgb(224, 253, 255);</string>
@@ -1362,12 +1398,12 @@ color: rgb(224, 253, 255);</string>
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>../../../../.designer/images/ic_search.png</normaloff>../../../../.designer/images/ic_search.png</iconset>
+       <normaloff>../images/ic_search.png</normaloff>../images/ic_search.png</iconset>
      </property>
      <property name="iconSize">
       <size>
        <width>40</width>
-       <height>25</height>
+       <height>20</height>
       </size>
      </property>
     </widget>
@@ -1382,8 +1418,8 @@ color: rgb(224, 253, 255);</string>
      </property>
      <property name="styleSheet">
       <string notr="true">
-    border-radius: 10px;
-    padding: 2px 8px;
+   border-radius: 10px;
+   padding53: 2px 8px;
 border: 2px solid rgb(170,210,250);background-color: rgb(67, 139, 196);
 font: 14pt &quot;Rockwell Condensed&quot;;
 color: rgb(224, 253, 255);</string>
@@ -1393,12 +1429,12 @@ color: rgb(224, 253, 255);</string>
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>../../../../.designer/images/ic_remove.png</normaloff>../../../../.designer/images/ic_remove.png</iconset>
+       <normaloff>../images/ic_remove.png</normaloff>../images/ic_remove.png</iconset>
      </property>
      <property name="iconSize">
       <size>
        <width>40</width>
-       <height>25</height>
+       <height>20</height>
       </size>
      </property>
     </widget>
@@ -1436,9 +1472,9 @@ color: rgb(224, 253, 255);</string>
     <property name="geometry">
      <rect>
       <x>600</x>
-      <y>50</y>
+      <y>60</y>
       <width>191</width>
-      <height>121</height>
+      <height>111</height>
      </rect>
     </property>
     <property name="focusPolicy">
@@ -1472,9 +1508,9 @@ border: 2px solid rgb(170,210,250);</string>
     <widget class="QPushButton" name="pushButtonSampleQuantity">
      <property name="geometry">
       <rect>
-       <x>30</x>
+       <x>20</x>
        <y>80</y>
-       <width>121</width>
+       <width>141</width>
        <height>31</height>
       </rect>
      </property>
@@ -1482,8 +1518,9 @@ border: 2px solid rgb(170,210,250);</string>
       <string notr="true">background-color: rgb(67, 139, 196);
 color: rgb(224, 253, 255);
 
-    border-radius: 10px;
-    padding: 2px 8px;
+
+   border-radius: 10px;
+   padding: 2px 8px;
 border: 2px solid rgb(170,210,250);
 font: 14pt &quot;Rockwell Condensed&quot;;
 </string>
@@ -1493,7 +1530,7 @@ font: 14pt &quot;Rockwell Condensed&quot;;
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>../../../../.designer/images/ic_samplequantity.png</normaloff>../../../../.designer/images/ic_samplequantity.png</iconset>
+       <normaloff>../images/ic_samplequantity.png</normaloff>../images/ic_samplequantity.png</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -1507,9 +1544,9 @@ font: 14pt &quot;Rockwell Condensed&quot;;
     <property name="geometry">
      <rect>
       <x>800</x>
-      <y>50</y>
+      <y>60</y>
       <width>191</width>
-      <height>121</height>
+      <height>111</height>
      </rect>
     </property>
     <property name="focusPolicy">
@@ -1544,9 +1581,9 @@ border: 2px solid rgb(170,210,250);</string>
     <widget class="QPushButton" name="pushButtonOpenChartFeedback_4">
      <property name="geometry">
       <rect>
-       <x>40</x>
+       <x>20</x>
        <y>78</y>
-       <width>111</width>
+       <width>151</width>
        <height>31</height>
       </rect>
      </property>
@@ -1554,8 +1591,9 @@ border: 2px solid rgb(170,210,250);</string>
       <string notr="true">background-color: rgb(67, 139, 196);
 color: rgb(224, 253, 255);
 
-    border-radius: 10px;
-    padding: 2px 8px;
+
+   border-radius: 10px;
+   padding: 2px 8px;
 border: 2px solid rgb(170,210,250);
 font: 14pt &quot;Rockwell Condensed&quot;;
 </string>
@@ -1565,7 +1603,7 @@ font: 14pt &quot;Rockwell Condensed&quot;;
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>../../../../.designer/images/ic_revenue.png</normaloff>../../../../.designer/images/ic_revenue.png</iconset>
+       <normaloff>../images/ic_revenue.png</normaloff>../images/ic_revenue.png</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -1589,23 +1627,27 @@ font: 14pt &quot;Rockwell Condensed&quot;;
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
-    background-color: rgb(72,134,180);
-    color: white;
+   background-color: rgb(72,134,180);
+   color: white;
 
-    border: 2px solid rgb(170,210,250);
-    border-radius: 12px;
 
-    padding: 3px 12px;
-    font: 75 12pt &quot;Rockwell&quot;;
+   border: 2px solid rgb(170,210,250);
+   border-radius: 12px;
+
+
+   padding: 3px 12px;
+   font: 75 12pt &quot;Rockwell&quot;;
 }
+
 
 QPushButton:hover{
-    background-color: rgb(90,150,200);
-    border: 2px solid rgb(190,220,255);
+   background-color: rgb(90,150,200);
+   border: 2px solid rgb(190,220,255);
 }
 
+
 QPushButton:pressed{
-    background-color: rgb(60,120,170);
+   background-color: rgb(60,120,170);
 }</string>
     </property>
     <property name="text">
@@ -1613,7 +1655,7 @@ QPushButton:pressed{
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>../../../../.designer/images/ic_closewindow.png</normaloff>../../../../.designer/images/ic_closewindow.png</iconset>
+      <normaloff>../images/ic_closewindow.png</normaloff>../images/ic_closewindow.png</iconset>
     </property>
     <property name="iconSize">
      <size>
@@ -1628,8 +1670,8 @@ QPushButton:pressed{
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1195</width>
-     <height>20</height>
+     <width>1873</width>
+     <height>22</height>
     </rect>
    </property>
   </widget>
@@ -1638,226 +1680,18 @@ QPushButton:pressed{
  <resources/>
  <connections>
   <connection>
-   <sender>pushButtonCustomerClear</sender>
+   <sender>pushButtonCloseWindow</sender>
    <signal>clicked()</signal>
-   <receiver>lineEditType</receiver>
-   <slot>clear()</slot>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>530</x>
-     <y>625</y>
+     <x>1110</x>
+     <y>85</y>
     </hint>
     <hint type="destinationlabel">
-     <x>670</x>
-     <y>559</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButtonSampleClear</sender>
-   <signal>clicked()</signal>
-   <receiver>lineEditSampleName</receiver>
-   <slot>clear()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>145</x>
-     <y>625</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>285</x>
-     <y>529</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButtonSampleClear</sender>
-   <signal>clicked()</signal>
-   <receiver>lineEditSampleID</receiver>
-   <slot>clear()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>145</x>
-     <y>625</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>285</x>
-     <y>499</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButtonSampleClear</sender>
-   <signal>clicked()</signal>
-   <receiver>lineEditSampleQuantity</receiver>
-   <slot>clear()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>145</x>
-     <y>625</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>285</x>
-     <y>589</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButtonSampleClear</sender>
-   <signal>clicked()</signal>
-   <receiver>lineEditPrice</receiver>
-   <slot>clear()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>145</x>
-     <y>625</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>285</x>
-     <y>559</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButtonSampleClear</sender>
-   <signal>clicked()</signal>
-   <receiver>lineEditSampleID</receiver>
-   <slot>setFocus()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>145</x>
-     <y>625</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>285</x>
-     <y>499</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButtonCustomerClear</sender>
-   <signal>clicked()</signal>
-   <receiver>lineEditCustomerUserName</receiver>
-   <slot>clear()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>530</x>
-     <y>625</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>670</x>
-     <y>499</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButtonCustomerClear</sender>
-   <signal>clicked()</signal>
-   <receiver>lineEditPhoneNumber</receiver>
-   <slot>clear()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>530</x>
-     <y>625</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>670</x>
-     <y>529</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButtonCustomerClear</sender>
-   <signal>clicked()</signal>
-   <receiver>lineEditCustomerUserName</receiver>
-   <slot>setFocus()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>530</x>
-     <y>625</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>670</x>
-     <y>499</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButtonEmployeeClear</sender>
-   <signal>clicked()</signal>
-   <receiver>lineEditEmployeeID</receiver>
-   <slot>clear()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>900</x>
-     <y>625</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>1045</x>
-     <y>499</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButtonEmployeeClear</sender>
-   <signal>clicked()</signal>
-   <receiver>lineEditEmployeeName</receiver>
-   <slot>clear()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>900</x>
-     <y>625</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>1045</x>
-     <y>529</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButtonEmployeeClear</sender>
-   <signal>clicked()</signal>
-   <receiver>lineEditExperience</receiver>
-   <slot>clear()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>900</x>
-     <y>625</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>1045</x>
-     <y>559</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButtonEmployeeClear</sender>
-   <signal>clicked()</signal>
-   <receiver>lineEditCustomerBooked</receiver>
-   <slot>clear()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>900</x>
-     <y>625</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>1045</x>
-     <y>589</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButtonEmployeeClear</sender>
-   <signal>clicked()</signal>
-   <receiver>lineEditEmployeeID</receiver>
-   <slot>setFocus()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>900</x>
-     <y>625</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>1045</x>
-     <y>499</y>
+     <x>592</x>
+     <y>344</y>
     </hint>
    </hints>
   </connection>

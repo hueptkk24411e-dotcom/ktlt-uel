@@ -20,7 +20,6 @@ class ProductMainWindowEx(Ui_MainWindow):
         self.cus = Customers()
         self.lp = Samples()
         self.emp = Employees()
-
         self.current_samples = []
         self.current_customers = []
         self.current_employees = []
@@ -292,7 +291,7 @@ class ProductMainWindowEx(Ui_MainWindow):
 
     def back_to_login(self):
 
-        from ui.MainWindowLoginEx import MainWindowLoginEx
+        from ui.MainWindowLoginEmployeeEx import MainWindowLoginEx
         self.login_window = MainWindowLoginEx()
         self.login_window.show()
         self.MainWindow.close()
