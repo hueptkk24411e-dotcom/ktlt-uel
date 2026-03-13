@@ -2,38 +2,31 @@
     "employees": [
         {
             "EmployeeId": "E01",
-            "EmployeeName": "meo",
+            "EmployeeName": "Anna",
             "Password": "1111",
-            "Experience": 1,
+            "Experience": 5,
             "CustomerBooked": "teo"
         },
         {
             "EmployeeId": "E02",
-            "EmployeeName": "ga",
+            "EmployeeName": "Lisa",
             "Password": "3331",
-            "Experience": 2,
+            "Experience": 3,
             "CustomerBooked": "ty"
         },
         {
             "EmployeeId": "E03",
-            "EmployeeName": "gau",
+            "EmployeeName": "Sophia",
             "Password": "5444",
-            "Experience": 1,
+            "Experience": 4,
             "CustomerBooked": "bin"
         },
         {
             "EmployeeId": "E04",
-            "EmployeeName": "chon",
+            "EmployeeName": "Emma",
             "Password": "6555",
-            "Experience": 3,
+            "Experience": 6,
             "CustomerBooked": "bo"
-        },
-        {
-            "EmployeeId": "E05",
-            "EmployeeName": "chuot",
-            "Password": "7446",
-            "Experience": 4,
-            "CustomerBooked": "tuan"
         }
     ]
 }

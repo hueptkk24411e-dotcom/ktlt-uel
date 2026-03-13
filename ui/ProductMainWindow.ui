@@ -1671,7 +1671,7 @@ QPushButton:pressed{
      <x>0</x>
      <y>0</y>
      <width>1873</width>
-     <height>22</height>
+     <height>20</height>
     </rect>
    </property>
   </widget>
@@ -1692,6 +1692,230 @@ QPushButton:pressed{
     <hint type="destinationlabel">
      <x>592</x>
      <y>344</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonSampleClear</sender>
+   <signal>clicked()</signal>
+   <receiver>lineEditSampleID</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>145</x>
+     <y>625</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>285</x>
+     <y>499</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonSampleClear</sender>
+   <signal>clicked()</signal>
+   <receiver>lineEditSampleName</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>145</x>
+     <y>625</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>285</x>
+     <y>529</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonSampleClear</sender>
+   <signal>clicked()</signal>
+   <receiver>lineEditPrice</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>145</x>
+     <y>625</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>285</x>
+     <y>559</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonSampleClear</sender>
+   <signal>clicked()</signal>
+   <receiver>lineEditSampleQuantity</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>145</x>
+     <y>625</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>285</x>
+     <y>589</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonSampleClear</sender>
+   <signal>clicked()</signal>
+   <receiver>lineEditSampleID</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>145</x>
+     <y>625</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>285</x>
+     <y>499</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonCustomerClear</sender>
+   <signal>clicked()</signal>
+   <receiver>lineEditCustomerUserName</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>530</x>
+     <y>625</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>670</x>
+     <y>499</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonCustomerClear</sender>
+   <signal>clicked()</signal>
+   <receiver>lineEditPhoneNumber</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>530</x>
+     <y>625</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>670</x>
+     <y>529</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonCustomerClear</sender>
+   <signal>clicked()</signal>
+   <receiver>lineEditType</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>530</x>
+     <y>625</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>670</x>
+     <y>559</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonCustomerClear</sender>
+   <signal>clicked()</signal>
+   <receiver>lineEditCustomerUserName</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>530</x>
+     <y>625</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>670</x>
+     <y>499</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonEmployeeClear</sender>
+   <signal>clicked()</signal>
+   <receiver>lineEditEmployeeID</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>900</x>
+     <y>625</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1045</x>
+     <y>499</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonEmployeeClear</sender>
+   <signal>clicked()</signal>
+   <receiver>lineEditEmployeeName</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>900</x>
+     <y>625</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1045</x>
+     <y>529</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonEmployeeClear</sender>
+   <signal>clicked()</signal>
+   <receiver>lineEditExperience</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>900</x>
+     <y>625</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1045</x>
+     <y>559</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonEmployeeClear</sender>
+   <signal>clicked()</signal>
+   <receiver>lineEditCustomerBooked</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>900</x>
+     <y>625</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1045</x>
+     <y>589</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonEmployeeClear</sender>
+   <signal>clicked()</signal>
+   <receiver>lineEditEmployeeID</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>900</x>
+     <y>625</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1045</x>
+     <y>499</y>
     </hint>
    </hints>
   </connection>

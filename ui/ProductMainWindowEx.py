@@ -35,7 +35,6 @@ class ProductMainWindowEx(Ui_MainWindow):
         self.display_samples()
         self.display_customers()
         self.display_employees()
-
         self.setupSignalAndSlot()
 
     def showWindow(self):
@@ -131,6 +130,11 @@ class ProductMainWindowEx(Ui_MainWindow):
             self.tableWidgetSample.setItem(row, 1, QTableWidgetItem(str(it.SampleID)))
             self.tableWidgetSample.setItem(row, 2, QTableWidgetItem(str(it.SamplePrice)))
             self.tableWidgetSample.setItem(row, 3, QTableWidgetItem(str(it.SampleQuantity)))
+        try:
+            self.tableWidgetSample.resizeColumnsToContents()
+        except Exception:
+            pass
+
 
     def display_customers(self, customers_list=None):
         if customers_list is None:
@@ -146,6 +150,10 @@ class ProductMainWindowEx(Ui_MainWindow):
             self.tableWidgetCustomer.setItem(row, 0, QTableWidgetItem(str(it.CustomerUserName)))
             self.tableWidgetCustomer.setItem(row, 1, QTableWidgetItem(str(it.PhoneNumber)))
             self.tableWidgetCustomer.setItem(row, 2, QTableWidgetItem(str(it.Type)))
+        try:
+            self.tableWidgetCustomer.resizeColumnsToContents()
+        except Exception:
+            pass
 
     def display_employees(self, employees_list=None):
         if employees_list is None:
@@ -162,36 +170,174 @@ class ProductMainWindowEx(Ui_MainWindow):
             self.tableWidgetEmployee.setItem(row, 1, QTableWidgetItem(str(it.EmployeeName)))
             self.tableWidgetEmployee.setItem(row, 2, QTableWidgetItem(str(it.Experience)))
             self.tableWidgetEmployee.setItem(row, 3, QTableWidgetItem(str(it.CustomerBooked)))
+        try:
+            self.tableWidgetEmployee.resizeColumnsToContents()
+        except Exception:
+            pass
+
 
     # ================= SAMPLE CRUD =================
     def save_sample(self):
-        QMessageBox.information(self.MainWindow, "Info", "Save Sample clicked")
+        sample_id = self.lineEditSampleID.text().strip()
+        sample_name = self.lineEditSampleName.text().strip()
+        sample_price = self.lineEditPrice.text().strip()
+        sample_quantity = self.lineEditSampleQuantity.text().strip()
+        if not sample_id or not sample_name or not sample_price or not sample_quantity:
+            QMessageBox.warning(self.MainWindow, "Sample",
+                                "Sample ID, Sample Name, Sample Price and Sample Quantity are required.")
+            return None
+
+        try:
+            sample_quantity = int(sample_quantity)
+        except ValueError:
+            QMessageBox.warning(self.MainWindow, "Sample", "Sample Quantity must be an integer.")
+            return None
+
+        # Check if sample exists by ID
+        sample = Sample(sample_id, sample_name, sample_price, sample_quantity)
+        self.lp.add_item(sample)  # Assumes add_item handles updates if ID exists
+        self.lp.export_json("../datasets/samples.json")  # Adjust path as needed
+        self.display_samples()  # Refresh the table
+        QMessageBox.information(self.MainWindow, "Sample", "Update Successfully!")
 
     def remove_sample(self):
-        QMessageBox.information(self.MainWindow, "Info", "Remove Sample clicked")
+        sample_id = self.lineEditSampleID.text().strip()
+        if not sample_id:
+            QMessageBox.warning(self.MainWindow, "Sample", "No sample available")
+            return
+
+        # Remove the sample from the list by ID
+        self.lp.list = [s for s in self.lp.list if s.SampleID != sample_id]
+        self.lp.export_json("../datasets/samples.json")
+        self.display_samples()
+        QMessageBox.information(self.MainWindow, "Sample", "Remove Successfully!")
 
     def search_sample(self):
-        QMessageBox.information(self.MainWindow, "Info", "Search Sample clicked")
+        sample_id = self.lineEditSampleID.text().strip()
+        sample_name = self.lineEditSampleName.text().strip()
+        sample_price = self.lineEditPrice.text().strip()
+        sample_quantity = self.lineEditSampleQuantity.text().strip()
 
-    # ================= CUSTOMER CRUD =================
+        filtered = self.lp.list
+
+        if sample_id:
+            filtered = [s for s in filtered if str(s.SampleID) == sample_id]
+        if sample_name:
+            filtered = [s for s in filtered if sample_name.lower() in str(s.SampleName).lower()]
+        if sample_price:
+            filtered = [s for s in filtered if str(s.SamplePrice) == sample_price]
+        if sample_quantity:
+            filtered = [s for s in filtered if str(s.SampleQuantity) == sample_quantity]
+
+        if not filtered:
+            QMessageBox.information(self.MainWindow, "Sample", "No sample available")
+            return
+
+        self.display_samples(filtered)
+
     def save_customer(self):
-        QMessageBox.information(self.MainWindow, "Info", "Save Customer clicked")
+        customer_username = self.lineEditCustomerUserName.text().strip()
+        phone_number = self.lineEditPhoneNumber.text().strip()
+        customer_type = self.lineEditType.text().strip()
+        if not customer_username or not phone_number or not customer_type:
+            QMessageBox.warning(self.MainWindow, "Customer", "Customer UserName, Phone Number and Type are required.")
+            return None
+
+        customer = Customer(customer_username, phone_number, customer_type)
+        self.cus.add_item(customer)
+        self.cus.export_json("../datasets/customers.json")
+        self.display_customers()
+        QMessageBox.information(self.MainWindow, "Customer", "Update Successfully!")
 
     def remove_customer(self):
-        QMessageBox.information(self.MainWindow, "Info", "Remove Customer clicked")
+        customer_username = self.lineEditCustomerUserName.text().strip()
+        if not customer_username:
+            QMessageBox.warning(self.MainWindow, "Customer", "No customer available")
+            return
+
+        # Remove the customer from the list by UserName
+        self.cus.list = [c for c in self.cus.list if c.CustomerUserName != customer_username]
+        self.cus.export_json("../datasets/customers.json")
+        self.display_customers()
+        QMessageBox.information(self.MainWindow, "Customer", "Remove Successfully!")
 
     def search_customer(self):
-        QMessageBox.information(self.MainWindow, "Info", "Search Customer clicked")
+        customer_username = self.lineEditCustomerUserName.text().strip()
+        phone_number = self.lineEditPhoneNumber.text().strip()
+        customer_type = self.lineEditType.text().strip()
 
-    # ================= EMPLOYEE CRUD =================
+        filtered = self.cus.list
+
+        if customer_username:
+            filtered = [c for c in filtered if customer_username.lower() in str(c.CustomerUserName).lower()]
+        if phone_number:
+            filtered = [c for c in filtered if str(c.PhoneNumber) == phone_number]
+        if customer_type:
+            filtered = [c for c in filtered if str(c.Type) == customer_type]
+
+        if not filtered:
+            QMessageBox.information(self.MainWindow, "Customer", "No customer available")
+            return
+
+        self.display_customers(filtered)
+
     def save_employee(self):
-        QMessageBox.information(self.MainWindow, "Info", "Save Employee clicked")
+        employee_id = self.lineEditEmployeeID.text().strip()
+        employee_name = self.lineEditEmployeeName.text().strip()
+        experience = self.lineEditExperience.text().strip()
+        customer_booked = self.lineEditCustomerBooked.text().strip()
+        if not employee_id or not employee_name or not experience or not customer_booked:
+            QMessageBox.warning(self.MainWindow, "Employee",
+                                "Employee ID, Name, Experience and Booked Customer are required.")
+            return None
+
+        try:
+            experience = int(experience)
+        except ValueError:
+            QMessageBox.warning(self.MainWindow, "Employee", "Experience must be an integer.")
+            return None
+
+        employee = Employee(employee_id, employee_name, experience, customer_booked)
+        self.emp.add_item(employee)
+        self.emp.export_json("../datasets/employees.json")
+        self.display_employees()
+        QMessageBox.information(self.MainWindow, "Employee", "Update Successfully!")
 
     def remove_employee(self):
-        QMessageBox.information(self.MainWindow, "Info", "Remove Employee clicked")
+        employee_id = self.lineEditEmployeeID.text().strip()
+        if not employee_id:
+            QMessageBox.warning(self.MainWindow, "Employee", "No employee available")
+            return
+
+        # Remove the employee from the list by ID
+        self.emp.list = [e for e in self.emp.list if e.EmployeeId != employee_id]
+        self.emp.export_json("../datasets/employees.json")
+        self.display_employees()
+        QMessageBox.information(self.MainWindow, "Employee", "Remove Successfully!")
 
     def search_employee(self):
-        QMessageBox.information(self.MainWindow, "Info", "Search Employee clicked")
+        employee_id = self.lineEditEmployeeID.text().strip()
+        employee_name = self.lineEditEmployeeName.text().strip()
+        experience = self.lineEditExperience.text().strip()
+        customer_booked = self.lineEditCustomerBooked.text().strip()
+
+        filtered = self.emp.list
+
+        if employee_id:
+            filtered = [e for e in filtered if str(e.EmployeeId) == employee_id]
+        if employee_name:
+            filtered = [e for e in filtered if employee_name.lower() in str(e.EmployeeName).lower()]
+        if experience:
+            filtered = [e for e in filtered if str(e.Experience) == experience]
+        if customer_booked:
+            filtered = [e for e in filtered if str(e.CustomerBooked) == customer_booked]
+
+        if not filtered:
+            QMessageBox.information(self.MainWindow, "Employee", "No employee available")
+            return
+
+        self.display_employees(filtered)
+
 
     # ================= SAMPLE CHART =================
     def show_sample_chart(self):
