@@ -258,6 +258,7 @@ class MainWindowEx(Ui_MainWindow):
         self.Summer.clicked.connect(self.show_summer)
         self.Autumn.clicked.connect(self.show_autumn)
         self.Winter.clicked.connect(self.show_winter)
+        self.pushButton_TB_16.clicked.connect(self.process_logout)
         # ========================
         # ADD PRODUCTS
         # ========================
@@ -556,3 +557,32 @@ class MainWindowEx(Ui_MainWindow):
             self.lineEdit_TotalBill.setText(f"{total:.2f}$")
     def show(self):
         self.MainWindow.show()
+
+
+    # ===============================
+    # log out
+    # ===============================
+
+    def process_logout(self):
+            # Hiển thị hộp thoại xác nhận
+            msg = QMessageBox.question(
+                self.MainWindow,
+                "Confirm Logout",
+                "Are you sure you want to log out?",
+                QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No
+            )
+    
+            if msg == QMessageBox.StandardButton.Yes:
+                # Import tại đây để tránh lỗi vòng lặp import (circular import)
+                from ui.MainWindowLoginEmployeeEx import MainWindowLoginEx
+                
+                # Khởi tạo lại màn hình Login
+                self.login_window = MainWindowLoginEx()
+                self.login_window.show()
+                
+                # Đóng màn hình chính hiện tại
+                self.MainWindow.close()
+    
+    
+        
+        
