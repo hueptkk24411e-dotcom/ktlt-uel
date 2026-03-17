@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SelfCustomWindow</class>
+ <widget class="QMainWindow" name="SelfCustomWindow">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>560</width><height>520</height></rect>
+  </property>
+  <property name="windowTitle"><string>Custom Your Design</string></property>
+  <property name="styleSheet">
+   <string notr="true">#centralwidget { background-color: #FFFFFF; color: #000000; } QLabel { color: #000000; }</string>
+  </property>
+
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing"><number>14</number></property>
+    <property name="leftMargin"><number>20</number></property>
+    <property name="topMargin"><number>0</number></property>
+    <property name="rightMargin"><number>20</number></property>
+    <property name="bottomMargin"><number>16</number></property>
+
+    <!-- Header -->
+    <item>
+     <widget class="QLabel" name="labelHeader">
+      <property name="text"><string>&lt;html&gt;&lt;body&gt;&lt;p align="center"&gt;&lt;span style="font-size:14pt; font-weight:600;"&gt;CUSTOM YOUR DESIGN&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string></property>
+      <property name="maximumSize"><size><width>16777215</width><height>60</height></size></property>
+      <property name="minimumSize"><size><width>0</width><height>60</height></size></property>
+      <property name="styleSheet">
+       <string notr="true">color: white; font-size: 14px; background-color: #AFCBF3;</string>
+      </property>
+     </widget>
+    </item>
+
+    <!-- Style + Length combos row -->
+    <item>
+     <layout class="QHBoxLayout" name="comboRow">
+      <property name="spacing"><number>20</number></property>
+      <item>
+       <widget class="QLabel" name="chooseTheStyleLabel">
+        <property name="text"><string>Choose the style:</string></property>
+        <property name="styleSheet"><string notr="true">font-weight: bold; color: #0D3B66;</string></property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="chooseTheStyleComboBox">
+        <property name="styleSheet"><string notr="true">background-color: #AFCBF3; color: rgb(15,15,15);</string></property>
+        <item><property name="text"><string>...........</string></property></item>
+        <item><property name="text"><string>Square</string></property></item>
+        <item><property name="text"><string>Round</string></property></item>
+        <item><property name="text"><string>Oval</string></property></item>
+        <item><property name="text"><string>Almond</string></property></item>
+        <item><property name="text"><string>Stiletto</string></property></item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="chooseTheStyleLabel_2">
+        <property name="text"><string>Select long length:</string></property>
+        <property name="styleSheet"><string notr="true">font-weight: bold; color: #0D3B66;</string></property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="chooseTheStyleComboBox_2">
+        <property name="styleSheet"><string notr="true">background-color: #AFCBF3; color: rgb(15,15,15);</string></property>
+        <item><property name="text"><string>.............</string></property></item>
+        <item><property name="text"><string>Short</string></property></item>
+        <item><property name="text"><string>Medium</string></property></item>
+        <item><property name="text"><string>Long</string></property></item>
+        <item><property name="text"><string>Extra Long</string></property></item>
+       </widget>
+      </item>
+     </layout>
+    </item>
+
+    <!-- Color palette section -->
+    <item>
+     <widget class="QLabel" name="labelTitle">
+      <property name="text"><string>SELECT YOUR SHADE</string></property>
+      <property name="alignment"><set>Qt::AlignCenter</set></property>
+      <property name="styleSheet">
+       <string notr="true">font-size: 16px; font-weight: bold; color: #4A90E2;</string>
+      </property>
+     </widget>
+    </item>
+
+    <item>
+     <widget class="QFrame" name="paletteFrame">
+      <property name="styleSheet">
+       <string notr="true">QFrame { background-color: #F0F7FF; border-radius: 12px; border: 1px solid #CFE4FF; }</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayoutColors">
+       <property name="spacing"><number>10</number></property>
+       <property name="leftMargin"><number>14</number></property>
+       <property name="topMargin"><number>14</number></property>
+       <property name="rightMargin"><number>14</number></property>
+       <property name="bottomMargin"><number>14</number></property>
+       <!-- Row 0 -->
+       <item row="0" column="0"><widget class="QPushButton" name="color_1"><property name="maximumSize"><size><width>34</width><height>34</height></size></property><property name="minimumSize"><size><width>34</width><height>34</height></size></property><property name="styleSheet"><string notr="true">background-color: #FF0000; border-radius: 17px; border: 1px solid #ddd;</string></property><property name="text"><string/></property><property name="toolTip"><string>Red</string></property></widget></item>
+       <item row="0" column="1"><widget class="QPushButton" name="color_2"><property name="maximumSize"><size><width>34</width><height>34</height></size></property><property name="minimumSize"><size><width>34</width><height>34</height></size></property><property name="styleSheet"><string notr="true">background-color: #FF1493; border-radius: 17px; border: 1px solid #ddd;</string></property><property name="text"><string/></property><property name="toolTip"><string>Deep Pink</string></property></widget></item>
+       <item row="0" column="2"><widget class="QPushButton" name="color_3"><property name="maximumSize"><size><width>34</width><height>34</height></size></property><property name="minimumSize"><size><width>34</width><height>34</height></size></property><property name="styleSheet"><string notr="true">background-color: #FFC0CB; border-radius: 17px; border: 1px solid #ddd;</string></property><property name="text"><string/></property><property name="toolTip"><string>Pink</string></property></widget></item>
+       <item row="0" column="3"><widget class="QPushButton" name="color_4"><property name="maximumSize"><size><width>34</width><height>34</height></size></property><property name="minimumSize"><size><width>34</width><height>34</height></size></property><property name="styleSheet"><string notr="true">background-color: #DB7093; border-radius: 17px; border: 1px solid #ddd;</string></property><property name="text"><string/></property><property name="toolTip"><string>Pale Violet Red</string></property></widget></item>
+       <item row="0" column="4"><widget class="QPushButton" name="color_5"><property name="maximumSize"><size><width>34</width><height>34</height></size></property><property name="minimumSize"><size><width>34</width><height>34</height></size></property><property name="styleSheet"><string notr="true">background-color: #800000; border-radius: 17px; border: 1px solid #ddd;</string></property><property name="text"><string/></property><property name="toolTip"><string>Maroon</string></property></widget></item>
+       <!-- Row 1 -->
+       <item row="1" column="0"><widget class="QPushButton" name="color_6"><property name="maximumSize"><size><width>34</width><height>34</height></size></property><property name="minimumSize"><size><width>34</width><height>34</height></size></property><property name="styleSheet"><string notr="true">background-color: #FFA500; border-radius: 17px; border: 1px solid #ddd;</string></property><property name="text"><string/></property><property name="toolTip"><string>Orange</string></property></widget></item>
+       <item row="1" column="1"><widget class="QPushButton" name="color_7"><property name="maximumSize"><size><width>34</width><height>34</height></size></property><property name="minimumSize"><size><width>34</width><height>34</height></size></property><property name="styleSheet"><string notr="true">background-color: #FFFF00; border-radius: 17px; border: 1px solid #ddd;</string></property><property name="text"><string/></property><property name="toolTip"><string>Yellow</string></property></widget></item>
+       <item row="1" column="2"><widget class="QPushButton" name="color_8"><property name="maximumSize"><size><width>34</width><height>34</height></size></property><property name="minimumSize"><size><width>34</width><height>34</height></size></property><property name="styleSheet"><string notr="true">background-color: #FFD700; border-radius: 17px; border: 1px solid #ddd;</string></property><property name="text"><string/></property><property name="toolTip"><string>Gold</string></property></widget></item>
+       <item row="1" column="3"><widget class="QPushButton" name="color_9"><property name="maximumSize"><size><width>34</width><height>34</height></size></property><property name="minimumSize"><size><width>34</width><height>34</height></size></property><property name="styleSheet"><string notr="true">background-color: #F4A460; border-radius: 17px; border: 1px solid #ddd;</string></property><property name="text"><string/></property><property name="toolTip"><string>Sandy Brown</string></property></widget></item>
+       <item row="1" column="4"><widget class="QPushButton" name="color_10"><property name="maximumSize"><size><width>34</width><height>34</height></size></property><property name="minimumSize"><size><width>34</width><height>34</height></size></property><property name="styleSheet"><string notr="true">background-color: #E9967A; border-radius: 17px; border: 1px solid #ddd;</string></property><property name="text"><string/></property><property name="toolTip"><string>Dark Salmon</string></property></widget></item>
+       <!-- Row 2 -->
+       <item row="2" column="0"><widget class="QPushButton" name="color_11"><property name="maximumSize"><size><width>34</width><height>34</height></size></property><property name="minimumSize"><size><width>34</width><height>34</height></size></property><property name="styleSheet"><string notr="true">background-color: #008000; border-radius: 17px; border: 1px solid #ddd;</string></property><property name="text"><string/></property><property name="toolTip"><string>Green</string></property></widget></item>
+       <item row="2" column="1"><widget class="QPushButton" name="color_12"><property name="maximumSize"><size><width>34</width><height>34</height></size></property><property name="minimumSize"><size><width>34</width><height>34</height></size></property><property name="styleSheet"><string notr="true">background-color: #90EE90; border-radius: 17px; border: 1px solid #ddd;</string></property><property name="text"><string/></property><property name="toolTip"><string>Light Green</string></property></widget></item>
+       <item row="2" column="2"><widget class="QPushButton" name="color_13"><property name="maximumSize"><size><width>34</width><height>34</height></size></property><property name="minimumSize"><size><width>34</width><height>34</height></size></property><property name="styleSheet"><string notr="true">background-color: #0000FF; border-radius: 17px; border: 1px solid #ddd;</string></property><property name="text"><string/></property><property name="toolTip"><string>Blue</string></property></widget></item>
+       <item row="2" column="3"><widget class="QPushButton" name="color_14"><property name="maximumSize"><size><width>34</width><height>34</height></size></property><property name="minimumSize"><size><width>34</width><height>34</height></size></property><property name="styleSheet"><string notr="true">background-color: #ADD8E6; border-radius: 17px; border: 1px solid #ddd;</string></property><property name="text"><string/></property><property name="toolTip"><string>Light Blue</string></property></widget></item>
+       <item row="2" column="4"><widget class="QPushButton" name="color_15"><property name="maximumSize"><size><width>34</width><height>34</height></size></property><property name="minimumSize"><size><width>34</width><height>34</height></size></property><property name="styleSheet"><string notr="true">background-color: #000080; border-radius: 17px; border: 1px solid #ddd;</string></property><property name="text"><string/></property><property name="toolTip"><string>Navy</string></property></widget></item>
+       <!-- Row 3 -->
+       <item row="3" column="0"><widget class="QPushButton" name="color_16"><property name="maximumSize"><size><width>34</width><height>34</height></size></property><property name="minimumSize"><size><width>34</width><height>34</height></size></property><property name="styleSheet"><string notr="true">background-color: #800080; border-radius: 17px; border: 1px solid #ddd;</string></property><property name="text"><string/></property><property name="toolTip"><string>Purple</string></property></widget></item>
+       <item row="3" column="1"><widget class="QPushButton" name="color_17"><property name="maximumSize"><size><width>34</width><height>34</height></size></property><property name="minimumSize"><size><width>34</width><height>34</height></size></property><property name="styleSheet"><string notr="true">background-color: #E6E6FA; border-radius: 17px; border: 1px solid #ddd;</string></property><property name="text"><string/></property><property name="toolTip"><string>Lavender</string></property></widget></item>
+       <item row="3" column="2"><widget class="QPushButton" name="color_18"><property name="maximumSize"><size><width>34</width><height>34</height></size></property><property name="minimumSize"><size><width>34</width><height>34</height></size></property><property name="styleSheet"><string notr="true">background-color: #A52A2A; border-radius: 17px; border: 1px solid #ddd;</string></property><property name="text"><string/></property><property name="toolTip"><string>Brown</string></property></widget></item>
+       <item row="3" column="3"><widget class="QPushButton" name="color_19"><property name="maximumSize"><size><width>34</width><height>34</height></size></property><property name="minimumSize"><size><width>34</width><height>34</height></size></property><property name="styleSheet"><string notr="true">background-color: #D2B48C; border-radius: 17px; border: 1px solid #ddd;</string></property><property name="text"><string/></property><property name="toolTip"><string>Tan</string></property></widget></item>
+       <item row="3" column="4"><widget class="QPushButton" name="color_20"><property name="maximumSize"><size><width>34</width><height>34</height></size></property><property name="minimumSize"><size><width>34</width><height>34</height></size></property><property name="styleSheet"><string notr="true">background-color: #F5F5DC; border-radius: 17px; border: 1px solid #ddd;</string></property><property name="text"><string/></property><property name="toolTip"><string>Beige</string></property></widget></item>
+       <!-- Row 4 -->
+       <item row="4" column="0"><widget class="QPushButton" name="color_21"><property name="maximumSize"><size><width>34</width><height>34</height></size></property><property name="minimumSize"><size><width>34</width><height>34</height></size></property><property name="styleSheet"><string notr="true">background-color: #000000; border-radius: 17px; border: 1px solid #ddd;</string></property><property name="text"><string/></property><property name="toolTip"><string>Black</string></property></widget></item>
+       <item row="4" column="1"><widget class="QPushButton" name="color_22"><property name="maximumSize"><size><width>34</width><height>34</height></size></property><property name="minimumSize"><size><width>34</width><height>34</height></size></property><property name="styleSheet"><string notr="true">background-color: #FFFFFF; border-radius: 17px; border: 2px solid #ccc;</string></property><property name="text"><string/></property><property name="toolTip"><string>White</string></property></widget></item>
+       <item row="4" column="2"><widget class="QPushButton" name="color_23"><property name="maximumSize"><size><width>34</width><height>34</height></size></property><property name="minimumSize"><size><width>34</width><height>34</height></size></property><property name="styleSheet"><string notr="true">background-color: #808080; border-radius: 17px; border: 1px solid #ddd;</string></property><property name="text"><string/></property><property name="toolTip"><string>Gray</string></property></widget></item>
+       <item row="4" column="3"><widget class="QPushButton" name="color_24"><property name="maximumSize"><size><width>34</width><height>34</height></size></property><property name="minimumSize"><size><width>34</width><height>34</height></size></property><property name="styleSheet"><string notr="true">background-color: #C0C0C0; border-radius: 17px; border: 1px solid #ddd;</string></property><property name="text"><string/></property><property name="toolTip"><string>Silver</string></property></widget></item>
+       <item row="4" column="4"><widget class="QPushButton" name="color_25"><property name="maximumSize"><size><width>34</width><height>34</height></size></property><property name="minimumSize"><size><width>34</width><height>34</height></size></property><property name="styleSheet"><string notr="true">background-color: #708090; border-radius: 17px; border: 1px solid #ddd;</string></property><property name="text"><string/></property><property name="toolTip"><string>Slate Gray</string></property></widget></item>
+      </layout>
+     </widget>
+    </item>
+
+    <!-- Selected color display -->
+    <item>
+     <layout class="QHBoxLayout" name="colorDisplayRow">
+      <property name="spacing"><number>10</number></property>
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="text"><string>Color Selection:</string></property>
+        <property name="styleSheet"><string notr="true">font-weight: bold; color: #0D3B66; font-size: 13px;</string></property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="lblColorSwatch">
+        <property name="minimumSize"><size><width>30</width><height>30</height></size></property>
+        <property name="maximumSize"><size><width>30</width><height>30</height></size></property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #FFFFFF; border-radius: 15px; border: 2px solid #AFCBF3;</string>
+        </property>
+        <property name="text"><string/></property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="txtSelectedColor">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(208,236,250); color: rgb(15,15,15); border: 2px solid #AFCBF3; border-radius: 10px; padding: 4px 10px;</string>
+        </property>
+        <property name="readOnly"><bool>true</bool></property>
+        <property name="placeholderText"><string>Touch a shade above...</string></property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+
+    <!-- Note -->
+    <item>
+     <layout class="QHBoxLayout" name="noteRow">
+      <property name="spacing"><number>10</number></property>
+      <item>
+       <widget class="QLabel" name="lblNote">
+        <property name="text"><string>Note:</string></property>
+        <property name="styleSheet"><string notr="true">font-weight: bold; color: #0D3B66; font-size: 13px;</string></property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEditNote">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(208,236,250); color: rgb(15,15,15); border: 2px solid #AFCBF3; border-radius: 10px; padding: 4px 10px;</string>
+        </property>
+        <property name="placeholderText"><string>Describe your desired style, reference, etc...</string></property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+
+    <!-- Confirm button -->
+    <item>
+     <widget class="QPushButton" name="buychocolatebalance_45">
+      <property name="text"><string>CONFIRM COLOR CHOICE — Add to Cart ($50)</string></property>
+      <property name="minimumSize"><size><width>0</width><height>44</height></size></property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton { background-color: #AFCBF3; color: #4A90E2; border-radius: 12px; padding: 10px; font-size: 14px; font-weight: bold; font-family: "Georgia"; border: 2px solid #A6C8FF; } QPushButton:hover { background-color: #A6C8FF; border: 2px solid #7FAFFF; color: white; } QPushButton:pressed { background-color: #7FAFFF; border: 2px solid #4A90E2; }</string>
+      </property>
+     </widget>
+    </item>
+
+   </layout>
+  </widget>
+
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry"><rect><x>0</x><y>0</y><width>560</width><height>22</height></rect></property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

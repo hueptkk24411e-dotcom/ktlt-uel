@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RatingUI</class>
+ <widget class="QWidget" name="RatingUI">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>450</width><height>460</height></rect>
+  </property>
+  <property name="windowTitle"><string>Rate Our Service</string></property>
+  <property name="styleSheet">
+   <string notr="true">QWidget { background-color: #e6f4fa; color: #000000; font-family: 'Georgia'; } QFrame { background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #ffffff, stop:0.5 #e6f4fa, stop:1 #d4edf7); border-radius: 20px; } QLabel { background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255,255,255,220), stop:1 rgba(255,255,255,150)); border-radius: 15px; padding: 8px 15px; border: 1px solid rgba(255,255,255,180); }</string>
+  </property>
+
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing"><number>20</number></property>
+   <property name="leftMargin"><number>30</number></property>
+   <property name="topMargin"><number>30</number></property>
+   <property name="rightMargin"><number>30</number></property>
+   <property name="bottomMargin"><number>30</number></property>
+
+   <!-- Instruction -->
+   <item>
+    <widget class="QLabel" name="lblInstruction">
+     <property name="text"><string>How was your experience today?</string></property>
+     <property name="alignment"><set>Qt::AlignCenter</set></property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 18px; font-weight: bold; color: rgb(190,215,226);</string>
+     </property>
+    </widget>
+   </item>
+
+   <!-- Stars row -->
+   <item>
+    <layout class="QHBoxLayout" name="starLayout">
+     <item>
+      <widget class="QPushButton" name="star_1">
+       <property name="text"><string>★</string></property>
+       <property name="minimumSize"><size><width>50</width><height>50</height></size></property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton { background: transparent; color: #333; font-size: 35px; border: none; } QPushButton:hover { color: gold; }</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="star_2">
+       <property name="text"><string>★</string></property>
+       <property name="minimumSize"><size><width>50</width><height>50</height></size></property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton { background: transparent; color: #333; font-size: 35px; border: none; }</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="star_3">
+       <property name="text"><string>★</string></property>
+       <property name="minimumSize"><size><width>50</width><height>50</height></size></property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton { background: transparent; color: #333; font-size: 35px; border: none; }</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="star_4">
+       <property name="text"><string>★</string></property>
+       <property name="minimumSize"><size><width>50</width><height>50</height></size></property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton { background: transparent; color: #333; font-size: 35px; border: none; }</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="star_5">
+       <property name="text"><string>★</string></property>
+       <property name="minimumSize"><size><width>50</width><height>50</height></size></property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton { background: transparent; color: #333; font-size: 35px; border: none; }</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+
+   <!-- Feedback label (gốc) -->
+   <item>
+    <widget class="QLabel" name="lblFeedback">
+     <property name="text"><string>Leave a feedback for us:</string></property>
+     <property name="styleSheet">
+      <string notr="true">QLabel { background-color: transparent; }</string>
+     </property>
+    </widget>
+   </item>
+
+   <!-- Feedback text input (gốc) -->
+   <item>
+    <widget class="QLineEdit" name="lineEditFeedback">
+     <property name="minimumSize"><size><width>0</width><height>40</height></size></property>
+     <property name="placeholderText"><string>Your thoughts...</string></property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit { background-color: rgb(208,236,250); color: rgb(15,15,15); border: 2px solid #AFCBF3; border-radius: 20px; padding: 6px 10px; }</string>
+     </property>
+    </widget>
+   </item>
+
+   <!-- Submit button (gốc) -->
+   <item>
+    <widget class="QPushButton" name="btnSubmit">
+     <property name="text"><string>SEND</string></property>
+     <property name="minimumSize"><size><width>0</width><height>45</height></size></property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton { background-color: rgb(208,236,250); color: #0D3B66; font-weight: bold; font-size: 15px; border: none; border-radius: 15px; padding: 8px 15px; } QPushButton:hover { background-color: rgb(208,236,250); } QPushButton:pressed { background-color: #8FB6F5; }</string>
+     </property>
+    </widget>
+   </item>
+
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

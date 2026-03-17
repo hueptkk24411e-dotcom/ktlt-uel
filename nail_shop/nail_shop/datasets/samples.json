@@ -1,0 +1,94 @@
+{
+    "samples": [
+        {
+            "sample_id": "S01",
+            "name": "White Flora Charm",
+            "price": 36,
+            "season": "Spring"
+        },
+        {
+            "sample_id": "S02",
+            "name": "Yellow Daisy Garden",
+            "price": 30,
+            "season": "Spring"
+        },
+        {
+            "sample_id": "S03",
+            "name": "Silver Ribbon Dew",
+            "price": 25,
+            "season": "Spring"
+        },
+        {
+            "sample_id": "S04",
+            "name": "Pink Crystal Fairy",
+            "price": 40,
+            "season": "Summer"
+        },
+        {
+            "sample_id": "S05",
+            "name": "Sparkling Starlight",
+            "price": 37,
+            "season": "Summer"
+        },
+        {
+            "sample_id": "S06",
+            "name": "Green Matcha Muse",
+            "price": 36,
+            "season": "Autumn"
+        },
+        {
+            "sample_id": "S07",
+            "name": "Sunny Side Up",
+            "price": 26,
+            "season": "Autumn"
+        },
+        {
+            "sample_id": "S08",
+            "name": "Butterfly Garden Glow",
+            "price": 36,
+            "season": "Autumn"
+        },
+        {
+            "sample_id": "S09",
+            "name": "Ocean Pearl Dream",
+            "price": 40,
+            "season": "Winter"
+        },
+        {
+            "sample_id": "S10",
+            "name": "Winter Snowman",
+            "price": 30,
+            "season": "Winter"
+        },
+        {
+            "sample_id": "S11",
+            "name": "Purple Amethyst Glaze",
+            "price": 36,
+            "season": "Winter"
+        },
+        {
+            "sample_id": "S12",
+            "name": "Creamy Heart Pearl",
+            "price": 32,
+            "season": "Summer"
+        },
+        {
+            "sample_id": "S13",
+            "name": "Inimalist Red Ribbon",
+            "price": 30,
+            "season": "Autumn"
+        },
+        {
+            "sample_id": "S14",
+            "name": "Cosmic Marble Pink",
+            "price": 36,
+            "season": "Summer"
+        },
+        {
+            "sample_id": "s15",
+            "name": "kah",
+            "price": 11.0,
+            "season": "Spring"
+        }
+    ]
+}

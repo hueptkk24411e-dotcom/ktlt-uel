@@ -1,0 +1,24 @@
+{
+    "employees": [
+        {
+            "emp_id": "E01",
+            "name": "Anna",
+            "experience": 5
+        },
+        {
+            "emp_id": "E02",
+            "name": "Lisa",
+            "experience": 3
+        },
+        {
+            "emp_id": "E03",
+            "name": "Sophia",
+            "experience": 4
+        },
+        {
+            "emp_id": "E04",
+            "name": "Emma",
+            "experience": 6
+        }
+    ]
+}

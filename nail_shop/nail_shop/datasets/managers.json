@@ -1,0 +1,22 @@
+{
+    "managers": [
+        {
+            "manager_id": "M01",
+            "name": "Ho Tiger",
+            "username": "ho",
+            "password": "1"
+        },
+        {
+            "manager_id": "M02",
+            "name": "Voi Ele",
+            "username": "voi",
+            "password": "333333"
+        },
+        {
+            "manager_id": "M03",
+            "name": "Tho Trang",
+            "username": "tho",
+            "password": "345678"
+        }
+    ]
+}

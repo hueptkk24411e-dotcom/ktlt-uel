@@ -1,0 +1,1241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ProductMainWindow</class>
+ <widget class="QMainWindow" name="ProductMainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>751</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>900</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>My Nail Shop — Management</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(234, 242, 251);</string>
+   </property>
+   <layout class="QVBoxLayout" name="rootLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <layout class="QHBoxLayout" name="headerLayout">
+      <property name="leftMargin">
+       <number>20</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>20</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="lblDashTitle">
+        <property name="styleSheet">
+         <string notr="true">font-size: 20px; font-weight: bold; font-family: Georgia, serif; color: rgb(15,40,80);</string>
+        </property>
+        <property name="text">
+         <string>MY NAIL SHOP  —  Management Dashboard</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="headerSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnLogout">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton { background-color: rgb(67, 139, 196); color: rgb(224, 253, 255); border: 2px solid rgb(170, 210, 250); border-radius: 8px; font-size: 12px; font-weight: bold; padding: 5px 12px; } QPushButton:hover { background-color: #4E86B5; } QPushButton:pressed { background-color: #3a6f99; }</string>
+        </property>
+        <property name="text">
+         <string>← Logout</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="contentLayout">
+      <property name="leftMargin">
+       <number>12</number>
+      </property>
+      <property name="topMargin">
+       <number>10</number>
+      </property>
+      <property name="rightMargin">
+       <number>12</number>
+      </property>
+      <property name="bottomMargin">
+       <number>10</number>
+      </property>
+      <item>
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="styleSheet">
+         <string notr="true">QTabWidget::pane { border: 2px solid rgb(170, 210, 250); border-radius: 8px; background-color: rgb(234, 242, 251); } QTabBar::tab { background-color: rgb(215, 233, 255); color: rgb(0, 0, 127); border: 1px solid rgb(170, 210, 250); border-bottom: none; padding: 6px 16px; font-weight: bold; font-size: 12px; border-top-left-radius: 6px; border-top-right-radius: 6px; } QTabBar::tab:selected { background-color: rgb(67, 139, 196); color: rgb(224, 253, 255); } QTabBar::tab:hover:!selected { background-color: #A6C8FF; }</string>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="tabSamples">
+         <attribute name="title">
+          <string>💅  Nail Samples</string>
+         </attribute>
+         <layout class="QHBoxLayout" name="sampleTabLayout" stretch="2,1">
+          <property name="spacing">
+           <number>12</number>
+          </property>
+          <property name="leftMargin">
+           <number>10</number>
+          </property>
+          <property name="topMargin">
+           <number>10</number>
+          </property>
+          <property name="rightMargin">
+           <number>10</number>
+          </property>
+          <property name="bottomMargin">
+           <number>10</number>
+          </property>
+          <item>
+           <widget class="QTableWidget" name="tableSamples">
+            <property name="styleSheet">
+             <string notr="true">QTableWidget { background-color: white; border: 2px solid rgb(170, 210, 250); border-radius: 8px; gridline-color: rgb(215, 233, 255); } QHeaderView::section { background-color: rgb(167, 212, 238); color: rgb(0, 0, 127); font-weight: bold; padding: 5px; border: none; }</string>
+            </property>
+            <property name="editTriggers">
+             <set>QAbstractItemView::NoEditTriggers</set>
+            </property>
+            <property name="selectionBehavior">
+             <enum>QAbstractItemView::SelectRows</enum>
+            </property>
+            <attribute name="verticalHeaderVisible">
+             <bool>false</bool>
+            </attribute>
+            <column>
+             <property name="text">
+              <string>ID</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Name</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Price ($)</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Season</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="sampleFormLayout">
+            <property name="spacing">
+             <number>8</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="lblSampleTitle">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(0,0,127); font-size: 12px; font-weight: bold;</string>
+              </property>
+              <property name="text">
+               <string>Sample Details</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="lblSampleID">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(0,0,127); font-size: 11px; font-weight: bold;</string>
+              </property>
+              <property name="text">
+               <string>ID:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="inputSampleID">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit { border: 2px solid rgb(170, 210, 250); border-radius: 6px; padding: 3px 8px; background-color: rgb(243, 248, 253); color: rgb(0, 0, 127); font-size: 12px; } QLineEdit:focus { border: 2px solid rgb(67, 139, 196); }</string>
+              </property>
+              <property name="placeholderText">
+               <string>e.g. S15</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="lblSampleName">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(0,0,127); font-size: 11px; font-weight: bold;</string>
+              </property>
+              <property name="text">
+               <string>Name:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="inputSampleName">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit { border: 2px solid rgb(170, 210, 250); border-radius: 6px; padding: 3px 8px; background-color: rgb(243, 248, 253); color: rgb(0, 0, 127); font-size: 12px; } QLineEdit:focus { border: 2px solid rgb(67, 139, 196); }</string>
+              </property>
+              <property name="placeholderText">
+               <string>Sample name</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="lblSamplePrice">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(0,0,127); font-size: 11px; font-weight: bold;</string>
+              </property>
+              <property name="text">
+               <string>Price ($):</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="inputSamplePrice">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit { border: 2px solid rgb(170, 210, 250); border-radius: 6px; padding: 3px 8px; background-color: rgb(243, 248, 253); color: rgb(0, 0, 127); font-size: 12px; } QLineEdit:focus { border: 2px solid rgb(67, 139, 196); }</string>
+              </property>
+              <property name="placeholderText">
+               <string>e.g. 35</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="lblSampleSeason">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(0,0,127); font-size: 11px; font-weight: bold;</string>
+              </property>
+              <property name="text">
+               <string>Season:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="comboSampleSeason">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border:2px solid rgb(170,210,250); border-radius:6px; padding:3px; background:rgb(243,248,253); color:rgb(0,0,127);</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>Spring</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Summer</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Autumn</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Winter</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="lblSampleImageTitle">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(0,0,127); font-size: 11px; font-weight: bold;</string>
+              </property>
+              <property name="text">
+               <string>Image:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="lblSampleImage">
+              <property name="minimumSize">
+               <size>
+                <width>160</width>
+                <height>100</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>160</width>
+                <height>100</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border:2px dashed rgb(170,210,250); border-radius:6px; background:rgb(234,242,251); color:rgb(150,150,180); font-size:11px;</string>
+              </property>
+              <property name="text">
+               <string>No image</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnSampleImage">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton { background-color: rgb(67, 139, 196); color: rgb(224, 253, 255); border: 2px solid rgb(170, 210, 250); border-radius: 8px; font-size: 12px; font-weight: bold; padding: 5px 12px; } QPushButton:hover { background-color: #4E86B5; } QPushButton:pressed { background-color: #3a6f99; }</string>
+              </property>
+              <property name="text">
+               <string>📷  Choose Image</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnSampleSave">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton { background-color: rgb(67, 139, 196); color: rgb(224, 253, 255); border: 2px solid rgb(170, 210, 250); border-radius: 8px; font-size: 12px; font-weight: bold; padding: 5px 12px; } QPushButton:hover { background-color: #4E86B5; } QPushButton:pressed { background-color: #3a6f99; }</string>
+              </property>
+              <property name="text">
+               <string>💾  Save</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnSampleRemove">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton { background-color: rgb(67, 139, 196); color: rgb(224, 253, 255); border: 2px solid rgb(170, 210, 250); border-radius: 8px; font-size: 12px; font-weight: bold; padding: 5px 12px; } QPushButton:hover { background-color: #4E86B5; } QPushButton:pressed { background-color: #3a6f99; }</string>
+              </property>
+              <property name="text">
+               <string>🗑  Remove</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnSampleSearch">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton { background-color: rgb(67, 139, 196); color: rgb(224, 253, 255); border: 2px solid rgb(170, 210, 250); border-radius: 8px; font-size: 12px; font-weight: bold; padding: 5px 12px; } QPushButton:hover { background-color: #4E86B5; } QPushButton:pressed { background-color: #3a6f99; }</string>
+              </property>
+              <property name="text">
+               <string>🔍  Search</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnSampleClear">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton { background-color: rgb(67, 139, 196); color: rgb(224, 253, 255); border: 2px solid rgb(170, 210, 250); border-radius: 8px; font-size: 12px; font-weight: bold; padding: 5px 12px; } QPushButton:hover { background-color: #4E86B5; } QPushButton:pressed { background-color: #3a6f99; }</string>
+              </property>
+              <property name="text">
+               <string>✕  Clear</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnSampleRefresh">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton { background-color: rgb(67, 139, 196); color: rgb(224, 253, 255); border: 2px solid rgb(170, 210, 250); border-radius: 8px; font-size: 12px; font-weight: bold; padding: 5px 12px; } QPushButton:hover { background-color: #4E86B5; } QPushButton:pressed { background-color: #3a6f99; }</string>
+              </property>
+              <property name="text">
+               <string>🔄  Refresh</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="sampleFormSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>10</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tabCustomers">
+         <attribute name="title">
+          <string>👤  Customers</string>
+         </attribute>
+         <layout class="QHBoxLayout" name="cusTabLayout" stretch="2,1">
+          <property name="spacing">
+           <number>12</number>
+          </property>
+          <property name="leftMargin">
+           <number>10</number>
+          </property>
+          <property name="topMargin">
+           <number>10</number>
+          </property>
+          <property name="rightMargin">
+           <number>10</number>
+          </property>
+          <property name="bottomMargin">
+           <number>10</number>
+          </property>
+          <item>
+           <widget class="QTableWidget" name="tableCustomers">
+            <property name="styleSheet">
+             <string notr="true">QTableWidget { background-color: white; border: 2px solid rgb(170, 210, 250); border-radius: 8px; gridline-color: rgb(215, 233, 255); } QHeaderView::section { background-color: rgb(167, 212, 238); color: rgb(0, 0, 127); font-weight: bold; padding: 5px; border: none; }</string>
+            </property>
+            <property name="editTriggers">
+             <set>QAbstractItemView::NoEditTriggers</set>
+            </property>
+            <property name="selectionBehavior">
+             <enum>QAbstractItemView::SelectRows</enum>
+            </property>
+            <attribute name="verticalHeaderVisible">
+             <bool>false</bool>
+            </attribute>
+            <column>
+             <property name="text">
+              <string>Name</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Phone</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Type</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Rating</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="cusFormLayout">
+            <property name="spacing">
+             <number>8</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="lblCusTitle">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(0,0,127); font-size: 12px; font-weight: bold;</string>
+              </property>
+              <property name="text">
+               <string>Customer Details</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="lblCusName">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(0,0,127); font-size: 11px; font-weight: bold;</string>
+              </property>
+              <property name="text">
+               <string>Name:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="inputCusName">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit { border: 2px solid rgb(170, 210, 250); border-radius: 6px; padding: 3px 8px; background-color: rgb(243, 248, 253); color: rgb(0, 0, 127); font-size: 12px; } QLineEdit:focus { border: 2px solid rgb(67, 139, 196); }</string>
+              </property>
+              <property name="placeholderText">
+               <string>Customer name</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="lblCusPhone">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(0,0,127); font-size: 11px; font-weight: bold;</string>
+              </property>
+              <property name="text">
+               <string>Phone:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="inputCusPhone">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit { border: 2px solid rgb(170, 210, 250); border-radius: 6px; padding: 3px 8px; background-color: rgb(243, 248, 253); color: rgb(0, 0, 127); font-size: 12px; } QLineEdit:focus { border: 2px solid rgb(67, 139, 196); }</string>
+              </property>
+              <property name="placeholderText">
+               <string>Phone number</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="lblCusType">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(0,0,127); font-size: 11px; font-weight: bold;</string>
+              </property>
+              <property name="text">
+               <string>Type:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="comboCusType">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border:2px solid rgb(170,210,250); border-radius:6px; padding:3px; background:rgb(243,248,253); color:rgb(0,0,127); font-size:12px;</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>Normal</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>VIP</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="lblCusRating">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(0,0,127); font-size: 11px; font-weight: bold;</string>
+              </property>
+              <property name="text">
+               <string>Rating:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="comboCusRating">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border:2px solid rgb(170,210,250); border-radius:6px; padding:3px; background:rgb(243,248,253); color:rgb(0,0,127); font-size:12px;</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>0</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>1</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>3</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>4</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>5</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnCusSave">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton { background-color: rgb(67, 139, 196); color: rgb(224, 253, 255); border: 2px solid rgb(170, 210, 250); border-radius: 8px; font-size: 12px; font-weight: bold; padding: 5px 12px; } QPushButton:hover { background-color: #4E86B5; } QPushButton:pressed { background-color: #3a6f99; }</string>
+              </property>
+              <property name="text">
+               <string>💾  Save</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnCusRemove">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton { background-color: rgb(67, 139, 196); color: rgb(224, 253, 255); border: 2px solid rgb(170, 210, 250); border-radius: 8px; font-size: 12px; font-weight: bold; padding: 5px 12px; } QPushButton:hover { background-color: #4E86B5; } QPushButton:pressed { background-color: #3a6f99; }</string>
+              </property>
+              <property name="text">
+               <string>🗑  Remove</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnCusSearch">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton { background-color: rgb(67, 139, 196); color: rgb(224, 253, 255); border: 2px solid rgb(170, 210, 250); border-radius: 8px; font-size: 12px; font-weight: bold; padding: 5px 12px; } QPushButton:hover { background-color: #4E86B5; } QPushButton:pressed { background-color: #3a6f99; }</string>
+              </property>
+              <property name="text">
+               <string>🔍  Search</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnCusClear">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton { background-color: rgb(67, 139, 196); color: rgb(224, 253, 255); border: 2px solid rgb(170, 210, 250); border-radius: 8px; font-size: 12px; font-weight: bold; padding: 5px 12px; } QPushButton:hover { background-color: #4E86B5; } QPushButton:pressed { background-color: #3a6f99; }</string>
+              </property>
+              <property name="text">
+               <string>✕  Clear</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnCusRefresh">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton { background-color: rgb(67, 139, 196); color: rgb(224, 253, 255); border: 2px solid rgb(170, 210, 250); border-radius: 8px; font-size: 12px; font-weight: bold; padding: 5px 12px; } QPushButton:hover { background-color: #4E86B5; } QPushButton:pressed { background-color: #3a6f99; }</string>
+              </property>
+              <property name="text">
+               <string>🔄  Refresh</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="cusFormSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>10</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tabEmployees">
+         <attribute name="title">
+          <string>💼  Employees</string>
+         </attribute>
+         <layout class="QHBoxLayout" name="empTabLayout" stretch="2,1">
+          <property name="spacing">
+           <number>12</number>
+          </property>
+          <property name="leftMargin">
+           <number>10</number>
+          </property>
+          <property name="topMargin">
+           <number>10</number>
+          </property>
+          <property name="rightMargin">
+           <number>10</number>
+          </property>
+          <property name="bottomMargin">
+           <number>10</number>
+          </property>
+          <item>
+           <widget class="QTableWidget" name="tableEmployees">
+            <property name="styleSheet">
+             <string notr="true">QTableWidget { background-color: white; border: 2px solid rgb(170, 210, 250); border-radius: 8px; gridline-color: rgb(215, 233, 255); } QHeaderView::section { background-color: rgb(167, 212, 238); color: rgb(0, 0, 127); font-weight: bold; padding: 5px; border: none; }</string>
+            </property>
+            <property name="editTriggers">
+             <set>QAbstractItemView::NoEditTriggers</set>
+            </property>
+            <property name="selectionBehavior">
+             <enum>QAbstractItemView::SelectRows</enum>
+            </property>
+            <attribute name="verticalHeaderVisible">
+             <bool>false</bool>
+            </attribute>
+            <column>
+             <property name="text">
+              <string>ID</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Name</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Experience (yrs)</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="empFormLayout">
+            <property name="spacing">
+             <number>8</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="lblEmpTitle">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(0,0,127); font-size: 12px; font-weight: bold;</string>
+              </property>
+              <property name="text">
+               <string>Employee Details</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="lblEmpID">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(0,0,127); font-size: 11px; font-weight: bold;</string>
+              </property>
+              <property name="text">
+               <string>Employee ID:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="inputEmpID">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit { border: 2px solid rgb(170, 210, 250); border-radius: 6px; padding: 3px 8px; background-color: rgb(243, 248, 253); color: rgb(0, 0, 127); font-size: 12px; } QLineEdit:focus { border: 2px solid rgb(67, 139, 196); }</string>
+              </property>
+              <property name="placeholderText">
+               <string>e.g. E05</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="lblEmpName">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(0,0,127); font-size: 11px; font-weight: bold;</string>
+              </property>
+              <property name="text">
+               <string>Name:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="inputEmpName">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit { border: 2px solid rgb(170, 210, 250); border-radius: 6px; padding: 3px 8px; background-color: rgb(243, 248, 253); color: rgb(0, 0, 127); font-size: 12px; } QLineEdit:focus { border: 2px solid rgb(67, 139, 196); }</string>
+              </property>
+              <property name="placeholderText">
+               <string>Full name</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="lblEmpExp">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(0,0,127); font-size: 11px; font-weight: bold;</string>
+              </property>
+              <property name="text">
+               <string>Experience:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="inputEmpExp">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit { border: 2px solid rgb(170, 210, 250); border-radius: 6px; padding: 3px 8px; background-color: rgb(243, 248, 253); color: rgb(0, 0, 127); font-size: 12px; } QLineEdit:focus { border: 2px solid rgb(67, 139, 196); }</string>
+              </property>
+              <property name="placeholderText">
+               <string>Years (number)</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnEmpSave">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton { background-color: rgb(67, 139, 196); color: rgb(224, 253, 255); border: 2px solid rgb(170, 210, 250); border-radius: 8px; font-size: 12px; font-weight: bold; padding: 5px 12px; } QPushButton:hover { background-color: #4E86B5; } QPushButton:pressed { background-color: #3a6f99; }</string>
+              </property>
+              <property name="text">
+               <string>💾  Save</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnEmpRemove">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton { background-color: rgb(67, 139, 196); color: rgb(224, 253, 255); border: 2px solid rgb(170, 210, 250); border-radius: 8px; font-size: 12px; font-weight: bold; padding: 5px 12px; } QPushButton:hover { background-color: #4E86B5; } QPushButton:pressed { background-color: #3a6f99; }</string>
+              </property>
+              <property name="text">
+               <string>🗑  Remove</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnEmpSearch">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton { background-color: rgb(67, 139, 196); color: rgb(224, 253, 255); border: 2px solid rgb(170, 210, 250); border-radius: 8px; font-size: 12px; font-weight: bold; padding: 5px 12px; } QPushButton:hover { background-color: #4E86B5; } QPushButton:pressed { background-color: #3a6f99; }</string>
+              </property>
+              <property name="text">
+               <string>🔍  Search</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnEmpClear">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton { background-color: rgb(67, 139, 196); color: rgb(224, 253, 255); border: 2px solid rgb(170, 210, 250); border-radius: 8px; font-size: 12px; font-weight: bold; padding: 5px 12px; } QPushButton:hover { background-color: #4E86B5; } QPushButton:pressed { background-color: #3a6f99; }</string>
+              </property>
+              <property name="text">
+               <string>✕  Clear</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnEmpRefresh">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton { background-color: rgb(67, 139, 196); color: rgb(224, 253, 255); border: 2px solid rgb(170, 210, 250); border-radius: 8px; font-size: 12px; font-weight: bold; padding: 5px 12px; } QPushButton:hover { background-color: #4E86B5; } QPushButton:pressed { background-color: #3a6f99; }</string>
+              </property>
+              <property name="text">
+               <string>🔄  Refresh</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="empFormSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>10</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tabStats">
+         <attribute name="title">
+          <string>📊  Statistics</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="statsTabLayout">
+          <property name="spacing">
+           <number>10</number>
+          </property>
+          <property name="leftMargin">
+           <number>10</number>
+          </property>
+          <property name="topMargin">
+           <number>10</number>
+          </property>
+          <property name="rightMargin">
+           <number>10</number>
+          </property>
+          <property name="bottomMargin">
+           <number>10</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="lblChartPrompt">
+            <property name="styleSheet">
+             <string notr="true">color: rgb(0,0,127); font-size: 13px; font-weight: bold;</string>
+            </property>
+            <property name="text">
+             <string>Click a button to generate chart:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="chartBtnRow">
+            <property name="spacing">
+             <number>10</number>
+            </property>
+            <item>
+             <widget class="QPushButton" name="btnChartSamples">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>36</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>36</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton { background-color: rgb(67, 139, 196); color: rgb(224, 253, 255); border: 2px solid rgb(170, 210, 250); border-radius: 8px; font-size: 12px; font-weight: bold; padding: 5px 12px; } QPushButton:hover { background-color: #4E86B5; } QPushButton:pressed { background-color: #3a6f99; }</string>
+              </property>
+              <property name="text">
+               <string>📊  Sample Quantities</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnChartFeedback">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>36</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>36</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton { background-color: rgb(67, 139, 196); color: rgb(224, 253, 255); border: 2px solid rgb(170, 210, 250); border-radius: 8px; font-size: 12px; font-weight: bold; padding: 5px 12px; } QPushButton:hover { background-color: #4E86B5; } QPushButton:pressed { background-color: #3a6f99; }</string>
+              </property>
+              <property name="text">
+               <string>⭐  Customer Ratings</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnChartRevenue">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>36</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>36</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton { background-color: rgb(67, 139, 196); color: rgb(224, 253, 255); border: 2px solid rgb(170, 210, 250); border-radius: 8px; font-size: 12px; font-weight: bold; padding: 5px 12px; } QPushButton:hover { background-color: #4E86B5; } QPushButton:pressed { background-color: #3a6f99; }</string>
+              </property>
+              <property name="text">
+               <string>💰  Revenue by Season</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QLabel" name="chartPlaceholder">
+            <property name="styleSheet">
+             <string notr="true">color: rgb(150,150,180); font-size: 13px;</string>
+            </property>
+            <property name="text">
+             <string>Charts will appear here</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
