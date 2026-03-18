@@ -1,11 +1,8 @@
 import sys, os
-
-from nail_shop.nail_shop.models.manager import Manager
-from nail_shop.nail_shop.models.managers import Managers
-
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
-
+from models.manager import Manager
+from models.managers import Managers
 
 managers = [
     Manager("M01", "Ho Tiger",   "ho",  "111111"),

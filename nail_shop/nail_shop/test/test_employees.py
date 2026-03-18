@@ -1,11 +1,8 @@
 import sys, os
-
-from nail_shop.nail_shop.models.employee import Employee
-from nail_shop.nail_shop.models.employees import Employees
-
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
-
+from models.employee import Employee
+from models.employees import Employees
 
 employees = [
     Employee("E01", "Anna",   5),

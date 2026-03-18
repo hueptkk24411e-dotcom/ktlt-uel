@@ -83,12 +83,6 @@
             "name": "Cosmic Marble Pink",
             "price": 36,
             "season": "Summer"
-        },
-        {
-            "sample_id": "s15",
-            "name": "kah",
-            "price": 11.0,
-            "season": "Spring"
         }
     ]
 }

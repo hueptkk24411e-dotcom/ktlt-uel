@@ -1,6 +1,5 @@
 import json
-
-from nail_shop.nail_shop.models.sample import Sample
+from models.sample import Sample
 
 
 class Samples:

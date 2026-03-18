@@ -120,8 +120,172 @@
          <string notr="true">QTabWidget::pane { border: 2px solid rgb(170, 210, 250); border-radius: 8px; background-color: rgb(234, 242, 251); } QTabBar::tab { background-color: rgb(215, 233, 255); color: rgb(0, 0, 127); border: 1px solid rgb(170, 210, 250); border-bottom: none; padding: 6px 16px; font-weight: bold; font-size: 12px; border-top-left-radius: 6px; border-top-right-radius: 6px; } QTabBar::tab:selected { background-color: rgb(67, 139, 196); color: rgb(224, 253, 255); } QTabBar::tab:hover:!selected { background-color: #A6C8FF; }</string>
         </property>
         <property name="currentIndex">
-         <number>0</number>
+         <number>4</number>
         </property>
+        <widget class="QWidget" name="tabOrders">
+         <attribute name="title">
+          <string>🧾  Orders</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="ordersTabLayout">
+          <property name="spacing">
+           <number>10</number>
+          </property>
+          <property name="leftMargin">
+           <number>10</number>
+          </property>
+          <property name="topMargin">
+           <number>10</number>
+          </property>
+          <property name="rightMargin">
+           <number>10</number>
+          </property>
+          <property name="bottomMargin">
+           <number>10</number>
+          </property>
+          <item>
+           <layout class="QHBoxLayout" name="ordersToolbarLayout">
+            <property name="spacing">
+             <number>8</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="lblOrderSearch">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(0,0,127); font-size: 11px; font-weight: bold;</string>
+              </property>
+              <property name="text">
+               <string>Search (name / phone):</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="inputOrderSearch">
+              <property name="minimumSize">
+               <size>
+                <width>200</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>300</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit { border: 2px solid rgb(170, 210, 250); border-radius: 6px; padding: 3px 8px; background-color: rgb(243, 248, 253); color: rgb(0, 0, 127); font-size: 12px; } QLineEdit:focus { border: 2px solid rgb(67, 139, 196); }</string>
+              </property>
+              <property name="placeholderText">
+               <string>Enter customer name or phone…</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnOrdersSearch">
+              <property name="minimumSize">
+               <size>
+                <width>90</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>90</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton { background-color: rgb(67, 139, 196); color: rgb(224, 253, 255); border: 2px solid rgb(170, 210, 250); border-radius: 8px; font-size: 12px; font-weight: bold; padding: 5px 12px; } QPushButton:hover { background-color: #4E86B5; } QPushButton:pressed { background-color: #3a6f99; }</string>
+              </property>
+              <property name="text">
+               <string>🔍  Search</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnOrdersRefresh">
+              <property name="minimumSize">
+               <size>
+                <width>90</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>90</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton { background-color: rgb(67, 139, 196); color: rgb(224, 253, 255); border: 2px solid rgb(170, 210, 250); border-radius: 8px; font-size: 12px; font-weight: bold; padding: 5px 12px; } QPushButton:hover { background-color: #4E86B5; } QPushButton:pressed { background-color: #3a6f99; }</string>
+              </property>
+              <property name="text">
+               <string>🔄  Refresh</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="ordersToolbarSpacer">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QTableWidget" name="tableOrders">
+            <property name="styleSheet">
+             <string notr="true">QTableWidget { background-color: white; color: rgb(0, 0, 127); border: 2px solid rgb(170, 210, 250); border-radius: 8px; gridline-color: rgb(215, 233, 255); } QHeaderView::section { background-color: rgb(167, 212, 238); color: rgb(0, 0, 127); font-weight: bold; padding: 5px; border: none; } QTableWidget::item { background-color: white; color: rgb(0, 0, 127); font-size: 12px; padding: 4px; } QTableWidget::item:selected { background-color: rgb(210, 233, 255); color: rgb(0, 0, 127); } QTableWidget::item:alternate { background-color: rgb(243, 248, 253); color: rgb(0, 0, 127); }</string>
+            </property>
+            <property name="editTriggers">
+             <set>QAbstractItemView::NoEditTriggers</set>
+            </property>
+            <property name="selectionBehavior">
+             <enum>QAbstractItemView::SelectRows</enum>
+            </property>
+            <attribute name="verticalHeaderVisible">
+             <bool>false</bool>
+            </attribute>
+            <column>
+             <property name="text">
+              <string>Order ID</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Customer</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Phone</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Total ($)</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Method</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Date</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </widget>
         <widget class="QWidget" name="tabSamples">
          <attribute name="title">
           <string>💅  Nail Samples</string>
@@ -145,7 +309,7 @@
           <item>
            <widget class="QTableWidget" name="tableSamples">
             <property name="styleSheet">
-             <string notr="true">QTableWidget { background-color: white; border: 2px solid rgb(170, 210, 250); border-radius: 8px; gridline-color: rgb(215, 233, 255); } QHeaderView::section { background-color: rgb(167, 212, 238); color: rgb(0, 0, 127); font-weight: bold; padding: 5px; border: none; }</string>
+             <string notr="true">QTableWidget { background-color: white; color: rgb(0, 0, 127); border: 2px solid rgb(170, 210, 250); border-radius: 8px; gridline-color: rgb(215, 233, 255); } QHeaderView::section { background-color: rgb(167, 212, 238); color: rgb(0, 0, 127); font-weight: bold; padding: 5px; border: none; } QTableWidget::item { background-color: white; color: rgb(0, 0, 127); font-size: 12px; padding: 4px; } QTableWidget::item:selected { background-color: rgb(210, 233, 255); color: rgb(0, 0, 127); } QTableWidget::item:alternate { background-color: rgb(243, 248, 253); color: rgb(0, 0, 127); }</string>
             </property>
             <property name="editTriggers">
              <set>QAbstractItemView::NoEditTriggers</set>
@@ -521,7 +685,7 @@
           <item>
            <widget class="QTableWidget" name="tableCustomers">
             <property name="styleSheet">
-             <string notr="true">QTableWidget { background-color: white; border: 2px solid rgb(170, 210, 250); border-radius: 8px; gridline-color: rgb(215, 233, 255); } QHeaderView::section { background-color: rgb(167, 212, 238); color: rgb(0, 0, 127); font-weight: bold; padding: 5px; border: none; }</string>
+             <string notr="true">QTableWidget { background-color: white; color: rgb(0, 0, 127); border: 2px solid rgb(170, 210, 250); border-radius: 8px; gridline-color: rgb(215, 233, 255); } QHeaderView::section { background-color: rgb(167, 212, 238); color: rgb(0, 0, 127); font-weight: bold; padding: 5px; border: none; } QTableWidget::item { background-color: white; color: rgb(0, 0, 127); font-size: 12px; padding: 4px; } QTableWidget::item:selected { background-color: rgb(210, 233, 255); color: rgb(0, 0, 127); } QTableWidget::item:alternate { background-color: rgb(243, 248, 253); color: rgb(0, 0, 127); }</string>
             </property>
             <property name="editTriggers">
              <set>QAbstractItemView::NoEditTriggers</set>
@@ -863,7 +1027,7 @@
           <item>
            <widget class="QTableWidget" name="tableEmployees">
             <property name="styleSheet">
-             <string notr="true">QTableWidget { background-color: white; border: 2px solid rgb(170, 210, 250); border-radius: 8px; gridline-color: rgb(215, 233, 255); } QHeaderView::section { background-color: rgb(167, 212, 238); color: rgb(0, 0, 127); font-weight: bold; padding: 5px; border: none; }</string>
+             <string notr="true">QTableWidget { background-color: white; color: rgb(0, 0, 127); border: 2px solid rgb(170, 210, 250); border-radius: 8px; gridline-color: rgb(215, 233, 255); } QHeaderView::section { background-color: rgb(167, 212, 238); color: rgb(0, 0, 127); font-weight: bold; padding: 5px; border: none; } QTableWidget::item { background-color: white; color: rgb(0, 0, 127); font-size: 12px; padding: 4px; } QTableWidget::item:selected { background-color: rgb(210, 233, 255); color: rgb(0, 0, 127); } QTableWidget::item:alternate { background-color: rgb(243, 248, 253); color: rgb(0, 0, 127); }</string>
             </property>
             <property name="editTriggers">
              <set>QAbstractItemView::NoEditTriggers</set>
@@ -1146,28 +1310,6 @@
             <property name="spacing">
              <number>10</number>
             </property>
-            <item>
-             <widget class="QPushButton" name="btnChartSamples">
-              <property name="minimumSize">
-               <size>
-                <width>0</width>
-                <height>36</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>16777215</width>
-                <height>36</height>
-               </size>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">QPushButton { background-color: rgb(67, 139, 196); color: rgb(224, 253, 255); border: 2px solid rgb(170, 210, 250); border-radius: 8px; font-size: 12px; font-weight: bold; padding: 5px 12px; } QPushButton:hover { background-color: #4E86B5; } QPushButton:pressed { background-color: #3a6f99; }</string>
-              </property>
-              <property name="text">
-               <string>📊  Sample Quantities</string>
-              </property>
-             </widget>
-            </item>
             <item>
              <widget class="QPushButton" name="btnChartFeedback">
               <property name="minimumSize">

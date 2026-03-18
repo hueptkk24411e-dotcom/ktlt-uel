@@ -1,6 +1,5 @@
 import json
-
-from nail_shop.nail_shop.models.manager import Manager
+from models.manager import Manager
 
 
 class Managers:

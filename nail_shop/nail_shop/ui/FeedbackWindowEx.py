@@ -5,12 +5,12 @@ Import từ ui.constants — KHÔNG import trực tiếp từ FeedbackWindow.py.
 Sửa lỗi: self.starBtns không tồn tại trong Ui_RatingUI,
           nay tự build từ STAR_BTN_NAMES trong constants.py.
 """
-from PyQt6.QtWidgets import QWidget, QMessageBox
 
-from nail_shop.nail_shop.models.customer import Customer
-from nail_shop.nail_shop.models.customers import Customers
-from nail_shop.nail_shop.ui.FeedbackWindow import Ui_RatingUI
-from nail_shop.nail_shop.ui.constants import STAR_BTN_NAMES, STAR_ON, STAR_OFF, RATING_LABELS
+from PyQt6.QtWidgets import QMessageBox, QWidget
+from models.customers import Customers
+from models.customer import Customer
+from ui.FeedbackWindow import Ui_RatingUI
+from ui.constants import STAR_BTN_NAMES, STAR_ON, STAR_OFF, RATING_LABELS
 
 
 class FeedbackWindowEx(Ui_RatingUI):

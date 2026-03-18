@@ -1,6 +1,5 @@
 from PyQt6.QtWidgets import QMainWindow, QMessageBox
-
-from nail_shop.nail_shop.ui.CustomerInfoWindow import Ui_CustomerInfoWindow
+from ui.CustomerInfoWindow import Ui_CustomerInfoWindow
 
 
 class CustomerInfoWindowEx(Ui_CustomerInfoWindow):
@@ -17,7 +16,7 @@ class CustomerInfoWindowEx(Ui_CustomerInfoWindow):
     def showWindow(self):
         self.Window.show()
 
-    def _lookup_cus_type(self, phone: str, models=None) -> str:
+    def _lookup_cus_type(self, phone: str) -> str:
         """Tra cứu customers.json theo SĐT.
         Trả về 'VIP' nếu tìm thấy và type là VIP, ngược lại 'Normal'."""
         if not phone:

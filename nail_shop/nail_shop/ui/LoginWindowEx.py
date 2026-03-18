@@ -1,8 +1,7 @@
 import sys
 from PyQt6.QtWidgets import QMessageBox, QApplication, QMainWindow
-
-from nail_shop.nail_shop.models.managers import Managers
-from nail_shop.nail_shop.ui.LoginWindow import Ui_LoginWindow
+from models.managers import Managers
+from ui.LoginWindow import Ui_LoginWindow
 
 
 class LoginWindowEx(Ui_LoginWindow):

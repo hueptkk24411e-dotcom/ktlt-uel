@@ -1,11 +1,8 @@
 import sys, os
-
-from nail_shop.nail_shop.models.customer import Customer
-from nail_shop.nail_shop.models.customers import Customers
-
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
-
+from models.customer import Customer
+from models.customers import Customers
 
 customers = [
     Customer("Nguyen An",  "0901111111", "VIP",    5),

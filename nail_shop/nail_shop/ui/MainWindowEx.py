@@ -1,7 +1,10 @@
 """
-MainWindowEx.py — CẬP NHẬT:
-  _open_custom() dùng SelfCustomWindowEx (cửa sổ riêng + bảng màu)
-  thay cho SelfCustomDialog inline cũ. Tất cả logic khác giữ nguyên.
+MainWindowEx.py
+───────────────
+THAY ĐỔI SO VỚI FILE GỐC:
+  [1] _open_payment() truyền thêm tham số cart=self.cart sang PaymentWindowEx
+      → PaymentWindowEx cần tham số này để lưu chi tiết order vào orders.json
+      → Không thay đổi gì logic hiển thị hay tính tiền, chỉ thêm 1 dòng truyền tham số
 """
 import os
 from PyQt6.QtWidgets import (
@@ -11,10 +14,10 @@ from PyQt6.QtWidgets import (
 from PyQt6.QtCore import Qt
 from PyQt6.QtGui import QPixmap, QFont
 
-from nail_shop.nail_shop.models.employees import Employees
-from nail_shop.nail_shop.models.samples import Samples
-from nail_shop.nail_shop.ui.MainWindow import Ui_MainWindow
-from nail_shop.nail_shop.ui.constants import STYLE_ACTION_BTN
+from models.samples import Samples
+from models.employees import Employees
+from ui.MainWindow import Ui_MainWindow
+from ui.constants import STYLE_ACTION_BTN, STYLE_PRODUCT_BTN
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 IMG_DIR  = os.path.join(BASE_DIR, "..", "images")
@@ -58,18 +61,8 @@ SEASON_BADGE = {
 
 
 class ProductCard(QWidget):
-    """
-    Card sản phẩm nail với:
-    - Viền bo góc pastel, đổi màu khi hover
-    - Badge mùa góc trên trái đè lên ảnh
-    - Tên + giá nổi bật riêng dòng
-    - Nút Select Design full-width
-    - Hover dùng paintEvent để tránh stylesheet xung đột
-    """
-
-    # Màu viền
-    _COLOR_NORMAL = (200, 225, 248)   # xanh pastel nhạt
-    _COLOR_HOVER  = (67,  139, 196)   # xanh đậm khi hover
+    _COLOR_NORMAL = (200, 225, 248)
+    _COLOR_HOVER  = (67,  139, 196)
     _RADIUS       = 16
 
     def __init__(self, sample, on_add_callback):
@@ -78,9 +71,7 @@ class ProductCard(QWidget):
         self._hovered = False
         self.setFixedSize(190, 320)
         self.setCursor(Qt.CursorShape.PointingHandCursor)
-        # Bật mouse tracking để nhận hover
         self.setAttribute(Qt.WidgetAttribute.WA_Hover, True)
-        # Nền trắng, không dùng stylesheet border (dùng paintEvent thay)
         self.setStyleSheet(
             "QWidget#card { background-color: white; border-radius: 16px; }"
         )
@@ -89,8 +80,6 @@ class ProductCard(QWidget):
         lay.setContentsMargins(8, 8, 8, 10)
         lay.setSpacing(5)
 
-        # ── Ảnh + badge mùa ───────────────────────────────────────
-        # Dùng QWidget làm container để badge có thể đặt absolute lên ảnh
         img_wrap = QWidget()
         img_wrap.setFixedSize(174, 190)
         img_wrap.setStyleSheet("background: transparent;")
@@ -104,7 +93,6 @@ class ProductCard(QWidget):
             "border: none;"
         )
 
-        # Load ảnh
         slug     = sample.name.lower().replace(" ", "_")
         img_path = os.path.join(IMG_DIR, f"{slug}.jpg")
         if not os.path.exists(img_path):
@@ -121,7 +109,6 @@ class ProductCard(QWidget):
             lbl_img.setText("💅")
             lbl_img.setFont(QFont("Arial", 32))
 
-        # Badge mùa
         season = sample.season or ""
         badge_txt, badge_bg, badge_fg = SEASON_BADGE.get(
             season, (season, "#e8f4fb", "#2c7db5")
@@ -142,7 +129,6 @@ class ProductCard(QWidget):
 
         lay.addWidget(img_wrap)
 
-        # ── Tên sản phẩm ──────────────────────────────────────────
         lbl_name = QLabel(sample.name)
         lbl_name.setAlignment(Qt.AlignmentFlag.AlignCenter)
         lbl_name.setWordWrap(True)
@@ -156,7 +142,6 @@ class ProductCard(QWidget):
         )
         lay.addWidget(lbl_name)
 
-        # ── Giá nổi bật ───────────────────────────────────────────
         lbl_price = QLabel(f"${int(sample.price)}")
         lbl_price.setAlignment(Qt.AlignmentFlag.AlignCenter)
         lbl_price.setFixedHeight(24)
@@ -169,67 +154,50 @@ class ProductCard(QWidget):
         )
         lay.addWidget(lbl_price)
 
-        # ── Nút Select Design full-width ──────────────────────────
         btn_add = QPushButton("Select Design")
         btn_add.setFixedHeight(32)
         btn_add.setStyleSheet(STYLE_SELECT_BTN)
         btn_add.setCursor(Qt.CursorShape.OpenHandCursor)
         btn_add.clicked.connect(
-            lambda: on_add_callback(sample.name, float(sample.price))
+            lambda _, n=sample.name, p=sample.price: on_add_callback(n, p)
         )
         lay.addWidget(btn_add)
 
-    # ── Vẽ viền + nền bằng paintEvent (không bị widget con override) ─
-    def paintEvent(self, event):
-        from PyQt6.QtGui import QPainter, QColor, QPen
+    def event(self, e):
+        from PyQt6.QtCore import QEvent
+        from PyQt6.QtGui import QPainter, QPen, QColor
+        if e.type() == QEvent.Type.HoverEnter:
+            self._hovered = True; self.update()
+        elif e.type() == QEvent.Type.HoverLeave:
+            self._hovered = False; self.update()
+        return super().event(e)
+
+    def paintEvent(self, e):
+        super().paintEvent(e)
+        from PyQt6.QtGui import QPainter, QPen, QColor
         from PyQt6.QtCore import QRect
-        painter = QPainter(self)
-        painter.setRenderHint(QPainter.RenderHint.Antialiasing)
-
-        r = self._RADIUS
-        rect = self.rect().adjusted(1, 1, -1, -1)
-
-        # Nền trắng hoặc xanh nhạt khi hover
-        if self._hovered:
-            painter.setBrush(QColor(235, 246, 255))
-        else:
-            painter.setBrush(QColor(255, 255, 255))
-
-        # Viền
-        if self._hovered:
-            pen = QPen(QColor(*self._COLOR_HOVER), 2)
-        else:
-            pen = QPen(QColor(*self._COLOR_NORMAL), 2)
-        painter.setPen(pen)
-        painter.drawRoundedRect(rect, r, r)
-        painter.end()
-        super().paintEvent(event)
-
-    def enterEvent(self, event):
-        self._hovered = True
-        self.update()
-        super().enterEvent(event)
-
-    def leaveEvent(self, event):
-        self._hovered = False
-        self.update()
-        super().leaveEvent(event)
+        p = QPainter(self)
+        p.setRenderHint(QPainter.RenderHint.Antialiasing)
+        r, g, b = self._COLOR_HOVER if self._hovered else self._COLOR_NORMAL
+        pen = QPen(QColor(r, g, b)); pen.setWidth(2); p.setPen(pen)
+        p.setBrush(Qt.BrushStyle.NoBrush)
+        p.drawRoundedRect(1, 1, self.width()-2, self.height()-2, self._RADIUS, self._RADIUS)
 
 
 class TechnicianDialog(QMainWindow):
     def __init__(self, employees_list, on_select_callback):
         super().__init__()
-        self.setWindowTitle("Choose Technician"); self.resize(380, 300)
-        self.setStyleSheet("background-color: rgb(234,242,251);")
-        from PyQt6.QtWidgets import QTableWidget, QHeaderView
+        from PyQt6.QtWidgets import QTableWidget
+        self.setWindowTitle("Select Technician")
+        self.setFixedSize(380, 300)
         central = QWidget(); lay = QVBoxLayout(central)
-        lay.setContentsMargins(16, 16, 16, 16); lay.setSpacing(10)
-        lbl = QLabel("Double-click a technician to select:")
-        lbl.setStyleSheet("color: rgb(0,0,127); font-weight: bold;"); lay.addWidget(lbl)
-        self.table = QTableWidget()
-        self.table.setColumnCount(3)
-        self.table.setHorizontalHeaderLabels(["ID", "Name", "Experience"])
-        self.table.horizontalHeader().setSectionResizeMode(1, QHeaderView.ResizeMode.Stretch)
+        lay.setContentsMargins(16,16,16,16); lay.setSpacing(10)
+        lbl = QLabel("Double-click to select a technician:")
+        lbl.setStyleSheet("font-size:13px;font-weight:bold;color:rgb(0,0,127);")
+        lay.addWidget(lbl)
+        self.table = QTableWidget(0, 3)
+        self.table.setHorizontalHeaderLabels(["ID","Name","Experience"])
+        self.table.horizontalHeader().setStretchLastSection(True)
         self.table.setEditTriggers(QTableWidget.EditTrigger.NoEditTriggers)
         self.table.setSelectionBehavior(QTableWidget.SelectionBehavior.SelectRows)
         self.table.verticalHeader().setVisible(False)
@@ -385,7 +353,6 @@ class MainWindowEx(Ui_MainWindow):
         self.lblTechnician.setText(f"✔  {name}")
         self.lblTechnician.setStyleSheet("color:rgb(0,100,0);font-weight:bold;font-size:12px;")
 
-    # ── CẬP NHẬT: SelfCustomWindowEx thay SelfCustomDialog ────────
     def _open_custom(self):
         from ui.SelfCustomWindowEx import SelfCustomWindowEx
         self._custom_win = QMainWindow()
@@ -393,6 +360,10 @@ class MainWindowEx(Ui_MainWindow):
         self._custom_wex.setupUi(self._custom_win)
         self._custom_wex.showWindow()
 
+    # ── [1] THAY ĐỔI: truyền thêm cart=self.cart sang PaymentWindowEx ──────────
+    # Trước đây chỉ truyền subtotal/discount/total.
+    # Bây giờ truyền thêm self.cart để PaymentWindowEx biết khách order món gì,
+    # dùng để ghi chi tiết vào orders.json sau khi thanh toán thành công.
     def _open_payment(self):
         if not self.cart: QMessageBox.warning(self.MainWindow,"Empty Cart","Please add items first."); return
         discount = self.subtotal*VIP_DISCOUNT if self.is_vip else 0.0
@@ -403,8 +374,10 @@ class MainWindowEx(Ui_MainWindow):
             cus_info=self.cus_info, subtotal=self.subtotal,
             discount=discount, total=total,
             technician=self.selected_technician or "Any available",
+            cart=self.cart,                          # [1] THÊM MỚI
             login_window_ex=self.login_window_ex, main_window=self.MainWindow)
         self._payment_ex.setupUi(self._payment_win); self._payment_ex.showWindow()
+    # ── hết thay đổi [1] ────────────────────────────────────────────────────────
 
     def _back_to_login(self):
         self.login_window_ex.LoginWindow.show(); self.MainWindow.close()

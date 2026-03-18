@@ -1,6 +1,5 @@
 import json
-
-from nail_shop.nail_shop.models.customer import Customer
+from models.customer import Customer
 
 
 class Customers:

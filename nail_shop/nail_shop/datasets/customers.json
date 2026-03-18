@@ -4,7 +4,7 @@
             "name": "Nguyen An",
             "phone": "0901111111",
             "cus_type": "VIP",
-            "rating": 2
+            "rating": 5
         },
         {
             "name": "Tran Binh",
@@ -25,22 +25,16 @@
             "rating": 5
         },
         {
-            "name": "ksks",
-            "phone": "1",
+            "name": "khang",
+            "phone": "2111",
             "cus_type": "Normal",
-            "rating": 2
-        },
-        {
-            "name": "tetst1",
-            "phone": "123",
-            "cus_type": "Normal",
-            "rating": 3
+            "rating": 1
         },
         {
             "name": "nhu",
             "phone": "111",
             "cus_type": "VIP",
-            "rating": 0
+            "rating": 2
         }
     ]
 }

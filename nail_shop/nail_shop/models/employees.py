@@ -1,6 +1,5 @@
 import json
-
-from nail_shop.nail_shop.models.employee import Employee
+from models.employee import Employee
 
 
 class Employees:

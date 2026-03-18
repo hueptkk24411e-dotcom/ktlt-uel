@@ -7,9 +7,8 @@ Sửa lỗi: COLOR_PALETTE và self._color_btns không tồn tại trong Ui_Self
 """
 
 from PyQt6.QtWidgets import QMainWindow
-
-from nail_shop.nail_shop.ui.SelfCustomWindow import Ui_SelfCustomWindow
-from nail_shop.nail_shop.ui.constants import COLOR_PALETTE
+from ui.SelfCustomWindow import Ui_SelfCustomWindow
+from ui.constants import COLOR_PALETTE
 
 SELECTED_BORDER     = "3px solid #4A90E2"
 DEFAULT_BORDER      = "1px solid #ddd"

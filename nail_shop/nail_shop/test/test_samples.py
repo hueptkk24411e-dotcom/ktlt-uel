@@ -1,11 +1,8 @@
 import sys, os
-
-from nail_shop.nail_shop.models.sample import Sample
-from nail_shop.nail_shop.models.samples import Samples
-
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
-
+from models.sample import Sample
+from models.samples import Samples
 
 samples = [
     Sample("S01", "White Flora Charm",     36, "Spring"),
