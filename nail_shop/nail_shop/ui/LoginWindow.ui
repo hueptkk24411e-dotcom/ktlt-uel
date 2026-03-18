@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LoginWindow</class>
+ <widget class="QMainWindow" name="LoginWindow">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>460</width><height>520</height></rect>
+  </property>
+  <property name="minimumSize">
+   <size><width>460</width><height>520</height></size>
+  </property>
+  <property name="windowTitle">
+   <string>My Nail Shop</string>
+  </property>
+
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(234, 242, 251);</string>
+   </property>
+   <layout class="QVBoxLayout" name="rootLayout">
+    <property name="leftMargin"><number>24</number></property>
+    <property name="topMargin"><number>20</number></property>
+    <property name="rightMargin"><number>24</number></property>
+    <property name="bottomMargin"><number>20</number></property>
+    <property name="spacing"><number>16</number></property>
+
+    <!-- HEADER -->
+    <item>
+     <widget class="QWidget" name="headerWidget">
+      <property name="minimumSize"><size><width>0</width><height>80</height></size></property>
+      <property name="maximumSize"><size><width>16777215</width><height>80</height></size></property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(167, 212, 238); border-radius: 16px; color: white;</string>
+      </property>
+      <layout class="QVBoxLayout" name="headerLayout">
+       <property name="leftMargin"><number>0</number></property>
+       <property name="topMargin"><number>6</number></property>
+       <property name="rightMargin"><number>0</number></property>
+       <property name="bottomMargin"><number>6</number></property>
+       <item>
+        <widget class="QLabel" name="lblTitle">
+         <property name="text"><string>MY NAIL SHOP</string></property>
+         <property name="alignment"><set>Qt::AlignCenter</set></property>
+         <property name="styleSheet">
+          <string notr="true">font-size: 26px; font-weight: bold; font-family: Georgia, serif; color: white;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="lblSubtitle">
+         <property name="text"><string>Where Your Beauty and Satisfaction Come First</string></property>
+         <property name="alignment"><set>Qt::AlignCenter</set></property>
+         <property name="styleSheet">
+          <string notr="true">font-size: 11px; color: white;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+
+    <!-- Role label -->
+    <item>
+     <widget class="QLabel" name="lblRole">
+      <property name="text"><string>Please select your role:</string></property>
+      <property name="alignment"><set>Qt::AlignCenter</set></property>
+      <property name="styleSheet">
+       <string notr="true">font-size: 13px; color: rgb(0,0,127); font-weight: bold;</string>
+      </property>
+     </widget>
+    </item>
+
+    <!-- Role buttons row -->
+    <item>
+     <layout class="QHBoxLayout" name="btnRoleRow">
+      <property name="spacing"><number>16</number></property>
+      <item>
+       <widget class="QPushButton" name="btnCustomer">
+        <property name="text"><string>👤  Customer
+(No Login Required)</string></property>
+        <property name="minimumSize"><size><width>0</width><height>70</height></size></property>
+        <property name="maximumSize"><size><width>16777215</width><height>70</height></size></property>
+        <property name="styleSheet"><string notr="true">QPushButton{background-color:rgb(167,212,238);color:rgb(0,0,127);border:2px solid rgb(67,139,196);border-radius:14px;font-size:15px;font-weight:bold;padding:10px;}QPushButton:hover{background-color:#A6C8FF;}QPushButton:pressed{background-color:#7FAFFF;}</string></property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnManagerLogin">
+        <property name="text"><string>🔐  Manager
+(Login Required)</string></property>
+        <property name="minimumSize"><size><width>0</width><height>70</height></size></property>
+        <property name="maximumSize"><size><width>16777215</width><height>70</height></size></property>
+        <property name="styleSheet"><string notr="true">QPushButton{background-color:rgb(67,139,196);color:rgb(224,253,255);border:2px solid rgb(170,210,250);border-radius:14px;font-size:15px;font-weight:bold;padding:10px;}QPushButton:hover{background-color:#4E86B5;}QPushButton:pressed{background-color:#3a6f99;}</string></property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+
+    <!-- Divider -->
+    <item>
+     <widget class="QFrame" name="divider">
+      <property name="frameShape"><enum>QFrame::HLine</enum></property>
+      <property name="frameShadow"><enum>QFrame::Sunken</enum></property>
+      <property name="styleSheet"><string notr="true">color: rgb(170, 210, 250);</string></property>
+     </widget>
+    </item>
+
+    <!-- Manager login GroupBox (hidden by default) -->
+    <item>
+     <widget class="QGroupBox" name="groupLogin">
+      <property name="title"><string>Manager Login</string></property>
+      <property name="visible"><bool>false</bool></property>
+      <property name="styleSheet"><string notr="true">QGroupBox{border:2px solid rgb(170,210,250);border-radius:10px;margin-top:14px;font-weight:bold;color:rgb(0,0,127);}QGroupBox::title{subcontrol-origin:margin;left:12px;padding:0 4px;}</string></property>
+      <layout class="QFormLayout" name="loginFormLayout">
+       <property name="leftMargin"><number>16</number></property>
+       <property name="topMargin"><number>20</number></property>
+       <property name="rightMargin"><number>16</number></property>
+       <property name="bottomMargin"><number>16</number></property>
+       <property name="spacing"><number>12</number></property>
+
+       <!-- Username row -->
+       <item row="0" column="0">
+        <widget class="QLabel" name="lblUsername">
+         <property name="text"><string>Username:</string></property>
+         <property name="styleSheet"><string notr="true">color: rgb(0,0,127); font-weight: bold;</string></property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="lineEditUsername">
+         <property name="minimumSize"><size><width>0</width><height>34</height></size></property>
+         <property name="maximumSize"><size><width>16777215</width><height>34</height></size></property>
+         <property name="placeholderText"><string>Enter username...</string></property>
+         <property name="styleSheet"><string notr="true">QLineEdit{border:2px solid rgb(170,210,250);border-radius:8px;padding:4px 8px;background-color:rgb(243,248,253);color:rgb(0,0,127);font-size:13px;}QLineEdit:focus{border:2px solid rgb(67,139,196);}</string></property>
+        </widget>
+       </item>
+
+       <!-- Password row -->
+       <item row="1" column="0">
+        <widget class="QLabel" name="lblPassword">
+         <property name="text"><string>Password:</string></property>
+         <property name="styleSheet"><string notr="true">color: rgb(0,0,127); font-weight: bold;</string></property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="lineEditPassword">
+         <property name="minimumSize"><size><width>0</width><height>34</height></size></property>
+         <property name="maximumSize"><size><width>16777215</width><height>34</height></size></property>
+         <property name="placeholderText"><string>Enter password...</string></property>
+         <property name="echoMode"><enum>QLineEdit::Password</enum></property>
+         <property name="styleSheet"><string notr="true">QLineEdit{border:2px solid rgb(170,210,250);border-radius:8px;padding:4px 8px;background-color:rgb(243,248,253);color:rgb(0,0,127);font-size:13px;}QLineEdit:focus{border:2px solid rgb(67,139,196);}</string></property>
+        </widget>
+       </item>
+
+       <!-- Login + Back buttons row -->
+       <item row="2" column="0" colspan="2">
+        <layout class="QHBoxLayout" name="btnLoginRow">
+         <item>
+          <widget class="QPushButton" name="btnLogin">
+           <property name="text"><string>Login</string></property>
+           <property name="minimumSize"><size><width>0</width><height>34</height></size></property>
+           <property name="maximumSize"><size><width>16777215</width><height>34</height></size></property>
+           <property name="styleSheet"><string notr="true">QPushButton{background-color:rgb(67,139,196);color:rgb(224,253,255);border:2px solid rgb(170,210,250);border-radius:10px;font-size:13px;font-weight:bold;padding:6px 14px;}QPushButton:hover{background-color:#4E86B5;}QPushButton:pressed{background-color:#3a6f99;}</string></property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnBack">
+           <property name="text"><string>Back</string></property>
+           <property name="minimumSize"><size><width>0</width><height>34</height></size></property>
+           <property name="maximumSize"><size><width>16777215</width><height>34</height></size></property>
+           <property name="styleSheet"><string notr="true">QPushButton{background-color:rgb(167,212,238);color:rgb(0,0,127);border:2px solid rgb(170,210,250);border-radius:10px;font-size:13px;font-weight:bold;padding:6px 14px;}QPushButton:hover{background-color:#4E86B5;}QPushButton:pressed{background-color:#3a6f99;}</string></property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+
+      </layout>
+     </widget>
+    </item>
+
+    <!-- Stretch -->
+    <item>
+     <spacer name="verticalSpacer">
+      <property name="orientation"><enum>Qt::Vertical</enum></property>
+      <property name="sizeHint" stdset="0"><size><width>20</width><height>40</height></size></property>
+     </spacer>
+    </item>
+
+    <!-- Exit button -->
+    <item>
+     <widget class="QPushButton" name="btnExit">
+      <property name="text"><string>Exit App</string></property>
+      <property name="minimumSize"><size><width>0</width><height>34</height></size></property>
+      <property name="maximumSize"><size><width>16777215</width><height>34</height></size></property>
+      <property name="styleSheet"><string notr="true">QPushButton{background-color:rgb(67,139,196);color:rgb(224,253,255);border:2px solid rgb(170,210,250);border-radius:10px;font-size:13px;font-weight:bold;padding:6px 14px;}QPushButton:hover{background-color:#4E86B5;}QPushButton:pressed{background-color:#3a6f99;}</string></property>
+     </widget>
+    </item>
+
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
