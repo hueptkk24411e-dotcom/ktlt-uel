@@ -1,8 +1,5 @@
 """
-
 File DUY NHẤT chứa tất cả biến dùng chung.
-
-  • Thêm màu / style mới → chỉ sửa file này
 """
 
 # ══════════════════════════════════════════════════════════════════
@@ -57,9 +54,7 @@ RATING_LABELS = {
 }
 
 # ══════════════════════════════════════════════════════════════════
-# 3. COLOR PALETTE — bảng 25 màu trong SelfCustomWindow
-#    Format: (object_name, hex_color, color_name)
-#    object_name phải khớp với objectName trong SelfCustomWindow.py
+# 3. COLOR PALETTE
 # ══════════════════════════════════════════════════════════════════
 
 COLOR_PALETTE = [
@@ -90,8 +85,3 @@ COLOR_PALETTE = [
     ("color_25", "#708090", "Slate Gray"),
 ]
 
-# ══════════════════════════════════════════════════════════════════
-# 4. QR IMAGE — tên file ảnh QR thử lần lượt
-# ══════════════════════════════════════════════════════════════════
-
-QR_IMAGE_NAMES = ("qr.png", "qr.jpg", "download.png")

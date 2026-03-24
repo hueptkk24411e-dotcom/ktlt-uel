@@ -1,10 +1,4 @@
-"""
-FeedbackWindowEx.py
-────────────────────
-Import từ ui.constants — KHÔNG import trực tiếp từ FeedbackWindow.py.
-Sửa lỗi: self.starBtns không tồn tại trong Ui_RatingUI,
-          nay tự build từ STAR_BTN_NAMES trong constants.py.
-"""
+
 
 from PyQt6.QtWidgets import QMessageBox, QWidget
 from models.customers import Customers
@@ -25,7 +19,7 @@ class FeedbackWindowEx(Ui_RatingUI):
     def setupUi(self, Window):
         self.Window = Window
 
-        # Ui_RatingUI là QWidget-based → bọc vào centralwidget của QMainWindow
+
         self._ui_widget = QWidget()
         super().setupUi(self._ui_widget)
         Window.setCentralWidget(self._ui_widget)
@@ -71,19 +65,10 @@ class FeedbackWindowEx(Ui_RatingUI):
         if phone:
             existing = lc.find_by_phone(phone)
             if existing:
-                existing.rating = self.selected_stars
-                if hasattr(existing, "feedback"):
-                    existing.feedback = feedback_text
+                existing.rating   = self.selected_stars
+                existing.feedback = feedback_text          # gán thẳng, field đã có trong model
             else:
-                c = Customer(name, phone, ctype, self.selected_stars)
-                if hasattr(c, "feedback"):
-                    c.feedback = feedback_text
-                lc.add_item(c)
-        elif name != "Guest":
-            c = Customer(name, "", ctype, self.selected_stars)
-            if hasattr(c, "feedback"):
-                c.feedback = feedback_text
-            lc.add_item(c)
+                lc.add_item(Customer(name, phone, ctype, self.selected_stars, feedback_text))
 
         lc.export_json(self.file_customers)
 

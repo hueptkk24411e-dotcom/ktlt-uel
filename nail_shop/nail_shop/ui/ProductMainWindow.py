@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file 'D:\Code\ktlt-uel\nail_shop\nail_shop\ui\ProductMainWindow.ui'
+# Form implementation generated from reading ui file 'D:\PythonProject\nail_shop\ui\ProductMainWindow.ui'
 #
 # Created by: PyQt6 UI code generator 6.9.1
 #
@@ -300,6 +300,16 @@ class Ui_ProductMainWindow(object):
         self.comboCusRating.addItem("")
         self.comboCusRating.addItem("")
         self.cusFormLayout.addWidget(self.comboCusRating)
+        self.lblCusFeedbackTitle = QtWidgets.QLabel(parent=self.tabCustomers)
+        self.lblCusFeedbackTitle.setStyleSheet("color: rgb(0,0,127); font-size: 11px; font-weight: bold;")
+        self.lblCusFeedbackTitle.setObjectName("lblCusFeedbackTitle")
+        self.cusFormLayout.addWidget(self.lblCusFeedbackTitle)
+        self.lblCusFeedbackValue = QtWidgets.QLabel(parent=self.tabCustomers)
+        self.lblCusFeedbackValue.setMinimumSize(QtCore.QSize(0, 40))
+        self.lblCusFeedbackValue.setStyleSheet("background-color: rgb(243, 248, 253); border: 2px solid rgb(170, 210, 250); border-radius: 6px; padding: 4px 8px; color: rgb(0, 0, 127); font-size: 12px;")
+        self.lblCusFeedbackValue.setWordWrap(True)
+        self.lblCusFeedbackValue.setObjectName("lblCusFeedbackValue")
+        self.cusFormLayout.addWidget(self.lblCusFeedbackValue)
         self.btnCusSave = QtWidgets.QPushButton(parent=self.tabCustomers)
         self.btnCusSave.setMinimumSize(QtCore.QSize(0, 30))
         self.btnCusSave.setStyleSheet("QPushButton { background-color: rgb(67, 139, 196); color: rgb(224, 253, 255); border: 2px solid rgb(170, 210, 250); border-radius: 8px; font-size: 12px; font-weight: bold; padding: 5px 12px; } QPushButton:hover { background-color: #4E86B5; } QPushButton:pressed { background-color: #3a6f99; }")
@@ -458,7 +468,7 @@ class Ui_ProductMainWindow(object):
         ProductMainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(ProductMainWindow)
-        self.tabWidget.setCurrentIndex(4)
+        self.tabWidget.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(ProductMainWindow)
 
     def retranslateUi(self, ProductMainWindow):
@@ -535,6 +545,8 @@ class Ui_ProductMainWindow(object):
         self.comboCusRating.setItemText(3, _translate("ProductMainWindow", "3"))
         self.comboCusRating.setItemText(4, _translate("ProductMainWindow", "4"))
         self.comboCusRating.setItemText(5, _translate("ProductMainWindow", "5"))
+        self.lblCusFeedbackTitle.setText(_translate("ProductMainWindow", "Feedback:"))
+        self.lblCusFeedbackValue.setText(_translate("ProductMainWindow", "—"))
         self.btnCusSave.setText(_translate("ProductMainWindow", "💾  Save"))
         self.btnCusRemove.setText(_translate("ProductMainWindow", "🗑  Remove"))
         self.btnCusSearch.setText(_translate("ProductMainWindow", "🔍  Search"))
@@ -565,3 +577,7 @@ class Ui_ProductMainWindow(object):
         self.btnChartRevenue.setText(_translate("ProductMainWindow", "💰  Revenue by Season"))
         self.chartPlaceholder.setText(_translate("ProductMainWindow", "Charts will appear here"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tabStats), _translate("ProductMainWindow", "📊  Statistics"))
+        self.tableSamples.horizontalHeader().setSectionResizeMode(QtWidgets.QHeaderView.ResizeMode.Stretch)
+        self.tableCustomers.horizontalHeader().setSectionResizeMode(QtWidgets.QHeaderView.ResizeMode.Stretch)
+        self.tableEmployees.horizontalHeader().setSectionResizeMode(QtWidgets.QHeaderView.ResizeMode.Stretch)
+        self.tableOrders.horizontalHeader().setSectionResizeMode(QtWidgets.QHeaderView.ResizeMode.Stretch)

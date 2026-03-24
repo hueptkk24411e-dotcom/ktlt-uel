@@ -40,49 +40,38 @@
      <number>20</number>
     </property>
     <item>
-     <layout class="QVBoxLayout" name="headerLayout">
-      <property name="spacing">
-       <number>2</number>
+     <widget class="QWidget" name="headerWidget">
+      <property name="minimumSize"><size><width>0</width><height>70</height></size></property>
+      <property name="maximumSize"><size><width>16777215</width><height>70</height></size></property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(167, 212, 238); border-radius: 16px; color: white;</string>
       </property>
-      <property name="leftMargin">
-       <number>0</number>
-      </property>
-      <property name="topMargin">
-       <number>6</number>
-      </property>
-      <property name="rightMargin">
-       <number>0</number>
-      </property>
-      <property name="bottomMargin">
-       <number>6</number>
-      </property>
-      <item>
-       <widget class="QLabel" name="lblTitle">
-        <property name="styleSheet">
-         <string notr="true">font-size: 22px; font-weight: bold; font-family: Georgia, serif; color: white;</string>
-        </property>
-        <property name="text">
-         <string>MY NAIL SHOP</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLabel" name="lblSubtitle">
-        <property name="styleSheet">
-         <string notr="true">font-size: 11px; color: white;</string>
-        </property>
-        <property name="text">
-         <string>Welcome! Please tell us a bit about yourself</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
-      </item>
-     </layout>
+      <layout class="QVBoxLayout" name="headerLayout">
+       <property name="spacing"><number>2</number></property>
+       <property name="leftMargin"><number>0</number></property>
+       <property name="topMargin"><number>6</number></property>
+       <property name="rightMargin"><number>0</number></property>
+       <property name="bottomMargin"><number>6</number></property>
+       <item>
+        <widget class="QLabel" name="lblTitle">
+         <property name="styleSheet">
+          <string notr="true">font-size: 22px; font-weight: bold; font-family: Georgia, serif; color: white;</string>
+         </property>
+         <property name="text"><string>MY NAIL SHOP</string></property>
+         <property name="alignment"><set>Qt::AlignCenter</set></property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="lblSubtitle">
+         <property name="styleSheet">
+          <string notr="true">font-size: 11px; color: white;</string>
+         </property>
+         <property name="text"><string>Welcome! Please tell us a bit about yourself</string></property>
+         <property name="alignment"><set>Qt::AlignCenter</set></property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
     </item>
     <item>
      <widget class="QGroupBox" name="groupInfo">

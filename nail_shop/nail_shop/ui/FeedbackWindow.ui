@@ -7,24 +7,48 @@
   </property>
   <property name="windowTitle"><string>Rate Our Service</string></property>
   <property name="styleSheet">
-   <string notr="true">QWidget { background-color: #e6f4fa; color: #000000; font-family: 'Georgia'; } QFrame { background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #ffffff, stop:0.5 #e6f4fa, stop:1 #d4edf7); border-radius: 20px; } QLabel { background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255,255,255,220), stop:1 rgba(255,255,255,150)); border-radius: 15px; padding: 8px 15px; border: 1px solid rgba(255,255,255,180); }</string>
+   <string notr="true">QWidget { background-color: rgb(234, 242, 251); color: #000000; font-family: 'Georgia'; }</string>
   </property>
 
   <layout class="QVBoxLayout" name="verticalLayout">
-   <property name="spacing"><number>20</number></property>
-   <property name="leftMargin"><number>30</number></property>
-   <property name="topMargin"><number>30</number></property>
-   <property name="rightMargin"><number>30</number></property>
-   <property name="bottomMargin"><number>30</number></property>
+   <property name="spacing"><number>16</number></property>
+   <property name="leftMargin"><number>24</number></property>
+   <property name="topMargin"><number>20</number></property>
+   <property name="rightMargin"><number>24</number></property>
+   <property name="bottomMargin"><number>20</number></property>
 
-   <!-- Instruction -->
+   <!-- Header -->
    <item>
-    <widget class="QLabel" name="lblInstruction">
-     <property name="text"><string>How was your experience today?</string></property>
-     <property name="alignment"><set>Qt::AlignCenter</set></property>
+    <widget class="QWidget" name="headerWidget">
+     <property name="minimumSize"><size><width>0</width><height>70</height></size></property>
+     <property name="maximumSize"><size><width>16777215</width><height>70</height></size></property>
      <property name="styleSheet">
-      <string notr="true">font-size: 18px; font-weight: bold; color: rgb(190,215,226);</string>
+      <string notr="true">background-color: rgb(167, 212, 238); border-radius: 16px; color: white;</string>
      </property>
+     <layout class="QVBoxLayout" name="headerLayout">
+      <property name="leftMargin"><number>0</number></property>
+      <property name="topMargin"><number>6</number></property>
+      <property name="rightMargin"><number>0</number></property>
+      <property name="bottomMargin"><number>6</number></property>
+      <item>
+       <widget class="QLabel" name="lblTitle">
+        <property name="text"><string>MY NAIL SHOP</string></property>
+        <property name="alignment"><set>Qt::AlignCenter</set></property>
+        <property name="styleSheet">
+         <string notr="true">font-size: 22px; font-weight: bold; font-family: Georgia, serif; color: white;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="lblInstruction">
+        <property name="text"><string>How was your experience today?</string></property>
+        <property name="alignment"><set>Qt::AlignCenter</set></property>
+        <property name="styleSheet">
+         <string notr="true">font-size: 11px; color: white;</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </widget>
    </item>
 
@@ -79,34 +103,34 @@
     </layout>
    </item>
 
-   <!-- Feedback label (gốc) -->
+   <!-- Feedback label -->
    <item>
     <widget class="QLabel" name="lblFeedback">
      <property name="text"><string>Leave a feedback for us:</string></property>
      <property name="styleSheet">
-      <string notr="true">QLabel { background-color: transparent; }</string>
+      <string notr="true">color: rgb(0,0,127); font-size: 12px; font-weight: bold;</string>
      </property>
     </widget>
    </item>
 
-   <!-- Feedback text input (gốc) -->
+   <!-- Feedback input -->
    <item>
     <widget class="QLineEdit" name="lineEditFeedback">
      <property name="minimumSize"><size><width>0</width><height>40</height></size></property>
      <property name="placeholderText"><string>Your thoughts...</string></property>
      <property name="styleSheet">
-      <string notr="true">QLineEdit { background-color: rgb(208,236,250); color: rgb(15,15,15); border: 2px solid #AFCBF3; border-radius: 20px; padding: 6px 10px; }</string>
+      <string notr="true">QLineEdit { background-color: rgb(243, 248, 253); color: rgb(0,0,127); border: 2px solid rgb(170, 210, 250); border-radius: 8px; padding: 6px 10px; font-size: 13px; } QLineEdit:focus { border: 2px solid rgb(67, 139, 196); }</string>
      </property>
     </widget>
    </item>
 
-   <!-- Submit button (gốc) -->
+   <!-- Submit button -->
    <item>
     <widget class="QPushButton" name="btnSubmit">
-     <property name="text"><string>SEND</string></property>
+     <property name="text"><string>✔  Submit Rating</string></property>
      <property name="minimumSize"><size><width>0</width><height>45</height></size></property>
      <property name="styleSheet">
-      <string notr="true">QPushButton { background-color: rgb(208,236,250); color: #0D3B66; font-weight: bold; font-size: 15px; border: none; border-radius: 15px; padding: 8px 15px; } QPushButton:hover { background-color: rgb(208,236,250); } QPushButton:pressed { background-color: #8FB6F5; }</string>
+      <string notr="true">QPushButton { background-color: rgb(67, 139, 196); color: rgb(224, 253, 255); font-weight: bold; font-size: 14px; border: 2px solid rgb(170, 210, 250); border-radius: 10px; padding: 8px 15px; } QPushButton:hover { background-color: #4E86B5; } QPushButton:pressed { background-color: #3a6f99; }</string>
      </property>
     </widget>
    </item>

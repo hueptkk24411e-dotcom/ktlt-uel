@@ -4,37 +4,29 @@
             "name": "Nguyen An",
             "phone": "0901111111",
             "cus_type": "VIP",
-            "rating": 5
+            "rating": 5,
+            "feedback": "Very satisfied, will come back!"
         },
         {
             "name": "Tran Binh",
             "phone": "0902222222",
             "cus_type": "Normal",
-            "rating": 4
+            "rating": 4,
+            "feedback": "Good service, loved the design."
         },
         {
             "name": "Le Chau",
             "phone": "0903333333",
             "cus_type": "Normal",
-            "rating": 3
+            "rating": 3,
+            "feedback": ""
         },
         {
             "name": "Pham Duc",
             "phone": "0904444444",
             "cus_type": "VIP",
-            "rating": 5
-        },
-        {
-            "name": "khang",
-            "phone": "2111",
-            "cus_type": "Normal",
-            "rating": 1
-        },
-        {
-            "name": "nhu",
-            "phone": "111",
-            "cus_type": "VIP",
-            "rating": 2
+            "rating": 5,
+            "feedback": ""
         }
     ]
 }

@@ -1,11 +1,4 @@
-"""
-MainWindowEx.py
-───────────────
-THAY ĐỔI SO VỚI FILE GỐC:
-  [1] _open_payment() truyền thêm tham số cart=self.cart sang PaymentWindowEx
-      → PaymentWindowEx cần tham số này để lưu chi tiết order vào orders.json
-      → Không thay đổi gì logic hiển thị hay tính tiền, chỉ thêm 1 dòng truyền tham số
-"""
+
 import os
 from PyQt6.QtWidgets import (
     QTableWidgetItem, QMessageBox, QWidget, QVBoxLayout,
@@ -163,6 +156,8 @@ class ProductCard(QWidget):
         )
         lay.addWidget(btn_add)
 
+        #phan nay thiet lap card cho tung sample
+
     def event(self, e):
         from PyQt6.QtCore import QEvent
         from PyQt6.QtGui import QPainter, QPen, QColor
@@ -217,33 +212,7 @@ class TechnicianDialog(QMainWindow):
         callback(employees_list[row].name); self.close()
 
 
-class AboutUsDialog(QDialog):
-    def __init__(self, parent=None):
-        super().__init__(parent)
-        self.setWindowTitle("About My Nail Shop 💅"); self.setFixedSize(480, 400)
-        self.setStyleSheet("background-color: rgb(234,242,251);")
-        lay = QVBoxLayout(self); lay.setContentsMargins(24, 20, 24, 20); lay.setSpacing(14)
-        hdr = QWidget(); hdr.setFixedHeight(64)
-        hdr.setStyleSheet("background-color: rgb(167,212,238); border-radius: 14px;")
-        hl = QVBoxLayout(hdr); hl.setContentsMargins(0, 6, 0, 6)
-        lh = QLabel("MY NAIL SHOP"); lh.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        lh.setStyleSheet("font-size:22px;font-weight:bold;font-family:Georgia,serif;color:white;")
-        ls = QLabel("Where Your Beauty and Satisfaction Come First")
-        ls.setAlignment(Qt.AlignmentFlag.AlignCenter); ls.setStyleSheet("font-size:11px;color:white;")
-        hl.addWidget(lh); hl.addWidget(ls); lay.addWidget(hdr)
-        box = QFrame()
-        box.setStyleSheet("QFrame{background-color:white;border:2px solid rgb(170,210,250);border-radius:12px;}")
-        bl = QVBoxLayout(box); bl.setContentsMargins(20, 16, 20, 16); bl.setSpacing(10)
-        for icon, text in [("💅","Professional nail care since 2018"),("📍","123 Beauty Street, Ho Chi Minh City"),
-            ("📞","Hotline: 0909 123 456"),("🕐","Open daily: 9:00 AM – 8:00 PM"),
-            ("⭐","Specialties: Gel nails, nail art, custom designs"),("💬",'"Beauty is not just a look — it\'s a feeling."')]:
-            rw = QWidget(); rl = QHBoxLayout(rw); rl.setContentsMargins(0,0,0,0); rl.setSpacing(10)
-            li = QLabel(icon); li.setFixedWidth(24); li.setStyleSheet("font-size:16px;")
-            lt = QLabel(text); lt.setStyleSheet("color:rgb(0,0,127);font-size:13px;"); lt.setWordWrap(True)
-            rl.addWidget(li); rl.addWidget(lt, stretch=1); bl.addWidget(rw)
-        lay.addWidget(box)
-        bc = QPushButton("Close"); bc.setFixedHeight(36); bc.setStyleSheet(STYLE_ACTION_BTN)
-        bc.clicked.connect(self.accept); lay.addWidget(bc)
+
 
 
 class MainWindowEx(Ui_MainWindow):
@@ -285,7 +254,25 @@ class MainWindowEx(Ui_MainWindow):
     def showWindow(self): self.MainWindow.show()
 
     def _open_about_us(self):
-        self._about_dlg = AboutUsDialog(self.MainWindow); self._about_dlg.exec()
+        about_title = "✨ ABOUT MY NAIL SHOP ✨"
+        about_text = (
+            "<b>Vision:</b> <i>Elevating Vietnamese Beauty Through Every Stroke</i><br><br>"
+            "<b>Professional Team:</b><br>"
+            "• Certified technicians<br>"
+            "• Latest nail trends<br>"
+            "• Premium products<br><br>"
+            "<b>Contact:</b><br>"
+            "📍 UEL University Village<br>"
+            "📞 (+84) 123 456 789<br>"
+            "⏰ 08:00 - 21:00"
+        )
+        from PyQt6 import QtWidgets, QtCore
+        msg = QtWidgets.QMessageBox(self.MainWindow)
+        msg.setWindowTitle("About Us")
+        msg.setTextFormat(QtCore.Qt.TextFormat.RichText)
+        msg.setText(about_title)
+        msg.setInformativeText(about_text)
+        msg.exec()
 
     def _switch_season(self, season):
         self.current_season = season

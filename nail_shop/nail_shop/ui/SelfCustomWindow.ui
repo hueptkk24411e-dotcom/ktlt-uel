@@ -7,7 +7,7 @@
   </property>
   <property name="windowTitle"><string>Custom Your Design</string></property>
   <property name="styleSheet">
-   <string notr="true">#centralwidget { background-color: #FFFFFF; color: #000000; } QLabel { color: #000000; }</string>
+   <string notr="true">#centralwidget { background-color: rgb(234, 242, 251); color: #000000; } QLabel { color: #000000; }</string>
   </property>
 
   <widget class="QWidget" name="centralwidget">
@@ -20,13 +20,36 @@
 
     <!-- Header -->
     <item>
-     <widget class="QLabel" name="labelHeader">
-      <property name="text"><string>&lt;html&gt;&lt;body&gt;&lt;p align="center"&gt;&lt;span style="font-size:14pt; font-weight:600;"&gt;CUSTOM YOUR DESIGN&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string></property>
-      <property name="maximumSize"><size><width>16777215</width><height>60</height></size></property>
-      <property name="minimumSize"><size><width>0</width><height>60</height></size></property>
+     <widget class="QWidget" name="headerWidget">
+      <property name="minimumSize"><size><width>0</width><height>70</height></size></property>
+      <property name="maximumSize"><size><width>16777215</width><height>70</height></size></property>
       <property name="styleSheet">
-       <string notr="true">color: white; font-size: 14px; background-color: #AFCBF3;</string>
+       <string notr="true">background-color: rgb(167, 212, 238); border-radius: 16px; color: white;</string>
       </property>
+      <layout class="QVBoxLayout" name="headerLayout">
+       <property name="leftMargin"><number>0</number></property>
+       <property name="topMargin"><number>6</number></property>
+       <property name="rightMargin"><number>0</number></property>
+       <property name="bottomMargin"><number>6</number></property>
+       <item>
+        <widget class="QLabel" name="labelHeader">
+         <property name="text"><string>MY NAIL SHOP</string></property>
+         <property name="alignment"><set>Qt::AlignCenter</set></property>
+         <property name="styleSheet">
+          <string notr="true">font-size: 22px; font-weight: bold; font-family: Georgia, serif; color: white;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelHeaderSub">
+         <property name="text"><string>Custom Your Design</string></property>
+         <property name="alignment"><set>Qt::AlignCenter</set></property>
+         <property name="styleSheet">
+          <string notr="true">font-size: 11px; color: white;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </widget>
     </item>
 

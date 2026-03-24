@@ -20,7 +20,13 @@ class Customers:
         with open(filename, encoding='utf-8') as f:
             data = json.load(f)
             for p in data['customers']:
-                it = Customer(p['name'], p['phone'], p['cus_type'], p.get('rating', 0))
+                it = Customer(
+                    p['name'],
+                    p['phone'],
+                    p['cus_type'],
+                    p.get('rating', 0),
+                    p.get('feedback', None),   # tương thích ngược file JSON cũ chưa có field này
+                )
                 self.add_item(it)
 
     def export_json(self, filename=None):
@@ -29,10 +35,11 @@ class Customers:
         data = {'customers': []}
         for it in self.list:
             data['customers'].append({
-                'name': it.name,
-                'phone': it.phone,
+                'name':     it.name,
+                'phone':    it.phone,
                 'cus_type': it.cus_type,
-                'rating': it.rating
+                'rating':   it.rating,
+                'feedback': it.feedback or "",
             })
         with open(self.filename, 'w', encoding='utf-8') as f:
             json.dump(data, f, ensure_ascii=False, indent=4)

@@ -120,7 +120,7 @@
          <string notr="true">QTabWidget::pane { border: 2px solid rgb(170, 210, 250); border-radius: 8px; background-color: rgb(234, 242, 251); } QTabBar::tab { background-color: rgb(215, 233, 255); color: rgb(0, 0, 127); border: 1px solid rgb(170, 210, 250); border-bottom: none; padding: 6px 16px; font-weight: bold; font-size: 12px; border-top-left-radius: 6px; border-top-right-radius: 6px; } QTabBar::tab:selected { background-color: rgb(67, 139, 196); color: rgb(224, 253, 255); } QTabBar::tab:hover:!selected { background-color: #A6C8FF; }</string>
         </property>
         <property name="currentIndex">
-         <number>4</number>
+         <number>0</number>
         </property>
         <widget class="QWidget" name="tabOrders">
          <attribute name="title">
@@ -905,6 +905,35 @@
                 <string>5</string>
                </property>
               </item>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="lblCusFeedbackTitle">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(0,0,127); font-size: 11px; font-weight: bold;</string>
+              </property>
+              <property name="text">
+               <string>Feedback:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="lblCusFeedbackValue">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(243, 248, 253); border: 2px solid rgb(170, 210, 250); border-radius: 6px; padding: 4px 8px; color: rgb(0, 0, 127); font-size: 12px;</string>
+              </property>
+              <property name="text">
+               <string>—</string>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
              </widget>
             </item>
             <item>

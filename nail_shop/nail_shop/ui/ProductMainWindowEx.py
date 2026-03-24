@@ -1,32 +1,4 @@
-"""
-ProductMainWindowEx.py
-──────────────────────
-THAY ĐỔI SO VỚI FILE GỐC:
-  [1] __init__(): thêm load Orders từ datasets/orders.json
 
-  [2] _display_all(): gọi thêm _display_orders()
-
-  [3] _connect_signals(): thêm connect cho btnOrdersRefresh và btnOrdersSearch
-      (2 nút này cần có sẵn trong ProductMainWindow.ui — xem ghi chú bên dưới)
-
-  [4] Thêm 2 method mới: _display_orders(), _refresh_orders()
-
-  [5] Thêm 1 method mới: _search_orders() — lọc theo tên/SĐT khách
-
-  [6] _chart_revenue(): đổi từ tính theo giá catalog → tính từ orders.json thật
-      Nếu chưa có order nào thì fallback hiện thông báo thay vì chart rỗng
-
-────────────────────────────────────────────────────────────────
-  GHI CHÚ UI: Để [3][4][5] hoạt động, cần thêm vào ProductMainWindow.ui:
-    - Một tab mới tên "Orders" chứa:
-        • QTableWidget  objectName="tableOrders"  (6 cột: Order ID, Customer,
-          Phone, Total, Method, Date)
-        • QLineEdit     objectName="inputOrderSearch"
-        • QPushButton   objectName="btnOrdersSearch"   text="Search"
-        • QPushButton   objectName="btnOrdersRefresh"  text="Refresh"
-    Nếu chưa sửa UI kịp, comment out phần [3] để tránh AttributeError.
-────────────────────────────────────────────────────────────────
-"""
 
 import os
 import shutil
@@ -47,7 +19,7 @@ from models.customers import Customers
 from models.customer import Customer
 from models.employees import Employees
 from models.employee import Employee
-from models.orders import Orders           # [1] THÊM MỚI
+from models.orders import Orders
 from ui.ProductMainWindow import Ui_ProductMainWindow
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -60,17 +32,17 @@ class ProductMainWindowEx(Ui_ProductMainWindow):
         self.file_samples     = "datasets/samples.json"
         self.file_customers   = "datasets/customers.json"
         self.file_employees   = "datasets/employees.json"
-        self.file_orders      = "datasets/orders.json"   # [1] THÊM MỚI
+        self.file_orders      = "datasets/orders.json"
 
         self.ls = Samples()
         self.lc = Customers()
         self.le = Employees()
-        self.lo = Orders()                               # [1] THÊM MỚI
+        self.lo = Orders()
 
         self.ls.import_json(self.file_samples)
         self.lc.import_json(self.file_customers)
         self.le.import_json(self.file_employees)
-        self.lo.import_json(self.file_orders)            # [1] THÊM MỚI
+        self.lo.import_json(self.file_orders)
 
         self._current_fig = None
 
@@ -84,12 +56,12 @@ class ProductMainWindowEx(Ui_ProductMainWindow):
         self.Window.show()
 
     # ── Display ────────────────────────────────────────────────────
-    # [2] THAY ĐỔI: gọi thêm _display_orders()
+
     def _display_all(self):
         self._display_samples(self.ls.list)
         self._display_customers(self.lc.list)
         self._display_employees(self.le.list)
-        self._display_orders(self.lo.list)               # [2] THÊM MỚI
+        self._display_orders(self.lo.list)
 
     def _display_samples(self, lst):
         self.tableSamples.setRowCount(0)
@@ -116,7 +88,7 @@ class ProductMainWindowEx(Ui_ProductMainWindow):
             for c, val in enumerate([e.emp_id, e.name, str(e.experience)]):
                 self.tableEmployees.setItem(r, c, QTableWidgetItem(val))
 
-    # ── [4] METHOD MỚI: hiện danh sách orders ──────────────────────
+    # ──  hiện danh sách orders ──────────────────────
     def _display_orders(self, lst):
         """Hiện danh sách orders vào tableOrders."""
         self.tableOrders.blockSignals(True)
@@ -134,10 +106,10 @@ class ProductMainWindowEx(Ui_ProductMainWindow):
             ]):
                 self.tableOrders.setItem(r, col, QTableWidgetItem(val))
         self.tableOrders.blockSignals(False)
-    # ── hết [4] ────────────────────────────────────────────────────
+
 
     # ── Signals ────────────────────────────────────────────────────
-    # [3] THAY ĐỔI: thêm connect cho 2 nút Orders
+
     def _connect_signals(self):
         # Table row click → fill form
         self.tableSamples.itemSelectionChanged.connect(self._fill_sample_form)
@@ -167,6 +139,7 @@ class ProductMainWindowEx(Ui_ProductMainWindow):
         self.btnEmpRefresh.clicked.connect(self._refresh_employees)
 
         # Charts
+
         self.btnChartFeedback.clicked.connect(self._chart_feedback)
         self.btnChartRevenue.clicked.connect(self._chart_revenue)
 
@@ -203,6 +176,11 @@ class ProductMainWindowEx(Ui_ProductMainWindow):
         rating = self.tableCustomers.item(row, 3).text()
         idx2 = self.comboCusRating.findText(rating)
         if idx2 >= 0: self.comboCusRating.setCurrentIndex(idx2)
+        # Hiện feedback của customer được chọn
+        phone = self.tableCustomers.item(row, 1).text()
+        cus = self.lc.find_by_phone(phone)
+        feedback = (cus.feedback or "—") if cus and cus.feedback else "—"
+        self.lblCusFeedbackValue.setText(feedback)
 
     def _fill_employee_form(self):
         row = self.tableEmployees.currentRow()
@@ -376,6 +354,7 @@ class ProductMainWindowEx(Ui_ProductMainWindow):
         self.inputCusPhone.clear()
         self.comboCusType.setCurrentIndex(0)
         self.comboCusRating.setCurrentIndex(0)
+        self.lblCusFeedbackValue.setText("—")  # reset label feedback
         self._display_customers(self.lc.list)
 
     def _refresh_customers(self):
@@ -445,7 +424,7 @@ class ProductMainWindowEx(Ui_ProductMainWindow):
         self._display_employees(self.le.list)
         self._clear_employee_form()
 
-    # ── [4][5][6] ORDERS — methods ────────────────────────────────
+    # ── ORDERS — methods ────────────────────────────────
     def _refresh_orders(self):
         """Load lại orders.json và hiện lên table."""
         self.lo.import_json(self.file_orders)
@@ -597,7 +576,7 @@ class ProductMainWindowEx(Ui_ProductMainWindow):
         tbl.setColumnWidth(1, 40)
         lay.addWidget(tbl)
 
-        # ── Tổng tiền — text thẳng, không chia ô ──────────────────
+        # ── Tổng tiền  ──────────────────
         total_frame = QFrame()
         total_frame.setStyleSheet("background:white;border:2px solid rgb(170,210,250);"
                                   "border-radius:10px;")
@@ -633,7 +612,7 @@ class ProductMainWindowEx(Ui_ProductMainWindow):
         lay.addWidget(btn_close, alignment=Qt.AlignmentFlag.AlignRight)
 
         dlg.exec()
-    # ── hết [4][5][6] ──────────────────────────────────────────────
+
 
     # ── CHARTS ─────────────────────────────────────────────────────
     def _clear_chart_area(self):
@@ -645,6 +624,9 @@ class ProductMainWindowEx(Ui_ProductMainWindow):
             item = lay.takeAt(lay.count() - 1)
             if item.widget():
                 item.widget().deleteLater()
+
+
+
 
     def _chart_feedback(self):
         self._clear_chart_area()
@@ -678,12 +660,7 @@ class ProductMainWindowEx(Ui_ProductMainWindow):
         canvas = FigureCanvas(fig)
         self.tabStats.layout().addWidget(canvas)
 
-    # ── [6] THAY ĐỔI: _chart_revenue dùng orders.json thật ─────────
-    # Trước: tính tổng giá niêm yết từng mẫu trong catalog theo mùa (không phải doanh thu)
-    # Sau  : tính tổng tiền (total) từ các order đã thanh toán, nhóm theo mùa của sản phẩm
-    #
-    # Cách nhóm theo mùa: dò tên từng item trong order.items → tra samples.json
-    # để lấy season. Nếu không tìm được season (vd Custom nail) → gom vào "Other".
+
     def _chart_revenue(self):
         self._clear_chart_area()
 
@@ -703,16 +680,15 @@ class ProductMainWindowEx(Ui_ProductMainWindow):
 
         for order in self.lo.list:
             for item_str in (order.items or []):
-                # item_str dạng "White Flora Charm x2 ($72.00)"
-                # Lấy tên sản phẩm = phần trước " x"
+
                 try:
                     item_name = item_str.split(" x")[0].strip()
                     season    = season_map.get(item_name, "Other")
-                    # Lấy số tiền trong dấu ngoặc: ($72.00)
+
                     amount    = float(item_str.split("($")[1].rstrip(")"))
                     revenue[season] += amount
                 except (IndexError, ValueError):
-                    # Nếu parse lỗi (vd Custom nail format khác) → bỏ qua
+
                     pass
 
         # Chỉ vẽ các season có doanh thu > 0
@@ -745,7 +721,7 @@ class ProductMainWindowEx(Ui_ProductMainWindow):
         self._current_fig = fig
         canvas = FigureCanvas(fig)
         self.tabStats.layout().addWidget(canvas)
-    # ── hết thay đổi [6] ────────────────────────────────────────────
+
 
     # ── Logout ─────────────────────────────────────────────────────
     def _logout(self):

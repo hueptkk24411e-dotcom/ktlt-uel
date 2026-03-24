@@ -1,17 +1,4 @@
-"""
-PaymentWindowEx.py
-──────────────────
-THAY ĐỔI SO VỚI FILE GỐC:
-  [1] __init__() nhận thêm tham số cart (list các tuple (name, price, qty))
-      → dùng để ghi chi tiết order vào orders.json
 
-  [2] process_confirm() gọi thêm _save_order() trước khi mở FeedbackWindow
-      → toàn bộ logic hiển thị QMessageBox và mở Feedback giữ nguyên
-
-  [3] Thêm method _save_order() hoàn toàn mới
-      → tạo Order object, ghi vào datasets/orders.json
-      → nếu file chưa có hoặc lỗi thì bỏ qua, không crash app
-"""
 
 import os
 import datetime
@@ -21,12 +8,10 @@ from PyQt6.QtGui import QPixmap
 from ui.PaymentWindow import Ui_PaymentWindow
 
 
-QR_IMAGE_NAMES = ("qr.png", "qr.jpg", "download.png")
+QR_IMAGE_NAMES = ["payment.png"]
 
 
 class PaymentWindowEx(Ui_PaymentWindow):
-    # ── [1] THAY ĐỔI: thêm tham số cart ────────────────────────────────────────
-    # cart là self.cart từ MainWindowEx, dạng list of tuple: (name, price, qty)
     def __init__(self, cus_info, subtotal, discount, total,
                  technician, login_window_ex, main_window, cart=None):
         self.cus_info        = cus_info
@@ -38,7 +23,7 @@ class PaymentWindowEx(Ui_PaymentWindow):
         self.main_window     = main_window
         self.is_vip          = (cus_info.get("cus_type", "Normal") == "VIP")
         self.cart            = cart or []            # [1] THÊM MỚI
-    # ── hết thay đổi [1] ────────────────────────────────────────────────────────
+
 
     def setupUi(self, Window):
         super().setupUi(Window)
@@ -60,8 +45,7 @@ class PaymentWindowEx(Ui_PaymentWindow):
         if qr_path:
             self.labelQR.setPixmap(QPixmap(qr_path))
             self.labelQR.setText("")
-        else:
-            self.labelQR.setText("📱 QR not found\nPlace qr.png in images/")
+
 
         # ── Radio button logic ────────────────────────────────────
         self.radioQR.toggled.connect(self._on_payment_method_changed)
@@ -82,7 +66,7 @@ class PaymentWindowEx(Ui_PaymentWindow):
             self.labelQR.setVisible(False)
             self.lblCashInfo.setVisible(True)
 
-    # ── [2] THAY ĐỔI: gọi thêm _save_order() trước khi mở Feedback ─────────────
+
     def process_confirm(self):
         method = "QR / Bank Transfer" if self.radioQR.isChecked() else "Cash"
         name   = self.cus_info.get("name", "Guest")
@@ -96,12 +80,12 @@ class PaymentWindowEx(Ui_PaymentWindow):
             "We hope to see you again! 💅"
         )
 
-        self._save_order(method)                     # [2] THÊM MỚI — lưu order
+        self._save_order(method)
         self.Window.close()
         self._open_feedback()
-    # ── hết thay đổi [2] ────────────────────────────────────────────────────────
 
-    # ── [3] METHOD MỚI HOÀN TOÀN ────────────────────────────────────────────────
+
+
     def _save_order(self, method: str):
         """Tạo Order object từ thông tin hiện có và ghi vào datasets/orders.json.
         Bắt toàn bộ exception để đảm bảo nếu lỗi thì app không crash."""
@@ -139,7 +123,7 @@ class PaymentWindowEx(Ui_PaymentWindow):
         except Exception as e:
             # Không báo lỗi ra màn hình khách — chỉ in console để debug
             print(f"[PaymentWindowEx] _save_order failed: {e}")
-    # ── hết thay đổi [3] ────────────────────────────────────────────────────────
+
 
     def _open_feedback(self):
         from ui.FeedbackWindowEx import FeedbackWindowEx

@@ -1,10 +1,4 @@
-"""
-SelfCustomWindowEx.py
-──────────────────────
-Import từ ui.constants — KHÔNG import COLOR_PALETTE từ SelfCustomWindow.py.
-Sửa lỗi: COLOR_PALETTE và self._color_btns không tồn tại trong Ui_SelfCustomWindow,
-          nay build dict nút màu trực tiếp từ getattr() + COLOR_PALETTE trong constants.
-"""
+
 
 from PyQt6.QtWidgets import QMainWindow
 from ui.SelfCustomWindow import Ui_SelfCustomWindow
@@ -12,8 +6,7 @@ from ui.constants import COLOR_PALETTE
 
 SELECTED_BORDER     = "3px solid #4A90E2"
 DEFAULT_BORDER      = "1px solid #ddd"
-DEFAULT_BORDER_WHITE = "2px solid #ccc"   # màu trắng dùng border đặc biệt
-
+DEFAULT_BORDER_WHITE = "2px solid #ccc"
 
 class SelfCustomWindowEx(Ui_SelfCustomWindow):
     def __init__(self, on_confirm_callback):
@@ -27,8 +20,7 @@ class SelfCustomWindowEx(Ui_SelfCustomWindow):
         self.Window = Window
         Window.setWindowTitle("Custom Your Design")
 
-        # Build dict {object_name: btn} từ COLOR_PALETTE + getattr
-        # Không cần _color_btns hay import gì thêm từ SelfCustomWindow
+
         self._color_btn_map = {}
         for obj_name, hex_color, color_name in COLOR_PALETTE:
             btn = getattr(self, obj_name, None)
